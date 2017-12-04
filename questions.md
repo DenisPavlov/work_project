@@ -1,7 +1,7 @@
 # Список вопросов и ответов на собеседование Java
 
 ## ООП
-- <a href="http://">Что такое ООП?</a>
+- <a href="https://github.com/DenisPavlov/work_project/blob/master/answers/OOP/%D0%A7%D1%82%D0%BE%20%D1%82%D0%B0%D0%BA%D0%BE%D0%B5%20%D0%9E%D0%9E%D0%9F.md">Что такое ООП?</a>
 - <a href="http://">Что такое объект</a>
 - <a href="http://">Назовите основные принципы ООП</a>
 - <a href="http://">Что такое наследование?</a>
