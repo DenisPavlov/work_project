@@ -20,9 +20,11 @@
 - <a href="">Чем абстрактный класс отличается от интерфейса? В каких случаях Вы бы использовали абстрактный класс, 
 а в каких интерфейс?</a>
 
-##Многопоточность
+## Многопоточность
 
 
 
 
-- <a href="">DDDD</a>
+- <a href="http://becomejavasenior.com/blog/2015/07/01/327-interview-questions-java-developer/">327 вопросов на собеседование Java Developer</a>
+- <a href="http://ab.kh.ua/java-voprosi-s-sobesedovanij/">Вопросы с собеседований junior java</a>
+- <a href="http://javastudy.ru/category/interview/">Собеседование по java</a>
