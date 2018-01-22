@@ -8,3 +8,4 @@
 - <a href="https://habrahabr.ru/post/134102/">Размер Java объектов</a>
 - <a href="https://habrahabr.ru/post/124909/">Сравнение потребления памяти у разных структур хранения данных</a>
 
+-SQL
