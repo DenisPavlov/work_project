@@ -11,7 +11,7 @@
 - <a href="v_chem_raznica_mezhdu_peremennoj_ekzemplyara_i_staticheskoj_peremennoj_privedite_primer.md">В чем разница между переменной экземпляра и статической переменной? Приведите пример.</a> 
 
 
-- <a href="">Приведите пример когда можно использовать статический метод?</a> 
+- <a href="privedite_primer_kogda_mozhno_ispolzovat_staticheskij_metod.md">Приведите пример когда можно использовать статический метод?</a> 
 
 
 - <a href="">Расскажите про классы- загрузчики и про динамическую зарузку классов.</a> 
