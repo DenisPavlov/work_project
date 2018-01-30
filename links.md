@@ -2,6 +2,10 @@
 
 ## CORE
 - <a href="https://habrahabr.ru/post/197802/">А знаете ли Вы, что возвращает .getClass()?</a>
+- <a href="https://habrahabr.ru/post/103830/">Загрузка классов в Java. Теория</a>
+- <a href="https://habrahabr.ru/post/104229/">Загрузка классов в Java. Практика</a>
+- <a href="http://info.javarush.ru/translation/2014/04/15/10-%D0%B7%D0%B0%D0%BC%D0%B5%D1%82%D0%BE%D0%BA-%D0%BE-%D0%BC%D0%BE%D0%B4%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80%D0%B5-Static-%D0%B2-Java.html">10 заметок о модификаторе Static в Java</a>
+- <a href="http://codingrus.ru/readarticle.php?article_id=666">Статический импорт</a>
 
 ## Многопоточность
 - <a href="https://habrahabr.ru/post/164487">Многопоточность в Java</a>
