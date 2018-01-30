@@ -12,12 +12,11 @@
 - <a href="privedite_primer_kogda_mozhno_ispolzovat_staticheskij_metod.md">Приведите пример когда можно использовать статический метод?</a> 
 - <a href="rasskazhite_pro_klassy_zagruzchiki_i_pro_dinamicheskuyu_zaruzku_klassov.md">Расскажите про классы- загрузчики и про динамическую зарузку классов.</a> 
 - <a href="kak_vedut_sebya_static_polya_pri_serrializacii.md">Как ведут себя static поля при серриализации</a>
+- <a href="chto_takoe_staticheskaya_i_chto_takoe_dinamicheskaya_zagruzka_klassa.md">Что такое статическая и что такое динамическая загрузка класса?</a> 
 
 
 
 
-
-- <a href="">Что такое статическая и что такое динамическая загрузка класса?</a> 
 - <a href="">Для чего нужен оператор "assert" в джава?</a> 
 - <a href="">Почему в некоторых интерфейсах вообще не определяют методов?</a> 
 - <a href="">Какая основная разница между String, StringBuffer, StringBuilder?</a> 
