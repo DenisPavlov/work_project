@@ -7,14 +7,13 @@
 - <a href="mozhet_li_obekt_poluchit_dostup_k_private_peremennoj_klassa?_esli_da,_to_kakim_obrazom?.md">Может ли объект получить доступ к private переменной класса? Если да, то каким образом?</a> 
 - <a href="dlya_chego_v_java_staticheskie_bloki.md">Для чего в джаве статические блоки?</a> 
 - <a href="mozhno_li_peregruzit_static_metod.md">Можно ли перегрузить, переопределить static метод?</a> 
-
-
 - <a href="rasskazhite_pro_vnutrennie_klassy._kogda_vy_ix_budete_ispolzovat.md">Расскажите про внутренние классы. Когда вы их будете использовать?</a> 
+- <a href="v_chem_raznica_mezhdu_peremennoj_ekzemplyara_i_staticheskoj_peremennoj_privedite_primer.md">В чем разница между переменной экземпляра и статической переменной? Приведите пример.</a> 
 
 
-
-- <a href="">В чем разница между переменной экземпляра и статической переменной? Приведите пример.</a> 
 - <a href="">Приведите пример когда можно использовать статический метод?</a> 
+
+
 - <a href="">Расскажите про классы- загрузчики и про динамическую зарузку классов.</a> 
 - <a href="">Что такое статическая и что такое динамическая загрузка класса?</a> 
 - <a href="">Для чего нужен оператор "assert" в джава?</a> 
