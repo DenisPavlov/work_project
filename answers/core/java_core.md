@@ -9,12 +9,12 @@
 - <a href="mozhno_li_peregruzit_static_metod.md">Можно ли перегрузить, переопределить static метод?</a> 
 - <a href="rasskazhite_pro_vnutrennie_klassy._kogda_vy_ix_budete_ispolzovat.md">Расскажите про внутренние классы. Когда вы их будете использовать?</a> 
 - <a href="v_chem_raznica_mezhdu_peremennoj_ekzemplyara_i_staticheskoj_peremennoj_privedite_primer.md">В чем разница между переменной экземпляра и статической переменной? Приведите пример.</a> 
-
-
 - <a href="privedite_primer_kogda_mozhno_ispolzovat_staticheskij_metod.md">Приведите пример когда можно использовать статический метод?</a> 
 
 
-- <a href="">Расскажите про классы- загрузчики и про динамическую зарузку классов.</a> 
+- <a href="rasskazhite_pro_klassy_zagruzchiki_i_pro_dinamicheskuyu_zaruzku_klassov.md">Расскажите про классы- загрузчики и про динамическую зарузку классов.</a> 
+
+
 - <a href="">Что такое статическая и что такое динамическая загрузка класса?</a> 
 - <a href="">Для чего нужен оператор "assert" в джава?</a> 
 - <a href="">Почему в некоторых интерфейсах вообще не определяют методов?</a> 
