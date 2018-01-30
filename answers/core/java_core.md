@@ -17,7 +17,11 @@
 
 
 
-- <a href="">Для чего нужен оператор "assert" в джава?</a> 
+- <a href="dlya_chego_nuzhen_operator_"assert"_v_dzhava.md">Для чего нужен оператор "assert" в джава?</a> 
+
+
+
+
 - <a href="">Почему в некоторых интерфейсах вообще не определяют методов?</a> 
 - <a href="">Какая основная разница между String, StringBuffer, StringBuilder?</a> 
 - <a href="">Расскажите про потоки ввода-вывода Java</a> 
