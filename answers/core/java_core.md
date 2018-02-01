@@ -13,19 +13,19 @@
 - <a href="rasskazhite_pro_klassy_zagruzchiki_i_pro_dinamicheskuyu_zaruzku_klassov.md">Расскажите про классы- загрузчики и про динамическую зарузку классов.</a> 
 - <a href="kak_vedut_sebya_static_polya_pri_serrializacii.md">Как ведут себя static поля при серриализации</a>
 - <a href="chto_takoe_staticheskaya_i_chto_takoe_dinamicheskaya_zagruzka_klassa.md">Что такое статическая и что такое динамическая загрузка класса?</a> 
-
-
-
-
 - <a href="dlya_chego_nuzhen_operator_assert_v_dzhava.md">Для чего нужен оператор "assert" в джава?</a> 
+- <a href="pochemu_v_nekotoryx_interfejsax_voobshhe_ne_opredelyayut_metodov.md">Почему в некоторых интерфейсах вообще не определяют методов?</a> 
+- <a href="kakaya_osnovnaya_raznica_mezhdu_string_stringbuffer_stringbuilder.md">Какая основная разница между String, StringBuffer, StringBuilder?</a> 
+- <a href="rasskazhite_pro_potoki_vvoda-vyvoda_java.md">Расскажите про потоки ввода-вывода Java</a> 
 
 
 
 
-- <a href="">Почему в некоторых интерфейсах вообще не определяют методов?</a> 
-- <a href="">Какая основная разница между String, StringBuffer, StringBuilder?</a> 
-- <a href="">Расскажите про потоки ввода-вывода Java</a> 
-- <a href="">Что такое Heap и Stack память в Java?</a> 
+
+- <a href="chto_takoe_heap_i_stack_pamyat_v_java.md">Что такое Heap и Stack память в Java?</a> 
+
+
+
 - <a href="">Какая разница между Stack и Heap памятью в Java?</a> 
 - <a href="">Расскажите про модель памяти в джава?</a> 
 - <a href="">Как работает сборщик мусора (garbage collector)?</a> 
