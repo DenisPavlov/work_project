@@ -17,7 +17,7 @@
 
 
 
-- <a href="dlya_chego_nuzhen_operator_"assert"_v_dzhava.md">Для чего нужен оператор "assert" в джава?</a> 
+- <a href="dlya_chego_nuzhen_operator_assert_v_dzhava.md">Для чего нужен оператор "assert" в джава?</a> 
 
 
 
