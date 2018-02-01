@@ -17,14 +17,10 @@
 - <a href="pochemu_v_nekotoryx_interfejsax_voobshhe_ne_opredelyayut_metodov.md">Почему в некоторых интерфейсах вообще не определяют методов?</a> 
 - <a href="kakaya_osnovnaya_raznica_mezhdu_string_stringbuffer_stringbuilder.md">Какая основная разница между String, StringBuffer, StringBuilder?</a> 
 - <a href="rasskazhite_pro_potoki_vvoda-vyvoda_java.md">Расскажите про потоки ввода-вывода Java</a> 
-
-
-
-
-
 - <a href="chto_takoe_heap_i_stack_pamyat_v_java.md">Что такое Heap и Stack память в Java?</a> 
 
-
+Остановился
+-
 
 - <a href="">Какая разница между Stack и Heap памятью в Java?</a> 
 - <a href="">Расскажите про модель памяти в джава?</a> 
