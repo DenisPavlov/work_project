@@ -1,0 +1,85 @@
+## Java Collection Framework
+
+- <a href="">Что такое Коллекция?</a> 
+- <a href="">Назовите основные интерфейсы коллекций и их имплементации.</a> 
+- <a href="">Чем отличается ArrayList от LinkedList? В каких случаях лучше использовать первый, а в каких второй?</a> 
+- <a href="">Чем отличается HashMap от Hashtable?</a> 
+- <a href="">Чем отличается ArrayList от Vector?</a> 
+- <a href="">Как сравниваются елементы коллекций?</a> 
+- <a href="">Расположите в виде иерархии следующие интерфейсы: List, Set, Map, SortedSet, SortedMap, Collection, Iterable, Iterator, NavigableSet, NavigableMap.</a> 
+- <a href="">Почему Map - это не Collection, в то время как List и Set являются Collection?</a> 
+- <a href="">Дайте определение понятию "iterator".</a> 
+- <a href="">Что вы знаете об интерфейсе Iterable?</a> 
+- <a href="">Как одной строчкой преобразовать HashSet в ArrayList?</a> 
+- <a href="">Как одной строчкой преобразовать ArrayList в HashSet?</a> 
+- <a href="">Как перебрать все ключи Map учитывая, что Map - это не Iterable?</a> 
+- <a href="">Как перебрать все значения Map учитывая, что Map - это не Iterable?</a> 
+- <a href="">Как перебрать все пары ключ-значение в Map учитывая, что Map - это не Iterable?</a> 
+- <a href="">В чем проявляется "сортированность" SortedMap, кроме того, что toString() выводит все по порядку?</a> 
+- <a href="">Как одним вызовом копировать элементы из любой Collection в массив?</a> 
+- <a href="">Реализуйте симметрическую разность двух коллекций используя методы Collection (addAll(), removeAll(), retainAll()).</a> 
+- <a href="">Сравните Enumeration и Iterator.</a> 
+- <a href="">Как между собой связаны Iterable и Iterator?</a> 
+- <a href="">Как между собой связаны Iterable, Iterator и "for-each " введенный в Java 5?</a> 
+- <a href="">Сравните Iterator и ListIterator.</a> 
+- <a href="">Что произойдет, если я вызову Iterator.next() не "спросив" Iterator.hasNext()?</a> 
+- <a href="">Что произойдет, если я вызову Iterator.next() перед этим 10 раз вызвав Iterator.hasNext()? Я пропущу 9 элементов?</a> 
+- <a href="">Если у меня есть коллекция и порожденный итератор, изменится ли коллекция, если я вызову iterator.remove()?</a> 
+- <a href="">Если у меня есть коллекция и порожденный итератор, изменится ли итератор, если я вызову collection.remove(..)?</a> 
+- <a href="">Зачем добавили ArrayList, если уже был Vector?</a> 
+- <a href="">В реализации класса ArrayList есть следующие поля: Object[] elementData, int size. Объясните, зачем хранить отдельно size, если всегда можно взять elementData.length?</a> 
+- <a href="">LinkedList - это односвязный, двусвязный или четырехсвязный список?</a> 
+- <a href="">Какое худшее время работы метода contain() для элемента, который есть в LinkedList (O(1), O(log(N)), O(N), O(N * log(N)), O(N * N))?</a> 
+- <a href="">Какое худшее время работы метода contain() для элемента, который есть в ArrayList (O(1), O(log(N)), O(N), O(N * log(N)), O(N * N))?</a> 
+- <a href="">Какое худшее время работы метода add() для LinkedList (O(1), O(log(N)), O(N), O(N * log(N)), O(N * N))?</a> 
+- <a href="">Какое худшее время работы метода add() для ArrayList (O(1), O(log(N)), O(N), O(N * log(N)), O(N * N))?</a> 
+- <a href="">Сколько выделяется элементов в памяти при вызове ArrayList.add()?</a> 
+- <a href="">Сколько выделяется элементов в памяти при вызове LinkedList.add()?</a> 
+- <a href="">Оцените количество памяти на хранение одного примитива типа byte в LinkedList?</a> 
+- <a href="">Оцените количество памяти на хранение одного примитива типа byte в ArrayList?</a> 
+- <a href="">Я добавляю элемент в середину List-а: list.add(list.size()/2, newElem). Для кого эта операция медленнее - для ArrayList или для LinkedList?</a> 
+- <a href="">Как перебрать элементы LinkedList в обратном порядке, не используя медленный get(index)?</a> 
+- <a href="">Как одним вызовом из List получить List со всеми элементами, кроме первых и последних 3-х?</a> 
+- <a href="">Могут ли у разных объектов в памяти (ref0 != ref1) быть ref0.hashCode() == ref1.hashCode()?</a> 
+- <a href="">Могут ли у разных объектов в памяти (ref0 != ref1) быть ref0.equals(ref1) == true?</a> 
+- <a href="">Могут ли у разных ссылок на один объект в памяти (ref0 == ref1) быть &nbsp;ref0.equals(ref1) == false?</a> 
+- <a href="">Есть класс Point{int x, y;}. Почему хэш-код в виде 31 * x + y предпочтительнее чем x + y?</a> 
+- <a href="">Если у класса Point{int x, y;} "правильно " реализовать метод equals (return ref0.x == ref1.x && ref0.y == ref1.y), но сделать хэш-код в виде int hashCode() {return x;}, то будут ли корректно такие точки помещаться и извлекаться из HashSet?</a> 
+- <a href="">equals() порождает отношение эквивалентности. Какими из свойств обладает такое отношение: коммутативность, симметричность, рефлексивность, дистрибутивность, ассоциативность, транзитивность?</a> 
+- <a href="">Можно ли так реализовать equals(Object that) {return this.hashCode() == that.hashCode()}?</a> 
+- <a href="">В equals требуется проверять, что аргумент (equals(Object that)) такого же типа как и сам объект. В чем разница между this.getClass() == that.getClass() и that instanceof MyClass?</a> 
+- <a href="">Можно ли реализовать метод equals класса MyClass вот так: class MyClass {public boolean equals(MyClass that) {return this == that;}}?</a> 
+- <a href="">Будет ли работать HashMap, если все ключи будут возвращать int hashCode() {return 42;}?</a> 
+- <a href="">Зачем добавили HashMap, если уже был Hashtable?</a> 
+- <a href="">Согласно Кнуту и Кормену существует две основных реализации хэш-таблицы: на основе открытой адресацией и на основе метода цепочек. Как реализована HashMap? Почему так сделали (по вашему мнению)? В чем минусы и плюсы каждого подхода?</a> 
+- <a href="">Сколько переходов по ссылкам происходит, когда вы делаете HashMap.get(key) по ключу, который есть в таблице?</a> 
+- <a href="">Сколько создается новых объектов, когда вы добавляете новый элемент в HashMap?</a> 
+- <a href="">Как работает HashMap при попытке сохранить в нее два элемента по ключам с одинаковым hashCode, но для которых equals == false?</a> 
+- <a href="">HashMap может выродиться в список даже для ключей с разным hashCode. Как это возможно?</a> 
+- <a href="">Какое худшее время работы метода get(key) для ключа, которого нет в таблице (O(1), O(log(N)), O(N), O(N * log(N)), O(N * N))?</a> 
+- <a href="">Какое худшее время работы метода get(key) для ключа, который есть в таблице (O(1), O(log(N)), O(N), O(N * log(N)), O(N * N))?</a> 
+- <a href="">Объясните смысл параметров в конструкторе HashMap(int initialCapacity, float loadFactor).</a> 
+- <a href="">В чем разница между HashMap и IdentityHashMap? Для чего нужна IdentityHashMap? Как может быть полезна для реализации сериализации или клонирования?</a> 
+- <a href="">В чем разница между HashMap и WeakHashMap? Для чего нужна WeakHashMap?</a> 
+- <a href="">В WeakHashMap используются WeakReferences. А почему бы не создать SoftHashMap на SoftReferences?</a> 
+- <a href="">В WeakHashMap используются WeakReferences. А почему бы не создать PhantomHashMap на PhantomReferences?</a> 
+- <a href="">Сделайте HashSet из HashMap (используйте только множество ключей, но не множество значений).</a> 
+- <a href="">Сделайте HashMap из HashSet (HashSet<Map.Entry<K, V>>).</a> 
+- <a href="">Сравните интерфейсы java.util.Queue и java.util.Deque.</a> 
+- <a href="">Кто кого расширяет: Queue расширяет Deque, или Deque расширяет Queue?</a> 
+- <a href="">Почему LinkedList реализует и List, и Deque?</a> 
+- <a href="">В чем разница между классами java.util.Arrays и java.lang.reflect.Array?</a> 
+- <a href="">В чем разница между классами java.util.Collection и java.util.Collections?</a> 
+- <a href="">Напишите НЕмногопоточную программу, которая заставляет коллекцию выбросить ConcurrentModificationException.</a> 
+- <a href="">Что такое "fail-fast поведение"?</a> 
+- <a href="">Для множеств еnum-ов есть специальный класс java.util.EnumSet? Зачем? Чем авторов не устраивал HashSet или TreeSet?</a> 
+- <a href="">java.util.Stack - считается "устаревшим". Чем его рекомендуют заменять? Почему?</a> 
+- <a href="">Какая коллекция реализует дисциплину обслуживания FIFO?</a> 
+- <a href="">Какая коллекция реализует дисциплину обслуживания FILO?</a> 
+- <a href="">Приведите пример, когда какая-либо коллекция выбрасывает UnsupportedOperationException.</a> 
+- <a href="">Почему нельзя написать "ArrayList<List> numbers = new ArrayList<ArrayList>();" но можно "List<ArrayList> numbers = new ArrayList<ArrayList>();"?</a> 
+- <a href="">LinkedHashMap - что это еще за "зверь"? Что в нем от LinkedList, а что от HashMap?</a> 
+- <a href="">LinkedHashSet - что это еще за "зверь"? Что в нем от LinkedList, а что от HashSet?</a> 
+- <a href="">Говорят, на LinkedHashMap легко сделать простенький кэш c "invalidation policy", знаете как?</a> 
+- <a href="">Что позволяет сделать PriorityQueue?</a> 
+- <a href="">В чем заключаются отличия java.util.Comparator от java.lang.Comparable?</a> 
