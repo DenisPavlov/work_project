@@ -19,16 +19,17 @@
 - <a href="rasskazhite_pro_potoki_vvoda-vyvoda_java.md">Расскажите про потоки ввода-вывода Java</a> 
 - <a href="chto_takoe_heap_i_stack_pamyat_v_java.md">Что такое Heap и Stack память в Java?</a>
 - <a href="kakaya_raznica_mezhdu_stack_i_heap_pamyatyu_v_java.md">Какая разница между Stack и Heap памятью в Java?</a>
+- <a href="rasskazhite_pro_model_pamyati_v_java.md">Расскажите про модель памяти в джава?</a>
+- <a href="kak_rabotaet_sborshhik_musora.md">Как работает сборщик мусора (garbage collector)?</a>
+- <a href="rasskazhite_pro_privedenie_tipov.md">Расскажите про приведение типов. Что такое понижение и повышение типа? Когда вы получаете ClassCastException?</a>
+- <a href="chto_takoe_staticheskij_klass,_kakie_osobennosti_ego_ispolzovaniya.md">Что такое статический класс, какие особенности его использования?</a>
+- <a href="kakim_obrazom_iz_vlozhennogo_klassa_poluchit_dostup_k_polyu_vneshnego_klassa.md">Каким образом из вложенного класса получить доступ к полю внешнего класса.</a>
 
 Остановился
 -
 
-- <a href="rasskazhite_pro_model_pamyati_v_java.md">Расскажите про модель памяти в джава?</a> 
-- <a href="">Как работает сборщик мусора (garbage collector)?</a> 
-- <a href="">Расскажите про приведение типов. Что такое понижение и повышение типа? Когда вы получаете ClassCastException?</a> 
-- <a href="">Что такое статический класс, какие особенности его использования?</a> 
-- <a href="">Каким образом из вложенного класса получить доступ к полю внешнего класса.</a> 
-- <a href="">Какие существуют типы вложенных классов? Для чего они используются?</a>
+
+- <a href="kakie_sushhestvuyut_tipy_vlozhennyx_klassov.md">Какие существуют типы вложенных классов? Для чего они используются?</a>
  
  
 - <a>Возможно ли при переопределении (override) метода изменить:</a> 
