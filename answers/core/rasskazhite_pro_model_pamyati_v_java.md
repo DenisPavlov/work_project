@@ -1,0 +1,1 @@
+![alt text](https://github.com/DenisPavlov/work_project/blob/master/answers/core/memory_model.jpg)
