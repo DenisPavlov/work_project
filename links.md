@@ -41,6 +41,9 @@
 - <a href="https://habrahabr.ru/post/267389/">Структуры данных в Java. Стеки, хэши, сеты. Когда какие применяем</a>
 - <a href="https://metanit.com/java/tutorial/5.10.php">Iterator. Перебор данных в коллекции</a>
 
+## JavaEE
+- <a href="http://info.javarush.ru/eGarmin/2015/03/28/%D0%91%D0%B5%D0%B7-%D0%BF%D0%B0%D1%84%D0%BE%D1%81%D0%B0-%D0%9F%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%D0%BC-%D0%BE-JavaEE-%D1%81%D0%B5%D1%80%D0%B2%D0%BB%D0%B5%D1%82%D0%B0%D1%85-%D0%B8-%D0%B8%D1%85-%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%B9%D0%BD%D0%B5%D1%80%D0%B0%D1%85.html">Без пафоса. Поговорим о JavaEE, сервлетах и их контейнерах</a>
+
 ## Spring
 - <a href="https://habrahabr.ru/post/139421/">Spring Data на примере JPA</a>
 - <a href="https://habrahabr.ru/post/113945/">Кеширование в Spring Framework 3.1</a>
@@ -50,6 +53,7 @@
 - <a href="https://habrahabr.ru/post/50147/">SOAP и REST, в чем отличие</a>
 - <a href="https://habrahabr.ru/post/46374/">Что такое веб-сервис</a>
 - <a href="https://ru.wikipedia.org/wiki/%D0%92%D0%B5%D0%B1-%D1%81%D0%BB%D1%83%D0%B6%D0%B1%D0%B0">Что такое веб-сервис</a>
+- <a href="http://info.javarush.ru/eGarmin/2015/03/14/%D0%92%D0%B5%D0%B1-%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81%D1%8B-%D0%A8%D0%B0%D0%B3-1-%D0%A7%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D0%B2%D0%B5%D0%B1-%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81-%D0%B8-%D0%BA%D0%B0%D0%BA-%D1%81-%D0%BD%D0%B8%D0%BC-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D1%82%D1%8C-.html">Веб-сервисы. Шаг 1. Что такое веб-сервис и как с ним работать?</a>
 
 ## Тестирование
 - <a href="https://habrahabr.ru/post/269961/">Еще один способ тестирования веб-сервисов с использованием AssertJ</a>
