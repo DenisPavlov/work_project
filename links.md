@@ -5,6 +5,13 @@
 - <a href="https://ru.stackoverflow.com/questions/279518">Полиморфизм, last binding</a>
 
 ## CORE
+
+### Ключевые слова
+- <a href="http://www.quizful.net/post/features-of-the-application-of-modifiers-in-java">Особенности применения модификаторов в Java</a>
+
+### Обобщенные типы (Generics)
+- <a href="http://www.quizful.net/post/java-generics-tutorial">Дженерики (Java, обучающая статья)</a>
+
 - <a href="https://habrahabr.ru/post/197802/">А знаете ли Вы, что возвращает .getClass()?</a>
 - <a href="https://habrahabr.ru/post/103830/">Загрузка классов в Java. Теория</a>
 - <a href="https://habrahabr.ru/post/104229/">Загрузка классов в Java. Практика</a>
