@@ -119,6 +119,63 @@
 - Какую из них использовать в случае, когда два бина ссылаются друг на друга?
 - Как можно сделать так, что бы при тестировании иньектировались одни бины а на продакшене другие?
 - Как получить ссылку на бин?
+
+- @SuppressWarning аннотации
+- immutable (достоинства)
+- Classloader (типы класслоадеров)
+
+- HashMap
+- Оптимальные задачи для разных структур данных
+- Double и Float
+- Статические классы (для чего, nested, inner, области видимости)
+- StringPool
+- reflection
+- singlton(реализация)
+- thread-safe singleton
+- иерархия коллекций 
+- SOLID принципы
+- BlockingQueue
+- что такое transaction manager
+- ioc контейнер
+- finalize
+- try with resources
+- Nan, infinity
+- приоритет операций
+- примитивные типы
+- что такое REST
+- безопасность REST
+- POST vs PUT
+- HEAD и OPTIONS
+- достоинства и недостатки REST
+- класс String
+- nio vs io
+- Buffer
+- hashCode
+- hashCode числа
+- hash коллизия
+- generics
+- различие <? extends T> vs <? super T>
+
+Maven
+- 
+- Чем центральный отличается от remoute репозия
+- зачем maven сохраняет все версии
+- profile
+- Spring MVC locale
+- интерсепторы в MVC
+
+Hibernate
+-
+
+- как создать primary_key
+- foren_key как сделать в Hibernate
+- generator strategy ?
+- lasy loading
+- что такое kash в Hibernate?
+- сессии в Hibernate
+
+
+- tomcat (jdbc pool)
   
   Есть 8 шариков, один из них легче чем 7 других. Как при помощи весов и всего двух взвешиваний найти этот шарик?
   
