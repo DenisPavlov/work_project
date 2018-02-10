@@ -6,6 +6,8 @@
 
 ## CORE
 
+### Class
+
 ### Ключевые слова
 - <a href="http://www.quizful.net/post/features-of-the-application-of-modifiers-in-java">Особенности применения модификаторов в Java</a>
 
@@ -15,9 +17,15 @@
 ### Methods
 - <a href="http://info.javarush.ru/translation/2014/06/30/%D0%9F%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%D1%87%D0%B0-%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D0%BE%D0%B2-%D0%B2-Java-%D0%9F%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4-.html">Передача параметров в Java.></a>
 - <a href="http://www.javable.com/columns/robinson/letters/01/">Гадание на кофейной гуще, или передача по значению в Java</a>
+- <a href="https://habrahabr.ru/post/168195/">Разбираемся с hashCode() и equals()</a>
 
 ### Обобщенные типы (Generics)
 - <a href="http://www.quizful.net/post/java-generics-tutorial">Дженерики (Java, обучающая статья)</a>
+
+
+### Аннотации
+- <a href="https://www.ibm.com/support/knowledgecenter/ru/SS8PJ7_9.5.0/org.eclipse.jdt.doc.user/tasks/task-suppress_warnings.htm">Отключение предупреждений с помощью @SuppressWarnings</a></a>
+
 
 - <a href="https://habrahabr.ru/post/197802/">А знаете ли Вы, что возвращает .getClass()?</a>
 - <a href="https://habrahabr.ru/post/103830/">Загрузка классов в Java. Теория</a>
