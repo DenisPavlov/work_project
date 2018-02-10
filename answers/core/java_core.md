@@ -4,6 +4,7 @@
 - <a href="http://www.quizful.net/interview/java/access-modifiers">Какие бывают области видимости (модификаторы доступа) у переменных и методов? И каким образом модификатор доступа можно изменять в наследниках класса?</a>
 
 ### Class
+- <a href="kakie_metody_est_u_klassa_object.md">Какие методы есть у класса Object?</a>
 - <a href="kakie_sushhestvuyut_tipy_vlozhennyx_klassov.md">Какие существуют типы вложенных классов? Для чего они используются?</a>
 
 ### Methods
@@ -15,6 +16,9 @@
     5) Изменять порядок, количество или вовсе убрать секцию throws?</a>
 - <a href="kakim_obrazom_peredayutsya_peremennye_v_metody,_po_znacheniyu_ili_po_ssylke.md">Каким образом передаются переменные в методы, по значению или по ссылке?</a>
 - <a href="kak_peredayutsya_klassy_obertki_v_metody_(integer,_double...).md">Как передаются классы обертки в методы?(Integer, Double...)</a>
+- <a href="pravila_pereopredeleniya_metoda_object.equals().md">Правила переопределения метода Object.equals().</a>
+- <a href="esli_vy_xotite_pereopredelit_equals(),_kakie_usloviya_dolzhny_udovletvoryatsya_dlya_pereopredelennogo_metoda.md">Если вы хотите переопределить equals(), какие условия должны удовлетворяться для переопределенного метода?</a>
+- <a href="kakaya_svyaz_mezhdu_hashcode_i_equals.md">Какая связь между hashCode и equals?</a>
 
 
 ### Типы данных
@@ -62,10 +66,6 @@
 -
 
  
-- <a href="">Какие методы есть у класса Object?</a> 
-- <a href="">Правила переопределения метода Object.equals().</a> 
-- <a href="">Если вы хотите переопределить equals(), какие условия должны удовлетворяться для переопределенного метода?</a> 
-- <a href="">Какая связь между hashCode и equals?</a> 
 - <a href="">Каким образом реализованы методы hashCode и equals в классе Object?</a> 
 - <a href="">Что будет, если переопределить equals не переопределяя hashCode? Какие могут возникнуть проблемы?</a> 
 - <a href="">Есть ли какие-либо рекомендации о том, какие поля следует использовать при подсчете hashCode?</a> 
