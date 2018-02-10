@@ -13,6 +13,9 @@
     3) Тип аргумента или количество
     4) Имя аргументов
     5) Изменять порядок, количество или вовсе убрать секцию throws?</a>
+- <a href="kakim_obrazom_peredayutsya_peremennye_v_metody,_po_znacheniyu_ili_po_ssylke.md">Каким образом передаются переменные в методы, по значению или по ссылке?</a>
+- <a href="kak_peredayutsya_klassy_obertki_v_metody_(integer,_double...).md">Как передаются классы обертки в методы?(Integer, Double...)</a>
+
 
 ### Типы данных
 - <a href="chto_takoe_autoboxing.md">Что такое autoboxing?</a> 
@@ -59,7 +62,6 @@
 -
 
  
-- <a href="kakim_obrazom_peredayutsya_peremennye_v_metody,_po_znacheniyu_ili_po_ssylke.md">Каким образом передаются переменные в методы, по значению или по ссылке?</a> 
 - <a href="">Какие методы есть у класса Object?</a> 
 - <a href="">Правила переопределения метода Object.equals().</a> 
 - <a href="">Если вы хотите переопределить equals(), какие условия должны удовлетворяться для переопределенного метода?</a> 

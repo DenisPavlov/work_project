@@ -27,21 +27,24 @@ public class Main {
         Main main = new Main();
 
         //примитивный тип int
-        int i = 5;
-        System.out.println("до передачи в метод(примитив) " + i);
-        main.method(i);
-        System.out.println("После метода(примитив) " + i);
-//
-//        //Объект класса Integer
-//        Integer ii = new Integer(5);
-//        System.out.println("до передачи в метод(объект) " + ii);
-//        main.method(ii);
-//        System.out.println("после метода(объект) " + ii);
+//        int i = 5;
+//        System.out.println("до передачи в метод(примитив) " + i);
+//        main.method(i);
+//        System.out.println("После метода(примитив) " + i);
 
-        Cat cat = new Cat(2);
-        System.out.println("До передачи в метод коту было " + cat.age + " лет");
-        main.oldCatAge(cat);
-        System.out.println("После передачи в метод коту стало " + cat.age + " лет");
+        //Объект класса Integer
+        Integer ii = new Integer(5);
+        System.out.println("до передачи в метод(объект) " + ii);
+
+        Integer iii = main.method(ii);
+        System.out.println("после метода(объект) " + ii);
+
+        System.out.println(ii == iii);
+
+//        Cat cat = new Cat(2);
+//        System.out.println("До передачи в метод коту было " + cat.age + " лет");
+//        main.oldCatAge(cat);
+//        System.out.println("После передачи в метод коту стало " + cat.age + " лет");
 
     }
 }
