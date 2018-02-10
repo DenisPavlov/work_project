@@ -6,6 +6,22 @@
 ### Class
 - <a href="kakie_sushhestvuyut_tipy_vlozhennyx_klassov.md">Какие существуют типы вложенных классов? Для чего они используются?</a>
 
+### Methods
+- <a href="vozmozhno_li_pri_pereopredelenii_(override)_metoda_izmenit.md">Возможно ли при переопределении (override) метода изменить:
+    1) Модификатор доступа
+    2) Возвращаемый тип
+    3) Тип аргумента или количество
+    4) Имя аргументов
+    5) Изменять порядок, количество или вовсе убрать секцию throws?</a>
+
+### Типы данных
+- <a href="chto_takoe_autoboxing.md">Что такое autoboxing?</a> 
+
+### Generics
+- <a href="chto_takoe_generics.md">Что такое Generics?</a>
+- <a href="kakova_istinnaya_cel_ispolzovaniya_obobshhennyx_tipov_v_java.md">Какова истинная цель использования обобщенных типов в Java?</a>
+
+
 
 ### Exceptions
 
@@ -42,19 +58,8 @@
 Остановился
 -
 
-
-- <a href="vozmozhno_li_pri_pereopredelenii_(override)_metoda_izmenit.md">Возможно ли при переопределении (override) метода изменить:
-    1) Модификатор доступа
-    2) Возвращаемый тип
-    3) Тип аргумента или количество
-    4) Имя аргументов
-    5) Изменять порядок, количество или вовсе убрать секцию throws?</a> 
-
-
-- <a href="">Что такое autoboxing?</a> 
-- <a href="">Что такое Generics?</a> 
-- <a href="">Какова истинная цель использования обобщенных типов в Java?</a> 
-- <a href="">Каким образом передаются переменные в методы, по значению или по ссылке?</a> 
+ 
+- <a href="kakim_obrazom_peredayutsya_peremennye_v_metody,_po_znacheniyu_ili_po_ssylke.md">Каким образом передаются переменные в методы, по значению или по ссылке?</a> 
 - <a href="">Какие методы есть у класса Object?</a> 
 - <a href="">Правила переопределения метода Object.equals().</a> 
 - <a href="">Если вы хотите переопределить equals(), какие условия должны удовлетворяться для переопределенного метода?</a> 
