@@ -1,4 +1,4 @@
-# Список вопросов и ответов на собеседование Java+
+# Список вопросов и ответов на собеседование Java
 
 ## <a href="https://github.com/DenisPavlov/work_project/blob/master/answers/OOP/OOP.md">ООП</a>
 ## <a href="https://github.com/DenisPavlov/work_project/blob/master/answers/core/java_core.md">Java Core</a>
