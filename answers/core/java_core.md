@@ -28,7 +28,18 @@
 - <a href="chto_takoe_generics.md">Что такое Generics?</a>
 - <a href="kakova_istinnaya_cel_ispolzovaniya_obobshhennyx_tipov_v_java.md">Какова истинная цель использования обобщенных типов в Java?</a>
 
-
+### Enum
+- <a href="mozhet_li_enum_nasledovat_(implement)_interfejs_v_java.md">Может ли Enum наследовать (implement) интерфейс в Java?</a>
+- <a href="mozhet_li_enum_nasledovat_(extends)_klass.md">Может ли Enum наследовать (extends) класс?</a>
+- <a href="kak_sozdat_enum_bez_ekzemplyarov_obektov.md">Как создать Enum без экземпляров объектов? Возможно ли это без ошибки компиляции?</a>
+- <a href="mozhem_li_my_pereopredelit_metod_tostring()_dlya_enum.md">Можем ли мы переопределить метод toString() для Enum? Что будет, если не будем переопределять?</a>
+- <a href="mozhem_li_my_sozdat_ekzemplyar_enum_vne_enum.md">Можем ли мы создать экземпляр Enum вне Enum? Почему нет?</a>
+- <a href="mozhem_li_my_ukazat_konstruktor_vnutri_enum.md">Можем ли мы указать конструктор внутри Enum?</a>
+- <a href="kakaya_raznica_sravnivat_enum_pri_pomoshhi_==_ili_metoda_equals().md">Какая разница сравнивать Enum при помощи == или метода equals()?</a>
+- <a href=""></a>
+- <a href=""></a>
+- <a href=""></a>
+- <a href=""></a>
 
 ### Exceptions
 
