@@ -1,7 +1,7 @@
-package answers.core.enums;
+Если вы открывали <code>java.lang.Enum</code>, то знаете, что метод <code>values()</code> возвращает массив всех констант Enum.
+Поскольку каждое перечисление наследует <code>java.lang.Enum</code>, они имеют метод <code>values()</code>. Используя его, вы можете пройтись по всем константам перечисления определённого типа.
 
-import static answers.core.enums.SimpleOperators.PLUS;
-
+```java
 public enum SimpleOperators implements Operator {
     PLUS {
         @Override
@@ -40,3 +40,4 @@ class Main {
         }
     }
 }
+``` 

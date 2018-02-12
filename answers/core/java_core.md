@@ -36,15 +36,16 @@
 - <a href="mozhem_li_my_sozdat_ekzemplyar_enum_vne_enum.md">Можем ли мы создать экземпляр Enum вне Enum? Почему нет?</a>
 - <a href="mozhem_li_my_ukazat_konstruktor_vnutri_enum.md">Можем ли мы указать конструктор внутри Enum?</a>
 - <a href="kakaya_raznica_sravnivat_enum_pri_pomoshhi_==_ili_metoda_equals().md">Какая разница сравнивать Enum при помощи == или метода equals()?</a>
-- <a href=""></a>
+- <a href="chto_delaet_metod_ordinal()_v_enum.md">Что делает метод ordinal() в Enum?</a>
+- <a href="mozhno_ispolzovat_enum_s_treeset_ili_treemap_v_java.md">Можно использовать Enum с TreeSet или TreeMap в Java?</a>
+- <a href="kakaya_raznica_mezhdu_ordinal()_i_compareto()_v_enum.md">Какая разница между ordinal() и compareTo() в Enum?</a>
+- <a href="mozhno_li_ispolzovat_enum_v_switch_case.md">Можно ли использовать Enum в switch case?</a>
+- <a href="kak_projtis_po_vsemu_ekzemplyaru_enum.md">Как пройтись по всему экземпляру Enum?</a>
 - <a href=""></a>
 - <a href=""></a>
 - <a href=""></a>
 
 ### Exceptions
-
-### Enum
-
 
 ### Не разобранное
 
