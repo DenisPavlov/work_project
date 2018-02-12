@@ -41,9 +41,9 @@
 - <a href="kakaya_raznica_mezhdu_ordinal()_i_compareto()_v_enum.md">Какая разница между ordinal() и compareTo() в Enum?</a>
 - <a href="mozhno_li_ispolzovat_enum_v_switch_case.md">Можно ли использовать Enum в switch case?</a>
 - <a href="kak_projtis_po_vsemu_ekzemplyaru_enum.md">Как пройтись по всему экземпляру Enum?</a>
-- <a href=""></a>
-- <a href=""></a>
-- <a href=""></a>
+- <a href="kakie_plyusy_i_minusy_ispolzovaniya_enum_v_kachestve_singltona.md">Какие плюсы и минусы использования Enum в качестве синглтона</a>
+- <a href="kakaya_vygoda_ispolzovat_enum_vmesto_patternov_perechisleniya_int_i_perechisleniya_string.md">Какая выгода использовать Enum вместо паттернов перечисления int и перечисления String?</a>
+- <a href="kak_preobrazovat_string_v_enum.md">Как преобразовать String в Enum?</a>
 
 ### Exceptions
 
