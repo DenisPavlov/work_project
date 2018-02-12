@@ -25,6 +25,7 @@
 ### Enum
 - <a href="http://info.javarush.ru/translation/2015/10/13/15-%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D0%BE%D0%B2-%D0%B4%D0%BB%D1%8F-%D1%81%D0%BE%D0%B1%D0%B5%D1%81%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%D0%BE%D0%B2-%D0%BE%D1%82%D0%BD%D0%BE%D1%81%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE-Enum-%D0%B2-%D0%94%D0%B6%D0%B0%D0%B2%D0%B5-%D1%81-%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D0%B0%D0%BC%D0%B8-.html">15 вопросов для собеседования разработчиков, относительно Enum в Джаве (с ответами!)</a>
 - <a href="https://tproger.ru/articles/comparing-enums-in-java/">Как лучше сравнивать перечисляемые типы в Java</a>
+- <a href="http://info.javarush.ru/tag/%D0%9D%D0%B0%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B2%20enum/">Перечисления в Java (java enum)</a>
 
 ### Аннотации
 - <a href="https://www.ibm.com/support/knowledgecenter/ru/SS8PJ7_9.5.0/org.eclipse.jdt.doc.user/tasks/task-suppress_warnings.htm">Отключение предупреждений с помощью @SuppressWarnings</a></a>

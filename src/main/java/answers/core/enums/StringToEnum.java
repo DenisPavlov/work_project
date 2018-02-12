@@ -6,7 +6,6 @@ package answers.core.enums;
  * into String. beware that String must be same as declared Enum instances and they are
  * case sensitive as well. "UsD" instead of "USD" will throw IllegalArgumentException
  *
- * @author Javin Paul
  */
 public class StringToEnum {
     private enum Currency {USD, AUD, GBP, EURO }
@@ -28,7 +27,11 @@ public class StringToEnum {
         String INR = "INR";
         //java.lang.IllegalArgumentException: No enum const class
         Currency rupee = Currency.valueOf("INR");
+
+        //This Enum to String conversion will throw Exception
+        String nul = null;
+
+        //NPE
+        Currency curr = Currency.valueOf(nul);
     }
 }
-
-    Read more: http://www.java67.com/2012/08/string-to-enum-in-java-conversion.html#ixzz56uAAo5H6
