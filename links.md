@@ -28,9 +28,34 @@
 - <a href="http://info.javarush.ru/tag/%D0%9D%D0%B0%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B2%20enum/">Перечисления в Java (java enum)</a>
 
 ### Аннотации
-- <a href="https://www.ibm.com/support/knowledgecenter/ru/SS8PJ7_9.5.0/org.eclipse.jdt.doc.user/tasks/task-suppress_warnings.htm">Отключение предупреждений с помощью @SuppressWarnings</a></a>
+- <a href="https://www.ibm.com/support/knowledgecenter/ru/SS8PJ7_9.5.0/org.eclipse.jdt.doc.user/tasks/task-suppress_warnings.htm">Отключение предупреждений с помощью @SuppressWarnings</a>
+
+### Java 8
+- <a href="https://github.com/winterbe/java8-tutorial">A Guide to Java 8(Eng)</a>
+- <a href="https://www.youtube.com/watch?v=hEyCK4ueBlc">Видео: Алексея Владыкин: Элементы функционального программирования в Java</a>
+- <a href="https://www.youtube.com/watch?v=iD8H7cmxw_w">Видео: Yakov Fain о новом в Java 8</a>
+
+#### Date ant Time API
+- <a href="http://www.mscharhag.com/2014/02/java-8-datetime-api.html">Java 8 Date and Time API(Eng)</a>
+
+#### Lambda
+- <a href="http://www.youtube.com/watch?v=_PDIVhEs6TM">Видео: Доступно о Java 8 Lambda</a>
+- <a href="http://habrahabr.ru/post/224593/">Лямбда-выражения в Java 8</a>
 
 
+#### Stream
+- <a href="http://javadevblog.com/polnoe-rukovodstvo-po-java-8-stream.html">Pуководство по Java 8 Stream</a>
+- <a href="http://habrahabr.ru/company/luxoft/blog/270383/">Шпаргалка Java Stream API</a>
+- <a href="http://stackoverflow.com/questions/28319064/java-8-best-way-to-transform-a-list-map-or-foreach">stream.map vs forEach(stackoverflow)</a>
+- <a href="https://www.youtube.com/watch?v=O8oN4KSZEXE">Видео: Сергей Куксенко — Stream API, часть 1</a>
+- <a href="https://www.youtube.com/watch?v=i0Jr2l3jrDA">Видео: Сергей Куксенко — Stream API, часть 2</a>
+
+
+
+
+
+
+-----
 - <a href="https://habrahabr.ru/post/197802/">А знаете ли Вы, что возвращает .getClass()?</a>
 - <a href="https://habrahabr.ru/post/103830/">Загрузка классов в Java. Теория</a>
 - <a href="https://habrahabr.ru/post/104229/">Загрузка классов в Java. Практика</a>
@@ -83,6 +108,11 @@
 
 ## Тестирование
 - <a href="https://habrahabr.ru/post/269961/">Еще один способ тестирования веб-сервисов с использованием AssertJ</a>
+
+## Алгоритмы
+- <a href="https://tproger.ru/translations/algorithms-and-data-structures">Алгоритмы и структуры данных для начинающих: сложность алгоритмов</a>
+- <a href="https://ru.wikipedia.org/wiki/%D0%92%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F_%D1%81%D0%BB%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D1%8C_%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B0">Временная сложность алгоритма</a>
+- <a href="https://ru.wikipedia.org/wiki/%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D1%81%D0%BB%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D1%8C">Вычислительная сложность</a>
 
 ## Базы данных
 
