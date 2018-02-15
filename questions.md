@@ -232,6 +232,19 @@ Hibernate
 - strategy
 - decorator
 
+## В сбертех
+- Многопоточность
+- String
+- StringBuilder
+- StringBuffer
+- вложенные и внутренние классы
+- Коллекции
+- hashCode, equals
+- Аннотации
+- @SupressWarning
+- Отличия equals от ==
+- Контракт equals и hashCode
+- темы скринов
 
 
 - <a href="http://becomejavasenior.com/blog/2015/07/01/327-interview-questions-java-developer/">327 вопросов на собеседование Java Developer</a>
