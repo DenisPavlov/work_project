@@ -16,10 +16,15 @@
     5) Изменять порядок, количество или вовсе убрать секцию throws?</a>
 - <a href="kakim_obrazom_peredayutsya_peremennye_v_metody,_po_znacheniyu_ili_po_ssylke.md">Каким образом передаются переменные в методы, по значению или по ссылке?</a>
 - <a href="kak_peredayutsya_klassy_obertki_v_metody_(integer,_double...).md">Как передаются классы обертки в методы?(Integer, Double...)</a>
+
+#### hashCode(), equals()
 - <a href="pravila_pereopredeleniya_metoda_object.equals().md">Правила переопределения метода Object.equals().</a>
 - <a href="esli_vy_xotite_pereopredelit_equals(),_kakie_usloviya_dolzhny_udovletvoryatsya_dlya_pereopredelennogo_metoda.md">Если вы хотите переопределить equals(), какие условия должны удовлетворяться для переопределенного метода?</a>
 - <a href="kakaya_svyaz_mezhdu_hashcode_i_equals.md">Какая связь между hashCode и equals?</a>
-
+- <a href="kakim_obrazom_realizovany_metody_hashcode_i_equals_v_klasse_object.md">Каким образом реализованы методы hashCode и equals в классе Object?</a>
+- <a href="chto_budet,_esli_pereopredelit_equals_ne_pereopredelyaya_hashcode.md">Что будет, если переопределить equals не переопределяя hashCode? Какие могут возникнуть проблемы?</a>
+- <a href="est_li_kakie-libo_rekomendacii_o_tom,_kakie_polya_sleduet_ispolzovat_pri_podschete_hashcode.md">Есть ли какие-либо рекомендации о том, какие поля следует использовать при подсчете hashCode?</a>
+- <a href="dlya_chego_nuzhen_metod_hashcode.md">Для чего нужен метод hashCode()?</a>
 
 ### Типы данных
 - <a href="chto_takoe_autoboxing.md">Что такое autoboxing?</a> 
@@ -78,10 +83,7 @@
 -
 
  
-- <a href="">Каким образом реализованы методы hashCode и equals в классе Object?</a> 
-- <a href="">Что будет, если переопределить equals не переопределяя hashCode? Какие могут возникнуть проблемы?</a> 
-- <a href="">Есть ли какие-либо рекомендации о том, какие поля следует использовать при подсчете hashCode?</a> 
-- <a href="">Для чего нужен метод hashCode()?</a> 
+ 
 - <a href="">Правила переопределения метода Object.hashCode().</a> 
 - <a href="">Расскажите про клонирование объектов. В чем отличие между поверхностным и глубоким клонированием?</a> 
 - <a href="">Правила переопределения метода Object.clone().</a> 

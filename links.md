@@ -26,6 +26,7 @@
 - <a href="http://info.javarush.ru/translation/2015/10/13/15-%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D0%BE%D0%B2-%D0%B4%D0%BB%D1%8F-%D1%81%D0%BE%D0%B1%D0%B5%D1%81%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%D0%BE%D0%B2-%D0%BE%D1%82%D0%BD%D0%BE%D1%81%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE-Enum-%D0%B2-%D0%94%D0%B6%D0%B0%D0%B2%D0%B5-%D1%81-%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D0%B0%D0%BC%D0%B8-.html">15 вопросов для собеседования разработчиков, относительно Enum в Джаве (с ответами!)</a>
 - <a href="https://tproger.ru/articles/comparing-enums-in-java/">Как лучше сравнивать перечисляемые типы в Java</a>
 - <a href="http://info.javarush.ru/tag/%D0%9D%D0%B0%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B2%20enum/">Перечисления в Java (java enum)</a>
+- <a href="http://cyclowiki.org/wiki/Enum_(Java)">Enum (Java)</a>
 
 ### Аннотации
 - <a href="https://www.ibm.com/support/knowledgecenter/ru/SS8PJ7_9.5.0/org.eclipse.jdt.doc.user/tasks/task-suppress_warnings.htm">Отключение предупреждений с помощью @SuppressWarnings</a>
@@ -105,6 +106,9 @@
 - <a href="https://habrahabr.ru/post/46374/">Что такое веб-сервис</a>
 - <a href="https://ru.wikipedia.org/wiki/%D0%92%D0%B5%D0%B1-%D1%81%D0%BB%D1%83%D0%B6%D0%B1%D0%B0">Что такое веб-сервис</a>
 - <a href="http://info.javarush.ru/eGarmin/2015/03/14/%D0%92%D0%B5%D0%B1-%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81%D1%8B-%D0%A8%D0%B0%D0%B3-1-%D0%A7%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D0%B2%D0%B5%D0%B1-%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81-%D0%B8-%D0%BA%D0%B0%D0%BA-%D1%81-%D0%BD%D0%B8%D0%BC-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D1%82%D1%8C-.html">Веб-сервисы. Шаг 1. Что такое веб-сервис и как с ним работать?</a>
+
+## Сервлеты
+- <a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%B5%D1%80%D0%B2%D0%BB%D0%B5%D1%82_(Java)">Сервлет (Java)</a>
 
 ## Тестирование
 - <a href="https://habrahabr.ru/post/269961/">Еще один способ тестирования веб-сервисов с использованием AssertJ</a>
