@@ -13,15 +13,13 @@ public class Main {
         for (String s : strings) {
             char c = s.charAt(0);
             List<String> list = map.get(c);
-            if (list == null) list = new LinkedList<>(); //подумать над структурой
+            if (list == null) list = new ArrayList<>();
 
             list.add(s);
             map.put(c, list);
         }
 
-        map.forEach((c, l) -> {
-            l.sort(String::compareTo);
-        });
+        map.forEach((c, l) -> l.sort(String::compareTo));
 
         System.out.println(map.toString());
 
