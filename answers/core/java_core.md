@@ -25,6 +25,7 @@
 - <a href="chto_budet,_esli_pereopredelit_equals_ne_pereopredelyaya_hashcode.md">Что будет, если переопределить equals не переопределяя hashCode? Какие могут возникнуть проблемы?</a>
 - <a href="est_li_kakie-libo_rekomendacii_o_tom,_kakie_polya_sleduet_ispolzovat_pri_podschete_hashcode.md">Есть ли какие-либо рекомендации о том, какие поля следует использовать при подсчете hashCode?</a>
 - <a href="dlya_chego_nuzhen_metod_hashcode.md">Для чего нужен метод hashCode()?</a>
+- <a href="pravila_pereopredeleniya_metoda_object.hashcode.md">Правила переопределения метода Object.hashCode().</a> 
 
 ### Типы данных
 - <a href="chto_takoe_autoboxing.md">Что такое autoboxing?</a> 
@@ -84,7 +85,7 @@
 
  
  
-- <a href="">Правила переопределения метода Object.hashCode().</a> 
+
 - <a href="">Расскажите про клонирование объектов. В чем отличие между поверхностным и глубоким клонированием?</a> 
 - <a href="">Правила переопределения метода Object.clone().</a> 
 - <a href="">Где и как вы можете использовать закрытый конструктор?</a> 
