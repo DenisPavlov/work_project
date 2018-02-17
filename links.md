@@ -87,6 +87,8 @@
 - <a href="https://habrahabr.ru/post/137065">Multithreading in practice</a>
 - <a href="https://github.com/JavaOPs/masterjava#Первое-занятие-многопоточность">1й урок MasterJava: Многопоточность</a>
 - <a href="https://habrahabr.ru/post/164487/">Способы создания паралельных потоков: Thread и Runnable</a>
+- <a href="http://java-course.ru/begin/multithread_01/">Многопоточность — первые шаги(код в пакете answers.multithreading)</a>
+- <a href="http://java-course.ru/begin/multithread_02/">Проблемы многопоточности. Часть 2(код в пакете answers.multithreading)</a>
 
 ## Структуры данных
 - <a href="https://habrahabr.ru/users/tarzan82/posts/">Структуры данных в Java. Стеки, хэши, сеты. Когда какие применяем</a>
