@@ -4,26 +4,31 @@ package answers.multithreading;
 // которого будут брать товары покупатели
 // и куда будут вносить товары производители
 class Store {
-    int counter = 0; // счетчик товаров
-    final int N = 5; // максимально допустимое число
-    // синхронизированный метод для производителей
-    synchronized int put() {
-        if(counter<=N) //если товаров меньше
-        {
-            counter++; // кладем товар
-            System.out.println ("склад имеет " + counter + " товар(ов)");
-            return 1; // в случае удачного выполнения возвращаем 1
+    private int product=0;
+    public synchronized void get() {
+        if (product<1) {
+            try {
+                wait();
+            }
+            catch (InterruptedException e) {
+            }
         }
-        return 0;// в случае неудачного выполнения возвращаем 0
+        product--;
+        System.out.println("Покупатель купил 1 товар");
+        System.out.println("Товаров на складе: " + product);
+        notify();
     }
-    // метод для покупателей
-    synchronized int get() {
-        if(counter>0) //если хоть один товар присутствует
-        {
-            counter--; //берем товар
-            System.out.println ("склад имеет " + counter + " товар(ов)");
-            return 1;// в случае удачного выполнения возвращаем 1
+    public synchronized void put() {
+        if (product>=3) {
+            try {
+                wait();
+            }
+            catch (InterruptedException e) {
+            }
         }
-        return 0;// в случае неудачного выполнения возвращаем 0
+        product++;
+        System.out.println("Производитель добавил 1 товар");
+        System.out.println("Товаров на складе: " + product);
+        notify();
     }
 }
