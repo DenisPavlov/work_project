@@ -53,25 +53,25 @@
 - <a href="kakoj_metod_opisyvaet_dejstvie_potoka_vo_vremya_vypolneniya.md">Какой метод описывает действие потока во время выполнения?</a>
 - <a href="kogda_potok_zavershaet_svoe_vypolnenie.md">Когда поток завершает свое выполнение?</a>
 - <a href="kak_sinxronizirovat_metod.md">Как синхронизировать метод?</a>
+- <a href="kak_prinuditelno_ostanovit_potok.md">Как принудительно остановить поток?</a>
+- <a href="dajte_opredelenie_ponyatiyu_potok-demon.md">Дайте определение понятию “поток-демон”.</a>
+- <a href="kak_sozdat_potok-demon.md">Как создать поток-демон?</a>
+- <a href="kak_poluchit_tekushhij_potok.md">Как получить текущий поток?</a>
+- <a href="dajte_opredelenie_ponyatiyu_monitor.md">Дайте определение понятию “монитор”.</a>
+- <a href="kak_priostanovit_vypolnenie_potoka.md">Как приостановить выполнение потока?</a>
+- <a href="v_kakix_sostoyaniyax_mozhet_prebyvat_potok.md">В каких состояниях может пребывать поток?</a>
+- <a href="chto_yavlyaetsya_monitorom_pri_vyzove_nestaticheskogo_i_staticheskogo_metoda.md">Что является монитором при вызове нестатического и статического метода?</a>
+- <a href="chto_yavlyaetsya_monitorom_pri_vypolnenii_uchastka_koda_metoda.md">Что является монитором при выполнении участка кода метода?</a>
+- <a href="kakie_metody_pozvolyayut_sinxronizirovat_vypolnenie_potokov.md">Какие методы позволяют синхронизировать выполнение потоков?</a>
+- <a href="kakoj_metod_perevodit_potok_v_rezhim_ozhidaniya.md">Какой метод переводит поток в режим ожидания?</a>
+- <a href="kakova_funkcionalnost_metodov_notify_i_notifyall.md">Какова функциональность методов notify и notifyAll?</a>
+- <a href="chto_pozvolyaet_sdelat_metod_join.md">Что позволяет сделать метод join?</a>
+- <a href="kakovy_usloviya_vyzova_metoda_wait_notify.md">Каковы условия вызова метода wait/notify?</a>
 
 
 
 
-- <a href="">Как принудительно остановить поток?</a>
-- <a href="">Дайте определение понятию “поток-демон”.</a>
-- <a href="">Как создать поток-демон?</a>
-- <a href="">Как получить текущий поток?</a>
-- <a href="">Дайте определение понятию “монитор”.</a>
-- <a href="">Как приостановить выполнение потока?</a>
-- <a href="">В каких состояниях может пребывать поток?</a>
-- <a href="">Что является монитором при вызове нестатического и статического метода?</a>
-- <a href="">Что является монитором при выполнении участка кода метода?</a>
-- <a href="">Какие методы позволяют синхронизировать выполнение потоков?</a>
-- <a href="">Какой метод переводит поток в режим ожидания?</a>
-- <a href="">Какова функциональность методов notify и notifyAll?</a>
-- <a href="">Что позволяет сделать метод join?</a>
-- <a href="">Каковы условия вызова метода wait/notify?</a>
-- <a href="">Дайте определение понятию “взаимная блокировка”.</a>
+- <a href="dajte_opredelenie_ponyatiyu_vzaimnaya_blokirovka.md">Дайте определение понятию “взаимная блокировка”.</a>
 - <a href="">Чем отличаются методы interrupt, interrupted, isInterrupted?</a>
 - <a href="">В каком случае будет выброшено исключение InterruptedException, какие методы могут его выбросить?</a>
 - <a href="">Модификаторы volatile и метод yield().</a>

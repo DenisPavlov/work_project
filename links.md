@@ -89,6 +89,7 @@
 - <a href="https://habrahabr.ru/post/164487/">Способы создания паралельных потоков: Thread и Runnable</a>
 - <a href="http://java-course.ru/begin/multithread_01/">Многопоточность — первые шаги(код в пакете answers.multithreading)</a>
 - <a href="http://java-course.ru/begin/multithread_02/">Проблемы многопоточности. Часть 2(код в пакете answers.multithreading)</a>
+- <a href="https://habrahabr.ru/post/143237/">А как же всё-таки работает многопоточность? Часть I: синхронизация</a>
 
 ## Структуры данных
 - <a href="https://habrahabr.ru/users/tarzan82/posts/">Структуры данных в Java. Стеки, хэши, сеты. Когда какие применяем</a>

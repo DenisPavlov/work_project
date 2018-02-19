@@ -1,0 +1,1 @@
+Метод <code>wait()</code>.
