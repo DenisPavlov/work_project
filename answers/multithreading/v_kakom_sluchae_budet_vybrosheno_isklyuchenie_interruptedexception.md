@@ -1,0 +1,1 @@
+Методы, требующие обработку этого исключения: <code>wait, sleep, join</code>. Исключение будет выброшено, если флаг <code>interrupt</code> у потока <code>true</code>.

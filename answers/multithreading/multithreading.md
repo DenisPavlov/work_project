@@ -38,6 +38,7 @@
 - <a href="">Что такое ReadWriteLock</a>
 - <a href="">Что такое double checked locking Синглтона?</a>
 - <a href="">Что такое фреймворк Fork/Join?</a>
+- <a href="">Пакет java.util.concurrent</a>
 
 ### С сайта javastudy
 
@@ -67,22 +68,20 @@
 - <a href="kakova_funkcionalnost_metodov_notify_i_notifyall.md">Какова функциональность методов notify и notifyAll?</a>
 - <a href="chto_pozvolyaet_sdelat_metod_join.md">Что позволяет сделать метод join?</a>
 - <a href="kakovy_usloviya_vyzova_metoda_wait_notify.md">Каковы условия вызова метода wait/notify?</a>
-
-
-
-
 - <a href="dajte_opredelenie_ponyatiyu_vzaimnaya_blokirovka.md">Дайте определение понятию “взаимная блокировка”.</a>
-- <a href="">Чем отличаются методы interrupt, interrupted, isInterrupted?</a>
-- <a href="">В каком случае будет выброшено исключение InterruptedException, какие методы могут его выбросить?</a>
-- <a href="">Модификаторы volatile и метод yield().</a>
-- <a href="">Пакет java.util.concurrent</a>
-- <a href="">Есть некоторый метод, который исполняет операцию i++. Переменная i типа int. Предполагается, что код будет исполнятся в многопоточной среде. Следует ли синхронизировать блок?</a>
-- <a href="">Что используется в качестве mutex, если метод объявлен static synchronized? Можно ли создавать новые экземпляры класса, пока выполняется static synchronized метод?</a>
-- <a href="">Предположим в методе run возник RuntimeException, который не был пойман. Что случится с потоком? Есть ли способ узнать о том, что Exception произошел (не заключая все тело run в блок try-catch)? Есть ли способ восстановить работу потока после того как это произошло?</a>
-- <a href="">Какие стандартные инструменты Java вы бы использовали для реализации пула потоков?</a>
-- <a href="">Что такое ThreadGroup и зачем он нужен?</a>
-- <a href="">Что такое ThreadPool и зачем он нужен?</a>
-- <a href="">Что такое ThreadPoolExecutor и зачем он нужен?</a>
+- <a href="chem_otlichayutsya_metody_interrupt_interrupted_isinterrupted.md">Чем отличаются методы interrupt, interrupted, isInterrupted?</a>
+- <a href="v_kakom_sluchae_budet_vybrosheno_isklyuchenie_interruptedexception.md">В каком случае будет выброшено исключение InterruptedException, какие методы могут его выбросить?</a>
+- <a href="modifikatory_volatile_i_metod_yield.md">Модификаторы volatile и метод yield().</a>
+- <a href="est_nekotoryj_metod_kotoryj_ispolnyaet_operaciyu_i++.md">Есть некоторый метод, который исполняет операцию i++. Переменная i типа int. Предполагается, что код будет исполнятся в многопоточной среде. Следует ли синхронизировать блок?</a>
+- <a href="chto_ispolzuetsya_v_kachestve_mutex_esli_metod_obyavlen_static_synchronized.md">Что используется в качестве mutex, если метод объявлен static synchronized? Можно ли создавать новые экземпляры класса, пока выполняется static synchronized метод?</a>
+- <a href="predpolozhim_v_metode_run_voznik_runtimeexception.md">Предположим в методе run возник RuntimeException, который не был пойман. Что случится с потоком? Есть ли способ узнать о том, что Exception произошел (не заключая все тело run в блок try-catch)? Есть ли способ восстановить работу потока после того как это произошло?</a>
+- <a href="chto_takoe_threadgroup_i_zachem_on_nuzhen.md">Что такое ThreadGroup и зачем он нужен?</a>
+- <a href="chto_takoe_threadpool_i_zachem_on_nuzhen.md">Что такое ThreadPool и зачем он нужен?</a>
+
+
+
+
+- <a href="chto_takoe_threadpoolexecutor_i_zachem_on_nuzhen.md">Что такое ThreadPoolExecutor и зачем он нужен?</a>
 - <a href="">Что такое «атомарные типы» в Java?</a>
 - <a href="">Зачем нужен класс ThreadLocal?</a>
 - <a href="">Что такое Executor?</a>
