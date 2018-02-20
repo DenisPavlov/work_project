@@ -51,7 +51,8 @@
 - <a href="https://www.youtube.com/watch?v=O8oN4KSZEXE">Видео: Сергей Куксенко — Stream API, часть 1</a>
 - <a href="https://www.youtube.com/watch?v=i0Jr2l3jrDA">Видео: Сергей Куксенко — Stream API, часть 2</a>
 
-
+### String, StringBuilder, StringBuffer
+- <a href="https://habrahabr.ru/post/260767/">Обработка строк в Java. Часть I: String, StringBuffer, StringBuilder</a>
 
 
 

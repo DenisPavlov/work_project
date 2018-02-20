@@ -273,6 +273,7 @@ Hibernate
 - <a href="http://becomejavasenior.com/blog/2015/07/01/327-interview-questions-java-developer/">327 вопросов на собеседование Java Developer</a>
 - <a href="http://ab.kh.ua/java-voprosi-s-sobesedovanij/">Вопросы с собеседований junior java</a>
 - <a href="http://javastudy.ru/category/interview/">Собеседование по java</a>
+- <a href="http://info.javarush.ru/KapChook/2015/02/15/%D0%9F%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4-%D0%A2%D0%BE%D0%BF-50-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B2%D1%8C%D1%8E-%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D0%BE%D0%B2-%D0%BF%D0%BE-%D0%BD%D0%B8%D1%82%D1%8F%D0%BC-%D0%A7%D0%B0%D1%81%D1%82%D1%8C-1-.html">Перевод: Топ-50 интервью вопросов по нитям. Часть 1.</a>
 
 
 - <a href=""></a>
