@@ -104,6 +104,10 @@
 - <a href="http://www.developersonthe.net/ru/posts/post_id/34-Vzaimnaja-blokirovkadeadlock-v-Java-i-metody-borby-s-nej/">Взаимная блокировка(deadlock) в Java и методы борьбы с ней</a>
 - <a href="http://info.javarush.ru/CynepHy6/2014/10/27/%D0%A1%D0%B8%D0%BD%D1%85%D1%80%D0%BE%D0%BD%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%BF%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%B2-%D0%B1%D0%BB%D0%BE%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0-%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0-%D0%B8-%D0%B1%D0%BB%D0%BE%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0-%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D0%B0.html">Синхронизация потоков, блокировка объекта и блокировка класса</a>
 - <a href="http://tutorials.jenkov.com/java-util-concurrent/threadpoolexecutor.html">ThreadPoolExecutor(Eng)</a>
+- <a href="http://winterbe.com/posts/2015/05/22/java8-concurrency-tutorial-atomic-concurrent-map-examples/">Java 8 Concurrency Tutorial(Eng)</a>
+- <a href="http://samolisov.blogspot.ru/2011/04/threadlocal.html">О бедном ThreadLocal замолвите слово</a>
+- <a href="https://articles.javatalks.ru/articles/17">Использование ThreadLocal переменных</a>
+- <a href="https://habrahabr.ru/post/116363/">Многопоточность в Java: ExecutorService</a>
 
 ## Структуры данных
 - <a href="https://habrahabr.ru/users/tarzan82/posts/">Структуры данных в Java. Стеки, хэши, сеты. Когда какие применяем</a>
