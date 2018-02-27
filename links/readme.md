@@ -13,6 +13,7 @@
 
 ### Типы данных
 
+### <a href="strings/readme.md">String, StringBuilder, StringBuffer</a>
 
 ### Methods
 - <a href="http://info.javarush.ru/translation/2014/06/30/%D0%9F%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%D1%87%D0%B0-%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D0%BE%D0%B2-%D0%B2-Java-%D0%9F%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4-.html">Передача параметров в Java.></a>
@@ -51,8 +52,8 @@
 - <a href="https://www.youtube.com/watch?v=O8oN4KSZEXE">Видео: Сергей Куксенко — Stream API, часть 1</a>
 - <a href="https://www.youtube.com/watch?v=i0Jr2l3jrDA">Видео: Сергей Куксенко — Stream API, часть 2</a>
 
-### String, StringBuilder, StringBuffer
-- <a href="https://habrahabr.ru/post/260767/">Обработка строк в Java. Часть I: String, StringBuffer, StringBuilder</a>
+
+
 
 
 

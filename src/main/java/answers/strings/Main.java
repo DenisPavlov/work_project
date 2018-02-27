@@ -1,12 +1,7 @@
-package answers.core.strings;
+package answers.strings;
 
 import java.io.*;
-import java.nio.charset.Charset;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
-
-import static java.lang.System.getProperties;
 
 public class Main {
     public static void main(String[] args) {
