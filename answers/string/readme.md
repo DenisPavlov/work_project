@@ -1,9 +1,12 @@
 
 - <a href="kakie_strokovye_klassy_vy_znaete.md">Какие “строковые” классы вы знаете?</a>
 - <a href="kakie_osnovnye_svojstva_strokovyx_klassov.md">Какие основные свойства “строковых” классов (их особенности)?</a>
-- <a href="">Можно ли наследовать строковый тип, почему?</a>
-- <a href="">Дайте определение понятию конкатенация строк.</a>
-- <a href="">Как преобразовать строку в число?</a>
+- <a href="mozhno_li_nasledovat_strokovyj_tip,_pochemu.md">Можно ли наследовать строковый тип, почему?</a>
+- <a href="dajte_opredelenie_ponyatiyu_konkatenaciya_strok.md">Дайте определение понятию конкатенация строк.</a>
+
+
+
+- <a href="kak_preobrazovat_stroku_v_chislo.md">Как преобразовать строку в число?</a>
 - <a href="">Как сравнить значение двух строк?</a>
 - <a href="">Как перевернуть строку?</a>
 - <a href="">Как работает сравнение двух строк?</a>
