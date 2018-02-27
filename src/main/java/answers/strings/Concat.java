@@ -1,19 +1,28 @@
 package answers.strings;
 
-import java.util.Arrays;
 
 public class Concat {
 
+
+    public static String removeChar(String str, char ch) {
+        if (str == null)
+            return null;
+        return str.replaceAll(Character.toString(ch), "");
+    }
+
     public static void main(String[] args) {
 
+        String s = "abcabcabc";
+        String result = removeChar(s, 'a');
+        System.out.println(result);
 
-        String a = "string a";
-        String b = new String("string a");
-        String c = b.intern();
-
-        System.out.println(a == b); //false
-        System.out.println(b == c); //false
-        System.out.println(a == c); //true
+//        String a = "string a";
+//        String b = new String("string a");
+//        String c = b.intern();
+//
+//        System.out.println(a == b); //false
+//        System.out.println(b == c); //false
+//        System.out.println(a == c); //true
 
 //        String fs = "12345678904";
 //        int a = fs.indexOf("456"); //3
