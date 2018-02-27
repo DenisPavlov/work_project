@@ -1,0 +1,1 @@
+<code>str.charAt(int i)</code> вернет символ в по индексу.

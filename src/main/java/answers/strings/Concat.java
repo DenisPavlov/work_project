@@ -1,13 +1,56 @@
 package answers.strings;
 
+import java.util.Arrays;
+
 public class Concat {
+
     public static void main(String[] args) {
 
-        String fs = "123456789";
-        String sub = fs.subSequence(3,6).toString();
-        String sub2 = fs.substring(3,6);
-        System.out.println(sub); //456
-        System.out.println(sub2); //456
+
+        String a = "string a";
+        String b = new String("string a");
+        String c = b.intern();
+
+        System.out.println(a == b); //false
+        System.out.println(b == c); //false
+        System.out.println(a == c); //true
+
+//        String fs = "12345678904";
+//        int a = fs.indexOf("456"); //3
+//        int b = fs.lastIndexOf("4"); //10
+//        System.out.println(a);
+//        System.out.println(b);
+
+//        String line = "I am a java developer";
+//        String[] words = line.split(" ");
+//        String[] twoWords = line.split(" ", 2);
+//
+//        System.out.println("String split with delimiter: "+Arrays.toString(words));//String split with delimiter: [I, am, a, java, developer]
+//        System.out.println("String split into two: "+Arrays.toString(twoWords));//String split into two: [I, am a java developer]
+//
+//        //split string delimited with special characters
+//
+//        String wordsWithNumbers = "I|am|a|java|developer";
+//        String[] numbers = wordsWithNumbers.split("\\|");
+//
+//        System.out.println("String split with special character: "+ Arrays.toString(numbers));//String split with special character: [I, am, a, java, developer]
+
+
+//        String s1 = "Cat";
+//        String s2 = "Cat";
+//        String s3 = new String("Cat");
+//
+//        System.out.println("s1 == s2 :"+(s1==s2)); //s1 == s2 :true
+//        System.out.println("s1 == s3 :"+(s1==s3)); //s1 == s3 :false
+//
+//        s3 = s3.intern();
+//        System.out.println("s1 == s3 :"+(s1==s3)); //s1 == s3 :true
+
+//        String fs = "123456789";
+//        String sub = fs.subSequence(3,6).toString();
+//        String sub2 = fs.substring(3,6);
+//        System.out.println(sub); //456
+//        System.out.println(sub2); //456
 
 //        String sb = "AABAA";
 //        String s = "ABCDEF".replace("C", "**");
