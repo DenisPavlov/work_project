@@ -1,8 +1,12 @@
 package answers.core.strings;
 
+import java.io.*;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Scanner;
+
+import static java.lang.System.getProperties;
 
 public class Main {
     public static void main(String[] args) {
@@ -125,11 +129,24 @@ public class Main {
 
 class Test {
     public static void main(String[] args) {
+//        try {
+//            test(new StringBuffer("")); // StringBuffer: 35117ms.
+//            test(new StringBuilder("")); // StringBuilder: 3358ms.
+//        } catch (java.io.IOException e) {
+//            System.err.println(e.getMessage());
+//        }
+//        System.getProperties().forEach((a, b) -> {
+//            System.out.println(a + ": " + b);
+//        } );
         try {
-            test(new StringBuffer("")); // StringBuffer: 35117ms.
-            test(new StringBuilder("")); // StringBuilder: 3358ms.
-        } catch (java.io.IOException e) {
-            System.err.println(e.getMessage());
+            InputStream stream = Runtime.getRuntime().exec("lshw -class cpu ").getInputStream();
+            Scanner scanner = new Scanner(stream);
+            while (scanner.hasNext()){
+                System.out.println(scanner.next());
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
     private static void test(Appendable obj) throws java.io.IOException {

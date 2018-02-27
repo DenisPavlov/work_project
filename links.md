@@ -110,6 +110,7 @@
 - <a href="https://articles.javatalks.ru/articles/17">Использование ThreadLocal переменных</a>
 - <a href="https://habrahabr.ru/post/116363/">Многопоточность в Java: ExecutorService</a>
 - <a href="https://javadevblog.com/primer-ispol-zovaniya-wait-notify-i-notifyall-v-java.html">Пример использования wait(), notify() и notifyAll() в Java.(code in answers.multithreading)</a>
+- <a href="https://www.youtube.com/watch?v=dLDhB6SRXzw">Java. Многопоточность (лекция 9) Технопарк mail.ru Видео</a>
 
 ## Структуры данных
 - <a href="https://habrahabr.ru/users/tarzan82/posts/">Структуры данных в Java. Стеки, хэши, сеты. Когда какие применяем</a>
