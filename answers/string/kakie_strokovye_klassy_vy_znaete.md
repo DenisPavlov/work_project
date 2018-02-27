@@ -1,0 +1,3 @@
+- <code>public final class String implements java.io.Serializable, Comparable<String>, CharSequence</code>
+- <code>public final class StringBuffer extends AbstractStringBuilder implements java.io.Serializable, CharSequence</code>
+- <code>public final class StringBuilder extends AbstractStringBuilder implements java.io.Serializable, CharSequence</code>
