@@ -13,3 +13,4 @@
 Конструктор: <code>DataInputStream(InputStream stream)</code>
 
 Методы: <code>readDouble()</code>, <code>readBoolean()</code>, <code>readInt()<code>
+
