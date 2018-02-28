@@ -1,0 +1,3 @@
+- <a href="https://docs.oracle.com/javase/tutorial/essential/io/">Basic I/O. Oracle (Eng)</a>
+- <a href="http://developer.alexanderklimov.ru/android/java/io.php">Система ввода/вывода</a>
+- <a href="https://javadevblog.com/randomaccessfile-v-java-primer-ispol-zovaniya.html">RandomAccessFile в Java. Пример использования(answers.io)</a>

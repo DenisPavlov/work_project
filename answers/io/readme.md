@@ -1,11 +1,16 @@
 - <a href="kakie_sushhestvuyut_vidy_potokov_vvoda_vyvoda.md">Какие существуют виды потоков ввода/вывода?</a>
-- <a href="">Назовите основные предки потоков ввода/вывода.</a>
-- <a href="">Что общего и чем отличаются следующие потоки: InputStream, OutputStream, Reader, Writer?</a>
-- <a href="">Что вы знаете о RandomAccessFile?</a>
-- <a href="">Какие есть режимы доступа к файлу?</a>
-- <a href="">В каких пакетах лежат классы-потоки?</a>
-- <a href="">Что вы знаете о классах-надстройках?</a>
-- <a href="">Какой класс-надстройка позволяет читать данные из входного байтового потока в формате примитивных типов данных?</a>
+- <a href="nazovite_osnovnye_predki_potokov_vvoda_vyvoda.md">Назовите основные предки потоков ввода/вывода.</a>
+- <a href="chto_obshhego_i_chem_otlichayutsya_sleduyushhie_potoki_is_os_reader_writer.md">Что общего и чем отличаются следующие потоки: InputStream, OutputStream, Reader, Writer?</a>
+- <a href="chto_vy_znaete_o_randomaccessfile.md">Что вы знаете о RandomAccessFile?</a>
+- <a href="kakie_est_rezhimy_dostupa_k_fajlu.md">Какие есть режимы доступа к файлу?</a>
+- <a href="v_kakix_paketax_lezhat_klassy-potoki.md">В каких пакетах лежат классы-потоки?</a>
+- <a href="chto_vy_znaete_o_klassax-nadstrojkax.md">Что вы знаете о классах-надстройках?</a>
+
+
+wqwqwqw
+-
+
+- <a href="kakoj_klass_nadstrojka_pozvolyaet_chitat_dannye_v_formate_primitivnyx_tipov_dannyx.md">Какой класс-надстройка позволяет читать данные из входного байтового потока в формате примитивных типов данных?</a>
 - <a href="">Какой класс-надстройка позволяет ускорить чтение/запись за счет использования буфера?</a>
 - <a href="">Какие классы позволяют преобразовать байтовые потоки в символьные и обратно?</a>
 - <a href="">Какой класс предназначен для работы с элементами файловой системы (ЭФС)?</a>
