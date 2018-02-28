@@ -4,7 +4,6 @@
 ## <a href="https://github.com/DenisPavlov/work_project/blob/master/answers/core/java_core.md">Java Core</a>
 ## <a href="https://github.com/DenisPavlov/work_project/blob/master/answers/collections/java_collection_framework.md">Java Collection Framework</a>
 ## <a href="https://github.com/DenisPavlov/work_project/blob/master/answers/java_8/java_8.md">Java 8</a>
-## <a href="https://github.com/DenisPavlov/work_project/blob/master/answers/io/io.md">Потоки ввода вывода</a>
 ## <a href="https://github.com/DenisPavlov/work_project/blob/master/answers/multithreading/multithreading.md">Многопоточность</a>
 ## <a href="https://github.com/DenisPavlov/work_project/blob/master/answers/string/readme.md">String, StringBuilder, StringBuffer</a>
 ## <a href="https://github.com/DenisPavlov/work_project/blob/master/answers/io/readme.md">I/O</a>
