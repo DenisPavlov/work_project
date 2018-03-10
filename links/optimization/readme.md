@@ -1,0 +1,2 @@
+- <a href="https://habrahabr.ru/company/jugru/blog/338732/">Перформанс: что в имени тебе моём?</a>
+- <a href="https://habrahabr.ru/post/326242/">Performance это праздник</a>
