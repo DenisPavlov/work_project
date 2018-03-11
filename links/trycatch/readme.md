@@ -1,0 +1,2 @@
+- <a href="https://habrahabr.ru/company/golovachcourses/blog/223821/">Исключения в Java, Часть I (try-catch-finally)</a>
+- <a href="https://habrahabr.ru/company/golovachcourses/blog/225585/">Исключения в Java, Часть II (checked/unchecked)</a>
