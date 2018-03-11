@@ -19,6 +19,7 @@
 ### <a href="io/readme.md">I/O</a>
 ### <a href="java8/readme.md">Java 8</a>
 ### <a href="multithreading/readme.md">Многопоточность</a>
+### <a href="memory/readme.md">Кишочки</a>
 
 ### Methods
 - <a href="http://info.javarush.ru/translation/2014/06/30/%D0%9F%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%D1%87%D0%B0-%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D0%BE%D0%B2-%D0%B2-Java-%D0%9F%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4-.html">Передача параметров в Java.></a>
@@ -73,10 +74,6 @@
 ## JavaEE
 - <a href="http://info.javarush.ru/eGarmin/2015/03/28/%D0%91%D0%B5%D0%B7-%D0%BF%D0%B0%D1%84%D0%BE%D1%81%D0%B0-%D0%9F%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%D0%BC-%D0%BE-JavaEE-%D1%81%D0%B5%D1%80%D0%B2%D0%BB%D0%B5%D1%82%D0%B0%D1%85-%D0%B8-%D0%B8%D1%85-%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%B9%D0%BD%D0%B5%D1%80%D0%B0%D1%85.html">Без пафоса. Поговорим о JavaEE, сервлетах и их контейнерах</a>
 
-## Spring
-- <a href="https://habrahabr.ru/post/139421/">Spring Data на примере JPA</a>
-- <a href="https://habrahabr.ru/post/113945/">Кеширование в Spring Framework 3.1</a>
-
 ## Веб сервисы, SOAP, REST
 - <a href="https://habrahabr.ru/post/158605/">SOAP и REST, в чем отличие</a>
 - <a href="https://habrahabr.ru/post/50147/">SOAP и REST, в чем отличие</a>
@@ -107,3 +104,4 @@
 ### <a href="optimization/readme.md">Оптимизация</a>
 ### <a href="htmlcssjs/readme.md">HTML, JavaScript, CSS</a>
 ### <a href="interview/readme.md">Интервью</a>
+### <a href="spring/readme.md">Spring</a>

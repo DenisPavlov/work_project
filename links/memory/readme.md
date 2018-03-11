@@ -1,0 +1,2 @@
+- <a href="https://www.youtube.com/watch?v=NwsMQT-6V-M">как устроена память</a>
+- <a href="http://www.javaspecialist.ru/2011/06/java-memory-model.html">Java Memory Model вкратце</a>

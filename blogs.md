@@ -11,4 +11,5 @@
 - <a href="http://dev.cheremin.info/">Руслан Черёмин</a>
 - <a href="https://shipilev.net/">Алексей Шипилёв</a>
 - <a href="https://blog.sourced-bvba.be">Sourced Blog(Eng)</a>
+- <a href="http://www.niceandeasy.me/">Память и подобное</a>
 
