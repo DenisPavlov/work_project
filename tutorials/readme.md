@@ -1,1 +1,2 @@
 - <a href="https://danielniko.wordpress.com/2012/04/17/simple-crud-using-jsp-servlet-and-mysql/">создание небольшого CRUD приложения на JSP и сервлетах</a>
+- <a href="http://www.quizful.net/post/java-socket-programming">Программирование сокетов на Java(tutorials.socet)</a>
