@@ -13,10 +13,35 @@
 - <a href="http://www.javenue.info/post/java-modifiers-summary">Модификаторы в Java - обзор и примеры использования</a>
 - <a href="http://www.javenue.info/post/91">Многопоточность. Wait / notify и приоритеты при захвате монитора. Spurious wakeups. Starvation.</a>
 - <a href="http://www.javenue.info/post/design-patterns-java">Паттерны проектирования в Java</a>
--SQL
+- SQL
+- Inner классы
+- HashTable
+- Исключения
+- StringPool
+- PostgreSQl
+- Weak and soft references
+- Класс Runtime
+- JMX
+- stream
+- ORM
+- Spring
+- Java Concurent
+- Java EE
+- Git
+- Maven
+- Что такое web контейнер ?
+- Что такое servlet ?
+- http
+- Монады
+- Анонимные классы
+- 
 
 Вопросы с собеседований
 - WEB(запросы, заголовки, сессия)
 - Типы JOIN
 - Индекс БД
 - Отношеня в БД (многие ко многим, один ко многим, Многие к одному)
+
+Книги
+- Хорстман
+- Блох
