@@ -20,5 +20,20 @@
         </plugins>
     </build>
 
+    <properties>
+        <!--db-->
+        <postgresql.version>42.1.4</postgresql.version>
+
+    </properties>
+
+    <dependencies>
+        <!--DB-->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>${postgresql.version}</version>
+        </dependency>
+    </dependencies>
+
 
 </project>

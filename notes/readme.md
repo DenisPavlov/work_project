@@ -1,4 +1,4 @@
-1. Удивительно, почему компилятор не ругается, чотя метод ничего
+1. Удивительно, почему компилятор не ругается, хотя метод ничего
 не возвращает
 ```java
 public class App {
@@ -34,4 +34,7 @@ public class App {
     }
 }
 ```
+
+
+- <a href="/notes/duration_to_interval_jdbc_postgres.md">Разбирался с сохранением INTERVAL data type (Duration, Interval, JDBC, PostgresQL)
 
