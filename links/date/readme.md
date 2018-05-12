@@ -1,1 +1,2 @@
 - <a href="https://www.mkyong.com/java8/java-8-how-to-convert-string-to-localdate/">Классный туториал по фоматированию дат</a>
+- <a href="https://www.mscharhag.com/java/java-8-date-time-api">Java 8 Date and Time API</a>
