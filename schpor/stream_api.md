@@ -46,16 +46,16 @@ double productOfSqrRoots = myList.parallelStream().reduce(
         );
 ````
 
-####parallel() 
+#### parallel() 
 - метод распарсалеливает поток
 
-####sequential() 
+#### sequential() 
 - метод заменяет параллельный поток последовательным
 
-####unordered()
+#### unordered()
 - возвращает неупорядоченный поток
 
-####map()
+#### map()
 
 ````java
 <R> Stream<R> mар (Function<? super Т, ? extends R> функция отображения)
