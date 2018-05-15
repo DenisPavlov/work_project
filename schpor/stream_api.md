@@ -1,6 +1,6 @@
 Методы интерфейса stream
 ----
-<h4>reduce()
+####reduce()
 ````java
 Optional<T> reduce(BinaryOperator<T> накопитель)
 T reduce(T значение_идентичности, BinaryOperator<T> накопитель)
@@ -46,16 +46,16 @@ double productOfSqrRoots = myList.parallelStream().reduce(
         );
 ````
 
-<h4>parallel() 
+####parallel() 
 - метод распарсалеливает поток
 
-<h4>sequential() 
+####sequential() 
 - метод заменяет параллельный поток последовательным
 
-<h4>unordered()
+####unordered()
 - возвращает неупорядоченный поток
 
-<h4>map()</h4>
+####map()
 
 ````java
 <R> Stream<R> mар (Function<? super Т, ? extends R> функция отображения)
