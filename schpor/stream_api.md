@@ -49,3 +49,20 @@ double productOfSqrRoots = myList.parallelStream().reduce(
 
 <h4>unordered()
 - возвращает неупорядоченный поток
+
+<h4>map()</h4>
+````java
+<R> Stream<R> mар (Function<? super Т, ? extends R> функция отображения)
+````
+Где:
+- R - тип элемента из нового потока данных
+- Т - тип элемента из вызывающего потока данных
+````java
+Stream<String> sqrtRootStrm = myList.stream().map((a) -> "hello" + a);
+```` 
+- методы <b>map()</b> возвращающие примитивы
+````java
+IntStreaa mapToInt(ToIntFunction<? super Т> функция_отображения);
+LonqStream maapToLonq(ToLongFunction<? super Т> функция_отображения);
+DoubleStream mapToDouble(ToDoubeFunction<? super Т> функция_отображения)
+````
