@@ -95,7 +95,7 @@ List<NamePhone> npList = myList.stream()
     .collect(Collectors.toList());
 ````
 
-#####Еще одна форма метода <b>collect</b>
+##### Еще одна форма метода <b>collect</b>
 
 ````java
 <R> R collect(Supplier<R> адресат, BiConsuшer<R, ? super Т> накопитель, BiConsumer<R, R> объединитель)
