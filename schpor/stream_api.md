@@ -1,6 +1,6 @@
 Методы интерфейса stream
 ----
-####reduce()
+#### reduce()
 ````java
 Optional<T> reduce(BinaryOperator<T> накопитель)
 T reduce(T значение_идентичности, BinaryOperator<T> накопитель)
