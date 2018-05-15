@@ -76,3 +76,49 @@ IntStreaa mapToInt(ToIntFunction<? super Т> функция_отображени
 LonqStream maapToLonq(ToLongFunction<? super Т> функция_отображения);
 DoubleStream mapToDouble(ToDoubeFunction<? super Т> функция_отображения)
 ````
+
+#### collect()
+
+````java
+<R, A> R collect(Collector<? super T, A, R> функция_накопления)
+````
+
+Где:
+- R - тип получаемого результата
+- T - тип элемента из потока данных
+- A - тип накапливаемых внутри данных
+- функция_накопления - порядок обработки коллекции
+
+````java
+List<NamePhone> npList = myList.stream()
+    .map((a) -> new NamePhone(a.name,a.phonenum) 
+    .collect(Collectors.toList());
+````
+
+#####Еще одна форма метода <b>collect</b>
+
+````java
+<R> R collect(Supplier<R> адресат, BiConsuшer<R, ? super Т> накопитель, BiConsumer<R, R> объединитель)
+````
+
+Где:
+- адресат - порядок создания объекта, содержащего результат
+- накопитель - добавляет элементы к адресату
+- объединитель - служит для объединения двух частичных результатов
+
+````java
+LinkedList<NamePhone> npList = nameAndPhone.collect(
+    () -> new LinkedList<>(),
+    (list, element) -> list.add(element),
+    (list A, list B) -> listA.addAll(list B));
+````
+
+#### allMatch(), anyMatch(), noneMatch
+- выясняют, удовлетворяет ли один или несколько элементов указанному предикату
+
+#### count()
+- количество элементов в потоке
+
+#### distinct()
+- получение потока только с однозначными элементами
+
