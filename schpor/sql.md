@@ -43,7 +43,9 @@ sql-tutorial.ru
 - ASK - возрастающая последовательность
 - DESC - убывающая последовательность
 - allias - временная таблица
-- Вложенные запросы select * from orders
-	
-			where SNUM = (	select SNUM from salespeople where SNAME = 'Motika');
+- Вложенные запросы 
+
+
+    select * from orders where SNUM = (	select SNUM from salespeople where SNAME = 'Motika');
+    
 - UNION - объединяет выходные данные двух или более запросов в единое множество строк и столбцов
