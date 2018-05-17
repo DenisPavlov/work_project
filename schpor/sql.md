@@ -45,7 +45,7 @@ sql-tutorial.ru
 - allias - временная таблица
 - Вложенные запросы 
 
-
+ ````SQL
     select * from orders where SNUM = (	select SNUM from salespeople where SNAME = 'Motika');
-    
+ ````
 - UNION - объединяет выходные данные двух или более запросов в единое множество строк и столбцов
