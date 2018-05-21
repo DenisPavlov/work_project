@@ -24,6 +24,7 @@
     - Ctrl + Стрелочка вниз/вверх - прыгать по методам
     - Ctrl + Shoft + Space - smart auto complete
     - Ctrl + Shift + Enter - авто дополнение кода
+    - Alt + Ctrl + L - форматирование кода
 БД
 
 	- F4 - сделать selekt *
