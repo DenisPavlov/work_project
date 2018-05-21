@@ -45,3 +45,7 @@
 Книги
 - Хорстман
 - Блох
+
+amazon web services
+spring
+docker
