@@ -38,6 +38,5 @@ public class Sort {
 
 Результат:
 <code>
-
 [hello, hello, bar, foo, java, world]
 </code>
