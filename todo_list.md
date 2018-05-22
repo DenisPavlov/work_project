@@ -46,9 +46,10 @@
 - Хорстман
 - Блох
 
-amazon web services
-spring
-docker
+Обратить внимание
+- amazon web services
+- spring
+- docker
 
 Прочитанные книги
 - SQL для простых смертных (книга не очень, старый стандарт)
