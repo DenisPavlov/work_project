@@ -6,4 +6,3 @@
 - <a href="/blogs.md">Интересные блоги</a>
 - <a href="/actual/readme.md">Текушие задачи</a>
 - <a href="/schpor/readme.md">Шпоргалки</a>
-- <a href="/todo_list.md">to_do</a>
