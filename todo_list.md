@@ -50,5 +50,6 @@ amazon web services
 spring
 docker
 
-Остановился
-- topjava. Lesson01 4.Maven
+Прочитанные книги
+- SQL для простых смертных (книга не очень, старый стандарт)
+- 
