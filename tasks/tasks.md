@@ -70,3 +70,4 @@ public class App {
 ## Задачи по Java с решениями и объяснениями
 - <a href="/tasks/sort.md">Интересная задача на сортировку (увидел в twitter)</a>
 - <a href="/tasks/task01.md">Интересная задача на методы</a>
+- <a href="/tasks/task02.md">Задача с NaN</a>
