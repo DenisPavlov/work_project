@@ -53,6 +53,7 @@ topjava
 - amazon web services
 - spring
 - docker
+- Nan в java
 
 Вопросы с собеседований
 - WEB(запросы, заголовки, сессия)

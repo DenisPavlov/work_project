@@ -20,8 +20,8 @@ public class Task02 {
 Разбор:
 C первым выражением вроде всё ясно. Разные объекты, поэтому false. А вот дальше…
 В Java <code>NaN</code>'ы несравнимы между собой. Но есть два исключения в работе класса <code>Float</code>:
-Если <code>f1</code> и <code>f2</code> оба представляют <code>Float.NaN</code>, тогда метод equals возвращает true,
+1) Если <code>f1</code> и <code>f2</code> оба представляют <code>Float.NaN</code>, тогда метод equals возвращает true,
 в то время как <code>Float.NaN==Float.NaN</code> принимает значение <code>false</code>.
-Если <code>f1</code> содержит <code>+0.0f</code> в то время как <code>f2</code> 
+2) Если <code>f1</code> содержит <code>+0.0f</code> в то время как <code>f2</code> 
 содержит <code>-0.0f</code>, метод <code>equal</code> возвращает <code>false</code>,
 в то время как <code>0.0f==-0.0f</code> возвращает <code>true</code>.

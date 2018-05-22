@@ -71,3 +71,8 @@ public class App {
 - <a href="/tasks/sort.md">Интересная задача на сортировку (увидел в twitter)</a>
 - <a href="/tasks/task01.md">Интересная задача на методы</a>
 - <a href="/tasks/task02.md">Задача с NaN</a>
+- <a href="/tasks/task03.md">Задача на статические методы</a>
+- <a href="/tasks/task04.md">Задача на пулл значений</a>
+- <a href="/tasks/task05.md">Задача на пулл строк</a>
+- <a href="/tasks/task06.md"></a>
+
