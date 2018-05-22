@@ -58,7 +58,7 @@
 ## Тестовые задания
 - <a href="http://www.cyberforum.ru/java-j2ee/thread1670800.html">Java многомодульное приложение с разделением на слои - Java EE</a>
 
-## Скомпилируется ли код. И объяснить, что там происходит
+## Скомпилируется ли код. И объяснить, что там происходит (package tasks.Gen)
 ```java
 public class App {
     public <A extends Comparable<B> & List<? super Integer>, B extends Comparable<A>> void func(A a, B b) {
