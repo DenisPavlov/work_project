@@ -1,5 +1,0 @@
-- <a href="/schpor/git.md">git</a>
-- <a href="/schpor/stream_api.md">stream API</a>
-- <a href="/schpor/sql.md">SQL</a>
-- <a href="/schpor/idea.md">IDEA</a>
-- <a href="/schpor/scala.md">scala</a>
