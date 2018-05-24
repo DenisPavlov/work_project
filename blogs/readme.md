@@ -13,4 +13,4 @@
 - <a href="https://blog.sourced-bvba.be">Sourced Blog(Eng)</a>
 - <a href="http://www.niceandeasy.me/">Память и подобное</a>
 - <a href="http://dev.cheremin.info/">Рабочие заметки (Java)</a>
-
+- <a href="https://vertex-academy.com/tutorials/ru/">vertex (статьи по Java)</a>
