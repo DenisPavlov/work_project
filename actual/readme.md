@@ -4,7 +4,7 @@ sql-tutorial.ru
 
 topjava
 -----------------------
-- topjava. Lesson01 4.Maven
+- topjava. Lesson01 6.Логгирование
 
 Что доделать
 -----------------------
