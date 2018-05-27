@@ -9,7 +9,8 @@ SQL для простых смертных.
 - CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password'; - создать пользователя
 - SELECT USER from mysql.user; - посмотеть всех пользовтелей mysql
 - GRANT ALL PRIVILEGES ON stepic.* TO 'newuser'@'localhost'; - дать права плдбзователю на все таблицы базы stepic
-- 
+- UPDATE table_reference SET assignment_list - обновить значение
+- delete from billing where предикат- удаление строк из таблицы
 
 - DISTINCT - исключить дублирующиеся значения;
 - ALL - противоположно DISTINCT
