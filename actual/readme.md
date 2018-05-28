@@ -56,6 +56,7 @@ topjava
 - Nan в java
 - <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=7&cad=rja&uact=8&ved=0ahUKEwjjptrg5Z3bAhVLiKYKHT99CuIQtwIIbzAG&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DhEnvRXNyDgI&usg=AOvVaw3udiRZ7IJneLcAoyY2n42Z">посмотреть видео</a>
 - CompleatableFuture
+- лямбда исчесления и теория категорий
 
 Вопросы с собеседований
 - WEB(запросы, заголовки, сессия)
