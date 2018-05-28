@@ -4,5 +4,5 @@
 - <a href="/notes/readme.md">Свои заметки</a>
 - <a href="/tutorials/readme.md">Tutorials</a>
 - <a href="/blogs/readme.md">Интересные блоги и сайты</a>
-- <a href="/shpor/readme.md">Шпоргалки</a>
+- <a href="/help/readme.md">Help</a>
 - <a href="/actual/readme.md">Текушие задачи</a>

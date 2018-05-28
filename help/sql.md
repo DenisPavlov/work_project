@@ -1,13 +1,16 @@
 SQL для простых смертных.
 ------------------------
 
-Остановился - стр.343 Справка по синтакису и командам   
-Справка по синтаксису и командам - стр. 343
-
-sql-tutorial.ru
-------------------------
-Часть 1. Глава 1. Упражнение 6 
-
+- SHOW DATABASES; - показать все БД пользователя
+- CREATE DATABASE database name; - создать БД
+- DROP DATABASE database name; - удалить БД
+- USE events; - использовать БД (переключится на нее для выполнения запросов)
+- SHOW tables; - показать таблицы ДБ
+- CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password'; - создать пользователя
+- SELECT USER from mysql.user; - посмотеть всех пользовтелей mysql
+- GRANT ALL PRIVILEGES ON stepic.* TO 'newuser'@'localhost'; - дать права плдбзователю на все таблицы базы stepic
+- UPDATE table_reference SET assignment_list - обновить значение
+- delete from billing where предикат- удаление строк из таблицы
 
 - DISTINCT - исключить дублирующиеся значения;
 - ALL - противоположно DISTINCT
