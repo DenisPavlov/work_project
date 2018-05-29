@@ -20,7 +20,7 @@ stepic (введение в БД)
 ## Начал прорабатывать
 - <a href="https://habrahabr.ru/post/111189/">Знаешь ли ты JAVA, %username%?</a>
 
-
+- <a href="https://habr.com/company/oleg-bunin/blog/358520/">ПРОЧИТАТЬ И ПОСМОТЕРТЬ!!!</a>
 - <a href="https://habrahabr.ru/post/112674/">Знаешь ли ты JAVA, %username%? Часть вторая</a>
 - <a href="https://habrahabr.ru/post/346628/">Путь запроса по внутренностям Spring Security</a>
 - <a href="https://habrahabr.ru/post/134910/">Объекты Java</a>
