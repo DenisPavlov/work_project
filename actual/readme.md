@@ -4,7 +4,7 @@ sql-tutorial.ru
 
 topjava
 -----------------------
-- topjava. Lesson01 6.Логгирование
+- topjava. Lesson01 HW01
 
 stepic (введение в БД)
 -----------------------
