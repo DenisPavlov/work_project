@@ -75,4 +75,5 @@ public class App {
 - <a href="/tasks/task04.md">Задача на пулл значений</a>
 - <a href="/tasks/task05.md">Задача на пулл строк</a>
 - <a href="/tasks/task06.md">Задача с generics</a>
+- <a href="/tasks/task07.md">Задача с continue и меткой перехода</a>
 
