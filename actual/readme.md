@@ -18,7 +18,7 @@ stepic (введение в БД)
 # Что надо посмотреть и разобрать
 
 ## Начал прорабатывать
-- <a href="https://habrahabr.ru/post/111189/">Знаешь ли ты JAVA, %username%?</a> сделал вопрос 6
+- <a href="https://habrahabr.ru/post/111189/">Знаешь ли ты JAVA, %username%?</a> сделал вопрос 8
 
 - <a href="https://www.youtube.com/watch?v=b4mBmi1QNF0">Корутины в котлине</a>
 - <a href="https://habr.com/company/oleg-bunin/blog/358520/">ПРОЧИТАТЬ И ПОСМОТЕРТЬ!!!</a>
