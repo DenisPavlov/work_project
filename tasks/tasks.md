@@ -74,5 +74,5 @@ public class App {
 - <a href="/tasks/task03.md">Задача на статические методы</a>
 - <a href="/tasks/task04.md">Задача на пулл значений</a>
 - <a href="/tasks/task05.md">Задача на пулл строк</a>
-- <a href="/tasks/task06.md"></a>
+- <a href="/tasks/task06.md">Задача с generics</a>
 
