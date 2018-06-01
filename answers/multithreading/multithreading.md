@@ -41,6 +41,7 @@
 - <a href="chto_takoe_executor.md">Что такое Executor?</a>
 - <a href="chto_takoe_executorservice.md">Что такое ExecutorService?</a>
 - <a href="zachem_nuzhen_scheduledexecutorservice.md">Зачем нужен ScheduledExecutorService?</a>
+- <a href="completableFuture.md">Зачем нужен класс java.util.concurrent.CompletableFuture ?</a>
 
 
 ### Не отвеченные (jsehelper.blogspot.ru)
