@@ -66,12 +66,10 @@
 - <a href="https://blog.idrsolutions.com/2015/02/java-8-method-references-explained-5-minutes/">Лямбда выражения</a>
 - <a href="https://habrahabr.ru/post/101280/">Enum, перечисления</a>
 - <a href="https://neerc.ifmo.ru/wiki/index.php?title=%D0%9F%D0%B5%D1%80%D0%B5%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F">Enum, перечисления</a>
+- <a href="https://habr.com/post/132241/">Маленькие хитрости Java</a>
 
 
-## Структуры данных
-- <a href="https://habrahabr.ru/users/tarzan82/posts/">Структуры данных в Java. Стеки, хэши, сеты. Когда какие применяем</a>
-- <a href="https://habrahabr.ru/post/267389/">Структуры данных в Java. Стеки, хэши, сеты. Когда какие применяем</a>
-- <a href="https://metanit.com/java/tutorial/5.10.php">Iterator. Перебор данных в коллекции</a>
+## <a href="data_structure/readme.md">Структуры данных</a>
 
 ## JavaEE
 - <a href="http://info.javarush.ru/eGarmin/2015/03/28/%D0%91%D0%B5%D0%B7-%D0%BF%D0%B0%D1%84%D0%BE%D1%81%D0%B0-%D0%9F%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%D0%BC-%D0%BE-JavaEE-%D1%81%D0%B5%D1%80%D0%B2%D0%BB%D0%B5%D1%82%D0%B0%D1%85-%D0%B8-%D0%B8%D1%85-%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%B9%D0%BD%D0%B5%D1%80%D0%B0%D1%85.html">Без пафоса. Поговорим о JavaEE, сервлетах и их контейнерах</a>
@@ -103,7 +101,7 @@
 - <a href="http://info.javarush.ru/idea_help/2014/01/22/%D0%A0%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE-%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F-IntelliJ-IDEA-%D0%9E%D1%82%D0%BB%D0%B0%D0%B4%D1%87%D0%B8%D0%BA-.html">Руководство пользователя IntelliJ IDEA. Отладчик.</a>
 
 ### <a href="git/readme.md">git</a>
-### <a href="optimization/readme.md">Оптимизация</a>
+### <a href="optimization/readme.md">Performance</a>
 ### <a href="htmlcssjs/readme.md">HTML, JavaScript, CSS</a>
 ### <a href="interview/readme.md">Интервью</a>
 ### <a href="spring/readme.md">Spring</a>

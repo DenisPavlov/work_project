@@ -1,1 +1,2 @@
 - <a href="https://habrahabr.ru/post/260767/">Обработка строк в Java. Часть I: String, StringBuffer, StringBuilder</a>
+- <a href="http://www.java67.com/2014/08/difference-between-string-literal-and-new-String-object-Java.html">String literal pool</a>

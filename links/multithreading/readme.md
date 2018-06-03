@@ -25,3 +25,5 @@
 - <a href="https://habrahabr.ru/post/116363/">Многопоточность в Java: ExecutorService</a>
 - <a href="https://javadevblog.com/primer-ispol-zovaniya-wait-notify-i-notifyall-v-java.html">Пример использования wait(), notify() и notifyAll() в Java.(code in answers.multithreading)</a>
 - <a href="https://www.youtube.com/watch?v=dLDhB6SRXzw">Java. Многопоточность (лекция 9) Технопарк mail.ru Видео</a>
+- <a href="https://habr.com/company/luxoft/blog/157273/">Обзор java.util.concurrent.*</a>
+- <a href="http://www.skipy.ru/technics/synchronization.html">Синхронизация потоков</a>
