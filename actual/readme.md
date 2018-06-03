@@ -4,7 +4,7 @@ sql-tutorial.ru
 
 topjava
 -----------------------
-- topjava. Lesson01 HW01 Optional
+- topjava. Lesson02 4. Слои приложения
 
 stepic (введение в БД)
 -----------------------
