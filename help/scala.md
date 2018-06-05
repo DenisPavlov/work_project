@@ -241,4 +241,10 @@ println(friend)
 - pattern match - возвращает значение !!!
 
 #### ООП
+- любой ссылочный класс является расширением класса <code>scala.AnyRef</code>, который соответствует Java классу <code>java.lang.Object</code>
+- поля и методы разделяют единое пространство имен (поле может переопределить метод)
+- класс с полем можно объявить так - <code>class ArrayElement(val contents: Array[String]) extends Element { }</code> (у класса будет поле <code>val contents</code>)
+- модификатор <code>override</code> требуется для всех элементов переопределяющих родительский элемент, если элемент является реализацией абстрактного элемента, то модиффикатор можно не указывать
+- <code>final override def demo()</code> - метод нельзя переопределить в подклассе
+- <code>final class ArrayElement</code> - нельзя унаследоваться от класса
 - 
