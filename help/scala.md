@@ -257,3 +257,10 @@ println(friend)
 
 #### Трейты
 - в трейте не может быть параметров (передаваемых первичному конструктору)
+````scala
+trait Doubling extends IntQueue {
+  abstract override def put(x: Int) = { super.put(2 * x) }
+}
+````
+- можно объявить такой трейт, его можно подмешать только к классу <code>IntQueue</code> 
+- трейт можно подмешать на этапе выполнения - <code>val queue = new BasicIntQueue with Doubling</code>
