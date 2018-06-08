@@ -74,8 +74,10 @@ def curriedSum(x: Int)(y: Int) = x + y
 - два обычных следующих непосредственно друг за другом вызова функции, раскроется в <code>def first(x: Int) = (y: Int) => x + y</code>
 - первый вызов функции получает единственный Int параметр по имени x и возвращает функциональное значение для второй функции. Вторая функция получает параметр y
 - если при каждом вызове метода ему передается строго один аргумент, можно заключтьб его не в круглые а в фигурные скобки
-
-
+- доступ к protected полям возможен только у потомков (не как Java)
+- private[x], protected[x] - доступ закрыт или защищен вплоть до Х, где Х - некий внешний пакет, класс или сингтон-объект
+- <code>private[bobsrockets] class Navigator</code> - все классы и объекты пакета <code>bobsrockets</code> могут видеть класс <code>Navigator</code>
+- <code>private[this]</code> - доступен только внутри того же самого объекта
 
 
 #### Типы данных
@@ -97,6 +99,7 @@ def curriedSum(x: Int)(y: Int) = x + y
 - метод -> возвращает картеж (ключб значение)
 
 #### Структуры данных
+- <code>val links: Set[String] = rows.asScala</code> - преобразовать из Java колллекции в scala коллекцию
 
 ##### Кортеж (Tuples)
 - структура данных которая объединяет несколько элементов (элементы могут быть разных типов)
@@ -264,3 +267,24 @@ trait Doubling extends IntQueue {
 ````
 - можно объявить такой трейт, его можно подмешать только к классу <code>IntQueue</code> 
 - трейт можно подмешать на этапе выполнения - <code>val queue = new BasicIntQueue with Doubling</code>
+
+
+#### Пакеты
+- импорт полей класса
+````scala
+def showFruit(fruit: Fruit) = {
+    import fruit._
+    println(name + "s are " + color)
+  }
+````
+- импортировать можно синглтон объекты, обычные объекты, позволяет изменять имена или скрывать некоторые из импортируемых составляющих
+- <code>import Fruits.{Apple, Orange}</code> - из объекта Fruit импортируются только его составляющие Apple и Orange
+- <code>import Fruits.{Apple => McIntosh, Orange}</code> - из объекта Fruit импортируются две составляющие, Apple и Orange. Но Apple переименовывается в McIntosh
+- <code>import java.{sql => S} - под именем S импортируется пакет <code>java.sql</code>, чтобы мжно было воспользоваться кодом вида S.Date
+- <code>import Fruits.{Pear => _, _}</code> - импортируются все составляющие объекта Fruits, за исключением Pear
+- в каждой программе scala содержатся
+````scala
+import java.lang._ // everything in the java.lang package
+  import scala._     // everything in the scala package
+  import Predef._    // everything in the Predef object
+````
