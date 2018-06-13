@@ -72,7 +72,7 @@ stepic (введение в БД)
 - UML
 - java.util.regex
 - ForkJoin
-- 
+- https://www.bbc.com/russian/learning-english-41003378 (английский язык)
 
 Вопросы с собеседований
 - WEB(запросы, заголовки, сессия)
