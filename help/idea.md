@@ -1,6 +1,7 @@
 Плюшки
 
 	- Alt + Enter - раскрыть лампочку
+	- Shift + Ctrl + A - поиск действия 
 	- Ctrl + Alt + V - Extract variable (извлеччь переменную)
 	- Ctrl + P - посотреть параметры метода
 	- Shift + F1 - переход к Java Doc на сайт ORACLE

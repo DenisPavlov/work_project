@@ -288,3 +288,7 @@ import java.lang._ // everything in the java.lang package
   import scala._     // everything in the scala package
   import Predef._    // everything in the Predef object
 ````
+
+#### case классы
+- у классов есть фабричный метод с именем этого класса (<code>)
+- 
