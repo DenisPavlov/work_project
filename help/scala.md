@@ -242,6 +242,70 @@ println(friend)
 - значение <code>_</code> - используется как значение по умолчанию
 - в case могут использоваться любые типы
 - pattern match - возвращает значение !!!
+````scala
+def simplifyTop(expr: Expr): Expr = expr match {
+  case UnOp("-", UnOp("-", e))  => e   // Double negation
+  case BinOp("+", e, Number(0)) => e   // Adding zero
+  case BinOp("*", e, Number(1)) => e   // Multiplying by one
+  case _ => expr
+}
+````
+- универсальный шаблон сопоставления "_" - могут использоваться для игнорирования частей объекта (<code>case BinOp( _, _, _) => ...</code>)
+- шаблоны константы(5, true, "hello", Nil, любое val значение)
+````scala
+def describe(x: Any) = x match {
+    case 5 => "five"
+    case true => "truth"
+    case "hello" => "hi!"
+    case Nil => "the empty list"
+    case _ => "something else"
+  }
+````
+- шаблон переменная
+````scala
+expr match {
+  case 0 => "zero"
+  case somethingElse => "not zero: " + somethingElse
+}
+````
+- шаблоны конструкторы (<code>case BinOp("+", e, Number(0))</code>) - при условии, что имя обозначает case класс, сначала проверяется проверка
+принадлежности к case классу, а затем проверка параметров
+- шаблоны последовательности
+````scala
+expr match {
+    case List(0, _, _) => println("found it")
+    case _ =>
+  }
+````
+- проверяет, что трехэлементный список начинается с нуля
+- <code>case List(0, _*)</code> - проверяет соответствие без указания длинны (последний элемент может быть любым количеством)
+- шаблон картеж <code>case (a, b, c)  =>  println("matched " + a + b + c)</code>
+- типизированный шаблон - <code>case m: Map[_, _] => m.size</code>
+- привязка переменной (<code>case UnOp("abs", e @ UnOp("abs", _)) => e</code>) - обычный поиск по шаблону, в случае соответствия присоет e ссылку на конкретный объект
+- ограничение шаблона (указывается после шаблона и начинается с ключевого слова if)
+````scala
+def simplifyAdd(e: Expr) = e match {
+   case BinOp("+", x, y) if x == y =>
+     BinOp("*", x, Number(2))
+   case _ => e
+}
+````
+- при наличии ограничителя, соответствие считается найденным если ограничитель вычисляется в true
+- при определении val или var переменных можно использовать шаблоны
+````scala
+scala> val myTuple = (123, "abc")
+  myTuple: (Int, String) = (123,abc)
+
+  scala> val (number, string) = myTuple
+  number: Int = 123
+  string: String = abc
+````
+- for с шблоном (apple, orange)
+````scala
+val results = List(Some("apple"), None, Some("orange"))
+for (Some(fruit) <- results) println(fruit)
+````
+
 
 #### ООП
 - любой ссылочный класс является расширением класса <code>scala.AnyRef</code>, который соответствует Java классу <code>java.lang.Object</code>
@@ -280,7 +344,7 @@ def showFruit(fruit: Fruit) = {
 - импортировать можно синглтон объекты, обычные объекты, позволяет изменять имена или скрывать некоторые из импортируемых составляющих
 - <code>import Fruits.{Apple, Orange}</code> - из объекта Fruit импортируются только его составляющие Apple и Orange
 - <code>import Fruits.{Apple => McIntosh, Orange}</code> - из объекта Fruit импортируются две составляющие, Apple и Orange. Но Apple переименовывается в McIntosh
-- <code>import java.{sql => S} - под именем S импортируется пакет <code>java.sql</code>, чтобы мжно было воспользоваться кодом вида S.Date
+- <code>import java.{sql => S}</code> - под именем S импортируется пакет <code>java.sql</code>, чтобы мжно было воспользоваться кодом вида S.Date
 - <code>import Fruits.{Pear => _, _}</code> - импортируются все составляющие объекта Fruits, за исключением Pear
 - в каждой программе scala содержатся
 ````scala
@@ -290,5 +354,16 @@ import java.lang._ // everything in the java.lang package
 ````
 
 #### case классы
-- у классов есть фабричный метод с именем этого класса (<code>)
-- 
+- у классов есть фабричный метод с именем этого класса (<code>val x = Var("x")</code>)
+- все аргументы в списке параметров автоматически получают префикс val, сохраняются в качестве полей
+- можно создать копию case класса <code>op.copy(operator = "-")</code> - создается копия с измененным параметром operator
+- sealed - ключевое слово обозначающее запечатанный класс (класс в котором все наследники определены в одном файле)
+
+#### тип Option
+- значения этого типа м.б. двух видов, <code>Some(x)</code>, где x - реальное значение, либо<code>None</code> - объект представляющий отсутствующее значение
+````scala
+def show(x: Option[String]) = x match {
+   case Some(s) => s
+   case None => "?"
+}
+````
