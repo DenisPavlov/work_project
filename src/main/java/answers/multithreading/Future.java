@@ -1,5 +1,7 @@
 package answers.multithreading;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executors;
@@ -23,5 +25,7 @@ public class Future {
                 .collect(Collectors.joining(" "));
 
         System.out.println(result); //output: What the future holds?
+        Map<String, Integer> map = new HashMap<>();
+        map.replaceAll((k, v) -> v++);
     }
 }
