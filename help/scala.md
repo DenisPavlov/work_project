@@ -305,6 +305,21 @@ scala> val myTuple = (123, "abc")
 val results = List(Some("apple"), None, Some("orange"))
 for (Some(fruit) <- results) println(fruit)
 ````
+- ограничение по значению переменной
+````scala
+override def receive: Receive = {
+    case DeviceManager.RequestTrackDevice(`groupId`, `deviceId`) =>
+      sender() ! DeviceManager.DeviceRegistered
+
+    case DeviceManager.RequestTrackDevice(groupId, deviceId) =>
+      log.warning(
+        "Ignoring TrackDevice request for {}-{}.This actor is responsible for {}-{}.",
+        groupId, deviceId, this.groupId, this.deviceId
+      )
+   }
+````
+- в первом случае проверяется на соответствие значений (именно значение переменной)
+- во втором случае переменной groupId присваивается пришедшее значение параметра 
 
 
 #### ООП
