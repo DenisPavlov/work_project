@@ -36,5 +36,7 @@ public class App {
 ```
 
 
-- <a href="/notes/duration_to_interval_jdbc_postgres.md">Разбирался с сохранением INTERVAL data type (Duration, Interval, JDBC, PostgresQL)
+- <a href="/notes/duration_to_interval_jdbc_postgres.md">Разбирался с сохранением INTERVAL data type (Duration, Interval, JDBC, PostgresQL)</a>
 
+### Темы для статей
+- <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Objects.html">java.util.Objects</a>

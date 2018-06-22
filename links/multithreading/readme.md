@@ -27,3 +27,7 @@
 - <a href="https://www.youtube.com/watch?v=dLDhB6SRXzw">Java. Многопоточность (лекция 9) Технопарк mail.ru Видео</a>
 - <a href="https://habr.com/company/luxoft/blog/157273/">Обзор java.util.concurrent.*</a>
 - <a href="http://www.skipy.ru/technics/synchronization.html">Синхронизация потоков</a>
+
+
+### Проработано
+- <a href="https://www.ibm.com/developerworks/ru/library/j-jtp11137/index.html">Научитесь использовать мелкозернистый детальный параллелизм с помощью схемы fork-join (package links.multithreading.fork_join)</a>
