@@ -382,3 +382,11 @@ def show(x: Option[String]) = x match {
    case None => "?"
 }
 ````
+
+#### Списки
+- литерал списка - <code>val fruit = List("apples", "oranges", "pears")</code>
+- список - неизменяемая структура данных (их элементы не могут быть изменены путем присваивания)
+- создание списка - <code>val fruit = "apples" :: ("oranges" :: ("pears" :: Nil))</code>
+- шаблон списка - <code> val List(a, b, c) = fruit</code> (a,b,c - присваивается значения элементов из списка)
+- шаблон списка - <code> val List(a :: b :: rest) = fruit</code> (соответсвует списку с двумя и более элементов)
+- объединение двух списков - <code>:::</code>
