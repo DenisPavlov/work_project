@@ -161,6 +161,27 @@ thrill.tail | Возвращает список thrill за вычетом ег�
         if file.getNmae.endsWith(".scala")
         ) println(file)
     ````
+- свертка слева (ожно использовать при переборе коллекции)
+````scala
+      val (goodProxies, badProxies) = ((IndexedSeq.empty[GoodProxy], IndexedSeq.empty[BadProxy]) /: proxies) { case ((gps, bps), proxy) =>
+        val request: HttpGet = new HttpGet("https://www.google.com/")
+        val requestConfig = RequestConfig.custom()
+          .setConnectTimeout(15000)
+          .setProxy(new HttpHost(proxy.ip, proxy.port))
+          .build()
+        request.setConfig(requestConfig)
+
+        parseRequest(request, proxy) match {
+          case Left(good) =>
+            (gps :+ good, bps)
+          case Right(bad) =>
+            val badps = bps :+ bad
+            val res = (gps, badps)
+            logger.info(badps.size + " bad size")
+            res
+        }
+      }
+````
 
 ##### Map
 - создание Map - <code>val treasureMap = new HashMap\[Int, String]</code> (создается новый экземпляр изменяемого HashMap, с ключами типа Int и значениями типа String, и и помещает ссылку на HashMap в значение treasureMap)
