@@ -27,7 +27,6 @@ SQL для простых смертных.
 SELECT c.id, c.name FROM category AS c 
   WHERE NOT EXISTS (SELECT * FROM category_has_good AS cg
         WHERE cg.category_id = c.id)
-;
 ````
 - ANI - 
 - предикат с ALL - принимает значение истина, если каждое значение, в подзапросе, удовлетворяет условию внешнего подзапроса
