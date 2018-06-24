@@ -31,3 +31,6 @@
 
 ### Проработано
 - <a href="https://www.ibm.com/developerworks/ru/library/j-jtp11137/index.html">Научитесь использовать мелкозернистый детальный параллелизм с помощью схемы fork-join (package links.multithreading.fork_join)</a>
+
+### В процессе
+- <a href="https://www.youtube.com/watch?v=4YGqahTTWtQ&list=PLoij6udfBncgyV-7Y0lEh0EwfkpcAoBeK">Головач курсы про Многопоточность (package links.multithreading.golovach)</a>
