@@ -23,6 +23,12 @@ SQL для простых смертных.
 - IS NULL - проверяет значение на NULL (where CITY is null)
 - IS NOT NULL - проверят, что значение не NULL
 - EXISTS - оператор генерирующий значение истина или лож (булевое значение), использует подзапросы. Фиксирует наличие данных в подзапросе
+````sql
+SELECT c.id, c.name FROM category AS c 
+  WHERE NOT EXISTS (SELECT * FROM category_has_good AS cg
+        WHERE cg.category_id = c.id)
+;
+````
 - ANI - 
 - предикат с ALL - принимает значение истина, если каждое значение, в подзапросе, удовлетворяет условию внешнего подзапроса
 - SOME - 
