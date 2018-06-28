@@ -77,3 +77,6 @@ public class App {
 - <a href="/tasks/task06.md">Задача с generics</a>
 - <a href="/tasks/task07.md">Задача с continue и меткой перехода</a>
 
+## Вопросы с собеседований
+- <a href="/tasks/sob1.md">Найти ошибку в коде</a>
+- <a href="/tasks/sob2.md">Какой вариант выбрать, что будет выведено на экран, как это работает</a>
