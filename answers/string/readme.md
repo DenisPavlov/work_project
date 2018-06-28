@@ -29,5 +29,5 @@
 - <a href="napishite_metod_udaleniya_dannogo_simvola_iz_stroki.md">Напишите метод удаления данного символа из строки.</a>
 
 ## Не разобранные вопросы
-- <a href="http://goo.gl/K38JMG">Вопросы к собеседованию и ответы на них, ч.1. info.javarush.ru</a>
+- <a href="http://goo.gl/K38JMG">Вопросы к собеседованию и ответы на них, ч.1. info.javarush.ru (разобрал 3 ответа) </a>
 - <a href="http://goo.gl/OxO2I0">Java String. Вопросы к собеседованию и ответы на них, ч.2 info.javarush.ru</a>
