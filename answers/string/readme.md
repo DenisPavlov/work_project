@@ -1,4 +1,4 @@
-- <a href="chto_takoe_string_v_java?_kakoj_eto_tip_dannyx.md">Что такое String в Java? Какой это тип данных?</a>
+- <a href="chto_takoe_string_v_java_kakoj_eto_tip_dannyx.md">Что такое String в Java? Какой это тип данных?</a>
 - <a href="kakie_est'_sposoby'_sozdaniya_obekta_string.md">Какие есть способы создания объекта String?</a>
 - <a href="napishite_metod_proverki,_yavlyaetsya_li_stroka_palindromom.md">Напишите метод проверки, является ли строка палиндромом.</a>
 
