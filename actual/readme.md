@@ -29,7 +29,7 @@ stepic (введение в БД)
 ## Начал прорабатывать
 - <a href="https://habrahabr.ru/post/111189/">Знаешь ли ты JAVA, %username%?</a> сделал вопрос 8
 
-
+- <a href="https://www.jooq.org/">Посмотреть, библиотека для работы с БД (среднее между JDBC и ORM) - jOOQ </a>
 - heap and stack
 - <a href="https://www.ibm.com/developerworks/ru/library/j-jvmc2/index.html">Статья от IBM про многопоточность. </a>
 - <a href="https://www.youtube.com/watch?v=b4mBmi1QNF0">Корутины в котлине</a>
