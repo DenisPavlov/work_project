@@ -9,7 +9,6 @@
 ### Ключевые слова
 - <a href="http://www.quizful.net/post/features-of-the-application-of-modifiers-in-java">Особенности применения модификаторов в Java</a>
 
-### Типы данных
 ### <a href="reflection/readme.md">Reflection API</a>
 ### <a href="string/readme.md">String, StringBuilder, StringBuffer</a>
 ### <a href="classes/readme.md">Внутренние классы</a>
