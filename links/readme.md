@@ -1,9 +1,6 @@
 # Ссылки на полезные статьи
 
-## ООП
-
-- <a href="https://ru.stackoverflow.com/questions/279518">Полиморфизм, last binding</a>
-
+### <a href="oop/readme.md">ООП</a>
 ### <a href="course/readme.md">Курсы по Java</a>
 
 ### Синтаксис java
