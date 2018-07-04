@@ -6,3 +6,4 @@
 - <a href="/blogs/readme.md">Интересные блоги и сайты</a>
 - <a href="/help/readme.md">Help</a>
 - <a href="/actual/readme.md">Текушие задачи</a>
+- <a href="/cookbook/cookbook.md">Cook Book</a>

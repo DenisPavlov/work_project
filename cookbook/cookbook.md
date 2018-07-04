@@ -1,0 +1,1 @@
+- <a href="/cookbook/stream_api.md">stream API</a>
