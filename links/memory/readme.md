@@ -1,3 +1,4 @@
 - <a href="https://www.youtube.com/watch?v=NwsMQT-6V-M">как устроена память</a>
 - <a href="http://www.javaspecialist.ru/2011/06/java-memory-model.html">Java Memory Model вкратце</a>
 - <a href="https://habr.com/post/134102/">Размер Java объектов</a>
+- <a href="http://javatutor.net/articles/using-weakhashmap-for-listener-lists">Применение WeakHashmap для списков слушателей</a>
