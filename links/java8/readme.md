@@ -19,3 +19,4 @@
 - <a href="https://www.youtube.com/watch?v=i0Jr2l3jrDA">Видео: Сергей Куксенко — Stream API, часть 2</a>
 - <a href="https://habrahabr.ru/post/337350/">Используйте Stream API проще (или не используйте вообще)</a>
 - <a href="http://optimization.guide/intro.html">"Что? Где? Когда?"(Почитать, должно быть интересно)</a>
+- <a href="http://www.deadcoderising.com/2015-05-19-java-8-replace-traditional-for-loops-with-intstreams/">Java 8: Replace traditional for loops with IntStreams()</a>
