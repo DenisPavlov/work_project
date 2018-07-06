@@ -89,3 +89,9 @@ HAVING SUM(Sale) > 2000000
 
 ## JOIN
 - ![Logo](2.jpg)
+
+## SELECT
+- по дате
+````sql
+SELECT ip_address, port, timestamp FROM proxy.good_proxy WHERE timestamp::date = '2018-07-04';
+````
