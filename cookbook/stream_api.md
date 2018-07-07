@@ -112,6 +112,15 @@ LinkedList<NamePhone> npList = nameAndPhone.collect(
     (list, element) -> list.add(element),
     (list A, list B) -> listA.addAll(list B));
 ````
+#### Собрать в map
+````java
+Map<Integer, String> map = persons
+    .stream()
+    .collect(Collectors.toMap(
+        p -> p.age, //key
+        p -> p.name, //value
+        (name1, name2) -> name1 + ";" + name2)); //функция объединения значений
+````
 
 #### allMatch(), anyMatch(), noneMatch
 - выясняют, удовлетворяет ли один или несколько элементов указанному предикату
