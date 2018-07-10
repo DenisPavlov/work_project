@@ -61,20 +61,20 @@ class BigTaskManyThreads {
         ExecutorService es = Executors.newFixedThreadPool(ap);
 
         Long summa = 0L;
-        try {
-            List<MyCallable> threads = new ArrayList<MyCallable>();
-            for (int i = 0; i < Processor.STR_COUNT; i++) {
-                threads.add(new MyCallable());
-            }
-            List<Future<Long>> result = es.invokeAll(threads);
-
-            for (Future<Long> f : result) {
-                summa += f.get();
-            }
-            es.shutdown();
-        } catch (InterruptedException | ExecutionException ex) {
-            ex.printStackTrace(System.out);
-        }
+//        try {
+//            List<MyCallable> threads = new ArrayList<MyCallable>();
+//            for (int i = 0; i < Processor.STR_COUNT; i++) {
+//                threads.add(new MyCallable());
+//            }
+//            List<Future<Long>> result = es.invokeAll(threads);
+//
+//            for (Future<Long> f : result) {
+//                summa += f.get();
+//            }
+//            es.shutdown();
+//        } catch (InterruptedException | ExecutionException ex) {
+//            ex.printStackTrace(System.out);
+//        }
         return summa;
     }
 }

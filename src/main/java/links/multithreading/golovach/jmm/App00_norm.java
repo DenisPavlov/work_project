@@ -1,7 +1,7 @@
 package links.multithreading.golovach.jmm;
 
 public class App00_norm {
-    static volatile boolean run = true;
+    static boolean run = true;
     static int data = 0;
 
     public static void main(String[] args) {
