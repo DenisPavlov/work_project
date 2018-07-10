@@ -36,7 +36,9 @@
 ### Аннотации
 - <a href="https://www.ibm.com/support/knowledgecenter/ru/SS8PJ7_9.5.0/org.eclipse.jdt.doc.user/tasks/task-suppress_warnings.htm">Отключение предупреждений с помощью @SuppressWarnings</a>
 
-
+### Разное
+- <a href="https://habr.com/post/150186/">Шпаргалка по SCJP. Часть первая</a>
+- <a href="https://habr.com/post/150193/">Шпаргалка по SCJP. Часть вторая</a>
 
 -----
 - <a href="https://habrahabr.ru/post/197802/">А знаете ли Вы, что возвращает .getClass()?</a>

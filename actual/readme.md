@@ -53,6 +53,7 @@ stepic (введение в БД)
 - StringPool
 - PostgreSQl
 - Weak and soft references
+- WeakHashMap
 - Класс Runtime
 - JMX
 - stream
