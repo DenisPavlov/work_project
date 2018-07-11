@@ -10,6 +10,7 @@ topjava
 -----------------------
 - lesson01 ДЗ HW01
 - сделать TOPJAVA_ROOT
+- обратить внимание на метод Map.computeIfPresent()
 
 stepic (введение в БД)
 -----------------------
