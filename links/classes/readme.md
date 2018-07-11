@@ -1,1 +1,2 @@
 - <a href="https://juja.com.ua/java/inner-and-nested-classes/">Вложенные и внутренние классы в Java</a>
+- <a href="https://habr.com/post/104229/">Загрузка классов в Java. Практика(links.classes)</a>
