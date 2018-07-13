@@ -3,6 +3,7 @@ package links.java.clone;
 public class User implements Cloneable {
     private String name;
     private int age;
+    public User brother;
 
     public String getName() {
         return name;
