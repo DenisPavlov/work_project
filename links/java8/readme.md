@@ -20,3 +20,8 @@
 - <a href="https://habrahabr.ru/post/337350/">Используйте Stream API проще (или не используйте вообще)</a>
 - <a href="http://optimization.guide/intro.html">"Что? Где? Когда?"(Почитать, должно быть интересно)</a>
 - <a href="http://www.deadcoderising.com/2015-05-19-java-8-replace-traditional-for-loops-with-intstreams/">Java 8: Replace traditional for loops with IntStreams()</a>
+
+#### Optional
+- <a href="https://urvanov.ru/2017/09/30/optional-%D0%B2-java-8/">Optional в Java 8</a>
+- <a href="http://sboychenko.ru/java-optional/">Java Optional — Отец холиваров</a>
+- <a href="https://habr.com/post/346782/">Optional: Кот Шрёдингера в Java 8</a>
