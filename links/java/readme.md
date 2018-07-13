@@ -1,0 +1,1 @@
+- <a href="http://echuprina.blogspot.com/2012/02/cloneable.html">Клонирование объектов. Интерфейс Cloneable.</a>
