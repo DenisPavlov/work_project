@@ -40,3 +40,6 @@ public class App {
 
 ### Темы для статей
 - <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Objects.html">java.util.Objects</a>
+
+### Библиотеки
+- для конфигурирования библиотека - <a href="https://github.com/lightbend/config/blob/master/HOCON.md">HOCON</a>
