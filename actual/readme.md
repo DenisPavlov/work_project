@@ -28,6 +28,7 @@ stepic (введение в БД)
 - сохранить ссылки с toplava главной страницы
 
 # Что надо посмотреть и разобрать
+- https://www.youtube.com/watch?v=kxgo7Y4cdA8
 
 ## Начал прорабатывать
 - <a href="https://habrahabr.ru/post/111189/">Знаешь ли ты JAVA, %username%?</a> сделал вопрос 8
