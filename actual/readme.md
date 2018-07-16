@@ -8,7 +8,7 @@ git обучалка
 
 topjava
 -----------------------
-- lesson02 Видео 4 слои прилоения
+- lesson02 Видео 5 Обзор Spring Framework. Spring Context
 
 stepic (введение в БД)
 -----------------------
