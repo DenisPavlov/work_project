@@ -108,3 +108,27 @@ stepic (введение в БД)
 Прочитанные книги
 -----------------
 - SQL для простых смертных (книга не очень)
+
+Ссылки с работы (ЦЭС)
+- https://habr.com/post/203796/
+- https://habr.com/post/66926/
+- https://habr.com/post/150193/
+- https://www.ibm.com/developerworks/ru/library/j-jtp11225/index.html
+- https://www.ibm.com/developerworks/ru/library/j-5things4/index.html
+- https://habr.com/users/23derevo/posts/
+- https://habr.com/users/colwin/posts/
+- https://habr.com/users/xpendence/posts/
+- http://it.vaclav.kiev.ua/2010/12/25/spring-framework-for-begginers-part-1/
+- https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html#forEach-java.util.function.BiConsumer-
+- https://docs.oracle.com/javase/8/docs/api/java/util/Map.html
+- https://habr.com/post/128017/
+- https://docs.oracle.com/javase/8/docs/api/java/util/List.html
+- https://docs.oracle.com/javase/8/docs/api/java/util/Set.html
+- https://docs.oracle.com/javase/8/docs/api/java/util/Queue.html
+- https://docs.oracle.com/javase/8/docs/api/java/util/HashSet.html
+- https://docs.oracle.com/javase/8/docs/api/java/util/TreeSet.html
+- https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html
+- https://habr.com/post/267389/
+- https://www.ibm.com/developerworks/ru/library/j-jtp07233/
+- http://www.quizful.net/post/Java-TreeMap
+- https://blog.byndyu.ru/2009/10/solid.html?m=1
