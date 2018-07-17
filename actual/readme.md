@@ -87,6 +87,8 @@ stepic (введение в БД)
 - java.util.regex
 - ForkJoin
 - https://www.bbc.com/russian/learning-english-41003378 (английский язык)
+- HOCON
+- My Batis
 
 Вопросы с собеседований
 - WEB(запросы, заголовки, сессия)
