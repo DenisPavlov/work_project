@@ -31,8 +31,15 @@ SELECT c.id, c.name FROM category AS c
 - ANI - 
 - предикат с ALL - принимает значение истина, если каждое значение, в подзапросе, удовлетворяет условию внешнего подзапроса
 - SOME - 
-- UPDATE <название таблицы> SET <название столбца> <значение> wheare <предикат> - обновить данные в строке
-
+- UPDATE <название таблицы> SET <название столбца> <значение> where <предикат> - обновить данные в строке
+- изменение таблицы
+````sql
+ALTER TABLE client 
+DROP FOREIGN KEY fk_client_source1,
+DROP COLUMN code,
+ADD COLUMN source_id INT NOT NULL,
+ADD CONSTRAINT fk_a_id FOREIGN KEY (source_id) REFERENCES source(id);
+````
 			Агрегатные функции (select sum(AMT) from orders;)
 			-------------------------------------------------
 
@@ -95,3 +102,7 @@ HAVING SUM(Sale) > 2000000
 ````sql
 SELECT ip_address, port, timestamp FROM proxy.good_proxy WHERE timestamp::date = '2018-07-04';
 ````
+
+## Проектирование БД
+- пройтись по нормальным формам отношений
+- 
