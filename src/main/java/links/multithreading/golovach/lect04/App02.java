@@ -9,14 +9,14 @@ public class App02 {
     private static volatile boolean flag2 = false;
     public static void main(String[] args) {
         new Thread(() -> {
-            for (int i = 0; i < 10_000_000; i++) {
+            for (int i = 0; i < 40_000_000; i++) { //если ставлю цикл по 40_000_000, то все работает норм!!!
                 counter.incrementAndGet();
             }
             flag1 = true;
         }).start();
 
         new Thread(() -> {
-            for (int i = 0; i < 10_000_000; i++) {
+            for (int i = 0; i < 40_000_000; i++) {
                 counter.incrementAndGet();
             }
             flag2 = true;
