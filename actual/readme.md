@@ -14,12 +14,13 @@ stepic (введение в БД)
 -----------------------
 - 18.09.2014 Lecture #05. java.util.concurrent.
 
+English
+-----------------------
+- Beginners (начальная граматика - посмотрел)
 
 Что доделать
 -----------------------
 - разобрать вопросы по string !!! (НЕРАЗОБРАННЫЕ!!!!!!!!!!)
-
-- сохранить ссылки с toplava главной страницы
 
 # Что надо посмотреть и разобрать
 - https://www.youtube.com/watch?v=kxgo7Y4cdA8
@@ -85,6 +86,52 @@ stepic (введение в БД)
 - https://www.bbc.com/russian/learning-english-41003378 (английский язык)
 - HOCON
 - My Batis
+- Возврат лямбды из метода
+- java green thread
+- теория категорий (монады)
+- Jackson
+- завести блог
+- видео по лямбдам, пока не станет все понятно
+- Методы класса Objects
+- написать шпору по StreamAPI
+- java NAN
+- java Optional
+- мостовой метод (Generics)
+- типы JOIN (SQL)
+- индексы БД
+- http (headers)
+- сессия
+- перегрузка/переопределение
+- Sequence interface
+- java Arrays class
+- пулл строк
+- внутренние классы
+- final
+- ввод/вывод
+- ClassLoader
+- Модификаторы класса
+- переопределение методов (как будет работать?)
+````java
+class A {
+    Number meth(){
+        return null;
+    }
+}
+class B extends A {
+    Integer meth(){
+        return null;
+    }
+}
+````
+- разобраться с flatMap, map
+- Supplier interface
+- кастовать к пересечению двух типов(как рассказывал Тагир (A & B))
+- ssh - ?
+- репликация ?
+- основы оперрационных систем (изучить)
+- JIT компилятор
+- StreamEx библиотека
+- apache Commons, guava
 
 Вопросы с собеседований
 - WEB(запросы, заголовки, сессия)

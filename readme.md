@@ -7,3 +7,4 @@
 - <a href="/help/readme.md">Help</a>
 - <a href="/actual/readme.md">Текушие задачи</a>
 - <a href="/cookbook/cookbook.md">Cook Book</a>
+- <a href="/other/readme.md">Разное</a>
