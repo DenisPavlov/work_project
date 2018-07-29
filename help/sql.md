@@ -105,4 +105,10 @@ SELECT ip_address, port, timestamp FROM proxy.good_proxy WHERE timestamp::date =
 
 ## Проектирование БД
 - пройтись по нормальным формам отношений
-- 
+
+## План запроса
+- посторение плана запроса
+````sql
+explain
+SELECT * FROM stepic.billing;
+````
