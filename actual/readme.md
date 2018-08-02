@@ -21,7 +21,7 @@ English
 # Что надо посмотреть и разобрать
 - https://www.youtube.com/watch?v=kxgo7Y4cdA8
 
-## Начал прорабатывать
+## Начал прорабатывать!
 - <a href="https://habrahabr.ru/post/111189/">Знаешь ли ты JAVA, %username%?</a> сделал вопрос 8
 
 - <a href="https://www.jooq.org/">Посмотреть, библиотека для работы с БД (среднее между JDBC и ORM) - jOOQ </a>
