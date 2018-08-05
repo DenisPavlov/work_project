@@ -91,6 +91,7 @@
 
 ### PostgreSQL
 - <a href="https://habrahabr.ru/post/203320/">Оптимизация запросов. Основы EXPLAIN в PostgreSQL</a>
+- <a href="https://www.8host.com/blog/ispolzovanie-rolej-i-upravlenie-dostupom-v-postgresql/">ИСПОЛЬЗОВАНИЕ РОЛЕЙ И УПРАВЛЕНИЕ ДОСТУПОМ В POSTGRESQL</a>
 
 ## Прочее
 - <a href="https://habrahabr.ru/post/90696/">Что такое xsd-схема</a>

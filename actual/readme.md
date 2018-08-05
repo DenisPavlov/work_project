@@ -3,11 +3,16 @@ sql-tutorial.ru
 начать сначала
 
 PostgresQL для начинающих
+-------------------------
 стр.59
+
+Wicket
+-----------------------
+5.4 Markup inheritance with the wicket:extend tag
 
 topjava
 -----------------------
-- lesson03 2. Вопросы по API и слоям приложения
+- lesson03 9. Тестирование UserService через AssertJ.
 
 Головач курсы (многопоточность)
 -----------------------
