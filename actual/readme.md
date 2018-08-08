@@ -8,7 +8,7 @@ PostgresQL для начинающих
 
 Wicket
 -----------------------
-5.4 Markup inheritance with the wicket:extend tag
+8.2 Stateful pages
 
 topjava
 -----------------------

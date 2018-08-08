@@ -3,3 +3,4 @@
 - <a href="/help/db/readme.md">Базы данных</a>
 - <a href="/help/idea.md">IDEA</a>
 - <a href="/help/scala.md">scala</a>
+- <a href="/help/wicket.md">Wicket</a>
