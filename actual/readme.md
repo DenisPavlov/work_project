@@ -12,7 +12,7 @@ Wicket
 
 topjava
 -----------------------
-- lesson03 9. Тестирование UserService через AssertJ.
+- lesson03. Your questions
 
 Головач курсы (многопоточность)
 -----------------------
