@@ -16,7 +16,7 @@ topjava
 
 Головач курсы (многопоточность)
 -----------------------
-- 22.09.2014 Lecture #06. 1:23 (видео запаздывает)
+- https://www.youtube.com/watch?v=Mnid3x23idw&list=PLoij6udfBncgyV-7Y0lEh0EwfkpcAoBeK&index=9
 
 English
 -----------------------
