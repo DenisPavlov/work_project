@@ -8,7 +8,7 @@ PostgresQL для начинающих
 
 Wicket
 -----------------------
-8.2 Stateful pages
+10 Wicket Links and URL generation - Reference Documentation
 
 topjava
 -----------------------
