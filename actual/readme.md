@@ -12,7 +12,7 @@ Wicket
 
 topjava
 -----------------------
-- lesson03. Your questions
+- lesson03. Compleate optional 5 (not realization all test!!!)
 
 Головач курсы (многопоточность)
 -----------------------
