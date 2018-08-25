@@ -26,6 +26,7 @@
     - Ctrl + Shoft + Space - smart auto complete
     - Ctrl + Shift + Enter - авто дополнение кода
     - Alt + Ctrl + L - форматирование кода
+    - Ctrl + G - переход к строке
 БД
 
 	- F4 - сделать selekt *
