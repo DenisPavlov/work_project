@@ -27,6 +27,8 @@
     - Ctrl + Shift + Enter - авто дополнение кода
     - Alt + Ctrl + L - форматирование кода
     - Ctrl + G - переход к строке
+    - ALT + F - File menu
+    - Ctrl + Shift + V - умная вставка
 БД
 
 	- F4 - сделать selekt *
