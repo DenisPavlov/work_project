@@ -13,4 +13,5 @@
     -f | Перезаписывать файлы при копировании (если такие уже есть) без дополнительных предупреждений
     
 - Shift + PageUp - terminal scrol up
-- Shift + PageDown - terminal scrol down     
+- Shift + PageDown - terminal scrol down
+- skype & - запуск программы в фоне
