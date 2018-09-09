@@ -4,4 +4,4 @@
 - <a href="/help/idea.md">IDEA</a>
 - <a href="/help/scala.md">scala</a>
 - <a href="/help/wicket.md">Wicket</a>
-- <a href="/help/linux.md">Wicket</a>
+- <a href="/help/linux.md">Linux</a>
