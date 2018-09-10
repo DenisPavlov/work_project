@@ -3,3 +3,5 @@
 - <a href="https://habrahabr.ru/post/330676/">Клиент-сервер шаг — за — шагом, от однопоточного до многопоточного (tutorials.ClietnServerStepByStep)</a>
 - <a href="https://proselyte.net/tutorials/">Туториалы: Spring Framework, Hibernate, Java Core, JDBC</a>
 
+Mkyong
+- <a href="https://www.mkyong.com/java8/java-8-optional-in-depth/">Optional(package tutorials.mkyong.optional)</a>
