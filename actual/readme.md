@@ -10,6 +10,10 @@ Wicket
 -----------------------
 10 Wicket Links and URL generation - Reference Documentation
 
+Camel in action
+-----------------------
+1.4.2. Camel concepts. Processors
+
 topjava
 -----------------------
 - lesson04. end
