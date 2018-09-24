@@ -12,7 +12,7 @@ Wicket
 
 Camel in action
 -----------------------
-2.3.2. Using the Java DSL
+2.4.2. The spring DSL
 
 topjava
 -----------------------
