@@ -12,7 +12,7 @@ Wicket
 
 Camel in action
 -----------------------
-1.4.2. Camel concepts. Processors
+2.3.2. Using the Java DSL
 
 topjava
 -----------------------
