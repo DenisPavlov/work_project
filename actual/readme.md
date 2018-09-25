@@ -12,7 +12,7 @@ Wicket
 
 Camel in action
 -----------------------
-2.4.2. The spring DSL
+2.6.1. Using the otherwise clause
 
 topjava
 -----------------------
