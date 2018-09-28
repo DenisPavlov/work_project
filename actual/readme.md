@@ -12,7 +12,7 @@ Wicket
 
 Camel in action
 -----------------------
-2.6.4 Using recipient lists
+Part 2 Core Camel
 
 topjava
 -----------------------
