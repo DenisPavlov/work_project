@@ -12,7 +12,7 @@ Wicket
 
 Camel in action
 -----------------------
-2.5.1. Using the otherwise clause
+2.6.4 Using recipient lists
 
 topjava
 -----------------------
