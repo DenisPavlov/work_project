@@ -12,7 +12,7 @@ Wicket
 
 Camel in action
 -----------------------
-3.2 Transforming data using EIPs and java
+3.4 Transforming with data formats
 
 topjava
 -----------------------
