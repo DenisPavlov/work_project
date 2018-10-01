@@ -12,7 +12,7 @@ Wicket
 
 Camel in action
 -----------------------
-3.4 Transforming with data formats
+3.4.4  Using Camel’s JSON data format
 
 topjava
 -----------------------
