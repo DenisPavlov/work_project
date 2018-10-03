@@ -12,7 +12,7 @@ Wicket
 
 Camel in action
 -----------------------
-3.4.4  Using Camel’s JSON data format
+4.3.2  JndiRegistry
 
 topjava
 -----------------------
