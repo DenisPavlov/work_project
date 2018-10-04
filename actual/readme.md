@@ -12,7 +12,7 @@ Wicket
 
 Camel in action
 -----------------------
-4.3.2  JndiRegistry
+4.6 Summary and best practices
 
 topjava
 -----------------------
