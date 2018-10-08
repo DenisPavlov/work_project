@@ -12,7 +12,7 @@ Wicket
 
 Camel in action
 -----------------------
-5.2.6 Features of the error handlers
+5.4 Using exception policies
 
 topjava
 -----------------------
