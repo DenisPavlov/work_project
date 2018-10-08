@@ -12,7 +12,7 @@ Wicket
 
 Camel in action
 -----------------------
-5.4 Using exception policies
+1.3 Camel’s message model
 
 topjava
 -----------------------
