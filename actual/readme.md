@@ -12,7 +12,7 @@ Wicket
 
 Camel in action
 -----------------------
-2.3 Creating routes in Java
+2.4 Defining routes in XML
 
 topjava
 -----------------------
