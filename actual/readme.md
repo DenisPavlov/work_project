@@ -12,7 +12,7 @@ Wicket
 
 Camel in action
 -----------------------
-1.3 Camel’s message model
+2.3 Creating routes in Java
 
 topjava
 -----------------------
