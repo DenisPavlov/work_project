@@ -12,7 +12,7 @@ Wicket
 
 Camel in action
 -----------------------
-2.4 Defining routes in XML
+2.5 Endpoints revisited
 
 topjava
 -----------------------
