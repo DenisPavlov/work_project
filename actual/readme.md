@@ -12,7 +12,7 @@ Wicket
 
 Camel in action
 -----------------------
-2.5 Endpoints revisited
+2.6.2 Using message filter
 
 topjava
 -----------------------
