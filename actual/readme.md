@@ -12,7 +12,7 @@ Wicket
 
 Camel in action
 -----------------------
-2.6.2 Using message filter
+Part 2: Core Camel
 
 topjava
 -----------------------
