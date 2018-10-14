@@ -12,7 +12,7 @@ Wicket
 
 Camel in action
 -----------------------
-3.2 Transforming data by using EIPs and Java
+3.6 Understanding Camel type converters
 
 topjava
 -----------------------
