@@ -12,7 +12,7 @@ Wicket
 
 Camel in action
 -----------------------
-3.6 Understanding Camel type converters
+4.2 Understanding the Service Activator pattern
 
 topjava
 -----------------------
