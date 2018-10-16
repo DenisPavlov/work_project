@@ -12,7 +12,7 @@ Wicket
 
 Camel in action
 -----------------------
-4.2 Understanding the Service Activator pattern
+4.4.3 Some method-selection examples
 
 topjava
 -----------------------
