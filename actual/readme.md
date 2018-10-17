@@ -12,7 +12,8 @@ Wicket
 
 Camel in action
 -----------------------
-4.6 Using beans as predicates and expressions
+5 Enterprise integration patterns
+10.1.2 Using JAX-RS with REST services
 
 topjava
 -----------------------
