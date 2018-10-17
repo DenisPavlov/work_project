@@ -12,7 +12,7 @@ Wicket
 
 Camel in action
 -----------------------
-4.4.3 Some method-selection examples
+4.6 Using beans as predicates and expressions
 
 topjava
 -----------------------
