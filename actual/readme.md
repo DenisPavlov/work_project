@@ -13,7 +13,7 @@ Wicket
 Camel in action
 -----------------------
 5 Enterprise integration patterns
-10.1.5 Using camel-cxf with REST services
+10.2 The Camel Rest DSL
 
 topjava
 -----------------------
