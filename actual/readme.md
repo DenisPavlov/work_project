@@ -13,7 +13,7 @@ Wicket
 Camel in action
 -----------------------
 5 Enterprise integration patterns
-10.2.3 Using supported components for the Rest DSL
+10.2.5 Using Spring Boot configuration with Rest DSL
 
 topjava
 -----------------------
