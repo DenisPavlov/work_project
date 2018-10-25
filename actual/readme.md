@@ -12,8 +12,7 @@ Wicket
 
 Camel in action
 -----------------------
-5 Enterprise integration patterns
-10.2.5 Using Spring Boot configuration with Rest DSL
+5.5.2 Completion conditions for the Aggregator
 
 topjava
 -----------------------
