@@ -12,7 +12,7 @@ Wicket
 
 Camel in action
 -----------------------
-5.5.2 Completion conditions for the Aggregator
+5.3 The Splitter EIP
 
 topjava
 -----------------------
