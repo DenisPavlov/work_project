@@ -12,7 +12,7 @@ Wicket
 
 Camel in action
 -----------------------
-5.3 The Splitter EIP
+5.4 The Routing Slip EIP
 
 topjava
 -----------------------
