@@ -12,7 +12,7 @@ Wicket
 
 Camel in action
 -----------------------
-6 Using components
+6.3.2 Request-reply messaging
 
 topjava
 -----------------------
