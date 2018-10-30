@@ -12,7 +12,7 @@ Wicket
 
 Camel in action
 -----------------------
-5.4 The Routing Slip EIP
+6 Using components
 
 topjava
 -----------------------
