@@ -12,7 +12,7 @@ Wicket
 
 Camel in action
 -----------------------
-6.3.2 Request-reply messaging
+6.5 Working with databases: JDBC and JPA components
 
 topjava
 -----------------------
