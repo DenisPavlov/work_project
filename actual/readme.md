@@ -12,7 +12,7 @@ Wicket
 
 Camel in action
 -----------------------
-6.5 Working with databases: JDBC and JPA components
+7 Microservices
 
 topjava
 -----------------------
