@@ -12,7 +12,7 @@ Wicket
 
 Camel in action
 -----------------------
-7 Microservices
+7.2.3 WildFly Swarm with Camel as microservice
 
 topjava
 -----------------------
