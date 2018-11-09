@@ -12,7 +12,7 @@ Wicket
 
 Camel in action
 -----------------------
-7.3 Calling other microservices
+7.4.5 Using Hystrix with Camel
 
 topjava
 -----------------------
