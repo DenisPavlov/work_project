@@ -14,9 +14,9 @@ Camel in action
 -----------------------
 7.4.5 Using Hystrix with Camel
 
-topjava
+javabegin spring
 -----------------------
-- lesson04. end
+- 1
 
 Головач курсы (многопоточность)
 -----------------------
