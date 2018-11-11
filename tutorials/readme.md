@@ -5,3 +5,6 @@
 
 Mkyong
 - <a href="https://www.mkyong.com/java8/java-8-optional-in-depth/">Optional(package tutorials.mkyong.optional)</a>
+
+gradle
+- <a href="https://www.tutorialspoint.com/gradle/index.htm">tutorialspoint gradle</a>

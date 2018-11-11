@@ -1,3 +1,5 @@
+- <a href="https://help.ubuntu.ru/wiki/%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B0">справка</a>
+
 - fuser 1099/tcp - проверка порта (какой процесс на нем)
 - fuser -k 1099/tcp - убить процесс на порту
 
