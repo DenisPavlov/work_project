@@ -12,7 +12,7 @@ Wicket
 
 Camel in action
 -----------------------
-7.4.5 Using Hystrix with Camel
+7.4.4 Netflix Hystrix
 
 javabegin spring
 -----------------------
