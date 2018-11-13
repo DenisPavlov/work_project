@@ -12,7 +12,7 @@ Wicket
 
 Camel in action
 -----------------------
-7.4.4 Netflix Hystrix
+7.4.7 Bulkhead pattern
 
 javabegin spring
 -----------------------
