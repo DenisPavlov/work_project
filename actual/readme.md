@@ -12,7 +12,7 @@ Wicket
 
 Camel in action
 -----------------------
-7.4.7 Bulkhead pattern
+8 Developing Camel projects
 
 javabegin spring
 -----------------------
