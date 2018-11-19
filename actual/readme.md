@@ -12,7 +12,7 @@ Wicket
 
 Camel in action
 -----------------------
-8.4.2 Diving into the implementation
+9 Testing
 
 javabegin spring
 -----------------------
