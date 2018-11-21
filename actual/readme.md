@@ -12,7 +12,7 @@ Wicket
 
 Camel in action
 -----------------------
-9 Testing
+9.2.2 Camel resting with Spring Java Config
 
 javabegin spring
 -----------------------
