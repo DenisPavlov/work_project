@@ -12,7 +12,7 @@ Wicket
 
 Camel in action
 -----------------------
-9.2.7 Camel testing with WildFly
+9.3.5 Using mocks to simulate real components
 
 javabegin spring
 -----------------------
