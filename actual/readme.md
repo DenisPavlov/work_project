@@ -16,7 +16,10 @@ Camel in action
 
 javabegin spring
 -----------------------
-- 14 -complete
+- 18 -complete
+
+prospring4
+- закончил главу 2
 
 Головач курсы (многопоточность)
 -----------------------
