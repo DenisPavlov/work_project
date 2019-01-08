@@ -2,33 +2,17 @@ sql-tutorial.ru
 ------------------------
 начать сначала
 
-PostgresQL для начинающих
--------------------------
-стр.59
-
-Wicket
------------------------
-10 Wicket Links and URL generation - Reference Documentation
-
 Camel in action
 -----------------------
-9.3.5 Using mocks to simulate real components
+9 Testing
 
-javabegin spring
+Spring в действии 
 -----------------------
-- 19 -complete
-
-prospring4
------------------------
-- стр.54 Инверсия управления и внедрение зависимостей
+- стр 36 1.1.2 Внедрение зависимостей
 
 Головач курсы (многопоточность)
 -----------------------
 - https://www.youtube.com/watch?v=Mnid3x23idw&list=PLoij6udfBncgyV-7Y0lEh0EwfkpcAoBeK&index=9
-
-English
------------------------
-- Beginners (второе видео - посмотрел)
 
 Что доделать
 -----------------------
