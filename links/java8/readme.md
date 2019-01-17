@@ -5,6 +5,7 @@
 
 #### Date ant Time API
 - <a href="http://www.mscharhag.com/2014/02/java-8-datetime-api.html">Java 8 Date and Time API(Eng)</a>
+- <a href="https://habr.com/ru/post/274905/">Java и время (исследованы некоторые нюансы)</a>
 
 #### Lambda
 - <a href="http://www.youtube.com/watch?v=_PDIVhEs6TM">Видео: Доступно о Java 8 Lambda</a>
