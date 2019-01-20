@@ -23,14 +23,15 @@
 - \c  test - переключчиться на БД test
 - \d - посмотреть какие таблицы есть в БД
 - \q - завершить сеанс
+- create database test; - создать БД test
+- create user test with password 'test'; - создать пользователя test
+- GRANT ALL ON DATABASE test TO test; - дать права юзеру на БД
 
-  - create database test; - создать БД test
   - create table courses(c_no text PRIMARY KEY, title text ); - создать таблицу
   - \help create table - попросить справку по команде create table
   - insert into courses (c_no, title, hours) values ('CS301', 'Базы данных', 30); - вставить данные в таблицу
   - SELECT title AS course_title, hours FROM courses ; - select запрос
-  - 
-
+  
 
 
 Пользователи:
