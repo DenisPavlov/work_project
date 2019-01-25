@@ -16,7 +16,10 @@
     
 - mkdir - создание папки
 -     
-- rm - delete folder    
+- rm - delete folder   
+- tree -d src/ - посмотреть дерево каталогов 
+- tree -h src/ - посмотерть дерево каталогов в месте с файлами
+- ls -la - посмотреть скрытые папки
     
 - Shift + PageUp - terminal scrol up
 - Shift + PageDown - terminal scrol down
