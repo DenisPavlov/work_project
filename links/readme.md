@@ -39,6 +39,7 @@
 ### Разное
 - <a href="https://habr.com/post/150186/">Шпаргалка по SCJP. Часть первая</a>
 - <a href="https://habr.com/post/150193/">Шпаргалка по SCJP. Часть вторая</a>
+- <a href="https://www.digitalocean.com/community/tutorials/oauth-2-ru">Введение в OAuth 2</a>
 
 -----
 - <a href="https://habrahabr.ru/post/197802/">А знаете ли Вы, что возвращает .getClass()?</a>

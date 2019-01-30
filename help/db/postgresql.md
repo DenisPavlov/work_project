@@ -3,6 +3,10 @@
 - sudo journalctl -xeu postgresql - посмотеть лог
 - sudo -u postgres psql - запустить psql
 
+##Установка 
+- sudo apt-get update
+- sudo apt-get install postgresql postgresql-contrib
+
 ## psql
 ### Команды
 - \? - посмотеть команды
