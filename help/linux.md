@@ -20,6 +20,7 @@
 - tree -d src/ - посмотреть дерево каталогов 
 - tree -h src/ - посмотерть дерево каталогов в месте с файлами
 - ls -la - посмотреть скрытые папки
+- cat имя_файла - вывести содержимое файла в консоль
     
 - Shift + PageUp - terminal scrol up
 - Shift + PageDown - terminal scrol down
