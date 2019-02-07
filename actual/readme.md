@@ -13,8 +13,9 @@ Spring в действии
 
 topjava
 ---
-- Видео - 3. Работа с проектом (выполнять инструкции)
+- Видео - lesson01 - 1. Optional: реализация getFilteredMealsWithExcess через Stream API
 - Сылки - Java 8: Lambda выражения
+  - lesson01 - data transfer object naming convention
 - ДЗ - сделал HW0 но без супер optional
 
 Головач курсы (многопоточность)
