@@ -18,6 +18,10 @@ topjava
   - lesson01 - data transfer object naming convention
 - ДЗ - сделал HW0 но без супер optional
 
+JS
+---
+- стр 180 - Структуры данных
+
 Головач курсы (многопоточность)
 -----------------------
 - https://www.youtube.com/watch?v=Mnid3x23idw&list=PLoij6udfBncgyV-7Y0lEh0EwfkpcAoBeK&index=9
