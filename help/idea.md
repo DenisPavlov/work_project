@@ -52,6 +52,7 @@
 	- Alt + вверх или вниз - перебор методов в классе
 	- Ctrl + Shift + Backspace - переход в предыдущую локацию
     - Alt + вниз/вверх - на xml контексте прыгать по бинам
+    - Ctrl + B - провалиться в метод (замена ctrl + left click)
 git
 
 	- Ctrl + Shift + K - commit and push
