@@ -1,1 +1,5 @@
-alert( 0.1 + 0.2 == 0.3 );
+var user = {};
+user.name = 'Вася';
+user.surname = 'Петров';
+user[name] = 'Сергей';
+delete user.name;
