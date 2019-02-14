@@ -1,16 +1,9 @@
-function multiplyNumeric(obj) {
-    for (var key in obj) {
-        if (!isNaN(obj[key])) {
-            obj[key] = obj[key] * 2;
-        }
-    }
-    return obj;
-}
-
-var menu = {
-    width: 200,
-    height: 300,
-    title: "My menu"
-};
-
-alert(multiplyNumeric(menu).toString())
+var styles = ['Джаз','Блюз'];
+alert(styles)
+styles.push('Рок-н-Ролл');
+alert(styles)
+styles[styles.length-2] = 'Классика';
+alert(styles)
+alert(styles.shift());
+styles.unshift('Рэп', 'Регги');
+alert(styles)
