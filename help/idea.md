@@ -23,13 +23,14 @@
     - Shift + F11 - посмотреть все маркеры
     - Alt + Home - вызвать navigation bar
     - Ctrl + Стрелочка вниз/вверх - прыгать по методам
-    - Ctrl + Shoft + Space - smart auto complete
+    - Ctrl + Shift + Space - smart auto complete
     - Ctrl + Shift + Enter - авто дополнение кода
     - Alt + Ctrl + L - форматирование кода
     - Ctrl + G - переход к строке
     - ALT + F - File menu
     - Ctrl + Shift + V - умная вставка
     - Ctrl + '+'/'-' - раскрыть/скрыть скрытый блок кода (нужно встать на этот блок)
+    - Ctrl + Alt + M - вынести в отдельный метод (выделить код и нажать сочетание клавиш)
 БД
 
 	- F4 - сделать selekt *
@@ -47,6 +48,7 @@
 	- Ctrl + N - поиск по имени класса
 	- Ctrl + Shift + A - поиск опций IDEA
 	- Ctrl + Shift + N - поиск файлов
+	- Ctrl + Shift + E - недавно используемые файлы
 	- Alt + -> - переключение вкладок
 	- Ctrl + B (когда стоишь на методе) - переходит на ссылку на этот метод или переход на класс
 	- Ctrl + Tab - switcher

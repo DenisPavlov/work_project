@@ -17,6 +17,7 @@ topjava
 - Сылки - Java 8: Lambda выражения
   - lesson01 - Вопросы по HW0
 - ДЗ - сделал HW0 но без супер optional
+- настроить на своем ноуте - Navigate -> back (Ctrl + Alt + Left)
 
 JS
 ---
