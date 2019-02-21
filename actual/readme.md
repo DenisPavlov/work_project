@@ -14,7 +14,7 @@ Spring в действии
 
 topjava
 ---
-- Видео - 5. Maven.
+- Видео - 6. WAR. Веб-контейнер Tomcat. Сервлеты.
 - Сылки - Java 8: Потоки
 - ДЗ - сделал HW0 но без супер optional
 - настроить на своем ноуте - Navigate -> back (Ctrl + Alt + Left)
