@@ -5,3 +5,4 @@
 - <a href="/help/scala.md">scala</a>
 - <a href="/help/wicket.md">Wicket</a>
 - <a href="/help/linux.md">Linux</a>
+- <a href="/help/tomcat.md">Tomcat</a>
