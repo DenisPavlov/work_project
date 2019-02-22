@@ -14,3 +14,4 @@
 - <a href="http://www.niceandeasy.me/">Память и подобное</a>
 - <a href="http://dev.cheremin.info/">Рабочие заметки (Java)</a>
 - <a href="https://vertex-academy.com/tutorials/ru/">vertex (статьи по Java)</a>
+- <a href="https://alexkosarev.name/">Интересно почитать про экосистему java</a>
