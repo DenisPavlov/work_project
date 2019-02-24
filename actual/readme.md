@@ -16,7 +16,7 @@ topjava
 ---
 - Видео - 5. Обзор Spring Framework. Spring Context.
 - Сылки - Java 8: Потоки
-- ДЗ - нужно делать для урока 2
+- ДЗ - lesson 2 task 3 - complete
 - настроить на своем ноуте - Navigate -> back (Ctrl + Alt + Left)
 
 JS
