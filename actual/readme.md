@@ -14,9 +14,9 @@ Spring в действии
 
 topjava
 ---
-- Видео - 7. Логгирование
+- Видео - 5. Обзор Spring Framework. Spring Context.
 - Сылки - Java 8: Потоки
-- ДЗ - сделал HW0 но без супер optional
+- ДЗ - нужно делать для урока 2
 - настроить на своем ноуте - Navigate -> back (Ctrl + Alt + Left)
 
 JS
