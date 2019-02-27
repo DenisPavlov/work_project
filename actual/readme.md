@@ -15,7 +15,7 @@ topjava
 ---
 - Видео - 5. Обзор Spring Framework. Spring Context.
 - Сылки - Java 8: Потоки
-- ДЗ - lesson 2 task 4 - в процессе выполнения
+- ДЗ - lesson 2 - доделал
 
 JS
 ---
