@@ -13,7 +13,7 @@ Spring в действии
 
 topjava
 ---
-- Видео - 5. Обзор Spring Framework. Spring Context.
+- Видео - 2. Вопросы по API и слоям приложения - еще не посмотрел
 - Сылки - Java 8: Потоки
 - ДЗ - lesson 2 - доделал
 
