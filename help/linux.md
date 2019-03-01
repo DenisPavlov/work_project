@@ -25,3 +25,4 @@
 - Shift + PageUp - terminal scrol up
 - Shift + PageDown - terminal scrol down
 - skype & - запуск программы в фоне
+- etc/enviroment TOPJAVA_ROOT="/home/denis/projects/topjava" - добавить переменную окружения
