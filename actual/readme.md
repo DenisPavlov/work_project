@@ -13,7 +13,7 @@ Spring в действии
 
 topjava
 ---
-- Видео - 4. Тестирование через JUnit.
+- Видео - lesson 3 - 7. Настройка Database в IDEA.
 - Сылки - Java 8: Потоки
 - ДЗ - lesson 2 - доделал
 
