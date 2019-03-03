@@ -13,9 +13,9 @@ Spring в действии
 
 topjava
 ---
-- Видео - lesson 3 - 7. Настройка Database в IDEA.
+- Видео - lesson 3 - закончил все видео
 - Сылки - Java 8: Потоки
-- ДЗ - lesson 2 - доделал
+- ДЗ - lesson 3 - доделал
 
 JS
 ---
