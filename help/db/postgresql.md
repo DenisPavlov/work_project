@@ -7,6 +7,12 @@
 - sudo apt-get update
 - sudo apt-get install postgresql postgresql-contrib
 
+### создание базы и юзера
+- sudo -u postgres psql
+- CREATE DATABASE topjava;
+- CREATE USER "user" WITH password 'password';
+- GRANT ALL PRIVILEGES ON DATABASE topjava TO "user";
+
 ## psql
 ### Команды
 - \? - посмотеть команды
