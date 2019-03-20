@@ -9,6 +9,7 @@ Camel in action
 Spring в действии 
 -----------------------
 - стр 433 Глава 10. Безопасность в Spring
+- пока не подниму spitter web не приступать к чтению (после topjava web)
 
 topjava
 ---
