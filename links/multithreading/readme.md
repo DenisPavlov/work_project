@@ -27,6 +27,9 @@
 - <a href="https://www.youtube.com/watch?v=dLDhB6SRXzw">Java. Многопоточность (лекция 9) Технопарк mail.ru Видео</a>
 - <a href="https://habr.com/company/luxoft/blog/157273/">Обзор java.util.concurrent.*</a>
 - <a href="http://www.skipy.ru/technics/synchronization.html">Синхронизация потоков</a>
+- <a href="https://javarush.ru/groups/posts/2047-threadom-java-ne-isportishjh--chastjh-i---potoki">Thread'ом Java не испортишь: Часть I — потоки</a>
+- <a href="https://javarush.ru/groups/posts/2048-threadom-java-ne-isportishjh--chastjh-ii---sinkhronizacija">Thread'ом Java не испортишь: Часть II — синхронизация</a>
+- <a href="https://javarush.ru/groups/posts/2060-threadom-java-ne-isportishjh--chastjh-iii---vzaimodeystvie">Thread'ом Java не испортишь: Часть III - взаимодействие</a>
 
 
 ### Проработано
