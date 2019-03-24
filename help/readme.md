@@ -7,3 +7,4 @@
 - <a href="/help/linux.md">Linux</a>
 - <a href="/help/tomcat.md">Tomcat</a>
 - <a href="/help/tools.md">Tools</a>
+- <a href="/help/chrome.md">chrome</a>
