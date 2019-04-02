@@ -1,5 +1,5 @@
-- <a href="https://habrahabr.ru/post/260767/">Обработка строк в Java. Часть I: String, StringBuffer, StringBuilder</a>
-- <a href="http://www.java67.com/2014/08/difference-between-string-literal-and-new-String-object-Java.html">String literal pool</a>
-- <a href="https://habr.com/post/79913/">Все о String.intern()</a>
-- <a href="http://tlazarenko.blogspot.com/2013/10/string-java.html">Почему класс String в Java так важен?</a>
-- <a href="https://www.youtube.com/watch?v=QlrPy1wvBzg">создание сайта с помощью фреймворка Spring Boot</a>
+- <a href="https://habrahabr.ru/post/139421/">Spring Data на примере JPA</a>
+- <a href="https://habrahabr.ru/post/113945/">Кеширование в Spring Framework 3.1</a>
+- <a href="https://habrahabr.ru/post/343960/">Настройка валидации DTO в Spring Framework</a>
+- <a href="https://alexkosarev.name/2017/02/08/spring-framework-database-spring-data-jpa/">Spring Data JPA (основы)</a>
+
