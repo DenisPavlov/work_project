@@ -24,9 +24,24 @@
         <!--db-->
         <postgresql.version>42.1.4</postgresql.version>
 
+        <spring.version>4.3.3.RELEASE</spring.version>
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <!--tests-->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+
         <!--DB-->
         <dependency>
             <groupId>org.postgresql</groupId>
