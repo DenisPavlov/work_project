@@ -7,4 +7,4 @@
 - <a href="https://habr.com/ru/post/222579/">Этапы инициализации контекста</a>
 
 ### Video
-- <a href="https://www.youtube.com/watch?v=hDpa6m48eC4&index=15&list=PLVe-2wcL84b8qDFSA2rpbpuE3OTkEbAwe">Spring the Ripper (Евгений Борисов)</a> - <a href="">Код</a>
+- <a href="https://www.youtube.com/watch?v=hDpa6m48eC4&index=15&list=PLVe-2wcL84b8qDFSA2rpbpuE3OTkEbAwe">Spring the Ripper (Евгений Борисов)</a> - <a href="https://github.com/DenisPavlov/work_project/tree/master/src/main/java/links/jpoint">Код</a>
