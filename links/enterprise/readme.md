@@ -7,3 +7,6 @@
 ### REST
 - <a href="http://spring-projects.ru/understanding/hateoas/">Понимание HATEOAS</a>
 - <a href="https://www.youtube.com/watch?v=G9apMqwRedA">Хорошее видео по новому стилю REST</a> + <a href="https://github.com/vtsukur/spring-rest-black-market">github example</a>
+
+### Testing
+- <a href="https://www.petrikainulainen.net/programming/testing/writing-clean-tests-naming-matters/">Статья про название тестовых методова и классов(Eng)</a>
