@@ -32,3 +32,5 @@
 - kill PID - убить процесс
 
 - jps - посмотреть процессы java
+
+- Запуск visualvm - visualvm --jdkhome '/home/denis/java/jdk1.8.0_181' --openpid process_id
