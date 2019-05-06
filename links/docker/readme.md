@@ -1,2 +1,2 @@
-- <a href="https://habr.com/post/310460/">docker tutorial in habl</a>
+- <a href="https://habr.com/post/310460/">docker tutorial in habr</a>
 - <a href="https://www.digitalocean.com/community/tutorials/docker-ubuntu-16-04-ru">Как установить и использовать Docker в Ubuntu 16.04</a>
