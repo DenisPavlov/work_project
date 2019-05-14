@@ -30,17 +30,17 @@ fun isLetter(c: Char) = c in 'a'..'z' || c in 'A'..'Z'
 ````
 
 - можно поменять имя импортируемого класса или функции с помощью ключевого слова **as**
-````
+````kotlin
 import string.lastChar as last
 ````
 
 - вызов с оператором распаковки массива. В этом случае массив args распакуется в отдельные элементы
-````
+````kotlin
 val list = listOf("args: ", *args)
 ````
 
 - инфиксный вызов метода (обе записи эквивалентны)
-````
+````kotlin
 1.to("one")
 1 to "one"
 
@@ -73,9 +73,39 @@ class Button : Clickable, Focusable {
         super<Focusable>.showOff() // можно обратиться к нужному интерфейсу
     }
 }
+````
+- модификатор видимости <code>internal</code> - видимость в пределах модуля
+- модификатор доступа <code>private</code> - видимость в пределах файла
+
+Модификаторы видимости в Kotlin
+
+Модификатор | Член класса | Объявление верхнего уровня
+--- | --- | ---
+`public`(по умолчанию) | Доступен повсюду | Доступен повсюду
+`internal` | Доступен только в модуле | Доступен в модуле
+`protected` | Доступен в подклассах | -
+`private` | Доступен в классах | Доступен в файле
+
+- обращение к внутреннему классу
+````kotlin
+class Outer {
+    inner class Inner {
+        fun getOuterReference(): Outer = this@Outer
+    }
+}
+````
+
+- ограничение количества наследников
+````kotlin
+sealed class Expr {
+    class Num(val value: Int) : Expr()
+    class Sum(val left: Expr, val right: Expr) : Expr()
+}
+````
 
 ### Создание коллекций
-````
+
+````kotlin
 val set = hashSetOf(1, 7, 53)
 val list = arrayListOf(1, 7, 53)
 val map = hashMapOf(1 to "one", 7 to "seven", 53 to "fifty-three")
