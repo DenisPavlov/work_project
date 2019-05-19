@@ -103,6 +103,48 @@ sealed class Expr {
 }
 ````
 
+- сравнение ссылок на объекты - <code>===</code>
+
+- использование делегатов
+````kotlin
+class DelegationCollection<T>(
+    innerList: ArrayList<T>
+) : Collection<T> by innerList {}
+````
+
+- объявление объекта одиночки
+````kotlin
+object Singleton
+````
+
+- объект компаньон
+````kotlin
+class A {
+    companion object {
+        fun bar() {
+            println("Companion object called")
+        }
+    }
+}
+
+fun main(args: Array<String>) {
+    A.bar()
+}
+````
+
+- объекты выражения (аналог анонимных объектов в Java)
+````kotlin
+object : MouseAdapter() {
+    override fun mouseClicked(e : MouseEvent) {
+    //not implement
+    }
+}
+````
+
+
+
+
+
 ### Создание коллекций
 
 ````kotlin
