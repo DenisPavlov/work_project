@@ -141,6 +141,23 @@ object : MouseAdapter() {
 }
 ````
 
+### Лямбда выражения
+
+- синтаксис лямбда выражений
+````kotlin
+{ x: Int, y: Int -> x + y }
+````
+
+- ссылка на конструктор
+````kotlin
+data class Person(val name: String, val age: Int)
+
+fun main() {
+    val createPerson = ::Person
+    val p = createPerson("Alice", 29)
+    println(p)
+}
+````
 
 
 
