@@ -159,9 +159,18 @@ fun main() {
 }
 ````
 
+## Работа с null
+- оператор безопасного вызова - <code>?.</code>. Следующие выражения эквивалентны
+````kotlin
+val allCaps: String? = s?.toUpperCase()
+val allCaps: String? = if(s != null) s.toUpperCase() else null
+````
 
-
-
+- оператор элвис (замена null дефолтным знаением) - <code>?:</code>
+````kotlin
+fun strLenSafe(s: String?): Int = s?.length ?: 0
+ ````
+ 
 ### Создание коллекций
 
 ````kotlin
