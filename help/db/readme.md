@@ -4,37 +4,52 @@
 SQL для простых смертных.
 ------------------------
 
-- SHOW DATABASES; - показать все БД пользователя
-- CREATE DATABASE database name; - создать БД
-- DROP DATABASE database name; - удалить БД
-- USE events; - использовать БД (переключится на нее для выполнения запросов)
-- SHOW tables; - показать таблицы ДБ
-- CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password'; - создать пользователя
-- SELECT USER from mysql.user; - посмотеть всех пользовтелей mysql
-- GRANT ALL PRIVILEGES ON stepic.* TO 'newuser'@'localhost'; - дать права плдбзователю на все таблицы базы stepic
-- UPDATE table_reference SET assignment_list - обновить значение
-- delete from billing where предикат- удаление строк из таблицы
+- **SHOW DATABASES** - показать все БД пользователя
+- **CREATE DATABASE** database name; - создать БД
+- **DROP DATABASE** database name; - удалить БД
+- **USE** events; - использовать БД (переключится на нее для выполнения запросов)
+- **SHOW** tables; - показать таблицы ДБ
+- **CREATE USER** 'newuser'@'localhost' IDENTIFIED BY 'password'; - создать пользователя
+- **SELECT USER** from mysql.user; - посмотеть всех пользовтелей mysql
+- **GRANT ALL PRIVILEGES ON** stepic.* **TO** 'newuser'@'localhost'; - дать права плдбзователю на все таблицы базы stepic
+- **UPDATE** table_reference **SET** assignment_list - обновить значение
+- **DELETE** from billing where предикат - удаление строк из таблицы
 
-- DISTINCT - исключить дублирующиеся значения;
-- ALL - противоположно DISTINCT
-- IN - полностью определяет множество, которому данное значение может принадлежать или не принадлежать (where SNUM in (1002, 1001, 1005))
-- BETWEEN - задает границы множества (where COMM between .11 and .14)
-- LIKE - используется для поиска подстрок, смотрит, входит ли заданная подстрока в указанное поле (where CNAME like 'G%s')
-	- символ "подчеркивание" (_) - заменяет один любой символ
-	- символ "процент" (%) - заменяет последовательность символов произвольной длинны, в том числе и нулевой
-	- escape символ -  поиск слова начинающегося на 'P' и содержащее _ (where SNAME like 'P%/_%'escape'/')
-- IS NULL - проверяет значение на NULL (where CITY is null)
-- IS NOT NULL - проверят, что значение не NULL
-- EXISTS - Предикат EXISTS принимает значение TRUE, если подзапрос содержит любое количество строк, иначе его значение равно FALSE. Для NOT EXISTS все наоборот. Этот предикат никогда не принимает значение UNKNOWN.
+- **DISTINCT** - исключить дублирующиеся значения;
+- **ALL** - противоположно DISTINCT
+- **IN** - полностью определяет множество, которому данное значение может принадлежать или не принадлежать
+````sql
+WHERE SNUM IN (1002, 1001, 1005)
+````
+- **BETWEEN** - задает границы множества 
+````sql
+WHERE COMM BETWEEN .11 AND .14
+````
+- **LIKE** - используется для поиска подстрок, смотрит, входит ли заданная подстрока в указанное поле
+    ````sql
+    WHERE CNAME LIKE 'G%s'
+    ````
+    - символ *подчеркивание* <code>_</code> - заменяет один любой символ
+	- символ *процент* <code>%</code> - заменяет последовательность символов произвольной длинны, в том числе и нулевой
+	- *escape* символ -  поиск слова начинающегося на 'P' и содержащее _ 
+    ````sql
+    WHERE SNAME LIKE 'P%/_%'ESCAPE'/')
+    ````
+- **IS NULL** - проверяет значение на NULL
+````sql
+WHERE CITY IS NULL)
+````
+- **IS NOT NULL** - проверят, что значение **не** NULL
+- **EXISTS** - Предикат EXISTS принимает значение TRUE, если подзапрос содержит любое количество строк, иначе его значение равно FALSE. Для NOT EXISTS все наоборот. Этот предикат никогда не принимает значение UNKNOWN.
 ````sql
 SELECT c.id, c.name FROM category AS c 
   WHERE NOT EXISTS (SELECT * FROM category_has_good AS cg
         WHERE cg.category_id = c.id)
 ````
-- ANI - 
-- предикат с ALL - принимает значение истина, если каждое значение, в подзапросе, удовлетворяет условию внешнего подзапроса
+- **ANI** - 
+- предикат с **ALL** - принимает значение истина, если каждое значение, в подзапросе, удовлетворяет условию внешнего подзапроса
 - SOME - 
-- UPDATE <название таблицы> SET <название столбца> <значение> where <предикат> - обновить данные в строке
+- **UPDATE** <название таблицы> **SET** <название столбца> <значение> **WHERE** <предикат> - обновить данные в строке
 - изменение таблицы
 ````sql
 ALTER TABLE client 
@@ -43,8 +58,8 @@ DROP COLUMN code,
 ADD COLUMN source_id INT NOT NULL,
 ADD CONSTRAINT fk_a_id FOREIGN KEY (source_id) REFERENCES source(id);
 ````
-			Агрегатные функции (select sum(AMT) from orders;)
-			-------------------------------------------------
+
+###Агрегатные функции (select sum(AMT) from orders;)
 
 - COUNT - определяет количество строк или значений поля (не являющихся NULL)
 - COUNT(DISTINCT) - подсчет различных значений данного поля (select count(distinct snum) from orders;)
