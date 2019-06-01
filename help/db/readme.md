@@ -59,7 +59,7 @@ ADD COLUMN source_id INT NOT NULL,
 ADD CONSTRAINT fk_a_id FOREIGN KEY (source_id) REFERENCES source(id);
 ````
 
-##Агрегатные функции
+## Агрегатные функции
 
 - **COUNT** - определяет количество строк или значений поля (не являющихся NULL)
 - **COUNT ( DISTINCT )** - подсчет различных значений данного поля
@@ -78,9 +78,12 @@ SELECT SNUM, max(AMT) FROM orders GROUP BY SNUM
 - **HAVING** - является указателем на результат выполнения агрегатных функций. Оператор **HAVING** аналогичен оператору 
 **WHERE** за тем исключением, что применяется не для всего набора столбцов таблицы, а для набора созданного оператором 
 **GROUP BY** и применяется всегда строго после него.
-````sql
-SELECT SNUM, max(AMT) FROM orders GROUP BY SNUM HAVING max(AMT) > 10
-````
+    ````sql
+    SELECT SNUM, max(AMT) FROM orders GROUP BY SNUM HAVING max(AMT) > 10
+    ````
+    - условия в HAVING не могут ссылаться на псевдонимы
+    - условия в HAVING могут использовать агрегатные функции
+    - предложение HAVING может использоваться и без предложения GROUP BY 
 - **ORDER BY** - упорядочивает в соответствии со значениями одного или нескольуих столбцов. Всегда является последним 
 выражением в операторе SELECT
 ````sql
@@ -92,7 +95,7 @@ SELECT * FROM orders ORDER BY ONUM DESC
 - **INTERSECT** - (пересечение) строки, которые содержаться в результате каждого из участвующих запросов
 - **MINUS** - (разность) строки, содержащиеся в одном, но отсутствубщие в другом запросе
 
-##Вложенные запросы 
+## Вложенные запросы 
 
  ````sql
 SELECT * FROM orders WHERE 
@@ -117,7 +120,7 @@ SELECT * FROM orders WHERE
 - CHR(ASCII-код) - возвращает символ соответствующий коду
 - VALUE(строка) - возвращает строку в виде числа ('1' - 1)
 
-##Типы JOIN
+## Типы JOIN
 - ![Logo](../2.jpg)
 
 ## Date
@@ -135,3 +138,12 @@ SELECT ip_address, port, timestamp FROM proxy.good_proxy WHERE timestamp::date =
 explain
 SELECT * FROM stepic.billing;
 ````
+
+##Порядок выполнения запроса
+####SELECT
+1. FROM
+2. WHERE
+3. GROUP BY
+4. HAVING
+5. SELECT
+6. ORDER BY
