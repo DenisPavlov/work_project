@@ -139,8 +139,8 @@ explain
 SELECT * FROM stepic.billing;
 ````
 
-##Порядок выполнения запроса
-####SELECT
+## Порядок выполнения запроса
+#### SELECT
 1. FROM
 2. WHERE
 3. GROUP BY
