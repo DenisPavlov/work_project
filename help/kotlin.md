@@ -6,9 +6,9 @@
 - java -jar <имя jar файла>
 
 ## Синтаксис
-- e as Num - явное приведение типа
-- is - определяется принадлежность к определенному типу
-- val oneToTen = 1..10 - диапазон
+- <code>e as Num</code> - явное приведение типа
+- <code>is</code> - определяется принадлежность к определенному типу
+- <code>val oneToTen = 1..10</code> - диапазон
 
 - обычный цикл по числам
 ````Kotlin
@@ -54,8 +54,9 @@ val(number, name) = 1 to "one"
 ````
 
 - создание регулярного выражения
-````
-"\\.|-".toRegex()
+
+````kotlin
+val regexp =  "\\.|-".toRegex()
 ````
 
 - тройные кавычки позволяют
@@ -94,7 +95,6 @@ class Outer {
     }
 }
 ````
-
 - ограничение количества наследников
 ````kotlin
 sealed class Expr {
@@ -102,9 +102,7 @@ sealed class Expr {
     class Sum(val left: Expr, val right: Expr) : Expr()
 }
 ````
-
 - сравнение ссылок на объекты - <code>===</code>
-
 - использование делегатов
 ````kotlin
 class DelegationCollection<T>(
@@ -112,7 +110,7 @@ class DelegationCollection<T>(
 ) : Collection<T> by innerList {}
 ````
 
-- объявление объекта одиночки
+- объявление объекта одиночки(singleton)
 ````kotlin
 object Singleton
 ````
@@ -159,8 +157,8 @@ fun main() {
 }
 ````
 
-## Работа с null
-- оператор безопасного вызова - <code>?.</code>. Следующие выражения эквивалентны
+### Работа с null
+- оператор безопасного вызова - <code>?.</code> Следующие выражения эквивалентны
 ````kotlin
 val allCaps: String? = s?.toUpperCase()
 val allCaps: String? = if(s != null) s.toUpperCase() else null
@@ -170,6 +168,36 @@ val allCaps: String? = if(s != null) s.toUpperCase() else null
 ````kotlin
 fun strLenSafe(s: String?): Int = s?.length ?: 0
  ````
+- безопасное приведение типов **as?**
+````kotlin
+a as? String
+if(a is String) a as String else null 
+````
+- преобразует любое значение к не null типу - <code>!!</code> Чтобы было выбрашено исключение не нужно даже обращаться к
+переменной. В примере будет: <code>kotlin.KotlinNullPointerException</code>
+````kotlin
+val a: String? = null
+val b: String = a!!
+````
+
+### Специальные функции
+- **let** - превращает объект вызова в параметр лямбда выражения. Позволяет вычеслить выражение, проверить его на null и сохранить его в переменной. Чаще всего используется
+ для передачи аргумента который м.б. равен null в не null параметр.
+````kotlin
+ fun sendEmailTo(email: String) {
+     println("Sending email to $email")
+ }
+ 
+ fun main() {
+     var email: String? = "yole@example.com"
+     email?.let { sendEmailTo(it) }
+     email = null
+     email?.let { sendEmailTo(it) }
+     
+     //эквивалентно
+     if(email != null) sendEmail(email)
+ }
+````
  
 ### Создание коллекций
 
@@ -179,5 +207,5 @@ val list = arrayListOf(1, 7, 53)
 val map = hashMapOf(1 to "one", 7 to "seven", 53 to "fifty-three")
 ````
 
-##Tools
+## Tools
 - Kotlin REPL
