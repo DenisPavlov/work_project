@@ -181,8 +181,9 @@ val b: String = a!!
 ````
 
 ### Специальные функции
-- **let** - превращает объект вызова в параметр лямбда выражения. Позволяет вычеслить выражение, проверить его на null и сохранить его в переменной. Чаще всего используется
- для передачи аргумента который м.б. равен null в не null параметр.
+- **let** - Вызывает заданную функцию [block] со значением `this` в качестве аргумента и возвращает результат. 
+Превращает объект вызова в параметр лямбда выражения. Позволяет вычеслить выражение, проверить его на null и сохранить 
+его в переменной. Чаще всего используется для передачи аргумента который м.б. равен null в не null параметр.
 ````kotlin
  fun sendEmailTo(email: String) {
      println("Sending email to $email")
@@ -198,7 +199,66 @@ val b: String = a!!
      if(email != null) sendEmail(email)
  }
 ````
- 
+ - **with** - Вызывает определённую функцию [block] с данным [receiver] в качестве своего получателя и возвращает 
+ результат. Позволяет выполнить несколько операций над одним объектом, не повторяя его имени. Функция возвращает 
+ результат последнего выражения в теле лямбда-выражения.
+````kotlin
+// выводим все буквы алфавита
+fun printAlphabet() = with(StringBuilder()){
+    for (letter in 'A'..'Z'){
+        append(letter)
+    }
+    toString()
+} 
+````
+- **apply** - Вызывает определённую функцию [block] со значением `this` в качестве своего получателя и возвращает 
+значение `this`. Полезна в тех случаях, когда требуется создание экземпляра, у которого следует инициализировать 
+некоторые свойства. 
+````kotlin
+val button = findViewById<Button>(R.id.button)
+button.text = "I am a button"
+button.textSize =18.0F
+button.setBackgroundColor(Color.RED)
+
+//эквивалент через apply
+
+val button = findViewById<Button>(R.id.button)
+button.apply{
+    text = "I am a button"
+    textSize = 18.0F
+    setBackgroundColor(Color.RED)
+}
+````
+- **also** - Метод для обмена значениями между двумя переменными без участия третьей переменной.
+````kotlin
+var x = 100
+var y = 25
+x = y.also { y = x }
+
+class Cat(var age: Int)
+val result = Cat(5).also { it.age = 8 }
+println(result.age) // 8
+````
+- **run** - Вызывает функцию, которая передается как параметр
+````kotlin
+fun testCat() {
+    var mood = "I am sad"
+
+    run {
+        val mood = "I am happy"
+        println(mood) // I am happy
+    }
+    println(mood)  // I am sad
+}
+````
+- **run** - Вызывает определённую функцию [block] со значением `this` в качестве получателя и возвращает результат. 
+Она определена как функция-расширение типа, чей экземпляр затем передаётся в качестве получателя и возвращает результат 
+исполнения функции block.
+````kotlin
+val layout = LayoutStyle()
+layout.run { orientation = SharedState.previousOrientation } // returns Unit
+````
+
 ### Создание коллекций
 
 ````kotlin
