@@ -1,1 +1,3 @@
-<a href="http://www.quizful.net/post/features-of-the-application-of-modifiers-in-java">Особенности применения модификаторов в Java</a>
+- <a href="http://www.quizful.net/post/features-of-the-application-of-modifiers-in-java">Особенности применения модификаторов в Java</a>
+- <a href="http://proglang.su/java/modifiers">Модификаторы доступа и класса</a>
+- <a href="https://javarush.ru/quests/lectures/questcore.level10.lecture05">Модификатор transient</a>
