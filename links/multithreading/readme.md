@@ -1,4 +1,4 @@
-- <a href="https://habrahabr.ru/post/164487">Многопоточность в Java</a>
+- <a href="https://habrahabr.ru/post/164487">Многопоточность в Java</a> + *<a href="https://github.com/DenisPavlov/work_project/tree/master/src/main/java/links/multithreading/example1">код</a>*
 - <a href="https://habrahabr.ru/post/137065">Multithreading in practice</a>
 - <a href="https://github.com/JavaOPs/masterjava#Первое-занятие-многопоточность">1й урок MasterJava: Многопоточность</a>
 - <a href="https://habrahabr.ru/post/164487/">Способы создания паралельных потоков: Thread и Runnable</a>
