@@ -182,3 +182,4 @@ class B extends A {
 - https://www.ibm.com/developerworks/ru/library/j-jtp07233/
 - http://www.quizful.net/post/Java-TreeMap
 - https://blog.byndyu.ru/2009/10/solid.html?m=1
+- <a href="https://www.youtube.com/watch?v=QlrPy1wvBzg">создание сайта с помощью фреймворка Spring Boot</a>
