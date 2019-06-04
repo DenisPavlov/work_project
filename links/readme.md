@@ -25,8 +25,7 @@
 - <a href="http://www.javable.com/columns/robinson/letters/01/">Гадание на кофейной гуще, или передача по значению в Java</a>
 - <a href="https://habrahabr.ru/post/168195/">Разбираемся с hashCode() и equals()</a>
 
-### Обобщенные типы (Generics)
-- <a href="http://www.quizful.net/post/java-generics-tutorial">Дженерики (Java, обучающая статья)</a>
+### <a href="generics/readme.md">Обобщенные типы (Generics)</a>
 
 ### Enum
 - <a href="http://info.javarush.ru/translation/2015/10/13/15-%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D0%BE%D0%B2-%D0%B4%D0%BB%D1%8F-%D1%81%D0%BE%D0%B1%D0%B5%D1%81%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%D0%BE%D0%B2-%D0%BE%D1%82%D0%BD%D0%BE%D1%81%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE-Enum-%D0%B2-%D0%94%D0%B6%D0%B0%D0%B2%D0%B5-%D1%81-%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D0%B0%D0%BC%D0%B8-.html">15 вопросов для собеседования разработчиков, относительно Enum в Джаве (с ответами!)</a>
