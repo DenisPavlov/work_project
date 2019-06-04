@@ -16,6 +16,7 @@
 ### <a href="java8/readme.md">Java 8</a>
 ### <a href="multithreading/readme.md">Многопоточность</a>
 ### <a href="memory/readme.md">Кишочки</a>
+### <a href="garbage/readme.md">Сборка мусор</a>
 ### <a href="trycatch/readme.md">Исключения</a>
 ### <a href="date/readme.md">Java Date</a>
 
@@ -68,7 +69,7 @@
 - <a href="https://habrahabr.ru/post/101280/">Enum, перечисления</a>
 - <a href="https://neerc.ifmo.ru/wiki/index.php?title=%D0%9F%D0%B5%D1%80%D0%B5%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F">Enum, перечисления</a>
 - <a href="https://habr.com/post/132241/">Маленькие хитрости Java</a>
-
+- <a href="http://echuprina.blogspot.com/2012/02/cloneable.html">Клонирование объектов. Интерфейс Cloneable.(links.java.clone)</a>
 
 ## <a href="data_structure/readme.md">Структуры данных</a>
 
