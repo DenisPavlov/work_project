@@ -7,9 +7,8 @@
 ### Синтаксис java
 - <a href="http://begoml.by/%D0%BF%D0%B5%D1%80%D0%B5%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8-%D0%BF%D0%B5%D1%80%D0%B5%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B0-override-%D0%B8-overload/">Переопределение и перегрузка (override и overload)</a>
 
-### Ключевые слова
-- <a href="http://www.quizful.net/post/features-of-the-application-of-modifiers-in-java">Особенности применения модификаторов в Java</a>
 ### <a href="java/readme.md">Java</a>
+### <a href="keywords/readme.md">Ключевые слова</a>
 ### <a href="reflection/readme.md">Reflection API</a>
 ### <a href="string/readme.md">String, StringBuilder, StringBuffer</a>
 ### <a href="classes/readme.md">Внутренние классы</a>
