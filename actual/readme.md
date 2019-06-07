@@ -32,6 +32,7 @@ topjava
 # Что надо посмотреть и разобрать
 - https://www.youtube.com/watch?v=kxgo7Y4cdA8
 - https://www.youtube.com/playlist?list=PLYj3Bx1JM6Y7nQ6WW9uPJDvr1e_mryjZu
+- https://www.youtube.com/playlist?list=PL_O8YSX8ckffzeV9mIBUQniaKFxGnPdYh&app=desktop
 
 ## Начал прорабатывать!
 - <a href="https://habrahabr.ru/post/111189/">Знаешь ли ты JAVA, %username%?</a> сделал вопрос 8
