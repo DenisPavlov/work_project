@@ -267,5 +267,11 @@ val list = arrayListOf(1, 7, 53)
 val map = hashMapOf(1 to "one", 7 to "seven", 53 to "fifty-three")
 ````
 
+Тип коллекции | Только для чтения | Изменяемая коллекция
+--- | --- | ---
+`List` | `listOf` | `mutableListOf`, `arrayListOf` 
+`Set` | `setOf` | `mutableSetOf`, `hashSetOf`, `linkedSetOf`, `sortedSettOf`
+`Map` | `mapOf` | `mutableMapOf`, `hashMapOf`, `linkedMapOf`, `sortedMapOf`
+
 ## Tools
 - Kotlin REPL
