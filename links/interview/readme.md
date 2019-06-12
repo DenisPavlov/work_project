@@ -1,3 +1,6 @@
+### <a href="strings/readme.md">String</a>
+- <a href="https://www.freecodecamp.org/news/review-these-50-questions-to-crack-your-java-programming-interview-69d03d746b7f/amp/">Review these 50 questions to crack your Java programming interview</a>
+- <a href="https://hackernoon.com/top-20-java-interview-questions-from-investment-banks-80a2c405802">Top 20 Java Interview Questions from Investment Banks</a>
 - <a href="https://habrahabr.ru/post/308104/">Из юниоров в разработчики: получаем первую работу</a>
 - <a href="http://resumup.com/">Выбрать шаблон для резюме</a>
 - <a href="https://ain.ua/2015/01/14/idealnoe-rezyume-juniora-kak-najti-luchshuyu-rabotu-v-sfere-informacionnyx-texnologij">Идеальное резюме Junior’а</a>
