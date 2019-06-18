@@ -273,5 +273,15 @@ val map = hashMapOf(1 to "one", 7 to "seven", 53 to "fifty-three")
 `Set` | `setOf` | `mutableSetOf`, `hashSetOf`, `linkedSetOf`, `sortedSettOf`
 `Map` | `mapOf` | `mutableMapOf`, `hashMapOf`, `linkedMapOf`, `sortedMapOf`
 
+### Перегрузка операторов
+
+Выражение | Имя функции
+--- | --- 
+`a * b` | `times`  
+`a / b` | `div` 
+`a % b` | `mod` 
+`a + b` | `plus` 
+`a - b` | `minus` 
+
 ## Tools
 - Kotlin REPL
