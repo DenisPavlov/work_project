@@ -14,6 +14,7 @@
 ### <a href="classes/readme.md">Внутренние классы</a>
 ### <a href="io/readme.md">I/O</a>
 ### <a href="java8/readme.md">Java 8</a>
+### <a href="java8plus/readme.md">Java 8+</a>
 ### <a href="multithreading/readme.md">Многопоточность</a>
 ### <a href="memory/readme.md">Кишочки</a>
 ### <a href="garbage/readme.md">Сборка мусор</a>
