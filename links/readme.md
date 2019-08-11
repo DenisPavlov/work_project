@@ -9,7 +9,7 @@
 
 ### <a href="java/readme.md">Java</a>
 ### <a href="keywords/readme.md">Ключевые слова</a>
-### <a href="reflection/readme.md">Reflection API</a>
+
 ### <a href="string/readme.md">String, StringBuilder, StringBuffer</a>
 ### <a href="classes/readme.md">Внутренние классы</a>
 ### <a href="io/readme.md">I/O</a>
