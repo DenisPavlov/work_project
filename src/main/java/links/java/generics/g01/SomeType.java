@@ -1,4 +1,4 @@
-package links.java.generics;
+package links.java.generics.g01;
 
 import java.util.Arrays;
 import java.util.Collection;

@@ -1,2 +1,2 @@
 - <a href="http://www.quizful.net/post/java-generics-tutorial">Дженерики (Java, обучающая статья)</a>
-- <a href="https://javarush.ru/groups/posts/2004-teorija-dzhenerikov-v-java-ili-gde-na-praktike-stavitjh-skobki">Обзорная статья про generics</a>
+- <a href="https://javarush.ru/groups/posts/2004-teorija-dzhenerikov-v-java-ili-gde-na-praktike-stavitjh-skobki">Обзорная статья про generics</a> - <a href="">код</a>
