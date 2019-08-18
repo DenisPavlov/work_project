@@ -2,4 +2,5 @@
 - <a href="https://javarush.ru/groups/posts/2004-teorija-dzhenerikov-v-java-ili-gde-na-praktike-stavitjh-skobki">Обзорная статья про generics</a> - <a href="https://github.com/DenisPavlov/work_project/tree/master/src/main/java/links/java/generics/g01">код</a>
 - <a href="https://www.youtube.com/watch?v=MniNZsyjH9E&list=PL6jg6AGdCNaX1yIJpX4sgALBTmTVc_uOJ">Юрий Ткач: Сырые типы - Generics #1 - Advanced Java(видео)</a> - <a href="https://github.com/DenisPavlov/work_project/tree/master/src/main/java/links/java/generics/g02">код</a>
 - <a href="https://www.youtube.com/watch?v=pezRhckJbFE&index=2&list=PL6jg6AGdCNaX1yIJpX4sgALBTmTVc_uOJ">Наследование и расширители обобщений - Generics #2 - Advanced Java(видео)</a> - <a href="https://github.com/DenisPavlov/work_project/tree/master/src/main/java/links/java/generics/g03">код</a>
+- <a href="https://www.youtube.com/watch?v=ns8T7-nI_Ec&index=3&list=PL6jg6AGdCNaX1yIJpX4sgALBTmTVc_uOJ">Рекурсивное расширение типа - Generics #3 - Advanced Java(видео)</a> - <a href="https://github.com/DenisPavlov/work_project/tree/master/src/main/java/links/java/generics/g03">код</a>
 
