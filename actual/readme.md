@@ -1,34 +1,12 @@
-sql-tutorial.ru
-------------------------
-начать сначала
-
-Camel in action
------------------------
-9 Testing
-
-Spring в действии 
------------------------
-- стр 477 Глава 11. Взаимодействие с удаленными службами.
-
-Котлин в действии
-- стр. 225 7.1.3 Перегрузка унарных операторов
-
-topjava
----
-- Видео - lesson 7
-- Сылки - Java 8: Потоки
-- ДЗ - lesson 6 - доделал
-
-Головач курсы (многопоточность)
------------------------
-- https://www.youtube.com/watch?v=Mnid3x23idw&list=PLoij6udfBncgyV-7Y0lEh0EwfkpcAoBeK&index=9
-
-Что доделать
+TODO list
 -----------------------
 - пересмотреть видео по REST (с Joker 2016) и разобрать пример 
 - разобрать вопросы по string !!! (НЕРАЗОБРАННЫЕ!!!!!!!!!!)
 - можно ходить на <a href="https://github.com/spring-projects">github Spring</a> и смотреть разные примеры
-
+- Spring в действии
+- sql-tutorial.ru
+- topjava
+- https://www.youtube.com/watch?v=Mnid3x23idw&list=PLoij6udfBncgyV-7Y0lEh0EwfkpcAoBeK&index=9
 # Что надо посмотреть и разобрать
 - https://www.youtube.com/watch?v=kxgo7Y4cdA8
 - https://www.youtube.com/playlist?list=PLYj3Bx1JM6Y7nQ6WW9uPJDvr1e_mryjZu
@@ -141,7 +119,8 @@ class B extends A {
 - JIT компилятор
 - StreamEx библиотека
 - apache Commons, guava
-
+- deep learning
+- machine learning
 Вопросы с собеседований
 - WEB(запросы, заголовки, сессия)
 - Типы JOIN
@@ -150,9 +129,10 @@ class B extends A {
 
 Книги
 --------------
-- Дочитать Шилдта
-- Блох (Effective Java)
 - Хорстман
+- книга про лямбды в java
+- есть книга по дженерикам (eng)
+- Блох (Effective Java)
 - Мартин (Чистый код)
 - философия java
 - Предметно-ориентированное проектирование (DDD). Структуризация сложных программных систем. Эрик Эванс
