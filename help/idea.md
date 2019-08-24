@@ -62,7 +62,8 @@ git
 
 	- Ctrl + Shift + K - commit and push
 	- Ctrl + D - посмотреть изменения
-	
+	- Alt + 9 - открыть меню изменений
+	- Alt + Quote - открыть git операции
 DEBUG
     
     - Установить/снять точку останова — Ctrl + F8 (Cmd + F8 для Mac)
