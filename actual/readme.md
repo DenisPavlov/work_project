@@ -1,3 +1,7 @@
+Actual
+-----
+- topjava - 2. Wiki по ведению проекта в Git - прочитал
+
 TODO list
 -----------------------
 - пересмотреть видео по REST (с Joker 2016) и разобрать пример 
@@ -5,7 +9,7 @@ TODO list
 - можно ходить на <a href="https://github.com/spring-projects">github Spring</a> и смотреть разные примеры
 - Spring в действии
 - sql-tutorial.ru
-- topjava
+
 - https://www.youtube.com/watch?v=Mnid3x23idw&list=PLoij6udfBncgyV-7Y0lEh0EwfkpcAoBeK&index=9
 # Что надо посмотреть и разобрать
 - https://www.youtube.com/watch?v=kxgo7Y4cdA8

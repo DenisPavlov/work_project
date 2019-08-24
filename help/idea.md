@@ -62,6 +62,7 @@ git
 
 	- Ctrl + Shift + K - commit and push
 	- Ctrl + D - посмотреть изменения
+	- Ctrl + T - обновить проект
 	- Alt + 9 - открыть меню изменений
 	- Alt + Quote - открыть git операции
 DEBUG
