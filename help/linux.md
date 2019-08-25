@@ -20,6 +20,7 @@
 - tree -d src/ - посмотреть дерево каталогов 
 - tree -h src/ - посмотерть дерево каталогов в месте с файлами
 - ls -la - посмотреть скрытые папки и доступы к файлам и папкам
+- ls -lh - посмотреть файлы с подробной информацией
 - cat имя_файла - вывести содержимое файла в консоль
     
 - Shift + PageUp - terminal scrol up
@@ -38,3 +39,6 @@
 - Запуск visualvm - visualvm --jdkhome '/home/denis/java/jdk1.8.0_181' --openpid process_id
 
 - sudo update-alternatives --config java - выбрать версию java
+
+### Заметки
+- Esc + Fn - включить по умолчанию Fn кнопку
