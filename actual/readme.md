@@ -1,7 +1,6 @@
 Actual
 -----
 - topjava - 3. Java 8 Date and Time API
-    - закончил введение в интерактивной git обучалке
 - git - закончить интерактивную обучалку     
 
 TODO list
