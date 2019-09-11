@@ -1,0 +1,3 @@
+- <a href="https://easyjava.ru/data/jpa/pervichnye-klyuchi-v-jpa/">Первичные ключи в JPA</a>
+- <a href="https://thoughts-on-java.org/hibernate-postgresql-5-things-need-know/">Hibernate with PostgreSQL – 6 things you need to know</a>
+- <a href="https://thoughts-on-java.org/jpa-generate-primary-keys/">How to generate primary keys with JPA and Hibernate</a>
