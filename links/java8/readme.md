@@ -4,7 +4,7 @@
 - <a href="https://www.youtube.com/watch?v=iD8H7cmxw_w">Видео: Yakov Fain о новом в Java 8</a>
 
 #### Date ant Time API
-- <a href="http://www.mscharhag.com/2014/02/java-8-datetime-api.html">Java 8 Date and Time API(Eng)</a>
+- <a href="http://www.mscharhag.com/2014/02/java-8-datetime-api.html">Java 8 Date and Time API(Eng)(code)</a>
 - <a href="https://habr.com/ru/post/274905/">Java и время (исследованы некоторые нюансы)</a>
 
 #### Lambda
