@@ -1,7 +1,7 @@
 # Ссылки на полезные статьи
 
 ### <a href="oop/readme.md">ООП</a>
-### <a href="course/readme.md">Курсы по Java</a>
+### <a href="course/readme.md">Курсы</a>
 ### <a href="enterprise/readme.md">Enterprise</a>
 
 ### Синтаксис java
