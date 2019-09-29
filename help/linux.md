@@ -28,6 +28,13 @@
 - skype & - запуск программы в фоне
 - etc/enviroment TOPJAVA_ROOT="/home/denis/projects/topjava" - добавить переменную окружения
 
+## CURL
+- curl https://domain.ru - отобразить содержимое url
+- curl -o website https://domain.ru - сохранить вывод в файл
+- curl -O https://domain.ru/file.zip - скачать файл
+- curl -o archive.zip https://domain.ru/file.zip - скачать в определенный файл
+- curl -I http://domain.ru - получить заголовок
+
 ### удить процесс
 - ps - посмотреть процессы
 - ps -ef - посмотеть все процессы
@@ -46,3 +53,6 @@
 ### strace (работа с системными вызовами)
 - strace ls - посмотреть все
 - ![Logo](../resources/strace.png)
+
+
+- <a href="https://stackoverflow.com/questions/18740654/cannot-start-apache-tomcat-6-from-intellij-idea-12-1-4-ultimate-windows-7/38953356#38953356">Проверка кто занял порт</a>
