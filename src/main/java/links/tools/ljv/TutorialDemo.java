@@ -1,6 +1,6 @@
 package links.tools.ljv;
 
-public class Example {
+public class TutorialDemo {
     public static void main(String[] args) {
         int[] numbers = new int[4];
         numbers[0] = 3;
