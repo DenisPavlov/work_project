@@ -11,3 +11,4 @@
 - <a href="https://www.cs.auckland.ac.nz/~j-hamer/LJV/TeacherIntro.html">Lightweight Java Visualizer – LJV</a>
 - <a href="https://www.cs.auckland.ac.nz/~j-hamer/index.html#LJV">страничка автора</a>
 - <a href="https://www.cs.auckland.ac.nz/~j-hamer/LJV/Tutorial.html">Tutorial</a>
+- <a href="https://www.cs.auckland.ac.nz/~j-hamer/ACE04-paper.pdf">Подробное описание(pdf)</a>
