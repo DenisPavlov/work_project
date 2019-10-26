@@ -13,9 +13,6 @@
 
 
 
-### <a href="java8/readme.md">Java 8</a>
-### <a href="java8plus/readme.md">Java 8+</a>
-
 ### <a href="memory/readme.md">Кишочки</a>
 
 
