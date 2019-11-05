@@ -16,10 +16,10 @@ public class SetTest
       handler.setLevel(Level.FINEST);
       Logger.getLogger("com.horstmann").addHandler(handler);
 
-      Set<Item> parts = new HashSet<>();
-      parts.add(new Item("Toaster", 1279));
-      parts.add(new Item("Microwave", 4104));
-      parts.add(new Item("Toaster", 1279));
-      System.out.println(parts);
+//      Set<Item> parts = new HashSet<>();
+//      parts.add(new Item("Toaster", 1279));
+//      parts.add(new Item("Microwave", 4104));
+//      parts.add(new Item("Toaster", 1279));
+//      System.out.println(parts);
    }
 }
