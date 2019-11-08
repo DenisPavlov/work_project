@@ -1,7 +1,5 @@
 package books.horstman.v1ch05.inheritance;
 
-import java.time.LocalDate;
-
 public class Manager extends Employee
 {
    private double bonus;
