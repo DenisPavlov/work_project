@@ -1,0 +1,1 @@
+- <a href="https://habrahabr.ru/post/168195/">Разбираемся с hashCode() и equals()</a>

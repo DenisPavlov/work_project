@@ -1,3 +1,4 @@
+## <a href="java8/readme.md">Core</a>
 ## <a href="java8/readme.md">Java 8</a>
 ## <a href="java8plus/readme.md">Java 8+</a>
 ### <a href="reflection/readme.md">Reflection API</a>
@@ -8,3 +9,4 @@
 ### <a href="multithreading/readme.md">Многопоточность</a>
 ### <a href="garbage/readme.md">Сборка мусор</a>
 ### <a href="trycatch/readme.md">Исключения</a>
+### <a href="methods/readme.md">Methods</a>

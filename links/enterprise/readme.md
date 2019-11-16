@@ -10,3 +10,6 @@
 
 ### Testing
 - <a href="https://www.petrikainulainen.net/programming/testing/writing-clean-tests-naming-matters/">Статья про название тестовых методова и классов(Eng)</a>
+
+### Serialization
+- <a href="https://vk.com/javatutorial?z=video-111905078_456242685%2Fe09e5e586992d92bba%2Fpl_wall_-111905078">Java Serialization. Проблемы и альтернативы (video)</a>
