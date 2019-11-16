@@ -1,4 +1,4 @@
-## <a href="java8/readme.md">Core</a>
+## <a href="core/readme.md">Core</a>
 ## <a href="java8/readme.md">Java 8</a>
 ## <a href="java8plus/readme.md">Java 8+</a>
 ### <a href="reflection/readme.md">Reflection API</a>
