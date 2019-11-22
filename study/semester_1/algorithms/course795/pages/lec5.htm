@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="do.sibsutis.ru">
+
+    <title>Лекция 5. Конспект лекций</title>
+	
+	<link rel="icon" type="image/png" href="../lib/css/favicon.png">
+    <!-- Bootstrap Core CSS -->
+    <link href="../lib/css/bootstrap.css" rel="stylesheet">
+	
+    <!-- Custom CSS -->
+    <link href="../lib/css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" >
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <li class="hidden"> <a class="page-scroll" href="#page-top"></a> </li>
+	  
+	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  
+      <a class="navbar-brand " href="../index.htm"> 
+						<text class = "hidden-xs">Структуры и алгоритмы обработки данных</text> 
+						<text class = "visible-xs">САОД</text>
+	  </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and glyphicon glyphicon-list-alt content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+	  <!-- <ul class="nav navbar-nav">
+		<li><a href="#"></a></li> 
+      </ul> -->
+	
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+		<button type="button" class="navbar-toggle dropdown-toggle hidden-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" >
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>	      
+		<a class = "dropdown-toggle visible-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Материалы</a>
+          <ul class="dropdown-menu">
+            <li><a href="../index.htm">Аннотация курса</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="lec_index.htm">Теория</a></li>
+            <li><a href="course_work.htm">Контрольная работа</a></li>
+            <li><a href="labs.htm">Лабораторные работы</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="lit.htm">Литература</a></li>
+          </ul>
+ </li>
+  </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+    <!-- Intro Section -->
+	<!-- Секция с информацией "Уважаемый слушатель"	 -->
+    <div id="intro" class="section content-section ">
+        <div class="container">
+             <div class="row">
+                <div class="col-lg-12">	
+
+
+<!-- содержание -->	
+<div class="page-header">
+<h3>5 Работа с линейными списками </h3>
+<p><a href="lec5.htm#1" class=punkt>1. Указатели. Основные операции с указателями</a></LI>
+<p><a href="lec5.htm#2" class=punkt>2. Основные операции с линейными списками</a>
+
+</div>
+
+<h3><a name=1></a>1 Указатели. Основные операции с указателями</h3><br>
+
+<P ALIGN="JUSTIFY">Каждый элемент данных, хранящихся в памяти компьютера, имеет свой адрес. Адреса могут находиться в специальных переменных, называемых указателями. Мы будем рассматривать типизированные указатели, которые могут хранить адреса только объектов определенного типа.</P>
+<P ALIGN="JUSTIFY">Пусть указатели р и q содержат адрес объекта x некоторого типа tData. Графически будем изображать это следующим образом:</P>
+<p><img src="img_lec/Image29.gif" width="315" height="104"> <br>
+<p><font size="2">Рисунок 12 - Равенство указателей</font><br>
+<P ALIGN="JUSTIFY">Стрелка начинается в указателе и указывает на объект в целом, а не на отдельную компоненту, поэтому указатели p и q равны. Заметим, что обычно адрес объекта совпадает с адресом его первой компоненты. Можно обращаться к переменной по имени, а можно по адресу. При обращении по адресу не нужно знать имени переменной.</P>
+<P ALIGN="JUSTIFY">Основные операции с указателями приведены в следующей таблице.</P>
+<br><p><font size="2">Таблица 2 - Основные операции с указателями</font><br>
+<p><img src="img_lec/Image30.gif" width="480" height="227"><br>
+
+<h3><a name=2></a>2 Основные операции с линейными списками</h3><br>
+
+<P ALIGN="JUSTIFY">Списком</I> называется последовательность однотипных элементов, связанных между собой указателями. Будем считать, что элементы списка имеют  тип tLE, указатели на элементы списка имеют тип pLE.</P>
+<p><img src="img_lec/Image31.gif" width="287" height="97"><br>
+<p><font size="2">Рисунок 13 - Указатель на элемент списка</font><br>
+
+<P ALIGN="JUSTIFY">Поле Next является указателем на элемент списка и может занимать произвольное место в структуре элемента. Однако если оно является первым элементом структуры, то его адрес совпадает с адресом элемента списка, и это позволяет оптимизировать многие операции со списками. Поле Data содержит информацию, которая будет учитываться при сортировке.</P>
+<P ALIGN="JUSTIFY">Рассмотрим два вида списков: <I>стек</I> и <I>очередь</I>. <I>Стек</I> характеризуется тем, что новый элемент добавляется в начало последовательности, а удаляться может только первый элемент списка. При добавлении в <I>очередь</I> новый элемент ставится в конец списка, удаляется первый элемент последовательности.</P>
+<P ALIGN="JUSTIFY">Рассмотрим основные операции со стеком и очередью. Для работы со стеком необходимо иметь указатель на начало списка. Обозначим его Head. При работе с очередью требуется дополнительный указатель на конец очереди. Обозначим его Tail. Иногда при работе с очередью удобно объединять указатели Head и Tail в виде полей некоторой переменной Queue.</P>
+<I><P ALIGN="JUSTIFY">Добавление элемента по адресу р в стек.</P></I>
+<p><img src="img_lec/Image32.gif" width="487" height="192">
+<br><p><font size="2">Рисунок 14 - Добавление в стек</font></p><br>
+<P ALIGN="JUSTIFY">1) p&#8594;Next:=Head</P>
+<P ALIGN="JUSTIFY">2) Head:=p</P>
+<br><P ALIGN="JUSTIFY"><I>Удаление из стека или очереди (при условии, что список не пуст, т.е.</I> Head&#8800;NIL<I>)</I></P>
+<P ALIGN="JUSTIFY">1) p:=Head</P>
+<P ALIGN="JUSTIFY">2) Head:=p&#8594;Next</P>
+<P ALIGN="JUSTIFY">    &lt;освободить память по адресу p&gt;</P>
+<p><img src="img_lec/Image33.gif" width="528" height="177">
+
+<br><p><font size="2">Рисунок 15 - Удаление из стека</font></p><br>
+<P ALIGN="JUSTIFY"><I>Добавление элемента по адресу р в очередь.</i></P>
+
+<p><img src="img_lec/Image34.gif" width="453" height="204">
+<br><p><font size="2">Рисунок 16 - Добавление в очередь</font></p><br>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">1) p&#8594;Next:=NIL</P>
+<P ALIGN="JUSTIFY">2) IF (Head&#8800;NIL) Tail&#8594;Next:=p</P>
+<P ALIGN="JUSTIFY">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ELSE Head:=p </P>
+<P ALIGN="JUSTIFY">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FI</P>
+<P ALIGN="JUSTIFY">3) Tail:=p</P>
+<br><P ALIGN="JUSTIFY">Операцию добавления элемента в очередь можно оптимизировать в случае, если поле Next является первой компонентой элемента очереди и его адрес совпадает с адресом всего элемента. Зададим пустую очередь следующим образом:</P>
+
+
+<p><img src="img_lec/Image35.gif" width="252" height="136">
+<br><p><font size="2">Рисунок 17. Структура очереди</font></p><br>
+<p>Эту операцию назовем инициализацией очереди. Тогда добавление элемента в очередь будет происходить в два раза быстрее:</p><br>
+<p><img src="img_lec/Image36.gif" width="236" height="147">
+<br><p><font size="2">Рисунок 18 - Добавление в очередь</font></p><br>
+<P>1) Tail-&gt;Next:=p</P>
+<P>2) Tail:=p</P>
+<P><I>Перемещение элемента из начала списка List в конец очереди Queue.</i></P>
+<p><img src="img_lec/Image37.gif" width="701" height="230">
+<br><p><font size="2">Рисунок 19 - Перемещение элемента</font></p><br>
+<FONT SIZE=4><P>1) Queue.Tail&#8594;Next:=List</P>
+<P>2) Queue.Tail:=List</P>
+<P>3) List:=List&#8594;Next</P>
+
+<!-- конец содержания-->	
+				
+				</div>
+			</div>
+			
+            </div>
+        </div>
+    </div>
+	
+	<!--Меню навигации по лекциям -->	
+	<div aria-label="..." class = "nav-menu">
+	  <ul class="pager  background-transition-slow" >
+		 <li title="Наверх" style = "margin-right:15px;	"><a class = "glyphicon glyphicon-menu-up page-scroll" href="#page-top" ></a></li>
+		 <li title="К предыдущей лекции"><a class = "glyphicon glyphicon-menu-left page-scroll" href="lec4.htm" ></a></li>
+		 <li title="В содержание"><a class = "glyphicon glyphicon-list-alt" href="lec_index.htm" ></a></li>
+		 <li title="К следующей лекции"><a class = "glyphicon glyphicon-menu-right page-scroll" href="lec6.htm" ></a></li>
+	  </ul>
+	</div>
+	<!---->
+	
+	</div>
+    <!-- jQuery -->
+    <script src="../lib/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../lib/js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="../lib/js/jquery.easing.min.js"></script>
+    <script src="../lib/js/scrolling-nav.js"></script>
+
+</body>
+
+</html>

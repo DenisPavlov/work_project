@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="do.sibsutis.ru">
+
+    <title>Лекция 2. Конспект лекций</title>
+	
+	<link rel="icon" type="image/png" href="../lib/css/favicon.png">
+    <!-- Bootstrap Core CSS -->
+    <link href="../lib/css/bootstrap.css" rel="stylesheet">
+	
+    <!-- Custom CSS -->
+    <link href="../lib/css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" >
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <li class="hidden"> <a class="page-scroll" href="#page-top"></a> </li>
+	  
+	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  
+      <a class="navbar-brand " href="../index.htm"> 
+   <text class = "hidden-xs">Структуры и алгоритмы обработки данных</text> 
+   <text class = "visible-xs">САОД</text>
+	  </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and glyphicon glyphicon-list-alt content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+	  <!-- <ul class="nav navbar-nav">
+		<li><a href="#"></a></li> 
+      </ul> -->
+	
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+		<button type="button" class="navbar-toggle dropdown-toggle hidden-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" >
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>	      
+		<a class = "dropdown-toggle visible-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Материалы</a>
+          <ul class="dropdown-menu">
+            <li><a href="../index.htm">Аннотация курса</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="lec_index.htm">Теория</a></li>
+            <li><a href="course_work.htm">Контрольная работа</a></li>
+            <li><a href="labs.htm">Лабораторные работы</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="lit.htm">Литература</a></li>
+          </ul>
+ </li>
+  </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+    <!-- Intro Section -->
+	<!-- Секция с информацией "Уважаемый слушатель"	 -->
+    <div id="intro" class="section content-section ">
+        <div class="container">
+             <div class="row">
+                <div class="col-lg-12">	
+
+
+<!-- содержание -->	
+<div class="page-header">
+<h3>2 Методы сортировки с квадратичной трудоемкостью</h3>	
+<p><a href="lec2.htm#1" class=punkt>1. Обобщенная структура  процессора</a>
+<p><a href="lec2.htm#2" class=punkt>2. Пузырьковая сортировка</a>
+<p><a href="lec2.htm#3" class=punkt>3. Шейкерная сортировка</a>
+</div>
+
+<h3><a name="1"></a> 1 Метод прямого выбора</h3><br>
+
+<P ALIGN="JUSTIFY">Один из самых простых методов сортировки, метод прямого выбора, заключается в следующем. Находим наименьший элемент массива и обмениваем его с первым элементом массива. Таким образом, первый элемент можно больше не рассматривать. Среди оставшихся элементов находим наименьший элемент и обмениваем его со вторым элементом массива. Среди оставшихся элементов находим наименьший и переставляем его на третье место и т. д. </P>
+<P ALIGN="JUSTIFY"><B>Пример.</B> Упорядочим слово методом прямого выбора.</P>
+<P> Условные обозначения </P>
+<P>&#9;&#9;<img src="img_lec/Image23.GIF" width="19" height="21" align="absmiddle"> сравнение элемента Х с текущим максимальным элементом</P>
+<P>&#9;&#9;<IMG SRC="img_lec/Image24.gif" WIDTH="18" HEIGHT="22" align="absmiddle"> текущий максимальный элемент</P>
+<p>&#9;&#9;<img src="img_lec/Image3.gif" width="61" height="13" align="absmiddle"> Перестановка элементов</P>
+<div align="center"><img src="img_lec/Image4.gif" width="357" height="447"> </div>
+
+<center><font size="3">Рисунок 2 - Метод прямого выбора</font></center>
+<br><I><P ALIGN="CENTER"><B>Алгоритм на псевдокоде</b></P>
+<P ALIGN="CENTER">Метод прямого выбора</P></i><br>
+<P>&#9;DO (i = 1, 2, ... n-1)</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;k := &lt;номер наименьшего элемента из a<SUB>i</SUB>,… a<SUB>n</SUB>&gt;</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;a<SUB>i </SUB>&#8596; a<SUB>k</SUB></P>
+<P>&#9;OD</P><br>
+
+<P ALIGN="JUSTIFY">Дадим оценку трудоёмкости метода прямого выбора. В данном случае можно найти точные выражения для М и С. Поскольку на каждой итерации происходит точно один обмен, то  M = <I>3(n-1). </I>Определим теперь количество сравнений. На первом этапе имеем <I>(n-1)</I> сравнений, на втором – <I>(n-2)</I> сравнений, на i-том этапе происходит <I>(n- i) </I>сравнений и т.д. Суммируя, получим C = <IMG SRC="img_lec/Image5.gif" WIDTH="52" HEIGHT="48" align="absmiddle"></P>
+<P ALIGN="JUSTIFY">Отметим важные особенности метода прямого выбора. Метод не зависит от исходной отсортированности массива, т.е. значения М и С не меняются, даже если сортируется уже отсортированный массив. Сортировка методом прямого выбора неустойчива.</P>
+
+<br><h3><a name="2"></a>2 Пузырьковая сортировка</h3><br>
+<P ALIGN="JUSTIFY">Популярный метод пузырьковой сортировки заключается в следующем. Двигаясь от конца массива к его началу, будем сравнивать между собой соседние элементы. При этом если правый элемент a<SUB>j</SUB> будет меньше чем левый a<SUB>j-1</SUB>, j=<I>n</I>, <I>n-1</I>, … ,2, то поменяем их местами. Таким образом, при первом проходе наименьший элемент переместится на первое место и можно не учитывать его при сортировке оставшейся части массива. При втором проходе наименьший элемент из оставшихся “всплывёт” на второе место. Через (<I>n-1</I>) итераций массив будет отсортирован.</P>
+<P ALIGN="JUSTIFY"><B>Пример.</B> Отсортировать слово методом пузырьковой сортировки. Подчёркнуты те пары, в которых произошёл обмен. Вертикальной чертой ограничена отсортированная часть массива.</P>
+<br><div align="center"><img src="img_lec/Image6.gif" width="226" height="839"> </div>
+
+<center><font size="3">Рисунок 3 - Пузырьковая сортировка</font></center>
+<br><I><P ALIGN="CENTER"><B>Алгоритм на псевдокоде</B></P>
+<P ALIGN="CENTER">Пузырьковая сортировка</P></I><br>
+<P ALIGN="JUSTIFY">Обозначим i – номер итерации, j – индекс правого элемента в текущей паре.</P>
+<P>DO (i= 1, 2, ... n-1)</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;DO (j= n, n-1, ... i+1)</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IF (a<SUB>j </SUB>&lt; a<SUB>j-1</SUB>) a<SUB>j </SUB>&#8596; a<SUB>j-1</SUB> FI</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;OD</P>
+<P>OD</P><br>
+<P ALIGN="JUSTIFY">Проанализируем сложность пузырьковой сортировки. Количество сравнений в методе прямого выбора и в методе пузырьковой сортировки одинаково и не зависит от исходной отсортированности массива. Однако количество пересылок M зависит от того, как часто выполняется условие a<SUB>j</SUB> &lt; a<SUB>j-1</SUB>. Можно определить максимальное и минимальное значения М<SUB>min</SUB> <FONT FACE="Symbol">&#163;</FONT>
+ M<SUB>сред</SUB> <FONT FACE="Symbol">&#163;</FONT>
+ M<SUB>max</SUB>,. где</P>
+<P ALIGN="JUSTIFY">М<SUB>min</SUB> = 0, при сортировке упорядоченного по возрастанию массива.</P>
+<P ALIGN="JUSTIFY">M<SUB>max</SUB> = 3C = <IMG SRC="img_lec/Image7.gif" WIDTH="65" HEIGHT="43" align="absmiddle">, при сортировке упорядоченного по убыванию массива.</P>
+<P ALIGN="JUSTIFY">Отсюда следует, что M<SUB>сред</SUB>=<I>О</I>(<I>n<SUP>2</SUP></I>), при <I>n<FONT FACE="Symbol">&#174;</FONT>
+<FONT FACE="Symbol">&#165;</FONT></I></P>
+<P ALIGN="JUSTIFY">Таким образом, пузырьковая сортировка сильно зависит от исходной упорядоченности массива по количеству сравнений. Метод обеспечивает устойчивую сортировку.</P>
+
+<br><h3><a name="3"></a>3 Шейкерная сортировка</h3><br>
+<P ALIGN="JUSTIFY">Анализируя метод пузырьковой сортировки можно отметить два обстоятельства. Во-первых, если при движении по части массива перестановки не происходят, то эта часть массива уже отсортирована и, следовательно, ее можно исключить из рассмотрения. Во-вторых, при движении от конца массива к началу минимальный элемент “всплывает” на первую позицию, а максимальный элемент сдвигается только на одну позицию вправо. Эти две идеи приводят к следующим модификациям в методе пузырьковой сортировки. Границы рабочей части массива (т.е. части массива, где происходит движение) устанавливаются в месте последнего обмена на каждой итерации. Массив просматривается поочередно справа налево и слева направо. </P>
+<P ALIGN="JUSTIFY"><B>Пример.</B> Отсортировать слово методом шейкерной сортировки. Подчёркнуты те пары, в которых произошёл обмен. Вертикальной чертой ограничена рабочая часть массива.</P>
+<div align="center"><br>
+  <img src="img_lec/Image8.gif" width="272" height="813"></div>
+
+<center><font size="3">Рисунок 4 - Шейкерная сортировка</font></center>
+<br><I><P ALIGN="CENTER"><B>Алгоритм на псевдокоде</B></P>
+<P ALIGN="CENTER">Метод шейкерной сортировки</P></I>
+<br><P>Обозначим</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;L – левая граница рабочей части массива.</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;R – правая граница рабочей части массива.</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;n – количество элементов в массиве</P>
+
+<P>&nbsp;&nbsp;&nbsp;&nbsp;L: = 1, R: = n, k: = n,</P><br>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;DO</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DO (j =R, R-1, ... L+1)</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IF (a<SUB>j</SUB> &lt; a<SUB>j-1</SUB>) a<SUB>j</SUB> &#8596; a<SUB>j-1</SUB>, k: = j FI</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OD</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L: = k</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DO (j: = L, L+1, ... R-1)</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IF (a<SUB>j</SUB> &gt; a<SUB>j+1</SUB>) a<SUB>j</SUB> &#8596; a<SUB>j+1</SUB>, k: = j, FI</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OD</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R: = k</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;OD (L &lt; R)</P><br>
+<P ALIGN="JUSTIFY">Оценим трудоемкость метода. Количество пересылок такое же, как  и в методе пузырьковой сортировки M<SUB>сред</SUB>=О(<I>n</I><SUP>2</SUP>), при <I>n<FONT FACE="Symbol">&#174;</FONT>
+<FONT FACE="Symbol">&#165;</FONT>
+</I>. Улучшения в методе шейкерной сортировки приводят к снижению количества сравнений. Точное выражение для величины С получить не удается, поэтому определим границы, в которых изменяется С. Если сортируется массив, в котором элементы расположены в порядке возрастания, то в методе шейкерной сортировки достаточно один раз просмотреть массив. Тогда С<SUB>min</SUB> = <I>n-1</I>, где <I>n</I> – количество элементов в массиве. Если массив отсортирован в обратном порядке, то на каждой итерации границы слева и справа сдвигаются на одну позицию и С<SUB>max</SUB> = <IMG SRC="img_lec/Image9.gif" WIDTH=58 HEIGHT=43 align="absmiddle">. Следовательно, С<SUB>сред</SUB>=О(<I>n<SUP>2</SUP></I>), при <I>n<FONT FACE="Symbol">&#174;</FONT>
+<FONT FACE="Symbol">&#165;</FONT>
+</I>. Таким образом, как и пузырьковая сортировка, метод шейкерной сортировки сильно зависит от исходной упорядоченности массива по количеству сравнений. Метод обеспечивает устойчивую сортировку.</P>
+<br><h3>Контрольные вопросы</h3>
+
+<OL>
+<P ALIGN="JUSTIFY"><LI>Сформулируйте основную идею метода прямого выбора.</LI></P>
+<P ALIGN="JUSTIFY"><LI>Каковы теоретические оценки сложности метода пузырьковой сортировки?</LI></P>
+<P ALIGN="JUSTIFY"><LI>Как метод пузырьковой сортировки зависит от начальной отсортированности массива?</LI></P>
+<P ALIGN="JUSTIFY"><LI>Какова трудоемкость метода шейкерной сортировки?</LI></P>
+<P ALIGN="JUSTIFY"><LI>Является ли метод шейкерной сортировки устойчивым?</LI></P></OL>
+
+				</div>
+			</div>
+			
+            </div>
+        </div>
+    </div>
+	
+	<!--Меню навигации по лекциям -->	
+	<div aria-label="..." class = "nav-menu">
+	  <ul class="pager  background-transition-slow" >
+		 <li title="Наверх" style = "margin-right:15px;	"><a class = "glyphicon glyphicon-menu-up page-scroll" href="#page-top" ></a></li>
+		 <li title="К предыдущей лекции"><a class = "glyphicon glyphicon-menu-left page-scroll" href="lec1.htm" ></a></li>
+		 <li title="В содержание"><a class = "glyphicon glyphicon-list-alt" href="lec_index.htm" ></a></li>
+		 <li title="К следующей лекции"><a class = "glyphicon glyphicon-menu-right page-scroll" href="lec3.htm" ></a></li>
+	  </ul>
+	</div>
+	<!---->
+	
+	</div>
+    <!-- jQuery -->
+    <script src="../lib/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../lib/js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="../lib/js/jquery.easing.min.js"></script>
+    <script src="../lib/js/scrolling-nav.js"></script>
+
+</body>
+
+</html>

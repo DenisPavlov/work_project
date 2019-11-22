@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="do.sibsutis.ru">
+
+    <title>Лекция 8. Конспект лекций</title>
+	
+	<link rel="icon" type="image/png" href="../lib/css/favicon.png">
+    <!-- Bootstrap Core CSS -->
+    <link href="../lib/css/bootstrap.css" rel="stylesheet">
+	
+    <!-- Custom CSS -->
+    <link href="../lib/css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" >
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <li class="hidden"> <a class="page-scroll" href="#page-top"></a> </li>
+	  
+	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  
+      <a class="navbar-brand " href="../index.htm"> 
+						<text class = "hidden-xs">Структуры и алгоритмы обработки данных</text> 
+						<text class = "visible-xs">САОД</text>
+	  </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and glyphicon glyphicon-list-alt content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+	  <!-- <ul class="nav navbar-nav">
+		<li><a href="#"></a></li> 
+      </ul> -->
+	
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+		<button type="button" class="navbar-toggle dropdown-toggle hidden-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" >
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>	      
+		<a class = "dropdown-toggle visible-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Материалы</a>
+          <ul class="dropdown-menu">
+            <li><a href="../index.htm">Аннотация курса</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="lec_index.htm">Теория</a></li>
+            <li><a href="course_work.htm">Контрольная работа</a></li>
+            <li><a href="labs.htm">Лабораторные работы</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="lit.htm">Литература</a></li>
+          </ul>
+ </li>
+  </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+    <!-- Intro Section -->
+	<!-- Секция с информацией "Уважаемый слушатель"	 -->
+    <div id="intro" class="section content-section ">
+        <div class="container">
+             <div class="row">
+                <div class="col-lg-12">	
+
+
+<!-- содержание -->	
+<div class="page-header">
+<h3>8 Сортировка данных с произвольной структурой </h3>
+<p><a href="lec8.htm#1" class=punkt>1. Сравнение данных произвольной структуры</a>
+<p><a href="lec8.htm#2" class=punkt>2. Сортировка по множеству ключей. Индексация</a>
+<p><a href="lec8.htm#3" class=punkt>3. Индексация через массив указателей</a>
+</div>
+<h3><a name=1></a>1 Сравнение данных произвольной структуры</h3><br>
+
+<P ALIGN="JUSTIFY">Основная проблема, возникающая при сортировке данных произвольной структуры <FONT FACE="Symbol">&#190;</FONT>
+ неопределенность операции сравнения. Если исходный массив А заполнен числами, то в качестве операции сравнения могут быть использованы стандартные операции сравнения. Если структура сортируемых данных не соответствует простым встроенным типам языка, то необходимо переопределить операции сравнения с помощью логических функций. Например, пусть массив А <FONT FACE="Symbol">&#190;</FONT>
+ телефонный справочник, каждый элемент которого является записью с полями Name (фамилия абонента) и Phone (номер телефона):</P>
+<br><center>A:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="img_lec/Image47.gif" width="366" height="76" align="texttop"></center>
+<br><center>Рисунок 26 - Список абонентов</center><br>
+<P ALIGN="JUSTIFY">Если необходимо отсортировать телефонный справочник по фамилиям абонентов, то логическая функция Less (меньше) может выглядеть следующим образом: </P><br>
+<P>function less ( x,y: &lt;тип записи&gt;): boolean;</P>
+<P>&nbsp;&nbsp;&nbsp;&#9;begin</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9;&#9;less:=x.Name &lt;y.Name;</P>
+<P>&nbsp;&nbsp;&nbsp;&#9;end;</P>
+<br><P ALIGN="JUSTIFY">Такой подход позволяет путем изменения функции Less учитывать любые сложные условия упорядочивания массива элементов произвольной структуры. Например, если необходимо упорядочить телефонный справочник по номерам телефонов дополнительно по фамилиям абонентов, то функцию Less можно записать так:</P>
+<P ALIGN="JUSTIFY"></P>
+<P>function less ( x,y: &lt;тип записи&gt;): boolean;</P>
+<P>&nbsp;&nbsp;&nbsp;begin</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IF (x.phone&lt;y.phone)</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;less:=true </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ELSEIF (x.phone&gt;y.phone ) </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;less:=false </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ELSE less:=(x.name&lt;y.name)</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FI</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FI</P>
+<P>&nbsp;&nbsp;&nbsp;end;</P>
+<br><P ALIGN="JUSTIFY">Кроме того, нужно переопределить операцию сравнения и при организации поиска элементов в отсортированном массиве. Изменение направления упорядочивания массива достигается путем замены операций сравнения на противоположные, т. е. в самой функции меняем “&lt;” на “&gt;”.Операция пересылки не требует переопределения и выполняется путем побитового копирования.</P>
+
+<br><h3><a name=2></a>2 Сортировка по множеству ключей. Индексация</h3><br>
+<P ALIGN="JUSTIFY">Пусть рассмотренный выше телефонный справочник необходимо использовать для быстрого поочередного поиска абонентов или по номеру телефона,  или по фамилии абонента. Пересортировка массива то по одному, то по другому ключу требует значительных затрат времени. Для эффективного решения подобной задачи используется прием, называемый индексацией, или созданием индексного массива.</P>
+<P ALIGN="JUSTIFY">Вначале построения индексный массив В заполняется целыми числами от 1 до n. Затем производится сортировка, но при условии, что в операциях сравнения элементы массива А индексируются через массив В. Перестановки делаются только в массиве В. Тогда при доступе к элементам массива А через индексный массив В А[B[i]] можно работать с массивом А как с упорядоченным по возрастанию (например, производить быстрый поиск элементов), в то время как сами элементы А физически не переставляются.</P>
+<P ALIGN="JUSTIFY"><B>Пример.</B> Рассмотрим создание индексного массива, который упорядочивает массив целых чисел A=(7,1,6,3,2,8,5).Чтобы упорядочивать массив А по возрастанию, пронумеруем его элементы. Введем новый массив В и запишем в него номера массива А в последовательности, соответствующей условию упорядочиванию (по возрастанию). Получим следующий индексный массив В=(2,5,4,7,3,1,6)</P>
+<br><I><P ALIGN="CENTER"><B>Алгоритм на псевдокоде</B></P>
+<P ALIGN="CENTER"> (на примере пузырьковой сортировки)</P><br></I>
+
+<P ALIGN="JUSTIFY">B:=(1,2,…,n)</P>
+<P ALIGN="JUSTIFY">DO (i=1,2,…,n-1)</P>
+<P ALIGN="JUSTIFY">&nbsp;&nbsp;&nbsp;DO(j=n,n-1,…,i+1)</P>
+<P ALIGN="JUSTIFY">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IF(a[b<SUB>j</SUB>]&lt; a[b<SUB>j-1</SUB>]) b<SUB>i</SUB>&#8596;b<SUB>j-1</SUB> FI</P>
+<P ALIGN="JUSTIFY">&nbsp;&nbsp;&nbsp;OD</P>
+<P ALIGN="JUSTIFY">OD</P>
+<P ALIGN="JUSTIFY"></P>
+<br><P ALIGN="JUSTIFY">Отметим ряд положительных свойств индексации. </P>
+<OL>
+<P ALIGN="JUSTIFY"><LI>Индексация дает возможность построения нескольких различных индексов, которые можно использовать по мере необходимости.</LI></P>
+<P ALIGN="JUSTIFY"><LI>Исключается копирование больших массивов данных (физический массив остаётся на месте, а индексы занимают мало места).</LI></P>
+<P ALIGN="JUSTIFY"><LI>Имеется возможность фильтрации данных. Фильтрация означает, что при работе с базами данных используются не все элементы, а только те, которые отвечают определённым условиям. В индекс включаются физические номера тех элементов, которые удовлетворяют условию фильтра.</LI></P>
+</OL>
+
+<h3><a name=3></a>3 Индексация через массив указателей</h3><br>
+<P ALIGN="JUSTIFY">Индексация через массив указателей отличается от обычной индексации тем, что вместо номеров элементов в индексный массив записываются адреса сортируемых элементов. К достоинствам такой индексации можно отнести то, что исходные данные могут располагаться не только в массиве, а произвольным образом в динамической памяти.</P>
+
+<br><h3>Контрольные вопросы</h3>
+
+<OL>
+<P ALIGN="JUSTIFY"><LI>Что такое индексный массив? </LI></P>
+<P ALIGN="JUSTIFY"><LI>Назовите основные достоинства индексный массивов.</LI></P>
+<P ALIGN="JUSTIFY"><LI>Что такое фильтрация данных?</LI></P>
+<P ALIGN="JUSTIFY"><LI>Каким образом строится индексный массив?</LI></P>
+</OL>
+
+<!-- конец содержания-->	
+				
+				</div>
+			</div>
+			
+            </div>
+        </div>
+    </div>
+	
+	<!--Меню навигации по лекциям -->	
+	<div aria-label="..." class = "nav-menu">
+	  <ul class="pager  background-transition-slow" >
+		 <li title="Наверх" style = "margin-right:15px;	"><a class = "glyphicon glyphicon-menu-up page-scroll" href="#page-top" ></a></li>
+		 <li title="К предыдущей лекции"><a class = "glyphicon glyphicon-menu-left page-scroll" href="lec7.htm" ></a></li>
+		 <li title="В содержание"><a class = "glyphicon glyphicon-list-alt" href="lec_index.htm" ></a></li>
+		 <li title="К следующей лекции"><a class = "glyphicon glyphicon-menu-right page-scroll" href="lec9.htm" ></a></li>
+	  </ul>
+	</div>
+	<!---->
+	
+	</div>
+    <!-- jQuery -->
+    <script src="../lib/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../lib/js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="../lib/js/jquery.easing.min.js"></script>
+    <script src="../lib/js/scrolling-nav.js"></script>
+
+</body>
+
+</html>

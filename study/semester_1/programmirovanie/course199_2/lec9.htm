@@ -1,0 +1,381 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<TITLE></TITLE>
+<style type="text/css">
+p {
+margin:0cm;
+margin-bottom:.0001pt;
+text-align:justify;
+text-indent:35.45pt;
+mso-pagination:widow-orphan;
+font-size:12.0pt;
+font-family:"arial";
+mso-fareast-font-family:"arial";
+}
+.code{font-family:"Courier New";font-size:10pt}
+</style>
+</HEAD>
+<BODY>
+<basefont face=arial size=3>
+<B></B>
+<table border="0" cellpadding="0" cellspacing="0" width="100%"
+ height="31">
+<TR>
+ <TD width="100%" bgcolor="#000000"><div align=right><font color="#FFFFFF" size=3 face=Arial><b>Программирование
+ на языках высокого уровня. Язык программирования Паскаль&nbsp;</b></font></div></td>
+</TR>
+</table>
+<table border="0" cellpadding="2" cellspacing="0" width="100%" height="35">
+<TR>
+ <TD width="486" bgcolor=gray height="26">
+<P align=right>&nbsp;</p>
+ </td>
+ <TD width="230" bgcolor="#EEE0BF" height="26"><p align=center><font size=2 face=Arial color="#0000FF"><a href="P6.htm">
+</a><a href="lec8.htm">назад</a> | <a href="index_lec.htm">оглавление</a>
+| <a href="lec10.htm"> вперёд</a></font></p>
+ </td>
+ <TD width="43" height="26">&nbsp;</td>
+</TR>
+</table><br>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<TR>
+ <TD><div align=center></div>
+ <P><b>9. Файлы</b></P>
+<P>&nbsp;</P>
+<P></P>
+<P><b><u><a name="9_1"></a>9.1 Определение файла</u></b></P>
+<P>&nbsp;</P>
+ <P>В Паскале файл относится к структурированным типам данных,
+ как массив и запись. Файл представляет собой последовательность компонентов
+ одного типа, расположенных на внешнем устройстве (например, магнитный
+ диск). Тип компонентов файла может быть любым, кроме файлового. Количество
+ компонентов в файле не оговаривается и ограничивается только объемом памяти
+ на внешнем устройстве.</P>
+ <P>В Турбо-Паскале выделяют 3 типа файлов:</P>
+<OL>
+<P>
+<LI>Текстовые файлы – используются для хранения текстовой информации в
+ виде символов, объединенных в строки. </LI>
+<p></P>
+<P>Описание: <B>var &lt;файловая переменная&gt;: text;</b></P>
+<P>Например, var f1: text;</P>
+<P>
+<LI>Типизированные файлы – используются для хранения данных определенного
+ типа.</LI>
+<p></P>
+<P>Описание: <B>var &lt;файловая переменная&gt;: file
+ of &lt;тип&gt;;</b></P>
+<P>Например, var f1: integer;</P>
+<P> var f2: real;</P>
+<P> var f3: ‘A’..’z’;</P>
+<P>
+<LI>Нетипизированные файлы – используются для организации доступа к любым
+  данным, независимо от их структуры (тип компонентов не указывается).</LI>
+</OL>
+<DIR>
+<P>Описание: <B>var &lt;файловая переменная&gt;: file;</b></P>
+<P>Например, var f: file;</P>
+<P></P>
+</DIR>
+<P>&nbsp;</P>
+<P><b><u><a name="9_2"></a>9.2 Процедуры и функции для работы
+ с файлами</u></b></P>
+<P>&nbsp;</P>
+<P><I><B>assign (&lt;файловая переменная&gt;, &lt;имя.расширение&gt;);</b></i>
+ - устанавливает связь между файловой переменной и именем файла на диске.
+ Имя файла состоит из двух частей: имя (не более 8 символов) и расширение
+ (не более 3 символов). Расширение может отсутствовать.</P>
+<P>Например, assign(f1,’res.txt’);</P>
+<P>Далее в программе, где будет упоминаться переменная
+ f1 - подразумевается, что работа ведется с реальным файлом res.txt .</P>
+<P><I><B>reset (&lt;файловая переменная &gt;);</b></i> -
+ открывает существующий файл для чтения.</P>
+<P>Например, reset(f1);</P>
+<P><I><B>rewrite (&lt;файловая переменная &gt;);</b></i>
+ - открывает файл для записи. Если файла нет на диске, то он создается.
+ Если есть такой файл, то он создается заново пустым, вся старая информация
+ стирается.</P>
+<P>Например, rewrite(f1);</P>
+<P><I><B>append (&lt;файловая переменная &gt;);</b></i>
+ - открывает файл для добавления в него новой информации (старая не стирается).
+<I>Только для текстовых файлов</I> (!).</P>
+<P>Например, append(f1);</P>
+<P><I><B>read (&lt;файловая переменная &gt;, &lt;переменная&gt;</b></i>);
+ - чтение одного элемента из файла, соответствующего файловой переменной,
+ и помещение его в переменную программы. Чтение осуществляется последовательно,
+ после чтения каждого значения, указатель в файле перемещается на следующую
+ позицию.</P>
+<P>&nbsp;</P>
+<P><U>Пример:</u> Пусть на диске есть символьный файл mebel.
+ Задача: написать программу, которая последовательно считывает из этого
+ файла первые 4 символа и выводит их на экран.</P>
+<P>Изобразим файл следующим образом:</P>
+<P></P>
+<P>
+<CENTER>
+<TABLE BORDER CELLSPACING=1 CELLPADDING=1 WIDTH=390>
+<TR>
+ <TD WIDTH="12%" VALIGN=TOP>&nbsp;</TD>
+ <TD WIDTH="22%" VALIGN=TOP> 1-ый байт памяти</TD>
+ <TD WIDTH="20%" VALIGN=TOP> 2-ой байт памяти</TD>
+ <TD WIDTH="15%" VALIGN=TOP> …</TD>
+ <TD WIDTH="16%" VALIGN=TOP>&nbsp;</TD>
+ <TD WIDTH="15%" VALIGN=TOP>&nbsp;</TD>
+</TR>
+<TR>
+ <TD WIDTH="12%" VALIGN=TOP> Mebel</TD>
+ <TD WIDTH="22%" VALIGN=TOP> с</TD>
+ <TD WIDTH="20%" VALIGN=TOP> т</TD>
+ <TD WIDTH="15%" VALIGN=TOP> о</TD>
+ <TD WIDTH="16%" VALIGN=TOP> л</TD>
+ <TD WIDTH="15%" VALIGN=TOP> …</TD>
+</TR>
+</TABLE>
+</CENTER>
+<p></P>
+<P></P>
+<P><u>Программа:</u></P>
+<P><span class=code>varF1: file of char;</span></P>
+<P class=code>&nbsp;&nbsp;&nbsp;x:
+ char; i:integer;</P>
+<P class=code>Begin</P>
+<P class=code>&nbsp;assign(F1,’mebel’);</P>
+<P class=code>&nbsp;reset(F1);</P>
+<P class=code> &nbsp;for i:=1 to 4 do </P>
+<P class=code> &nbsp;begin</P>
+<P class=code> &nbsp;&nbsp;read(F1,x);</P>
+<P class=code> &nbsp;&nbsp;write(x);</P>
+<P class=code> &nbsp;end;</P>
+<P class=code> &nbsp;close(F1);</P>
+<P class=code>End.</P>
+<P></P>
+<P>На экране увидим: стол</P>
+<P>&nbsp;</P>
+<P></P>
+<P>Для текстового файла может использоваться процедура
+ readln, которая читает значение из файла и пропускает непрочитанную часть
+ строки и признак конца строки.</P>
+<P></P>
+<P><I><B>write (&lt;файловая переменная &gt;, &lt;переменная&gt;);</b></i>
+ - запись в файл данных из переменных программы. Вывод информации осуществляется
+ последовательно.</P>
+<P><span class=code>varf1: file of char;</span></P>
+<P class=code>&nbsp;&nbsp;y: array
+ [1..100] of integer;</P>
+<P class=code>&nbsp;&nbsp;…</P>
+<P class=code>&nbsp;for i:=1 to 100 do write(f1,y[i]);
+</P>
+<P><IMG SRC="img/Image1468.gif" WIDTH=250 HEIGHT=66></P>
+<P></P>
+<P><I><B>eof (var f): boolean;</b></i> - функция проверки
+ конца файла. Возвращает true, если достигнут конец файла, иначе возвращает
+ false.</P>
+<P></P>
+<P>while not eof(f) do read(f,x);</P>
+<P>{команда читается так: пока не конец файла делай команду:
+ чтение очередного элемента из файла, соответствующего файловой переменной
+ f, в переменную x}</P>
+<P></P>
+<P><I><B>close (&lt;файловая переменная &gt;);</b></i> -
+ процедура закрытия файла, завершает действия с файлом. После процедуры
+ close файловую переменную можно связать с другим файлом или снова открыть
+ этот же файл.</P>
+ <P><span class=code>assign(f2,’MyFile.txt’);</span></P>
+<P class=code> rewrite (f2);</P>
+<P class=code>…</P>
+<P class=code>close(f2);</P>
+<P class=code>reset(f2);</P>
+<P class=code>…</P>
+<P class=code> close(f2);</P>
+<P class=code> assign(f2,’OtherFile.txt’);</P>
+<P class=code>reset(f2);</P>
+<P class=code>…</P>
+<P class=code>&nbsp;</P>
+<P><U>Пример 1</u>: Программа, переписывающая из файла a.txt
+ в файл b.txt все символы, кроме цифр.</P>
+<P class=code>varch: char:</P>
+<P class=code>&nbsp;&nbsp;&nbsp;f1,f2:
+ text:</P>
+<P class=code>begin</P>
+<P class=code>&nbsp;assign(f1, ‘a.txt’);</P>
+<P class=code>&nbsp;assign(f2, ‘b.txt’);</P>
+<P class=code>&nbsp;reset(f1);</P>
+<P class=code>&nbsp;rewrite(f2);</P>
+<P class=code>&nbsp;repeat</P>
+<P class=code>&nbsp;&nbsp;read(f1,ch);</P>
+<P class=code>&nbsp;&nbsp;if (ch&lt;=’0’)
+ or (ch&gt;=’9’) then write(f2,ch);</P>
+<P class=code>&nbsp;until eof(f1);</P>
+<P class=code>&nbsp;close(f1); close(f2);</P>
+<P class=code>end.</P>
+<P class=code>&nbsp;</P>
+<P><U>Пример 2</u>: Программа для вычисления и вывода в файл таблицы Пифагора
+ (таблицы умножения).</P>
+<P class=code>Var i, j, n : Integer;</P>
+<P class=code>&nbsp;&nbsp;&nbsp;f : Text;</P>
+<P class=code>Begin</P>
+<P class=code> &nbsp;Assign(f, ‘tab_pif.txt’);</P>
+<P class=code> &nbsp;Rewrite(f);</P>
+<P class=code> &nbsp;For i := 1 to 9 do begin</P>
+<P class=code>&nbsp;&nbsp;For j := 1 to 9 do begin</P>
+<P class=code> &nbsp;&nbsp;&nbsp;n := i*j;</P>
+<P class=code> &nbsp;&nbsp;&nbsp;Write(n:4);{вывод
+ результата на экран}</P>
+<P class=code> &nbsp;&nbsp;&nbsp;Write(f,
+ n:4);{вывод результата в файл; т.е., если в процедуре Write первым
+ параметром</P>
+<P class=code> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;указана
+ файловая переменная, то вывод осуществляется не на экран, а в файл, </P>
+<P class=code> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;с
+ которым связана эта переменная в процедуре Assign }</P>
+<P class=code>&nbsp;&nbsp;end;</P>
+<P class=code>&nbsp;&nbsp;WriteLn;{перевод
+ строки на экране}</P>
+<P class=code>&nbsp;&nbsp;WriteLn(f);{перевод
+ строки в файле}</P>
+<P class=code> &nbsp;end;</P>
+<P class=code> &nbsp;Close(f);</P>
+<P class=code>End.</P>
+<P class=code>&nbsp;</P>
+<P></P>
+<P><I><B>rename(&lt;файловая переменная&gt;,&lt;новое имя
+ файла</b></i>&gt;); - переименование файла на диске. Перед использованием
+ этой поцедуры необходимо связать файловую переменную со старым именем
+ файла. Если файл был открыт, то необходимо его закрыть.</P>
+<P>&nbsp;</P>
+<P><u>Пример:</u></P>
+<P><span class=code>varf1,f2: text;</span></P>
+<P class=code>&nbsp;&nbsp;&nbsp;i:
+ integer;</P>
+<P class=code>begin</P>
+<P class=code>&nbsp;assign(f1, ‘res.txt’);</P>
+<P class=code>&nbsp;rename(f1, ‘res.old’);</P>
+<P class=code>&nbsp;assign(f2, ‘res.old’);</P>
+<P class=code>&nbsp;rewrite(f2);</P>
+<P class=code>&nbsp;for i:=1 to 20 do writeln(f2,i);</P>
+<P class=code>&nbsp;close(f2);</P>
+<P class=code>end.</P>
+<P class=code>&nbsp;</P>
+<P><I><B>erase (&lt;файловая переменная&gt;);</b></i> -
+ удаление файла с диска. Если файл был открыт, то закрыть, связать с файловой
+ переменной.</P>
+<P>assign(f,’res.old’);</P>
+<P>erase(f);</P>
+<P><I><B>seek (&lt;файловая переменная&gt;, N);</b></i>
+ - перемещение в заданную позицию файла, нумерация позиций с нуля, N –
+ номер позиции. <I>Не используется для текстовых файлов</I> (!).</P>
+<P>&nbsp;</P>
+ <TABLE BORDER CELLSPACING=1 CELLPADDING=1 WIDTH=211>
+<TR>
+ <TD VALIGN=TOP><div align=center>0</div></TD>
+ <TD VALIGN=TOP><div align=center>1</div></TD>
+ <TD VALIGN=TOP><div align=center>2</div></TD>
+ <TD VALIGN=TOP><div align=center>3</div></TD>
+ <TD VALIGN=TOP><div align=center>4</div></TD>
+ <TD VALIGN=TOP><div align=center>5</div></TD>
+</TR>
+<TR>
+ <TD WIDTH="17%" VALIGN=TOP><div align=center>2</div></TD>
+ <TD WIDTH="17%" VALIGN=TOP><div align=center>5</div></TD>
+ <TD WIDTH="17%" VALIGN=TOP><div align=center>3</div></TD>
+ <TD WIDTH="17%" VALIGN=TOP><div align=center>8</div></TD>
+ <TD WIDTH="17%" VALIGN=TOP><div align=center>8</div></TD>
+ <TD WIDTH="17%" VALIGN=TOP><div align=center>6</div></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<P><u>Пример:</u></P>
+<P><span class=code>varf: file of integer;</span></P>
+<P class=code>&nbsp;&nbsp;&nbsp;i:
+ integer;</P>
+<P class=code>begin</P>
+<P class=code>&nbsp;assign(f,’a.dat’);</P>
+<P class=code>&nbsp;reset(f); |N=0</P>
+<P class=code>&nbsp;read(f,i);|i=2</P>
+<P class=code>&nbsp;seek(f,4);|N=4</P>
+<P class=code>&nbsp;read(f,i);|i=8</P>
+<P class=code>end.</P>
+<P>&nbsp;</P>
+<P></P>
+<P><I><B>filesize(&lt;файловая переменная&gt;): longint;</b></i>
+ - функция, возвращает текущий размер файла (количество компонентов!).</P>
+<P></P>
+<P>&nbsp;</P>
+<P><U>Пример 3:</u> Программа, меняющая порядок символов
+ в файле на обратный.</P>
+<P><span class=code>varf1.f2: file of char;</span></P>
+<P class=code>&nbsp;&nbsp;i,n:
+ integer;</P>
+<P class=code>&nbsp;&nbsp;ch:
+ char;</P>
+<P class=code>begin</P>
+<P class=code>&nbsp;assign(f1,’a.txt’);</P>
+<P class=code>&nbsp;assign(f2,’b.txt’);</P>
+<P class=code>&nbsp;reset(f1);</P>
+<P class=code>&nbsp;rewrite(f2);</P>
+<P class=code>&nbsp;h:=filesize(f1);</P>
+<P class=code>&nbsp;for i:=h-1 downto 0 do</P>
+<P class=code>&nbsp;begin</P>
+<P class=code> &nbsp;&nbsp;seek(f1,i);</P>
+<P class=code> &nbsp;&nbsp;read(f1,ch);</P>
+<P class=code> &nbsp;&nbsp;write(f2,ch);</P>
+<P class=code>&nbsp;end;</P>
+<P class=code>&nbsp;close(f1);</P>
+<P class=code>&nbsp;close(f2);</P>
+<P class=code>end.</P>
+<P class=code>&nbsp;</P>
+<P></P>
+<P>&nbsp;</P>
+<P><b><u><a name="9_3"></a>9.3 Нетипизированные файлы</u></b></P>
+<P>&nbsp;</P>
+<P>При описании нетипизированных файлов <I>не указывается
+ тип компонентов файла</I>, что позволяет обеспечить доступ к данным любого
+ типа. Использование нетипизированных файлов дает возможность организовать
+ <I>высокоскоростной обмен данных</I> (т.е. чтение и запись на диск).</P>
+<P>В процедурах открытия таких файлов указывается размер
+ записи (в байтах), считываемой или записываемой на диск.</P>
+<P>reset(f, size);</P>
+<P>rewrite(f, size);</P>
+<P>Для обеспечения максимальной скорости обмена длина блока
+ должна быть кратна размеру сектора магнитного диска (512 байт). Но размер
+ файла может быть не кратен размеру записи, поэтому для полного чтения
+ всего файла размер записи устанавливается равным 1 байту.</P>
+<P>Для чтения и записи в Нетипизированные файлы используются
+<I>процедуры чтения и записи блоками</I>:</P>
+<P><I><B>blockread (f, buf, n, res);</b></i> - чтение из
+ файла f в переменную buf (обычно массив), n – число записей, запрашиваемых
+ на чтение, res – число реально считанных записей.</P>
+<P><I><B>blockwrite (f, buf, n, res);</b></i> - запись из
+ переменной buf в файл f.</P>
+<P>&nbsp;</P>
+<P>Пример:</P>
+<P class=code>varf1,f2: file;</P>
+<P class=code>&nbsp;&nbsp;r1,r2:
+ integer;</P>
+<P class=code>&nbsp;&nbsp;a: array
+ [1..4096] of byte;</P>
+<P class=code>&nbsp;&nbsp;st1,
+ st2: string;</P>
+<P class=code>begin</P>
+<P class=code>&nbsp;write(‘Введите имя исходного
+ файла’); readln(st1);</P>
+<P class=code>&nbsp;write(‘Введите имя нового
+ файла’); readln(st2);</P>
+<P class=code>&nbsp;assign(f1,st1); assign(f2,st2);</P>
+<P class=code>&nbsp;reset (f1,1); rewrite(f2,1);</P>
+<P class=code>&nbsp;repeat</P>
+<P class=code>&nbsp;&nbsp;blockread(f1,a,4096,r1);</P>
+<P class=code>&nbsp;&nbsp;blockwrite(f2,a,r1,r2);</P>
+<P class=code>&nbsp;until r1&lt;4096;</P>
+<P class=code>&nbsp;close(f1); close(f2);</P>
+<P class=code>end.</P>
+<P>&nbsp;</P>
+ </td>
+</TR>
+</table>
+<hr>
+<div align=center><font size=2 face=Arial color="#0000FF"><a href="lec8.htm">назад</a>
+ | <a href="index_lec.htm">оглавление</a> | <a href="lec10.htm"> вперёд</a></font></div>
+</BODY>
+</HTML>

@@ -1,0 +1,302 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="do.sibsutis.ru">
+
+    <title>Лекция 4. Конспект лекций</title>
+	
+	<link rel="icon" type="image/png" href="../lib/css/favicon.png">
+    <!-- Bootstrap Core CSS -->
+    <link href="../lib/css/bootstrap.css" rel="stylesheet">
+	
+    <!-- Custom CSS -->
+    <link href="../lib/css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" >
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <li class="hidden"> <a class="page-scroll" href="#page-top"></a> </li>
+	  
+	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  
+      <a class="navbar-brand " href="../index.htm"> 
+   <text class = "hidden-xs">Структуры и алгоритмы обработки данных </text> 
+   <text class = "visible-xs">САОД</text>
+	  </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and glyphicon glyphicon-list-alt content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+	  <!-- <ul class="nav navbar-nav">
+		<li><a href="#"></a></li> 
+      </ul> -->
+	
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+		<button type="button" class="navbar-toggle dropdown-toggle hidden-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" >
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>	      
+		<a class = "dropdown-toggle visible-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Материалы</a>
+          <ul class="dropdown-menu">
+            <li><a href="../index.htm">Аннотация курса</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="lec_index.htm">Теория</a></li>
+            <li><a href="course_work.htm">Контрольная работа</a></li>
+            <li><a href="labs.htm">Лабораторные работы</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="lit.htm">Литература</a></li>
+          </ul>
+ </li>
+  </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+    <!-- Intro Section -->
+	<!-- Секция с информацией "Уважаемый слушатель"	 -->
+    <div id="intro" class="section content-section ">
+        <div class="container">
+             <div class="row">
+                <div class="col-lg-12">	
+
+
+<!-- содержание -->	
+<div class="page-header">
+<h3>4 Быстрые методы сортировки массивов</h3>
+<p><a href="lec4.htm#1" class=punkt>1. Пирамидальная сортировка</a>
+<p><a href="lec4.htm#2" class=punkt>2. Метод Хоара</a>
+<p><a href="lec4.htm#3" class=punkt>3. Проблема глубины рекурсии</a>
+</div>
+
+<h3><a name=1></a>1 Пирамидальная сортировка</h3><br>
+
+<P ALIGN="JUSTIFY">Пирамидальная сортировка основана на алгоритме построения пирамиды. Последовательность a<SUB>i</SUB>, a<SUB>i+1</SUB>,…,a<SUB>k</SUB> называется <I>(i,k)-пирамидой</I>, если неравенство</P>
+<P ALIGN="CENTER">a<SUB>j</SUB>&#8804;min(a<SUB>2j</SUB>, а<SUB>2j+1</SUB>) &#9;&#9;&#9;&#9;(*)</P>
+<P ALIGN="JUSTIFY">выполняется для каждого j, j=i,…,k для которого хотя бы один из элементов a<SUB>2j</SUB>, a<SUB>2j+1</SUB> существует.</P><DIR>
+
+<P>Например, массив А является пирамидой, а массив В <FONT FACE="Symbol">&#190;</FONT>
+ не является.</P>
+<P>А=(а<SUB>2 </SUB>, а<SUB>3 </SUB>, а<SUB>4 </SUB>, а<SUB>5 </SUB>, а<SUB>6 </SUB>а<SUB>7 </SUB>, а<SUB>8 </SUB>)=(3, 2, 6, 4, 5, 7)</P>
+<P>В=(b<SUB>1</SUB>, b<SUB>2</SUB>, b<SUB>3</SUB>, b<SUB>4</SUB>, b<SUB>5</SUB>, b<SUB>6</SUB>, b<SUB>7</SUB>)=(3, 2, 6, 4, 5, 7)</P>
+</DIR>
+
+<P ALIGN="CENTER"><B><I>Свойства пирамиды</I></B></P><br>
+
+<ol>
+<P ALIGN="JUSTIFY"><LI>Если последовательность a<SUB>i</SUB>, a<SUB>i+1</SUB>,…,а<SUB>k-1</SUB>, a<SUB>k</SUB> является (<I>i, k</I>)-пирамидой, то последовательность a<SUB>i+1</SUB>,…,a<SUB>k-1</SUB>, полученная усечением элементов с обоих концов последовательности, является (<I>i+1, k-1</I>)пирамидой.</LI></P>
+<P ALIGN="JUSTIFY"><LI> Если последовательность a<SUB>1</SUB>…a<SUB>n</SUB> – (<I>1, n</I>)-пирамида, то а<SUB>1</SUB> – минимальный элемент последовательности.</LI></P>
+<P ALIGN="JUSTIFY"><LI>Если a<SUB>1</SUB>, a<SUB>2</SUB>…,a<SUB>n/2</SUB>,a<SUB>n/2+1</SUB>,…a<SUB>n</SUB>-произвольная последовательность, то последовательность a<SUB>n/2+1</SUB>,…,a<SUB>n </SUB> является (<I>n/2+1, n</I>)-пирамидой.</LI></P></OL>
+
+<P ALIGN="JUSTIFY">Процесс построения пирамиды выглядит следующим образом. Дана последовательность a<SUB>s+1</SUB>,…,a<SUB>k</SUB>,  которая является (<I>s+1, k</I>)-пирамидой. Добавим новый элемент х и поставим его на <I>s</I>-тую позицию в последовательности, т.е. пирамида всегда будет расширяться влево. Если выполняется (*), то полученная последовательность – (<I>s, k</I>)-пирамида. Иначе найдутся элементы a<SUB>2s+1</SUB>,a<SUB>2s</SUB> такие, что либо a<SUB>2s</SUB> &lt; a<SUB>s  </SUB>либо a<SUB>2s+1</SUB> &lt; a<SUB>s</SUB>.</P>
+<P ALIGN="JUSTIFY">Пусть имеет место первый случай, второй случай рассматривается аналогично. Поменяем местами элементы a<SUB>s</SUB> и a<SUB>2s</SUB>. В результате получим новую последовательность a<SUB>s</SUB><SUP>’</SUP>,a<SUB>s+1,</SUB>…, a<SUB>2s</SUB><SUP>’</SUP>,…, a<SUB>k</SUB>. Повторяем все действия для элемента a<SUB>2s</SUB><SUP>’</SUP> и т.д. пока не получим (<I>s, k</I>)-пирамиду.</P>
+<P><B>Пример.</B> Добавим в (2, 8)-пирамиду новый элемент х=6. </P>
+<P>Условные обозначения:</p> 
+<P><img src="img_lec/Image28.GIF" width="19" height="21" align="absmiddle"> новый элемент</P>
+<P><img src="img_lec/Image23.GIF" width="19" height="21" align="absmiddle"> сравнение с включаемым элементом</P>
+<P><img src="img_lec/Image10.gif" width="22" height="13"> обмен элементов</P>
+<div align="center"><br>
+  <img src="img_lec/Image18.gif" width="335" height="169"> </div>
+<center><font size="2">Рисунок 7- Добавление в пирамиду нового элемента</font></center><br>
+<I><P ALIGN="CENTER"><B>Алгоритм на псевдокоде</b></P>
+<P ALIGN="CENTER">Построение (L,R)-пирамиды </P></I>
+<br><P>a<SUB>L+1</SUB>,…,a<SUB> R</SUB> – на входе пирамида (L+1,R)</P>
+<P>a<SUB>L</SUB> –новый элемент</P>
+<P>x:= a<SUB>L</SUB>, i:=L</P>
+<P>DO</P>
+<P>&nbsp;&nbsp;&nbsp;j:=2i</P>
+<P>&nbsp;&nbsp;&nbsp;IF (j&gt;R) OD</P>
+<P>&nbsp;&nbsp;&nbsp;IF((j&lt;R) и (a<SUB>j+1<FONT FACE="Symbol">&#163;</FONT>
+</SUB> a<SUB>j</SUB>)) j=j+1 FI</P>
+<P>&nbsp;&nbsp;&nbsp;IF (x<FONT FACE="Symbol">&#163;</FONT>a<SUB>j</SUB>) OD</P>
+<P>&nbsp;&nbsp;&nbsp;a<SUB>i</SUB>= a<SUB>j</SUB></P>
+<P>&nbsp;&nbsp;&nbsp;i:=j</P>
+<P>OD</P>
+<P>a<SUB>i</SUB>:=x</P><br>
+<P ALIGN="JUSTIFY">Величины М и С в процессе построения (L, R)-пирамиды имеют следующие оценки M<SUB>пир</SUB>&#8804;log (R/L)+2, C<SUB>пир</SUB>&#8804;2 log (R/L)</P>
+<P ALIGN="JUSTIFY">Пирамидальная сортировка производится в два этапа. Сначала строится пирамида из элементов массива. По свойству (3) правая часть массива является (<I>n/2+1, n</I>)-пирамидой. Будем добавлять по одному элементу слева, расширяя пирамиду, пока в неё не войдут все элементы массива. Тогда по свойству (2) первый элемент последовательности – минимальный.</P>
+<P ALIGN="JUSTIFY">Произведём двустороннее усечение: уберём элементы a<SUB>1</SUB>,a<SUB>n</SUB>. По свойству (1) оставшаяся последовательность является (2, n-1)-пирамидой. Элемент a<SUB>1</SUB> поставим на последнее место, а элемент a<SUB>n</SUB> добавим к пирамиде a<SUB>2</SUB>,…,a<SUB>n-1</SUB> слева. Получим новую (1, <I>n-1</I>)-пирамиду. В ней первый элемент является минимальным. Поставим первый элемент пирамиды на позицию <I>n-1</I>, а элемент a<SUB>n-1</SUB> добавим к пирамиде a<SUB>2</SUB>,…,a<SUB>n-1</SUB>, и т.д. В результате получим обратно отсортированный массив. </P>
+<P ALIGN="JUSTIFY"><B>Пример.</B> Отсортировать слово методом пирамидальной сортировки.</P>
+
+<br><div align="center"><img src="img_lec/Image19.gif" width="306" height="420"> </div>
+<br><div align="center"><img src="img_lec/Image20.gif" width="307" height="790"> </div>
+<br><center><font size="2">Рисунок 8 - Пирамидальная сортировка</font></center><br>
+
+<I><P ALIGN="CENTER"><B>Алгоритм на псевдокоде</B></P>
+<P ALIGN="CENTER">Пирамидальная сортировка</P></I><br>
+<P>L:=<FONT FACE="Symbol">&#235;</FONT>n/2<FONT FACE="Symbol">&#251;</FONT></P>
+<P>DO (L&gt;0) </P>
+<P>&nbsp;&nbsp;&nbsp;Построение (L,n) пирамиды&gt;</P>
+<P>&nbsp;&nbsp;&nbsp;L:=L-1</P>
+<P>OD</P>
+<P>R:=n</P>
+<P>DO (R&gt;1)</P>
+<P>&nbsp;&nbsp;&nbsp;a<SUB>1</SUB>&#8596;a<SUB>R</SUB></P>
+<P>&nbsp;&nbsp;&nbsp;R:=R-1</P>
+<P>&nbsp;&nbsp;&nbsp;Построение (1,R) пирамиды &gt;</P>
+<P>OD</P><br>
+<P ALIGN="JUSTIFY">Общее количество операций сравнений и пересылок для пирамидальной сортировки: C &#8804; 2<I>n</I> log <I>n</I>+<I>n</I>+2, &#9;M &#8804; <I>n</I> log <I>n</I>+6.5<I>n</I>-4. Таким образом, С=O(<I>n</I> log <I>n</I>), М=O(<I>n</I> log <I>n</I>) при <I>n &#8594; &#8734;</I>.</P>
+<P ALIGN="JUSTIFY">Отметим некоторые свойства пирамидальной сортировки. Метод пирамидальной сортировки неустойчив и не зависит от исходной отсортированности массива.</P>
+
+<br><h3><a name=2></a>2 Метод Хоара</h3>
+<br><P ALIGN="JUSTIFY">Метод Хоара или метод быстрой сортировки заключается в следующем. Возьмём произвольный элемент массива х. Просматривая массив слева, найдём элемент a<SUB>i</SUB> &#8805;x. Просматривая массив справа, найдём a<SUB>j</SUB> &#8804;x. Поменяем местами a<SUB>i</SUB> и a<SUB>J </SUB>. Будем продолжать процесс просмотра и обмена, до тех пор пока i не станет больше j. Тогда массив можно разбить на две части: в левой части все элементы не больше х, в правой части массива не меньше х. Затем к каждой части массива применяется тот же алгоритм.</P>
+<P><B>Пример: </B>Отсортировать слово методом быстрой сортировки. </P>
+<P>Условные обозначения:</p>
+<p><IMG SRC="img_lec/Image21.GIF" WIDTH="19" HEIGHT="21" align="absmiddle"> ведущий элемент</P>
+<P><IMG SRC="img_lec/Image23.GIF" WIDTH="19" HEIGHT="21" align="absmiddle"> сравнение с ведущим элементом при просмотре справа</P>
+<P><IMG SRC="img_lec/Image22.gif" WIDTH="19" HEIGHT="21" align="absmiddle"> сравнение с ведущим элементом при просмотре слева</P>
+<P>| разделение массива на части </p>
+<p><IMG SRC="img_lec/Image3.gif" WIDTH="61" HEIGHT="13" align="absmiddle"> обмен элементов</P>
+<P><IMG SRC="img_lec/Image24.gif" WIDTH="18" HEIGHT="22" align="absmiddle"> индекс i </p>
+<p><IMG SRC="img_lec/Image25.GIF" WIDTH="18" HEIGHT="22" align="absmiddle"> индекс j</P>
+<div align="center"><br><img src="img_lec/Image26.GIF" width="361" height="379"> </div>
+<center><font size="2">Рисунок 9 - Метод Хоара</font></center>
+<br><I><P ALIGN="CENTER"><B>Алгоритм на псевдокоде</B></P>
+<P ALIGN="CENTER"> Сортировка части массива с границами (L,R).</P></I>
+<br><P>Обозначим: L-левую границу рабочей части массива</P>
+<P> R-правую границу рабочей части массива</P>
+
+<P>х:=а<SUB>L</SUB>, i:=L, j:=R,</P>
+<P>DО (i<FONT FACE="Symbol">&#163;</FONT>
+j)</P>
+<P>&nbsp;&nbsp;&nbsp;DО (a<SUB>i</SUB>&lt;x) i:=i+1 OD</P>
+<P>&nbsp;&nbsp;&nbsp;DО (a<SUB>j</SUB>&gt;x) j:=j-1 OD</P>
+<P>&nbsp;&nbsp;&nbsp;IF (i&lt;=j) </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a<SUB>i</SUB>&#8596; a<SUB>j,</SUB>, i:=i+1, j:=j-1</P>
+<P>&nbsp;&nbsp;&nbsp;FI</P>
+<P>OD</P>
+<P>&nbsp;&nbsp;&nbsp;IF (L&lt;j)</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Сортировка части массива с границами (L,j)&gt; </P>
+<P>&nbsp;&nbsp;&nbsp;FI</P>
+<P>&nbsp;&nbsp;&nbsp;IF (i&lt;R)</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Сортировка части массива с границами (i,R)&gt; </P>
+<P>&nbsp;&nbsp;&nbsp;FI</P><br>
+
+<P ALIGN="JUSTIFY">Очевидно, трудоёмкость метода существенно зависит от выбора элемента х, который влияет на разделение массива. Максимальные значения М и С для метода быстрой сортировки достигаются при сортировке упорядоченных массивов (в прямом и обратном порядке). Тогда в этом случае в одной части остаётся только один элемент (минимальный или максимальный), а во второй – все остальные элементы. Выражения для М и С имеют следующий вид</P>
+<P ALIGN="CENTER">M=<I>3(n-1),</I> C=<I>(n<SUP>2</SUP>+5n+4)/2</I></P>
+<P ALIGN="JUSTIFY">Таким образом, в случае упорядоченных массивов трудоёмкость сортировки имеет квадратичный порядок.</P>
+<P ALIGN="JUSTIFY">Элемент <I>a<SUB>m</SUB></I> называется <I>медианой</I> для элементов <I>a<SUB>L</SUB>…a<SUB>R</SUB>,</I> если количество элементов меньших <I>a<SUB>m</SUB> </I>равно количеству элементов больших <I>a<SUB>m</SUB></I> с точностью до одного элемента (если количество элементов нечётно). В примере буква К- медиана для КУРАПОВАЕ.</P>
+<P ALIGN="JUSTIFY">Минимальная трудоемкость метода Хоара достигается в случае, когда на каждом шаге алгоритма в качестве ведущего элемента выбирается медиана массива. Количество сравнений в этом случае C=<I>(n+1)</I>log<I>(n+1)-(n+1)</I>. Количество пересылок зависит от положения элементов, но не может быть больше одного обмена на два сравнения. Поэтому количество пересылок – величина того же порядка, что и число сравнений. Асимптотические оценки для средних значений М и С имеют следующий вид </P>
+<P ALIGN="CENTER">С=О(<I>n</I> log <I>n</I>), М=О(<I>n</I> log <I>n</I>) при <I>n &#8594; &#8734;</I>.</P>
+<P ALIGN="JUSTIFY">Метод Хоара неустойчив.</P>
+
+<br><h3><a name=3></a>3 Проблема глубины рекурсии</h3><br>
+</B></I><P ALIGN="JUSTIFY">В теле подпрограммы доступны все объекты, описанные в основной программе, в том числе и имя самой подпрограммы. Это позволяет внутри тела подпрограммы осуществлять её вызов. Процедуры и функции, организующие вызовы “самих себя” называются <I>рекурсивными. </I>Рекурсия широко используется в программирование, потому что многие математические алгоритмы имеют рекурсивную природу.</P>
+<P ALIGN="JUSTIFY">В качестве примера приведём известный алгоритм вычисления факториала неотрицательного целого числа:</P>
+<P ALIGN="JUSTIFY">&#9;&#9;0!=1</P>
+<P ALIGN="JUSTIFY">&#9;&#9;1!=1</P>
+<P ALIGN="JUSTIFY">&#9;&#9;<I>n</I>!<I>=(n-</I>1<I>)</I>!<I>*n</I></P>
+<i><P ALIGN="JUSTIFY">function fact (n:word):longint;</P>
+<P ALIGN="JUSTIFY">&nbsp;&nbsp;&nbsp;begin</P>
+<P ALIGN="JUSTIFY">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (n=0) or (n=1) then fact:=1</P>
+<P ALIGN="JUSTIFY">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else fact:=fact(n-1)*n;</P>
+<P ALIGN="JUSTIFY">&nbsp;&nbsp;&nbsp;end;</P>
+</i> 
+<div align="center"><img src="img_lec/Image27.GIF" width="311" height="185"> </I></FONT></div>
+
+<center><font size="2">Рисунок 10 - Схема вызовов при вычислении 4!</font></center>
+<br><P ALIGN="JUSTIFY">Рекурсивное оформление программы более компактно, наглядно и эффективно. Но существует опасность переполнения стека. Каждый вызов подпрограммы требует специально отведённой области памяти, называемой <I>фреймом</I>. В ней хранятся фактические параметры, адреса возврата, локальные переменные и регистры УП.</P>
+<P ALIGN="CENTER">Фрейм</P>
+<P ALIGN="CENTER"><CENTER><TABLE BORDER CELLSPACING=1 CELLPADDING=7 WIDTH=252>
+<TR><TD VALIGN="TOP">
+<FONT SIZE=4><P>Практический параметр</FONT></TD>
+</TR>
+<TR><TD VALIGN="TOP">
+<FONT SIZE=4><P>Адрес возврата</FONT></TD>
+</TR>
+<TR><TD VALIGN="TOP">
+<FONT SIZE=4><P>Регистры из программы</FONT></TD>
+</TR>
+<TR><TD VALIGN="TOP">
+<FONT SIZE=4><P>Локальные переменные</FONT></TD>
+</TR>
+</TABLE>
+</CENTER></P>
+
+<center><font size="2">Рисунок 11 - Структура фрейма</font></center>
+<br><P ALIGN="JUSTIFY">При выходе из программы эта память освобождается. Но если подпрограмма вызывает другую подпрограмму или саму себя, то в дополнение к существующему фрейму создаётся новый, т.е. <I>n</I> вложенных вызовов требуют выделения <I>n</I> фреймов в памяти.</P>
+<P ALIGN="JUSTIFY">Рассмотренный алгоритм Хоара может потребовать <I>n</I> вложенных вызовов (<I>n –</I> размер массива), т.е. глубина рекурсии достигает <I>n</I>. Это большой недостаток предложенного алгоритма. Попробуем уменьшить глубину рекурсии до log <I>n</I>. В рассмотренном алгоритме производится 2 рекурсивных вызова. Но один из них можно заменить простой итерацией, т.е. для одной части массива будем применять рекурсию, а для другого – простую итерацию. Чтобы уменьшить глубину рекурсии нужно делать рекурсивный вызов для меньшей по размеру части массива. Тогда в худшем случае, когда размеры правой и левой частей будут одинаковые, максимальная глубина рекурсии будет не больше log <I>n</I>. Например, для массива из 1 млн. элементов понадобиться одновременно менее 20 фреймов в памяти. Запишем новую версию алгоритма:</P>
+
+<br><I><P ALIGN="CENTER"><B>Алгоритм на псевдокоде</B></P>
+<P ALIGN="CENTER">Сортировка части массива (L,R)</P></I>
+<br><P ALIGN="JUSTIFY">DO (есть хотя бы 2 элемента, т.е. L&lt;R)</P>
+<P ALIGN="JUSTIFY">&nbsp;&nbsp;&nbsp;&#9;&lt;разделение&gt; (как в 1 версии)</P>
+<P ALIGN="JUSTIFY">&nbsp;&nbsp;&nbsp;IF (левая часть длиннее правой, т.е.j-L&gt;R-i) </P>
+<P ALIGN="JUSTIFY">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Сортировка части массива (i,R)</P>
+<P ALIGN="JUSTIFY">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R:=j</P>
+<P ALIGN="JUSTIFY">&nbsp;&nbsp;&nbsp;Else  </P>
+<P ALIGN="JUSTIFY">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Сортировка части массива (L,j)</P>
+<P ALIGN="JUSTIFY">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L:=i;</P>
+<P ALIGN="JUSTIFY">&nbsp;&nbsp;&nbsp;FI</P>
+<P ALIGN="JUSTIFY">OD</P>
+
+<br><h3>Контрольные вопросы</h3>
+<ol>
+<P ALIGN="JUSTIFY"><LI>Дайте определение пирамиды.</LI></P>
+<P ALIGN="JUSTIFY"><LI>Назовите основные свойства пирамиды</LI></P>
+<P ALIGN="JUSTIFY"><LI>Какова сложность пирамидальной сортировки?</LI></P>
+<P ALIGN="JUSTIFY"><LI>Сформулируйте основную идею метода Хоара.</LI></P>
+<P ALIGN="JUSTIFY"><LI>Какова сложность метода Хоара?</LI></P>
+<P ALIGN="JUSTIFY"><LI>Как зависит метод Хоара от начальной отсортированности массива?</LI></P></OL>
+
+
+<!-- конец содержания-->	
+				
+				</div>
+			</div>
+			
+            </div>
+        </div>
+    </div>
+	
+	<!--Меню навигации по лекциям -->	
+	<div aria-label="..." class = "nav-menu">
+	  <ul class="pager  background-transition-slow" >
+		 <li title="Наверх" style = "margin-right:15px;	"><a class = "glyphicon glyphicon-menu-up page-scroll" href="#page-top" ></a></li>
+		 <li title="К предыдущей лекции"><a class = "glyphicon glyphicon-menu-left page-scroll" href="lec3.htm" ></a></li>
+		 <li title="В содержание"><a class = "glyphicon glyphicon-list-alt" href="lec_index.htm" ></a></li>
+		 <li title="К следующей лекции"><a class = "glyphicon glyphicon-menu-right page-scroll" href="lec5.htm" ></a></li>
+	  </ul>
+	</div>
+	<!---->
+	
+	</div>
+    <!-- jQuery -->
+    <script src="../lib/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../lib/js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="../lib/js/jquery.easing.min.js"></script>
+    <script src="../lib/js/scrolling-nav.js"></script>
+
+</body>
+
+</html>

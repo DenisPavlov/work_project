@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="do.sibsutis.ru">
+
+  <title>Информатика</title>
+	
+	<link rel="icon" type="image/png" href="../lib/css/favicon.png">
+  <!-- Bootstrap Core CSS -->
+  <link href="../lib/css/bootstrap.css" rel="stylesheet">
+	
+  <!-- Custom CSS -->
+  <link href="../lib/css/scrolling-nav.css" rel="stylesheet">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+ <div class="container">
+  <!-- Brand and toggle get grouped for better mobile display -->
+ 
+ <div class="navbar-header">
+ 
+  <li class="hidden"> <a class="page-scroll" href="#page-top"></a> </li>
+	 
+	
+ <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+   </button>
+	 
+   <a class="navbar-brand " href="../index.html"> 
+  <text class = "hidden-xs">Информатика</text> 
+  <text class = "visible-xs">Информатика</text>
+</a>
+  </div>
+
+ 
+ <!-- Collect the nav links, forms, and glyphicon glyphicon-list-alt content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+   
+	  
+ <ul class="nav navbar-nav navbar-right">
+   
+ <li class="dropdown">
+		<button type="button" class="navbar-toggle dropdown-toggle hidden-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>	   
+		<a class = "dropdown-toggle visible-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Материалы</a>
+    
+	<ul class="dropdown-menu">
+	
+		<li><a href="../index.html">Аннотация курса</a></li>
+	
+		<li role="separator" class="divider"></li>
+	
+		<li><a href="lec_index.html">Теория</a></li>
+		<li><a href="labs.html">Лабораторные работы</a></li>
+		<li><a href="c_work.html">Контрольная работа</a></li>
+		
+		<li role="separator" class="divider"></li>
+		
+		<li><a href="lit.html">Литература</a></li>
+
+
+ 
+    </ul>
+ 
+</li>
+ </ul>
+  </div><!-- /.navbar-collapse -->
+ </div><!-- /.container-fluid -->
+</nav>
+
+
+<div id="intro" class="section content-section ">
+    <div class="container">
+		<div class="row">
+			<div class="col-lg-12">	
+				
+			<div class="page-header">
+				<h3>3. Кодирование текстовой информации</h3>
+		
+				<a href="lii_3.html#v" class="punkt">Вопросы и задачи для самопроверки</a>
+				<br>
+			</div>
+
+			
+			
+			<P>&#9;Итак, задача &#8722; представить
+				текстовую информацию в компьютере. Т.к. текстовая информация по своей
+				природе дискретна, нет необходимости предварительно её преобразовывать.</P>
+			  <P>&#9;Сколько разрядов (бит) надо взять, чтобы закодировать
+				заданное количество символов? Напомним, что количество различных последовательностей
+				из нулей и единиц, которые можно записать в n двоичных разрядах, равна <b>К=</b>
+				<IMG SRC="img/Image1533.gif" WIDTH=24 HEIGHT=26>(мощность алфавита). </P>
+			  <P>Если n = 4, мощность алфавита K = <IMG SRC="img/Image1534.gif" WIDTH=24 HEIGHT=26>=
+				16;</P>
+			  <P>Если n = 5, мощность алфавита K = <IMG SRC="img/Image1535.gif" WIDTH=22 HEIGHT=26>
+				= 32.</P>
+			  <P>Какое количество разрядов требуется, чтобы закодировать
+				буквы русского алфавита? В алфавите 33 буквы, т.е. 5-ти разрядов уже не
+				хватает. Реально же требуется около 200 различных символов (большие и
+				маленькие буквы, причём как минимум двух алфавитов – русского и английского,
+				цифры, знаки препинания, скобки-кавычки и т.д.). Минимальная подходящая
+				длина равна 8:</P>
+			  <P>&#9;&#9;n = 8, K = <IMG SRC="img/Image1536.gif" WIDTH=22 HEIGHT=26>=
+				256.</P>
+			  <P>&#9;Видимо, именно поэтому и получилась устоявшаяся длина
+				байта (один байт &#8722; один символ).</P>
+			  <P>&#9;Символы алфавита закодировали следующим образом:
+			  </P>
+			  <P>- составили квадратную таблицу размера 16 х 16;</P>
+			  <P>- пронумеровали строки и столбцы числами от 0000 до 1111
+				в двоичной с.с., либо в щестнадцатеричной числами от 0 до F; </P>
+			  <P>- записали в таблицу по определённому алгоритму все используемые
+				символы.</P>
+			  <P><B>Код символа составляется из номера строки (старшие разряды) и номера столбца (младшие разряды), на пересечении которых этот символ находится. А десятичный код символа получается, если эту последовательность  перевести из шестнадцатеричной (или двоичной) с.с. в десятичную.</b></P>
+			  <P>Однако во время создания большинства операционных систем никто не позаботился предусмотреть возможность представления информации на языках, отличных от английского. Наиболее популярной кодировкой была (и фактически ей и остается) <i>ASCII (<b>A</b>merican <b>S</b>tandard <b>C</b>ode for <b>I</b>nformation <b>I</b>nterchange</i>  – Американский Стандартный Код для Информационного Обмена). Таблица строго определяет ровно половину возможных символов (латинские буквы, арабские цифры, знаки препинания, управляющие символы). Они имеют десятичные коды от 0 до 127.</P>
+		  
+			  <P>Стандарт ASCII с 8 битами не определяет содержание «нижней» половины таблицы кодировки. Поэтому <i>МЕЖДУНАРОДНАЯ ОРГАНИЗАЦИЯ ПО СТАНДАРТИЗАЦИИ (ISO)</i> взяла ответственность по определению семейства стандартов, известных как ISO 8859-X семейство. Это семейство есть совокупность 8-ми битных кодировок, где младшая половина каждой кодировки (символы с кодами 0-127) соответствует ASCII, а старшая половина определяет символы для различных языков. Например, следующие кодовые страницы определены для:</P>
+			  <ol>
+			  
+			  <li><i>8859-0</i> - Новый европейский стандарт (так называемый <b>Latin 0</b>)
+			  <li><i>8859-1</i> - Европа, Латинская Америка (также известный как <b>Latin 1</b>)
+			  <li><i>8859-2</i> - Восточная Европа
+			  <li><i>8859-5</i> - Кириллица
+			  <li><i>8859-8</i> - Идиш
+			  
+			  </ol>
+			  
+			  <p>В <b>Latin 1</b> старшая половина таблицы определяет различные символы, которые не являются частью английского алфавита, но присутствует в различных европейских языках (немецкие umlauts, французские диакритические знаки и т.д).</p>
+			  <p>Русские буквы в кодировке ISO 8859-5 расположены в алфавитном порядке. Коды с 176 по 207 - заглавные буквы, коды с 208 по 239 - строчные буквы. Остальные cимволы кириллицы, включая русскую букву "Ё", располагаются на местах 161 - 175 (заглавные буквы) и 241 - 255 (строчные буквы).</p>
+			  <p>Но поскольку (как это часто случается со стандартами) этот стандарт был разработан без принятия во внимание реальных процессов, проходящих в СССР (когда это еще было), то единственное, что было действительно достигнуто с введением этого стандарта, так это только увеличение беспорядка с кодировками кириллицы. Дело в том, что для русских букв существуют по крайней мере 3 различных кодировки, связанные с различными операционными системами.</p>
+			  <p>Во-первых, это кодировка CP-866 (<i><b>C</b>ode <b>P</b>age</i> — кодовая страница). Здесь все специфические европейские символы были заменены на кириллицу, оставляя псевдографические символы нетронутыми. Следовательно, это не портило вид программ, использующих для работы текстовые окна, а также обеспечило символы кириллицы в них. Этот стандарт все еще жив и чрезвычайно популярен в среде МС-ДОС (система МС-ДОС тоже жива). Именно в этой ОС работает оболочка Турбо Паскаль (Таблица 1).</p>
+			  <p>&nbsp;</p>
+			 
+			  
+			  
+			  
+			  
+			  
+			  
+			  <div >Таблица 1 — <B>Кодировка CP-866</b></div>
+			  <TABLE BORDER CELLSPACING=1 CELLPADDING=2 WIDTH=384 >
+				<TR> 
+				  <TD VALIGN="TOP">&nbsp; </TD>
+				  <TD COLSPAN=17 VALIGN="TOP">Вторая шестнадцатеричная цифра кода</TD>
+				</TR>
+				<TR> 
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp; </TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>0</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>1</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>2</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>3</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>4</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>5</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>6</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>7</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>8</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>9</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>A</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>B</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>C</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>D</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>E</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>F</b></TD>
+				</TR>
+				<TR> 
+				  <TD WIDTH="6%" ROWSPAN=16 VALIGN="TOP">Первая цифра кода</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>0</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b><i>У</i></b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b><i>п</i></b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b><i>р</i></b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b><i>а</i></b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b><i>в</i></b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b><i>л</i></b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b><i>я</i></b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b><i>ю</i></b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b><i>щ</i></b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b><i>и</i></b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b><i>е</i></b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				</TR>
+				<TR> 
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>1</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b><i>с</i></b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b><i>и</i></b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b><i>м</i></b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b><i>в</i></b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b><i>о</i></b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b><i>л</i></b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b><i>ы</i></b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				</TR>
+				<TR> 
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>2</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> !</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> "</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> #</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> $</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> %</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> &amp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> ‘</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> (</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> )</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> *</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> +</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> ,</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> -</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> .</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> /</TD>
+				</TR>
+				<TR> 
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>3</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> 0</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> 1</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> 2</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> 3</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> 4</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> 5</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> 6</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> 7</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> 8</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> 9</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> :</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> ;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> &lt;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> =</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> &gt;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> ?</TD>
+				</TR>
+				<TR> 
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>4</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> @</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> A</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> B</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> C</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> D</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> E</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> F</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> G</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> H</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> I</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> J</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> K</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> L</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> M</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> N</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> O</TD>
+				</TR>
+				<TR> 
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>5</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> P</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Q</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> R</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> S</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> T</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> U</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> V</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> W</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> X</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Y</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Z</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> [</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> \</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> ^</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> _</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> `</TD>
+				</TR>
+				<TR> 
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>6</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> a</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> b</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> c</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> d</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> e</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> f</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> g</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> h</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> i</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> j</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> k</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> l</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> m</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> n</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> o</TD>
+				</TR>
+				<TR> 
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>7</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> p</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> q</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> r</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> s</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> t</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> u</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> v</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> w</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> x</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> y</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> z</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> {</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> |</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> }</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> ~</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				</TR>
+				<TR> 
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>8</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> А</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Б</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> В</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Г</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Д</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Е</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Ж</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> З</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> И</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Й</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> К</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Л</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> М</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Н</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> О</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> П</TD>
+				</TR>
+				<TR> 
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>9</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Р</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> С</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Т</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> У</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Ф</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Х</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Ц</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Ч</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Ш</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Щ</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Ъ</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Ы</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Ь</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Э</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Ю</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Я</TD>
+				</TR>
+				<TR> 
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>A</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> а</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> б</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> в</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> г</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> д</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> е</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> ж</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> з</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> и</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> й</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> к</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> л</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> м</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> н</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> о</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> п</TD>
+				</TR>
+				<TR> 
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>B</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b><i>С</i></b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b><i>и</i></b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b><i>м</i></b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b><i>в</i></b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b><i>о</i></b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b><i>л</i></b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b><i>ы</i></b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				</TR>
+				<TR> 
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>C</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b><i>п</i></b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b><i>с</i></b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b><i>е</i></b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b><i>в</i></b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b><i>д</i></b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b><i>о-</i></b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				</TR>
+				<TR> 
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>D</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b><i>г</i></b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b><i>р</i></b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b><i>а</i></b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b><i>ф</i></b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b><i>и</i></b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b><i>к</i></b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b><i>и</i></b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				</TR>
+				<TR> 
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>E</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> р</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> с</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> т</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> у</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> ф</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> х</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> ц</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> ч</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> ш</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> щ</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> ъ</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> ы</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> ь</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> э</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> ю</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> я</TD>
+				</TR>
+				<TR> 
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>F</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Ё</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> ё</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				</TR>
+			  </TABLE>
+			  <p>&nbsp;</p>
+			  <P></P>
+			  <P>&#9;Рассмотрим таблицу подробнее.</P>
+			  <P>Первые 32 места (первые две строки с номерами 0 и 1)
+				отданы производителям аппаратных средств. В этой области размещены так
+				называемые управляющие коды, которым не соответствуют никакие символы.</P>
+			  <P>В строке с номером 3 в столбцах с нулевого по девятый
+				идут цифры. Они расположены таким образом для того, чтобы их коды так
+				же шли подряд. Найдём шестнадцатиричные, двоичные и десятичные коды цифр:</P>
+			  <P>&nbsp;</P>
+			  <P><img src="img/Image1540.gif" width="626" height="130"></P>
+			  <P>&nbsp;</P>
+			  <P>&#9;</P>
+			  <P>Со строки с номером 4 начинаются буквы английского алфавита.</P>
+			  <P>Например, </P>
+			  <P>‘А’ имеет код <IMG SRC="img/Image1544.gif" WIDTH=280 HEIGHT=33 align="absmiddle"></P>
+			  <P>‘а’ имеет код <IMG SRC="img/Image1545.gif" WIDTH=212 HEIGHT=29 align="absmiddle"></P>
+			  <P>(т.е. разница между большими и соответствующими маленькими
+				буквами равна 32).</P>
+			  <P>Вообще, отличительным признаком заглавных латинских букв
+				является ноль в 5-ом бите, тогда как у строчных там стоит 1.</P>
+			  <P>Во-вторых, в Советском Союзе тоже были разработаны свои таблицы, например КОИ-7 (код обмена информацией, семизначный). Затем был разработан КОИ-8 - его происхождение относится к временам СЭВ государств Восточной Европы. Он был разработан довольно давно для <i>UNIX</i> машин. Так как, говоря о <i>UNIX</i>, мы подразумеваем <i>сеть</i>, то основной идей при создании <b>KOI-8</b> стандарта была идея об обеспечении перемещения кириллической информации по сети.</P>
+			  <p>&nbsp;</p>
+			  <div >Таблица 2 — <B>Кодировка КОИ-8</b></div>
+			  <TABLE BORDER CELLSPACING=1 CELLPADDING=4 WIDTH=200 >
+				<TR> 
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>0</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>1</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>2</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>3</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>4</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>5</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>6</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>7</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>8</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>9</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>A</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>B</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>C</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>D</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>E</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>F</b></TD>
+				</TR>
+				<TR> 
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>A</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> ё</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				</TR>
+				<TR> 
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>B</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Ё</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				</TR>
+				<TR> 
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>C</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> ю</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> а</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> б</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> ц</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> д</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> е</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> ф</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> г</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> х</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> и</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> й</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> к</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> л</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> м</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> н</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> о</TD>
+				</TR>
+				<TR> 
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>D</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> п</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> я</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> р</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> с</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> т</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> у</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> ж</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> в</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> ь</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> ы</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> з</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> ш</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> э</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> щ</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> ч</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> ъ</TD>
+				</TR>
+				<TR> 
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>E</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Ю</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> А</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Б</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Ц</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Д</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Е</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Ф</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Г</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Х</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> И</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Й</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> К</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Л</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> М</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Н</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> О</TD>
+				</TR>
+				<TR> 
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>F</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> П</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Я</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Р</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> С</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Т</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> У</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Ж</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> В</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Ь</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Ы</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> З</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Ш</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Э</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Щ</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Ч</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Ъ</TD>
+				</TR>
+			  </TABLE>
+			  <p>&nbsp;</p><P></P>
+			  <P>Разработчики <b>KOI-8</b> применили очень продуманный подход. Они поместили символы русской кириллицы в «нижней» части расширенной ASCII таблицы таким образом, что позиции кириллических символов соответствуют их фонетическим аналогам в английском алфавите в нижней части таблицы. Это означает, что, если в тексте, написанном в <b>KOI-8</b>, убирать восьмой бит каждого символа, <i>то мы все еще имеем "читабельный"  текст, хотя он и написан английскими символами!</i> Сегодня <b>КОИ-8</b> имеет распространение в компьютерных сетях на территории России и в российском секторе Интернета (эта же кодировка - ОС UNIX).</P>
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  <P>Следует отметить, что <b>KOI8-R</b> подходит только для русских текстов, и как следствие был создан украинский вариант <b>KOI-8: KOI8-U</b>.</P>
+			  <p>В-третьих, кодировка, известная как CP-1251, была введена “извне” компанией Microsoft, но глубоко закрепилась в связи с широким распространением программных продуктов этой фирмы. Эта кодировка используется на большинстве локальных компьютеров, работающих на платформе Windows.</p>
+			  <p>&nbsp;</p>
+			  <div >Таблица 3 — <B>Кодировка CP-1251</b></div>
+			  <TABLE BORDER CELLSPACING=1 CELLPADDING=4 WIDTH=400 >
+				<TR> 
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>0</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>1</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>2</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>3</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>4</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>5</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>6</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>7</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>8</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>9</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>A</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>B</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>C</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>D</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>E</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>F</b></TD>
+				</TR>
+				<TR> 
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>A</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Ё</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				</TR>
+				<TR> 
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>B</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> ё</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				  <TD WIDTH="6%" VALIGN="TOP">&nbsp;</TD>
+				</TR>
+				<TR> 
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>C</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> А</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Б</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> В</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Г</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Д</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Е</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Ж</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> З</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> И</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Й</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> К</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Л</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> М</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Н</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> О</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> П</TD>
+				</TR>
+				<TR> 
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>D</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Р</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> С</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Т</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> У</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Ф</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Х</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Ц</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Ч</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Ш</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Щ</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Ъ</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Ы</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Ь</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Э</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Ю</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> Я</TD>
+				</TR>
+				<TR> 
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>E</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> а</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> б</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> в</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> г</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> д</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> е</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> ж</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> з</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> и</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> й</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> к</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> л</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> м</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> н</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> о</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> п</TD>
+				</TR>
+				<TR> 
+				  <TD WIDTH="6%" VALIGN="TOP"> <b>F</b></TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> р</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> с</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> т</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> у</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> ф</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> х</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> ц</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> ч</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> ш</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> щ</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> ъ</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> ы</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> ь</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> э</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> ю</TD>
+				  <TD WIDTH="6%" VALIGN="TOP"> я</TD>
+				</TR>
+			  </TABLE>
+			  <p>&nbsp;</p>
+			  <P>Кроме того, в операционной системе MS-DOS могут действовать ещё две кодировки (ГОСТ и ГОСТ-альтернативная).</P>
+			  <P>&#9;В результате слово “ёрш” в кодировке DOS (CP-866)
+				имеет вид: F1-E0-E8<SUB>16</SUB>. Эта последовательность кодов под Windows
+				(кодировка CP-1251) будет декодирована как “саи”, а в ОС UNIX ( КОИ-8)
+				&#8722; как “яюх”.</P>
+			  <P>&#9;Чтобы избежать подобных проблем предлагается в качестве 
+				стандарта использовать не однобайтную кодировку, а двухбайтную. Это означает, 
+				что один байт будет содержать собственно код символа, а второй байт – 
+				информацию о том, к какому языку принадлежит символ. Такая 2-х байтовая 
+				кодировка позволяет обеспечить уникальные коды для <IMG SRC="img/Image1546.gif" WIDTH=105 HEIGHT=28> 
+				различных символов. <U>Но</U> при этом все текстовые документы становятся 
+				вдвое длиннее. Именно это и сдерживало долгое время переход на данную 
+				систему, которая называется UNICODE. Зато текст в такой кодировке всегда 
+				будет читаемым, независимо от языка и операционной системы. </P>
+			 <p>В настоящее время распределено около 40 000 позиций из 65 535 возможных, и им соответственно присвоены стандартные имена. Эти позиции зарезервированы за буквами практически всех известных алфавитов, включая древнеегипетские иероглифы. Т.е., используя этот стандарт, можно писать одновременно на русском и греческом, делая вставки на японском, с использованием одного единственного шрифта.</p>
+			 <p>Коды в стандарте Unicode разделены на несколько областей. Область с кодами от U+0000 до U+007F содержит символы набора ASCII с соответствующими кодами  (т.е. первые 256 символов <b>UNICODE</b> = Latin-1= ISO 8859-1). Далее расположены области знаков различных письменностей, знаки пунктуации и технические символы. Часть кодов зарезервирована для использования в будущем. Под символы кириллицы выделены коды от U+0400 до U+052F.</p>
+			 <p>В Юникоде для кириллицы выделено два раздела:</p>
+			 <ol>
+			 <li>	Cyrillic (U+0400 — U+04FF)</li>
+			 <li>	Cyrillic Supplement (U+0500 — U+052F).</li>
+			 </ol>
+			 <p>Символы можно разделить на 3 группы:</p>
+			 <ol>
+			 <li>	U+0400 — U+045F — это символы из ISO 8859-5, но перемещённые вверх на 864 позиции (36016).</li>
+			 <li>	U+0460 — U+0489 — исторические буквы.</li>
+			 <li>	U+048A — U+052F — это дополнительные буквы для разных языков, использующих кириллицу.</li>
+			 </ol>
+
+			  <h3><a name="v" class="anchor"></a>Вопросы и задачи для самопроверки</h3>
+			  <P>1. Какая последовательность десятичных кодов (номеров)
+				будет соответствовать в кодировке ASCII словам</P>
+			  <P> — file; </P>
+			  <P> — help; </P>
+			  <P>Какая последовательность кодов будет соответствовать
+				этим словам в двоичном и шестнадцатиричном кодах?</P>
+			  <P></P>
+			  <P>2. Пользуясь таблицей ASCII расшифровать текст</P>
+			  <P> — 57 69 6E 64 6F 77 73 2D 39 35</P>
+			  <P> — 63 6F 6D 65 2D 4F 4E 2D 6C 69 6E 65</P>
+			
+	
+	
+			</div>
+		</div>
+	</div>
+</div>
+	 <!--Меню навигации по Темам-->
+	<div aria-label="..." class = "nav-menu">
+		<ul class="pager  background-transition-slow" >
+			 <li title="Наверх" style = "margin-right:15px;	"><a class = "glyphicon glyphicon-menu-up page-scroll" href="#page-top" ></a></li>
+			 <li title="К предыдущей лекции"><a class = "glyphicon glyphicon-menu-left page-scroll" href="lii_1_2.html" ></a></li>
+			 <li title="В содержание"><a class = "glyphicon glyphicon-list-alt" href="lec_index.html" ></a></li>
+			 <li title="К следующей лекции"><a class = "glyphicon glyphicon-menu-right page-scroll" href="lii_4.html" ></a></li>
+		</ul>
+	</div>
+ 
+ 
+ <!-- jQuery -->
+ <script src="../lib/js/jquery.js"></script>
+
+ <!-- Bootstrap Core JavaScript -->
+ <script src="../lib/js/bootstrap.min.js"></script>
+
+ <!-- Scrolling Nav JavaScript -->
+ <script src="../lib/js/jquery.easing.min.js"></script>
+ <script src="../lib/js/scrolling-nav.js"></script>
+
+</body>
+
+</html>

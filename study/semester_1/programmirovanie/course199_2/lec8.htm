@@ -1,0 +1,365 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<TITLE></TITLE>
+<style type="text/css">
+p {
+margin:0cm;
+margin-bottom:.0001pt;
+text-align:justify;
+text-indent:35.45pt;
+mso-pagination:widow-orphan;
+font-size:12.0pt;
+font-family:"arial";
+mso-fareast-font-family:"arial";
+}
+.code{font-family:"Courier New";font-size:10pt}
+</style>
+</HEAD>
+<BODY>
+<basefont face=arial size=3>
+<B></B>
+<table border="0" cellpadding="0" cellspacing="0" width="100%"
+ height="31">
+<TR>
+ <TD width="100%" bgcolor="#000000"><div align=right><font color="#FFFFFF" size=3 face=Arial><b>Программирование
+ на языках высокого уровня. Язык программирования Паскаль&nbsp;</b></font></div></td>
+</TR>
+</table>
+<table border="0" cellpadding="2" cellspacing="0" width="100%" height="35">
+<TR>
+ <TD width="486" bgcolor=gray height="26">
+<P align=right>&nbsp;</p>
+ </td>
+ <TD width="230" bgcolor="#EEE0BF" height="26"><p align=center><font size=2 face=Arial color="#0000FF"><a href="P6.htm">
+</a><a href="lec7.htm">назад</a> | <a href="index_lec.htm">оглавление</a>
+| <a href="lec9.htm"> вперёд</a></font></p>
+ </td>
+ <TD width="43" height="26">&nbsp;</td>
+</TR>
+</table><br>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<TR>
+ <TD><div align=center></div>
+ <P><b>8. Записи</b></P>
+<P>&nbsp;</P>
+ <P><b><u><a name="8_1"></a>8.1 Определение записи</u></b></P>
+<P>&nbsp;</P>
+ <P>Относится к <I>структурированным типам данных</I> (как 
+ и массив, файл, множество). Запись состоит из фиксированного числа компонентов, 
+ называемых <I><U>полями записи</u></I>. В отличие от массива, поля записи 
+ <I>могут быть различных типов</I>.</P>
+ <P>Описание записи обычно осуществляют с использованием 
+ оператора TYPE, т.е. сначала определяют тип-запись, а затем в разделе 
+ var описывают конкретную запись. Тип-запись описывается следующим образом:</P>
+<P class=code>type &lt;имя типа&gt; = record</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;поле1&gt;: 
+ тип;</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;поле2&gt;: 
+ тип;</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;…</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;полеN&gt;: 
+ тип;</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end;</P>
+<P>&nbsp;</P>
+ <P><u>Пример1:</u></P>
+<P class=code>type date = record</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;day: 
+ 1..31;</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;month: 
+ 1..12;</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;year: 
+ integer;</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end;</P>
+<P class=code>type person = record</P>
+<P class=code> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name: 
+ string[20];</P>
+<P class=code> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;age: 
+ integer;</P>
+<P class=code> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adres: 
+ string[50];</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end;</P>
+ <p><span class=code>varbirthday: date;</span></p>
+	 <dir>
+ <TABLE BORDER CELLSPACING=1 CELLPADDING=1 WIDTH=180 HSPACE=12>
+<TR> 
+ <TD height="20" VALIGN="MIDDLE"><font size="2">day</font></TD>
+ <TD VALIGN="MIDDLE"><font size="2">month</font></TD>
+ <TD VALIGN="MIDDLE"><font size="2">year</font></TD>
+</TR>
+<TR> 
+ <TD WIDTH="29%" height="20" VALIGN="MIDDLE"><font size="2"> 10</font></TD>
+ <TD WIDTH="36%" VALIGN="MIDDLE"><font size="2"> 5</font></TD>
+ <TD WIDTH="36%" VALIGN="MIDDLE"><font size="2"> 1980</font></TD>
+</TR>
+ </TABLE></dir>
+ <P><span class=code>student: person;</span> 
+ </P><dir>
+ <TABLE BORDER CELLSPACING=1 CELLPADDING=1 WIDTH=180 HSPACE=12>
+<TR> 
+ <TD height="20" VALIGN="MIDDLE"><font size="2" face="Arial">name</font></TD>
+ <TD VALIGN="MIDDLE"><font size="2" face="Arial">age </font></TD>
+ <TD VALIGN="MIDDLE"><font size="2" face="Arial">adres</font></TD>
+</TR>
+<TR> 
+ <TD WIDTH="29%" height="24" VALIGN="MIDDLE"><font size="2" face="Arial">&nbsp; 
+ </font></TD>
+ <TD WIDTH="36%" VALIGN="MIDDLE"><font size="2" face="Arial">&nbsp; </font></TD>
+ <TD WIDTH="36%" VALIGN="MIDDLE"><font size="2" face="Arial">&nbsp; </font></TD>
+</TR>
+ </TABLE></dir>
+ <P>Доступ к полям записи осуществляется указанием имени 
+ записи и имени поля через точку:</P>
+<P class=code>birthday.day:=10;</P>
+<P class=code>birthday.month:=5;</P>
+<P class=code>birthday.year:=1980;</P>
+<P>&nbsp;</P>
+ <P></P>
+ <P><u>Пример 2:</u></P>
+<P class=code>type detal = record</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name: 
+ string[20];</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kod: 
+ integer;</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;weight: 
+ real;</P>
+<P class=code> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end;</P>
+<P class=code>vard: detal;</P>
+<P class=code>Begin</P>
+<P class=code>&nbsp;&nbsp;…</P>
+<P class=code>&nbsp;&nbsp;d.name:=’гайка’;</P>
+<P class=code>&nbsp;&nbsp;d.kod:=155;</P>
+<P class=code>&nbsp;&nbsp;d.weight:=0.057;</P>
+<P class=code>&nbsp;&nbsp;…</P>
+<P class=code>&nbsp;&nbsp;write(‘Деталь: ’,d.name,’ 
+ Код: ’, d.kod,’ Вес: ‘,d.weight);</P>
+<P class=code>End.</P>
+<P class=code>&nbsp;</P>
+ <P></P>
+<P>&nbsp;</P>
+ <P><b><u><a name="8_2"></a>8.2 Оператор над записями</u></b></P>
+<P>&nbsp;</P>
+ <P></P>
+ <P>Для того, чтобы не писать каждый раз имя записи при обращении 
+ к ее полям можно использовать оператор над записями WITH.</P>
+ <P>Структура оператора:</P>
+ <P><b>with &lt;имя записи&gt; do &lt;оператор&gt;;</b></P>
+ <P>обычно требуется begin…end;</P>
+ <P>В этом случае можно указывать только поле записи:</P>
+ <P><span class=code>with birthday do</span></P>
+<P class=code> &nbsp;&nbsp;begin</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;day:=10;</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;month:=5;</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;year:=1980;</P>
+<P class=code> &nbsp;&nbsp;end;</P>
+<P>&nbsp;</P><P>&nbsp;</P>
+ <P></P>
+ <P><b><u><a name="8_3"></a>8.3 Вложенные записи</u></b></P>
+<P>&nbsp;</P>
+ <P></P>
+ <P>Поля записи могут быть любого типа, в том числе поле 
+ записи может быть тоже записью. В этом случае образуются <I>вложенные 
+ записи</I>.</P>
+<P>&nbsp;</P>
+ <P></P>
+ <P><u>Пример:</u></P>
+ <P><img src="img/ex8_1.gif" width="463" height="449"></P>
+ <P></P>
+<P>&nbsp;</P><P>&nbsp;</P>
+ <P><b><u><a name="8_4"></a>8.4 Массив записей</u></b></P>
+<P>&nbsp;</P>
+ <P>На практике часто используются не отдельные записи, а 
+ массивы записей. Рассмотрим использование массива записей на примере.</P>
+ <P><IMG SRC="img/Image1465.gif" WIDTH=221 HEIGHT=138></P>
+<P>&nbsp;</P>
+ <P></P>
+ <P><U>Пример 1:</u> Программа, заполняющая экран точками 
+ различного цвета и стирающая их.</P>
+<P class=code>usescrt, graph;</P>
+<P class=code>typepoint = record</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x,y: 
+ integer;</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: 
+ byte;</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;end;</P>
+<P class=code>vargd,gm,i: integer;</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p: 
+ array [1..5000] of point;</P>
+<P class=code>begin</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;gd:=detect;</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;initgraph (gd, gm, 
+ ‘c:\tp6\bgi’);</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;if graphresult 
+ &lt;&gt; 0 then</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;begin</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;write 
+ (‘ошибка графики:’, grapherrormsg (graphresult));</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;halt;</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;end;</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;randomize;</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;for i:=1 to 
+ 5000 do</P>
+<P class=code> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with 
+ p[i] do begin</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x:=random(640);</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y:= 
+ random(350);</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color:= 
+ random(15)+1;</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;putpixel 
+ (x,y,color);</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;delay(50);</P>
+<P class=code> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end;</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;for i:=1 to 
+ 5000 do</P>
+<P class=code> &nbsp;&nbsp;&nbsp;&nbsp;begin</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;putpixel(p[i].x, 
+ p[i].y,0);</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;delay(50);</P>
+<P class=code> &nbsp;&nbsp;&nbsp;&nbsp;end;</P>
+<P class=code>end.</P>
+<P class=code>&nbsp;</P>
+ <P></P>
+ <P><U>Пример 2</u>: Программа создания библиотечного каталога 
+ и вывод на экран списка всех книг, изданных в указанном году.</P>
+<P class=code>usescrt;</P>
+<P class=code>typebook = record</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name: 
+ string;</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;autor: 
+ string;</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;year: 
+ string;</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;str: 
+ string;</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;end;</P>
+<P class=code>vari, n, god: integer;</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ch: 
+ char;</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b: 
+ array [1..1000] of book;</P>
+<P class=code>begin</P>
+<P class=code>&nbsp;&nbsp;i:=0;</P>
+<P class=code>&nbsp;&nbsp;repeat</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;inc(i);</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;with b[i] do begin</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;write(‘название:’); 
+ readln(name);</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;write(‘автор:’); 
+ readln(autor);</P>
+ 
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;write(‘год:’); 
+ readln(year);</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;write(‘количество 
+ страниц:’); readln(str);</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;end;</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;write(‘Еще вводить? 
+ Y/N’); readln(ch);</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;writeln; n:=i;</P>
+<P class=code>&nbsp;&nbsp;until (upcase(ch)=’N’);</P>
+<P class=code>&nbsp;&nbsp;repeat{поиск в каталоге}</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;write(‘Введите год’); 
+ readln(god);</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;for i:=1 to n do</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if 
+ b[i].year=god then writeln(b[i].name, b[i].autor, b[i].year, b[i].str);</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;writeln(‘Продолжить 
+ поиск? Y/N’); readln(ch);</P>
+<P class=code>until (upcase(ch)=’N’);</P>
+<P class=code>end.</P>
+<P class=code>&nbsp;</P>
+<P class=code>&nbsp;</P>
+ <P></P>
+ <P><b><u><a name="8_5"></a>8.5 Записи с вариантами</u></b></P>
+<P>&nbsp;</P>
+ <P>Кроме фиксированного списка полей, запись может содержать 
+ вариантную часть, определяющую <I>несколько вариантов структуры записи</I>. 
+ Различие может касаться количества полей и их типов.</P>
+ <P><U><I>Вариантная часть</i></u> содержит несколько альтернатив, 
+ для каждой из которых в скобках указывается <I>список полей, присущих 
+ данному варианту</I>.</P>
+ <P>Например, в библиотечном каталоге хранятся не только 
+ книги, но и журналы. Кроме названия, для книг хранится автор, год издания 
+ и количество страниц, а для журналов – номер и год выпуска.</P>
+<P class=code>b.name:=’Введение в Паскаль’;</P>
+<P class=code>b.autor:=’Абрамов В.И.’;</P>
+<P class=code>b.year:=1980;</P>
+<P class=code>b.str:=253;</P>
+<P class=code>или</P>
+<P class=code>b.name:=’Мир ПК’;</P>
+<P class=code>b.nomer:=2;</P>
+<P class=code>b.god:=1998;</P>
+ <P>Вариантная часть может быть только одна и должна располагаться 
+ в конце записи. Она начинается со слова CASE, за которым следует переменная 
+ выбора варианта с указанием типа. Затем перечисляются варианты записи 
+ с указанием их полей.</P>
+ <P>В стандарте Паскаля перед тем, как использовать один 
+ из вариантов записи, переменной выбора варианта необходимо присвоить соответствующее 
+ значение. В Турбо-Паскале это делать <I>необязательно </I>(!).</P>
+ <P><b>case &lt;переменная выбора&gt;: тип of</b></P>
+ <P><b>&nbsp;&nbsp;&nbsp;&nbsp;вариант1:(поле1: 
+ тип;</b></P>
+ <P><b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;поле2: 
+ тип;</b></P>
+ <P><b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;…</b></P>
+ <P><b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;полеN: 
+ тип);</b></P>
+ <P><b>&nbsp;&nbsp;&nbsp;&nbsp;вариант2:(поле1: 
+ тип;</b></P>
+ <P><b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;поле2: 
+ тип;</b></P>
+ <P><b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;…</b></P>
+ <P><b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;полеK: 
+ тип);</b></P>
+ <P><br>
+ </P>
+ <P><u>Пример:</u></P>
+<P class=code>typeizdanie = (book, magazine);</P>
+<P class=code><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b>zap 
+ = record</P>
+<P class=code><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b>name: 
+ string;</P>
+<P class=code><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b>case 
+ tip: izdanie of</P>
+<P class=code><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b>book:(autor: 
+ string;</P>
+<P class=code><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;</b>year: 
+ integer;</P>
+<P class=code><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;</b>str: 
+ integer);</P>
+<P class=code><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b>magazine: 
+ (nomer: byte;</P>
+<P class=code><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;</b><b>&nbsp;&nbsp;</b><b>&nbsp;</b>god: 
+ integer);</P>
+<P class=code><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b>end;</P>
+<P class=code>varb: zap;</P>
+<P class=code>begin</P>
+<P class=code><b>&nbsp;&nbsp;&nbsp;</b>if tip = book 
+ then writeln (b.name, b.autor, b.year, b.str)</P>
+<P class=code><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b>else 
+ writeln (b.name, b.nomer, b.god);</P>
+<P class=code>end.</P>
+ <P ALIGN=center class=code><IMG SRC="img/Image1466.gif" WIDTH=224 HEIGHT=62></P>
+ <P></P>
+<P class=code>В запись с вариантами можно не вводить переменную 
+ выбора, перечислить только разные варианты.</P>
+<P class=code>typedostup = record</P>
+<P class=code><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b>case 
+ integer of</P>
+<P class=code><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b>1: 
+ (one_word: word);</P>
+<P class=code><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b>2: 
+ (byte1: byte;</P>
+<P class=code><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;</b>byte2: 
+ byte);</P>
+<P class=code><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b><b>&nbsp;&nbsp;&nbsp;</b>end;</P>
+ <P><img src="img/Image1467.gif" width=118 height=57></P>
+<P>&nbsp;</P>
+ </td>
+</TR>
+</table>
+<hr>
+<div align=center><font size=2 face=Arial color="#0000FF"><a href="lec7.htm">назад</a> 
+ | <a href="index_lec.htm">оглавление</a> | <a href="lec9.htm"> вперёд</a></font></div>
+</BODY>
+</HTML>

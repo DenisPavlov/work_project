@@ -1,0 +1,1034 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<TITLE></TITLE>
+<style type="text/css">
+p {
+margin:0cm;
+margin-bottom:.0001pt;
+text-align:justify;
+text-indent:35.45pt;
+mso-pagination:widow-orphan;
+font-size:12.0pt;
+font-family:"arial";
+mso-fareast-font-family:"arial";
+}
+.code{font-family:"Courier New";font-size:10pt}
+</style>
+</HEAD>
+<BODY>
+<basefont face=arial size=3>
+<B></B>
+<table border="0" cellpadding="0" cellspacing="0" width="100%"
+ height="31">
+<TR>
+ <TD width="100%" bgcolor="#000000"><div align=right><font color="#FFFFFF" size=3 face=Arial><b>Программирование
+ на языках высокого уровня. Язык программирования Паскаль&nbsp;</b></font></div></td>
+</TR>
+</table>
+<table border="0" cellpadding="2" cellspacing="0" width="100%" height="35">
+<TR>
+ <TD width="486" bgcolor=gray height="26">
+<P align=right>&nbsp;</p>
+ </td>
+ <TD width="230" bgcolor="#EEE0BF" height="26"><p align=center><font size=2 face=Arial color="#0000FF"><a href="P6.htm">
+</a><a href="lec2.htm">назад</a> | <a href="index_lec.htm">оглавление</a>
+| <a href="lec4.htm"> вперёд</a></font></p>
+ </td>
+ <TD width="43" height="26">&nbsp;</td>
+</TR>
+</table><br>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<TR>
+ <TD><div align=center></div>
+<P><b>3. Операторы языка Паскаль</b></P>
+<P>&nbsp;</P>
+<P>Описывают некоторые действия, которые необходимо выполнить
+ для решения задачи. Тело программы представляет собой последовательность
+ операторов (команд), которые разделяются “;”.</P>
+<P>Напомним порядок выполнения операторов программы: слева
+ направо сверху вниз.</P>
+<P>&nbsp;</P>
+<P></P>
+<P><b><u>3.1 Оператор присваивания</u></b></P>
+<P>&nbsp;</P>
+<P>Обозначается <B>:= </B>. Вызывает вычисление выражения
+ стоящего справа от него, и присваивание вычисленного значения переменной,
+ стоящей слева. Таким образом, с помощью этого оператора в ячейку памяти,
+ имя которой указано слева от знака <B>:= , </B>заносится<B></B>значение,
+ находящееся справа от знака <B>:= </B>.</P>
+<P>&nbsp;</P>
+<P></P>
+<P ALIGN="LEFT">
+<TABLE BORDER CELLSPACING=1 CELLPADDING=1 WIDTH=540>
+<TR>
+ <TD VALIGN=TOP>Фрагмент программы:</TD>
+ <TD VALIGN=TOP>Содержимое ячеек памяти (имя указано слева) после выполнения
+ соответствующей команды присвоения:</TD>
+</TR>
+<TR>
+ <TD WIDTH="29%" VALIGN=TOP> y:=7;<br>
+ x:=y;<br>
+ a:=3; b:=25<br>
+ z:=a+b;<br>
+ i:=4; j:=8;<br>
+ res:=(i&gt;0) and (i&lt;100);<br>
+ k:=sqr(a)+i*j;</TD>
+ <TD WIDTH="71%" VALIGN=TOP> y 7<br>
+ x 7<br>
+ a 3 b 25<br>
+ z 28<br>
+ i 4 j 8<br>
+ res True<br>
+ <br>
+ k 41</TD>
+</TR>
+ </TABLE>
+<P>&nbsp;</p><p></P>
+<P></P>
+<P>&nbsp;</P>
+<P><b><u><a name="3_2"></a>3.2 Составной оператор</u></b></P>
+<P>&nbsp;</P>
+<P>Представляет собой совокупность последовательно выполняемых
+ операторов, заключенных в операторные скобки begin … end. Структура оператора
+ следующая:</P>
+<P><b>begin</b></P>
+<P><b>&lt;оператор 1&gt;;</b></P>
+<P><b>&lt;оператор 2&gt;;</b></P>
+<P><b>…</b></P>
+<P><b>&lt;оператор 3&gt;;</b></P>
+<P><b>end;</b></P>
+<P>Используется, когда необходимо выполнить несколько действий,
+ а синтаксисом языка допускается только один оператор. Само тело программы
+ тоже можно считать составным оператором.</P>
+<P>&nbsp;</P>
+<P></P>
+<P><b><u><a name="3_3"></a>3.3 Условный оператор</u></b></P>
+<P>&nbsp;</P>
+<P>Реализует алгоритмическую конструкцию “развилка”.</P>
+<P>Условный оператор позволяет выполнить один из двух возможных
+ операторов в зависимости от некоторого условия. Структура условного оператора
+ следующая:</P>
+<P><b>if &lt;условие&gt; then &lt;оператор 1&gt; else &lt;оператор
+ 2&gt;;</b></P>
+<P>Условие должно иметь <I>логический тип. </I>Если значение
+ условия равно true, то выполняется Оператор 1, если условие равно false,
+ то Оператор 2. Перед <I>else </I>точка с запятой <I>не ставится.</i></P>
+<P></P>
+<P>if a&gt;b then max:=a else max:=b;</P>
+<P></P>
+<P><I>Например</i>, если a=3, b=7, то выполнится оператор
+ max:=a; в противном случае, т.е.</P>
+<P> если a=7, b=3, то выполнится оператор max:=b; .</P>
+<P><I>Часть условного оператора</i>, начинающаяся со слова
+ <I>else</I>, может <I>отсутствовать</I>. Тогда, если условие истинно,
+ выполняется оператор1, если ложно, то выполняется оператор, следующий
+ за условным.</P>
+<P>if x=0 then writeln(‘ошибка’);</P>
+<P>Если при выполнении или невыполнении условия необходимо
+ <I>выполнить несколько действий</I>, то организуется <I>составной оператор</I>.</P>
+<P></P>
+<P></P>
+<P> if a&gt;b then </P>
+<P> &nbsp;&nbsp;begin max:=a; min:=b; end</P>
+<P> &nbsp;&nbsp;else begin min:=a; max:=b; end;</P>
+<P>&nbsp;</P>
+<P></P>
+<P><I>Например</i>, если a=3, b=7, то выполнятся операторы
+ max:=a; min:=b; в противном случае, т.е.</P>
+<P> если a=7, b=3, то выполнятся операторы min:=a; max:=b;
+ .</P>
+<P></P>
+<P>Для схематической записи алгоритмов решения задач существует
+ язык блок-схем. Приведем основные элементы блок-схемы:</P>
+<P></P>
+<P>&nbsp;</P><P>&nbsp;</P>
+ <TABLE WIDTH=500 BORDER align=center CELLPADDING=1 CELLSPACING=1>
+<TR>
+ <TD WIDTH="48%" VALIGN="MIDDLE"><div align=center><b>Действие</b></div></TD>
+ <TD WIDTH="52%" VALIGN="MIDDLE"><div align=center><b>Блок</b></div></TD>
+</TR>
+<TR>
+ <TD WIDTH="48%" VALIGN="MIDDLE"><div align=center>Начало процесса</div></TD>
+ <TD WIDTH="52%" VALIGN="MIDDLE"><div align=center><IMG SRC="img/Image1430.gif" WIDTH=137 HEIGHT=61></div></TD>
+</TR>
+<TR>
+ <TD WIDTH="48%" VALIGN="MIDDLE"><div align=center>Ввод данных</div></TD>
+ <TD WIDTH="52%" VALIGN="MIDDLE"><div align=center><IMG SRC="img/Image1431.gif" WIDTH=205 HEIGHT=81></div></TD>
+</TR>
+<TR>
+ <TD WIDTH="48%" VALIGN="MIDDLE"><div align=center>Присваивание</div></TD>
+ <TD WIDTH="52%" VALIGN="MIDDLE"><div align=center><IMG SRC="img/Image1432.gif" WIDTH=155 HEIGHT=81></div></TD>
+</TR>
+<TR>
+ <TD WIDTH="48%" VALIGN="MIDDLE"><div align=center>Проверка условия</div></TD>
+ <TD WIDTH="52%" VALIGN="MIDDLE"><div align=center><IMG SRC="img/Image1433.gif" WIDTH=166 HEIGHT=66></div></TD>
+</TR>
+<TR>
+ <TD WIDTH="48%" VALIGN="MIDDLE"><div align=center>Заголовок цикла</div></TD>
+ <TD WIDTH="52%" VALIGN="MIDDLE"><div align=center><IMG SRC="img/Image1434.gif" WIDTH=171 HEIGHT=81></div></TD>
+</TR>
+<TR>
+ <TD WIDTH="48%" VALIGN="MIDDLE"><div align=center>Вывод результатов</div></TD>
+ <TD WIDTH="52%" VALIGN="MIDDLE"><div align=center><IMG SRC="img/Image1435.gif" WIDTH=95 HEIGHT=71></div></TD>
+</TR>
+<TR>
+ <TD WIDTH="48%" VALIGN="MIDDLE"><div align=center>Конец процесса</div></TD>
+ <TD WIDTH="52%" VALIGN="MIDDLE"><div align=center><IMG SRC="img/Image1436.gif" WIDTH=148 HEIGHT=66></div></TD>
+</TR>
+ </TABLE>
+<P></P>
+<P>&nbsp;</P>
+<P><u>Блок-схема нахождения корней квадратного уравнения</u></P>
+<P><IMG SRC="img/Image1437.gif" ></P>
+<P></P>
+<P><u>Схемы условного оператора:</u></P>
+<P>полногосокращенного</P>
+<P><IMG SRC="img/Image1438.gif" WIDTH=261 HEIGHT=187><IMG SRC="img/Image1439.gif" WIDTH=186 HEIGHT=187></P>
+<P>вложенного:</P>
+<P><IMG SRC="img/Image1440.gif" WIDTH=270 HEIGHT=166>
+ <IMG SRC="img/Image1441.gif" WIDTH=223 HEIGHT=166></P>
+<P></P>
+ <TABLE BORDER CELLSPACING=1 CELLPADDING=1 WIDTH=550>
+<TR>
+ <TD WIDTH="51%" VALIGN=TOP HEIGHT=63> if &lt;условие 1&gt; then &lt;оператор
+ 1&gt; else if &lt;условие 2&gt; then &lt;оператор 2&gt; else &lt;оператор
+ 3&gt;</TD>
+ <TD WIDTH="49%" VALIGN=TOP HEIGHT=63> if &lt;условие 1&gt; then if
+ &lt;условие 2&gt; then &lt;оператор 1&gt; else &lt;оператор 2&gt;;</TD>
+</TR>
+ </TABLE>
+<P>&nbsp;</P>
+<P>Условные операторы могут быть вложенными друг в друга.
+ В этом случае else связывается с ближайшим к нему if:</P>
+<P></P>
+<P>if (a&gt;b) and (a&gt;c) then max:=a</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else
+ if (b&gt;c) then max:=b</P>
+<P> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else
+ max:=c;</P>
+<P>&nbsp;</P>
+<P></P>
+<P><I>Например</i>, если a=7, b=2, c=4, то выполнится оператор
+ max:=a; , т.к. (a&gt;b) and (a&gt;c)=True (истина);</P>
+<P> в противном случае, т.е. если (a&gt;b) and (a&gt;c)=False
+ (ложь), выполнится оператор</P>
+ <dir>
+<P> if (b&gt;c) then max:=b</P>
+<P> else max:=c;</P>
+ </dir>
+<P></P>
+<P> если, например, a=2, b=7, c=4, то выполнится оператор
+ max:=b;</P>
+<P> если, например, a=2, b=4, c=7, то выполнится оператор
+ max:=с;.</P>
+<P>&nbsp;</P>
+<P><u>Пример:</u></P>
+<P><span class=code>vari,j: integer;</span></P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ok:
+ boolean;</P>
+<P class=code>begin</P>
+<P class=code>&nbsp;&nbsp;writeln(‘Введите i и
+ j &gt; 0’);</P>
+<P class=code>&nbsp;&nbsp;readln(i,j);</P>
+<P class=code>&nbsp;&nbsp;ok:=(i&gt;0) and (j&gt;0);</P>
+<P class=code>&nbsp;&nbsp;if (not ok) then begin</P>
+<P class=code> &nbsp;&nbsp;&nbsp;&nbsp;writeln(‘Неверный
+ ввод’);</P>
+<P class=code> &nbsp;&nbsp;&nbsp;&nbsp;halt;</P>
+<P class=code> &nbsp;&nbsp;end;</P>
+<P class=code>end.</P>
+<P>&nbsp;</P><P>&nbsp;</P>
+<P></P>
+<P><b><u><a name="3_4"></a>3.4 Оператор выбора CASE</u></b></P>
+<P>&nbsp;</P>
+<P>С помощью этого оператора можно выбрать вариант из любого
+ количества вариантов.</P>
+<P>Структура оператора:</P>
+<P><b>case &lt;ключ выбора&gt; of</b></P>
+<P><b>константа1: оператор1;</b></P>
+<P><b>константа2: оператор2;</b></P>
+<P><b>…</b></P>
+<P><b>константаN: операторN;</b></P>
+<P><b>else оператор;</b></P>
+<P><b>end;</b></P>
+<P>&nbsp;</P>
+<P>&lt;ключ выбора&gt; - переменная или выражение, значение
+ которого вычисляется. Далее выполняется оператор, которому предшествует
+ константа, равная вычисленному значению. Если константы, соответствующей
+ значению ключа выбора не найдено, то выполняется оператор после else (эта
+ часть может отсутствовать).</P>
+<P>В качестве <I>ключа выбора</I> может использоваться выражение
+ порядкового типа, <I>константа</I> должна быть того же типа. В качестве
+ <I>констант</I> можно использовать диапазоны или списки значений через
+ запятую.</P>
+<P class=code>case i of</P>
+<P class=code>&nbsp;&nbsp;0,2,4,6,8: writeln(‘четная
+ цифра’);</P>
+<P class=code>&nbsp;&nbsp;1,3,5,7,9: writeln(‘нечетная
+ цифра’);</P>
+<P class=code>&nbsp;&nbsp;10..100: writeln(‘число
+ от 0 до 100’);</P>
+<P class=code>&nbsp;&nbsp;else writeln(‘отрицательное
+ число или &gt;100’);</P>
+<P class=code>end;</P>
+<P>&nbsp;</P>
+<P><U>Пример:</u> программа-калькулятор</P>
+<P class=code>varop: char;</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x,y,r:
+ real;</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;err:
+ boolean;</P>
+<P class=code>begin</P>
+<P class=code>&nbsp;&nbsp;err:=false;</P>
+<P class=code>&nbsp;&nbsp;write(‘Введите х, у’); readln(x,y);</P>
+<P class=code>&nbsp;&nbsp;write(‘Определите операцию’);
+ readln(ор);</P>
+<P class=code>&nbsp;&nbsp;case op of</P>
+<P class=code> &nbsp;&nbsp;&nbsp;&nbsp;‘+’: r:=x+y;</P>
+<P class=code> &nbsp;&nbsp;&nbsp;&nbsp;‘-’: r:=x-y;</P>
+<P class=code> &nbsp;&nbsp;&nbsp;&nbsp;‘*’: r:=x*y;</P>
+<P class=code> &nbsp;&nbsp;&nbsp;&nbsp;‘/’: r:=x/y;</P>
+<P class=code> &nbsp;&nbsp;else err:=true;</P>
+<P class=code>&nbsp;end;</P>
+<P class=code>&nbsp;if err then writeln(‘Неверно заданная
+ операция’)</P>
+<P class=code>&nbsp;&nbsp;else writeln(х, ор,
+ у, ‘=’, r);</P>
+<P class=code>end.</P>
+<P class=code>&nbsp;</P>
+<P></P>
+<P>&nbsp;</P>
+<P><b><u><a name="3_5"></a>3.5 Оператор цикла с параметром
+ (цикл FOR)</u></b></P>
+<P>&nbsp;</P>
+<P></P>
+<P><I>Циклом</i> называется последовательность действий,
+ выполняемая более одного раза. В Паскаль есть три различных типа операторов,
+ позволяющих запрограммировать циклический процесс: оператор цикла с параметром
+ (цикл FOR); оператор цикла с предусловием (цикл WHILE) и оператор цикла
+ с постусловием (цикл REPEAT).</P>
+<P>Рассмотрим работу оператора цикла с параметром (цикл
+ FOR). Начнем с примера. Пусть требуется вывести на экран строку из пяти
+ звездочек через пробел. Рассмотрим три варианта решения:</P>
+<P>1 вариант:</P>
+ <DIR>
+<P><span class=code>Begin</span></P>
+<P><span class=code> Write(‘* * * * *’);</span></P>
+<P><span class=code>End.</span></P>
+<P></P>
+ </DIR>
+<P>2 вариант:</P>
+ <DIR>
+<P><span class=code>Begin</span></P>
+<P><span class=code> Write(‘* ’);</span></P>
+ <DIR>
+<P class=code> Write(‘* ’);</P>
+<P class=code> Write(‘* ’);</P>
+<P class=code> Write(‘* ’);</P>
+<P class=code> Write(‘* ’);</P>
+ </DIR>
+<P><span class=code>End.</span></P>
+ </DIR>
+<P>3 вариант:</P>
+ <DIR>
+<P><span class=code>var i: integer;Begin</span></P>
+<P class=code> &nbsp;&nbsp;for i:=1 to 5 do</P>
+<P><span class=code> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Write(‘*
+ ’);</span></P>
+<P><span class=code>End.</span></P>
+<P></P>
+ </DIR>
+<P>Команду for i:=1 to 5 do Write(‘* ’); можно прочитать
+ так: “Для i от 1 до 5 делай команду вывода звездочки”.</P>
+<P>Переменная i изменит автоматически свое значение 5 раз
+ (от 1 до 5 с шагом 1), а, следовательно, и оператор, записанный после
+ слова do, повторится 5 раз.</P>
+<P>В данном примере самым простым является первый вариант
+ решения, однако если потребовалось бы вывести на экран 100 звездочек,
+ то сразу стало бы понятно преимущество третьего варианта.</P>
+<P>Теперь перейдем к теоретической части.</P>
+<P>Оператор цикла с параметром имеет следующую структуру:</P>
+<P></P>
+<P><I>заголовок цикла -</i><B> for &lt;параметр&gt;:=&lt;начальное
+ значение&gt; to &lt;конечное значение&gt; do</b></P>
+<P><I>тело цикла - </i><B> &lt;оператор&gt;;</b></P>
+<P>&nbsp;</P>
+<P></P>
+<P>Этот оператор <I>используется</I>, когда <I>число повторений
+ заранее известно</I>.</P>
+<P><U>Работает:</u> В заголовке параметр цикла <I>автоматически
+ изменяется</I> от начального значения до конечного <B><I>с шагом 1</i></B>
+ и каждый раз выполняется тело цикла - оператор после do.</P>
+<P></P>
+<P>for i:= 0 to 9 do write(i); На экране: 0123456789</P>
+<P>T.e. сколько раз параметр цикла изменит свой значение
+ от начального до конечного включительно с шагом один, столько раз выполнится
+ тело цикла.</P>
+<P></P>
+<P>&nbsp;</P>
+<P><u>Схема оператора FOR:</u></P>
+<P><IMG SRC="img/Image1442.gif" WIDTH=135 HEIGHT=114></P>
+ <DIR>
+<P><I>Параметр цикла</i> – переменная целого, порядкового
+ или символьного типа, <I>начальное</I> и <I>конечное значения</I> – переменные
+ или выражения того же типа, причем выражения вычисляются один раз, до
+ начала выполнения цикла. Если начальное значение параметра сразу превышает
+ конечное, то тело цикла не выполнится ни разу.</P>
+<P></P>
+ </DIR>
+ <TABLE BORDER CELLSPACING=1 CELLPADDING=1 WIDTH=500>
+<TR>
+ <TD WIDTH="60%" height="798" VALIGN=TOP><P><b>Пример 1.</b><br>
+ <span class=code>vark,x: integer;<br>
+ begin<br>
+ x:=2;<br>
+ for k:=x-2 to sqr(x) do<br>
+ x:=k;<br>
+ end.</span><br>
+ <br>
+ <U>Этапы работы данной программы</u>: <br>
+ 1. x:=2 <br>
+ 2. начальное значение параметра k = 0<br>
+ конечное значение параметра k = 4<br>
+ 3. k:=0<br>
+ 4. проверка: если к&lt;=4 то на п.5 если к&gt;4 то на п.<br>
+ 5. выполнение тела цикла:<br>
+ x:=k;<br>
+ <I>Замечание</i>: изменение значения x в теле цикла уже не влияет
+ на начальное и конечное значения параметра цикла.<br>
+ 6. возврат на заголовок цикла.<br>
+ В заголовке: k:=k+1 (автоматически) и п.4<br>
+ 7. Переход к следующему оператору программы после цикла For . <br>
+ <br>
+ <b>Пример 2.</b><br>
+ <span class=code>varc: char;<br>
+ begin<br>
+ &nbsp;&nbsp;for c:= ‘A’ to ‘D’ do<br>
+ &nbsp;&nbsp;write(c);<br>
+ end.</span><br>
+ <u>На экране:<br>
+ </u>ABCD</p>
+ <P>&nbsp;</P>
+ <b>Пример 3.</b><br>
+ <span class=code>varp, h: integer;<br>
+ begin<br>
+ &nbsp;&nbsp;h:=5;<br>
+ &nbsp;&nbsp;for p:=3 to 1 do<br>
+ &nbsp;&nbsp;h:=h+p;<br>
+ &nbsp;&nbsp;writeln(‘h=’,h);<br>
+ end. </span>
+<P><u><br>
+ На экране:</u></P>
+ h=5</TD>
+ <TD WIDTH="40%" VALIGN=TOP><P><b>Пример 4.</b><br>
+ <span class=code>varp, h: integer;<br>
+ begin<br>
+ &nbsp;&nbsp;h:=5;<br>
+ &nbsp;&nbsp;for p:=1 to 3 do<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;h:=h+p;<br>
+ &nbsp;&nbsp;writeln(‘h=’,h);<br>
+ end.<br>
+ </span></p>
+
+ <u>Этапы вычисления:</u>
+<P>h + p &#8594; h : </P>
+<P> 5 + 1 &#8594; 6 </P>
+<P> 6 + 2 &#8594; 8 </P>
+<P> 8 + 3 &#8594; 11 </P>
+ <u>На экране:</u><br>
+ h=11<b><br>
+ <br>
+ Пример 5.</b><br>
+ Внесем в программу примера 4 некоторые изменения:<br>
+ <span class=code>varp, h: integer;<br>
+ begin<br>
+ &nbsp;&nbsp;h:=5;<br>
+ &nbsp;&nbsp;for p:=1 to 3 do<br>
+ &nbsp;&nbsp;begin<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;h:=h+p;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;writeln(‘h=’,h);<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;end;<br>
+ end.</span><br>
+ <br>
+ <u>Этапы работы: </u>
+<P>h + p &#8594; h : </P>
+<P> 5 + 1 &#8594; 6 </P>
+<P>вывод на экран: h=6</P>
+<P>6 + 2 &#8594; 8 </P>
+<P>вывод на экран: h=8</P>
+<P>8 + 3 &#8594; 11 </P>
+ вывод на экран: h=11
+<P></P>
+<P>&nbsp;</P>
+ <u>В результате на экране:</u> h=6<br>
+ h=8<br>
+ h=11<br>
+ (см. пояснения ниже)</TD>
+</TR>
+ </TABLE>
+<P></P>
+<P></P>
+<P>&nbsp;</P>
+<P>Если тело цикла состоит из нескольких операторов, то
+ организуется составной оператор begin..end;</P>
+<P></P>
+<P><U>Пример:</u> Вычислить и вывести на экран 100 значений
+ функции y=sin x. Начальное значение x=0; <br>
+ x изменяется с заданным шагом H.</P>
+<P></P>
+<P class=code>varx,y,H: real;</P>
+<P class=code>i: integer;</P>
+<P class=code>begin</P>
+<P class=code>&nbsp;&nbsp;x:=0; H:=0,1;</P>
+<P class=code>&nbsp;&nbsp;for i:= 1 to 100 do</P>
+<P class=code> &nbsp;&nbsp;begin</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;y:=sin(x);</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;writeln(‘y = ’,
+ y);</P>
+<P><span class=code>&nbsp;&nbsp;&nbsp;&nbsp;x:=x+H;</span></P>
+<P class=code> &nbsp;&nbsp;end;</P>
+<P class=code>end.</P>
+<P>&nbsp;</P>
+<P></P>
+<P>Таким образом, если необходимо повторить заданное количество
+ раз не одну команду, а последовательность команд, то эта последовательность
+ заключается в так называемые операторные скобки begin..end; . Если после
+ слова do нет слова begin, то система считает телом цикла только одну команду,
+ записанную после слова do. Если после слова do есть слово begin, то система
+ считает телом цикла все команды, записанные между словами begin и end.
+ А работает оператор цикла и в том и в другом случаях одинаково: тело цикла
+ повторяется столько раз, сколько раз меняет свое значение параметр цикла
+ от начального до конечного включительно с шагом 1.<br>
+ </P>
+<P></P>
+<P><u>Замечания:</u></P>
+<OL>
+ <LI>Переменная-параметр цикла должна быть обязательно описана в разделе
+ описания переменных var. Имя параметра – любое.</LI>
+ <LI>В теле цикла можно использовать параметр, но запрещается его явное
+ изменение (например, присваиванием i:=… или вводом с клавиатуры read(i)).</LI>
+ <LI>По окончании цикла переменная-параметр цикла считается неопределенной,
+ хотя на практике последнее значение этой переменной сохраняется.</LI>
+</OL>
+<P></P>
+<P><u>Пример:</u></P>
+<P class=code>vark,p: integer;</P>
+<P class=code>begin</P>
+<P class=code>&nbsp;&nbsp;x:=5;</P>
+<P class=code>&nbsp;&nbsp;for k:=x+1 to x+5 dok
+ = 6 7 8 9 10</P>
+<P class=code> &nbsp;&nbsp;begin </P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;x:=x-2;x
+ = 3 1 -1 -3 -5</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;p:=sqr(k);p
+ = 36 49 64 81 100</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;writeln(x,’
+ ‘,p);</P>
+<P class=code> end;</P>
+<P class=code>end.</P>
+<P>&nbsp;</P>
+<P></P>
+<P>В результате работы программы на экране увидим: </P>
+<P>3 36</P>
+<P>1 49</P>
+<P>-1 64</P>
+<P>-3 81</P>
+<P>-5&nbsp;100</P>
+<P>&nbsp;</P>
+<P></P>
+<P><u>Второй вариант оператора FOR:</u></P>
+<P></P>
+<P><I>заголовок цикла -</i><B> for &lt;параметр&gt;:=&lt;начальное
+ значение&gt; downto &lt;конечное значение&gt; do</b></P>
+<P><I>тело цикла - </i><B> &lt;оператор&gt;;</b></P>
+<P></P>
+<P>&nbsp;</P>
+<P>В этом операторе параметр изменяется от начального значения
+ до конечного с <I>шагом -1</I>, т.е. <I>уменьшается на 1</I> при каждом
+ выполнении цикла. Если начальное значение сразу меньше конечного, то тело
+ цикла не выполняется ни разу.</P>
+<P></P>
+<P><U>Пример:</u> отсчет при запуске ракеты.</P>
+<P class=code>uses crt;</P>
+<P class=code>vari: integer;</P>
+<P class=code>begin</P>
+<P class=code>&nbsp;&nbsp;for i:= 9 downto 1 do</P>
+<P class=code> &nbsp;&nbsp;begin</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;write(#8,i);</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;delay(2000);</P>
+<P class=code> &nbsp;&nbsp;end;</P>
+<P class=code>&nbsp;&nbsp;write(#8,’Пуск’);</P>
+<P class=code>end.</P>
+<P class=code>&nbsp;</P>
+<P></P>
+<P>Еще некоторые примеры программ.</P>
+<P></P>
+<P><U>Пример 1: </u>Вычисление суммы чисел S=1+2+3+…+N.</P>
+<P class=code>varn, p, s: integer;</P>
+<P class=code>begin</P>
+<P class=code>&nbsp;&nbsp;s:=0;</P>
+<P class=code>&nbsp;&nbsp;write(‘Введите n’); readln(n);</P>
+<P class=code>&nbsp;&nbsp;for p:= 1 to n do </P>
+<P class=code> &nbsp;&nbsp;&nbsp;&nbsp;s:=s+p;</P>
+<P class=code>&nbsp;&nbsp;writeln(‘S = ’, s);</P>
+<P class=code>end.</P>
+<P>&nbsp;</P>
+<P></P>
+<P><U>Пример 2: </u>Вычисление суммы чисел S=0,2+ 0,4+ 0,6+…+2.</P>
+<P class=code>const n=10;</P>
+<P class=code>varp, s, x: integer;</P>
+<P class=code>begin</P>
+<P class=code>&nbsp;&nbsp;s:=0; x:=0.2;</P>
+<P class=code>&nbsp;&nbsp;for p:= 1 to n do </P>
+<P class=code> &nbsp;&nbsp;begin</P>
+<P class=code> &nbsp;&nbsp;&nbsp;&nbsp;s:=s+ x;</P>
+<P class=code> &nbsp;&nbsp;&nbsp;&nbsp;x:=x+ 0.2;</P>
+<P class=code> &nbsp;&nbsp;end;</P>
+<P class=code>&nbsp;&nbsp;writeln(‘S = ’, s);</P>
+<P class=code>end.</P>
+<P>&nbsp;</P>
+<P>В данном примере использование оператора цикла For нецелеобразно,
+ т.к. в задании явно не указано число повторений суммирования. В таких
+ случаях применяют циклы с условиями: While или Repeat (см. пп. 3.6, 3.7)</P>
+<P></P>
+<P>&nbsp;</P>
+<P><U>Пример 3:</u> Вычисление факториала n!=1*2*3*…*N.</P>
+<P class=code>varn,i: integer;</P>
+<P class=code>f: longint;</P>
+<P class=code>begin</P>
+<P class=code>&nbsp;&nbsp;write(‘Введите n’); readln(n);</P>
+<P class=code>&nbsp;&nbsp;f:=1;</P>
+<P class=code>&nbsp;&nbsp;for i:= 1 to n do </P>
+<P class=code> &nbsp;&nbsp;&nbsp;&nbsp;f:=f*i;</P>
+<P class=code>&nbsp;&nbsp;writeln(‘Факториал f = ’, f);</P>
+<P class=code>end.</P>
+<P></P>
+<P>&nbsp;</P>
+<P><b><u><a name="3_6"></a>3.6 Оператор цикла с предусловием
+ (цикл WHILE)</u></b></P>
+<P>&nbsp;</P>
+<P>Обычно используется, когда число повторений заранее неизвестно.</P>
+<P>Структура оператора:</P>
+<P><I>заголовок цикла -</i><B> while &lt;условие&gt; do</b></P>
+<P><I>тело цикла - </i><B> &lt;оператор&gt;;</b></P>
+<P>(при условии истинном выполняется оператор)</P>
+<P><I>Условие</i> – логическое выражение, определяющее момент
+ окончания циклических вычислений (цикл выполняется, пока условие истинно).
+ Проверка условия производится перед каждым выполнением тела цикла. Если
+ условие ложно сразу, <I>тело</I><I>цикла не выполняется ни разу</I>.</P>
+<P>Обычно в теле цикла требуется выполнить несколько операторов,
+ поэтому используется составной оператор begin…end.</P>
+<P></P>
+<P>&nbsp;</P>
+<P><u>Схема оператора:</u></P>
+<P><IMG SRC="img/Image1443.gif" WIDTH=143 HEIGHT=142></P>
+<P>&nbsp;</P>
+<P><u>Пример:</u></P>
+<P><span class=code>var x:integer;</span></P>
+<P class=code> Begin</P>
+<P class=code>&nbsp;&nbsp;x:=4;</P>
+<P class=code>&nbsp;&nbsp;while x&gt;0 do</P>
+<P class=code>&nbsp;&nbsp;begin</P>
+<P class=code> &nbsp;&nbsp;&nbsp;&nbsp;x:=x-2;
+ {На экране:}</P>
+<P><span class=code> &nbsp;&nbsp;&nbsp;&nbsp;writeln(x);{2}</span></P>
+<P><span class=code>&nbsp;&nbsp;end; {0}</span></P>
+<P class=code> End.</P>
+<P></P>
+<P>&nbsp;</P>
+<P>В теле цикла должны изменяться переменные, входящие в
+ условие, с тем, чтобы условие, в конце концов, стало ложным, и цикл завершился.
+ В противном случае возникает так называемый <I>бесконечный цикл.</I> Прервать
+ выполнение бесконечного цикла можно с помощью клавиш ctrl-break.</P>
+<table width="500" border="0">
+<tr>
+ <td width="267"><u>Пример 1:</u> while y&lt;0 do writeln (y);</td>
+ <td width="33" rowspan="2"><img src="img/sys.gif" width="17" height="91"></td>
+ <td width="186" rowspan="2"> бесконечные циклы (в примере1 – если y:=-1;)</td>
+</tr>
+<tr>
+ <td><u>Пример 2:</u> while true do begin…end;</td>
+</tr>
+</table>
+<P>&nbsp;</p><P><U>Пример 3: </u>Вычисление суммы чисел S=0,2+ 0,4+ 0,6+…+2.</P>
+<P class=code>const n=2;</P>
+<P class=code>vars, x: integer;</P>
+<P class=code>begin</P>
+<P class=code>&nbsp;s:=0; x:=0.2;</P>
+<P class=code>&nbsp;while x&lt;=n do begin</P>
+<P class=code> &nbsp;&nbsp;s:=s+ x;</P>
+<P class=code> &nbsp;&nbsp;x:=x+ 0.2;</P>
+<P class=code> &nbsp;end;</P>
+<P class=code>&nbsp;writeln(‘S = ’, s);</P>
+<P class=code>end.</P>
+<P class=code>&nbsp;</P>
+<P></P>
+<P><U>Пример 4:</u> Программа вычисления суммы S=1+1/2+1/3+…+1/1000</P>
+<P class=code>vari: integer;</P>
+<P class=code>&nbsp;&nbsp;&nbsp;s:
+ real;</P>
+<P class=code>begin</P>
+<P class=code>&nbsp;i:=1; s:=0;</P>
+<P class=code>&nbsp;while i&lt;=1000 do</P>
+<P class=code> &nbsp;begin</P>
+<P class=code>&nbsp;&nbsp;s:=s+1/i;или
+ for i:= 1 to 1000 do s:=s+1/i;</P>
+<P class=code>&nbsp;&nbsp;i:=i+1;</P>
+<P class=code> &nbsp;end;</P>
+<P class=code>&nbsp;writeln(‘S’, s:7:3);</P>
+<P class=code>end.</P>
+<P>&nbsp;</P>
+<P></P>
+<P><U>Пример 5:</u> Программа вычисления суммы S=1-1/4+1/9-1/16…
+ с точностью &#949; = 0,001</P>
+<P>(считается, что требуемая точность достигнута, если очередное
+ слагаемое по модулю меньше &#949;, т.е. все последующие слагаемые можно
+ не учитывать).</P>
+<P>&nbsp;</P>
+<P></P>
+<P><b>1 вариант:</b></P>
+<P class=code>vari, zn: integer;</P>
+<P class=code>&nbsp;&nbsp;s: real;</P>
+<P class=code>begin</P>
+<P class=code>&nbsp;i:=1; s:=0; zn:=1</P>
+<P class=code>&nbsp;while 1/sqr(i) &gt; = 0.001
+ do</P>
+<P class=code> &nbsp;begin</P>
+<P class=code>&nbsp;&nbsp;s:=s+1/sqr(i)*zn;</P>
+<P class=code>&nbsp;&nbsp;i:=i+1;</P>
+<P class=code>&nbsp;&nbsp;zn:=-zn;</P>
+<P class=code> &nbsp;end;</P>
+<P class=code>&nbsp;writeln(‘S = ’, s);</P>
+<P class=code>end.</P>
+<P>&nbsp;</P>
+<P></P>
+<P><b>2 вариант:</b></P>
+<P class=code>vari: integer;</P>
+<P class=code>&nbsp;&nbsp;s: real;</P>
+<P class=code>begin</P>
+<P class=code>&nbsp;i:=1; s:=0;</P>
+<P class=code>&nbsp;while 1/sqr(i) &gt; = 0.001
+ do</P>
+<P class=code> &nbsp;begin</P>
+<P class=code>&nbsp;&nbsp;if Odd(i) then
+ s:=s+1/sqr(i) </P>
+<P class=code> &nbsp;&nbsp;&nbsp;else
+ s:=s -1/sqr(i);</P>
+<P class=code>&nbsp;&nbsp;i:=i+1;</P>
+<P class=code> &nbsp;end;</P>
+<P class=code>&nbsp;writeln(‘S = ’, s);</P>
+<P class=code>end.</P>
+<P>&nbsp;</P>
+<P></P>
+<P><b>3 вариант:</b></P>
+<P class=code>vari: integer;</P>
+<P class=code>&nbsp;&nbsp;s: real;</P>
+<P class=code>begin</P>
+<P class=code>&nbsp;i:=1; s:=0;</P>
+<P class=code>&nbsp;while 1/sqr(i) &gt; = 0.001
+ do</P>
+<P class=code> &nbsp;begin</P>
+<P class=code>&nbsp;&nbsp;if (i mod 2=0)
+ then s:=s-1/sqr(i) </P>
+<P class=code> &nbsp;&nbsp;&nbsp;else
+ s:=s+-1/sqr(i);</P>
+<P class=code>&nbsp;&nbsp;i:=i+1;</P>
+<P class=code> &nbsp;end;</P>
+<P class=code>&nbsp;writeln(‘S = ’, s);</P>
+<P class=code>end.</P>
+<P>&nbsp;</P>
+<P></P>
+<P>&nbsp;</P>
+<P><b><u><a name="3_7"></a>3.7 Оператор цикла с постусловием
+ (цикл REPEAT)</u></b></P>
+<P>&nbsp;</P>
+<P>Обычно используется, когда число повторений заранее неизвестно.</P>
+<P>Структура оператора:</P>
+<P><b>repeat &lt; операторы &gt; until &lt; условие
+ &gt;;</b></P>
+<P>(операторы повторяются до тех пор, пока не выполнится
+ условие)</P>
+<P><I>Условие</i> – логическое выражение, определяющее момент
+ окончания циклических вычислений (цикл выполняется, пока условие ложно).
+ Когда условие становится истинным, осуществляется выход из цикла. Проверка
+ условия производится в конце тела цикла, поэтому он <I>всегда выполняется
+ хотя бы один раз</I>.</P>
+<P>Под телом цикла понимается последовательность операторов
+ между словами repeat и until. Операторов может быть один и более. В любом
+ случае операторные скобки <I>begin…end не требуются.</i></P>
+<P>&nbsp;</P>
+<P>Пример:</P>
+<P class=code>var i:integer;</P>
+<P class=code>Begin</P>
+<P class=code>&nbsp;i:=4;</P>
+<P class=code>&nbsp;repeat</P>
+<P class=code> &nbsp;&nbsp;i:=i-1;</P>
+<P class=code> &nbsp;&nbsp;writeln(i);</P>
+<P class=code>&nbsp;until i&lt;0;(выполнится
+ 4 раза: i=3,2,1,0)</P>
+<P class=code> End.</P>
+<P>&nbsp;</P>
+<P><u>Схема оператора:</u></P>
+<P><IMG SRC="img/Image1444.gif" WIDTH=119 HEIGHT=130></P>
+<P>В теле цикла должны изменяться переменные, входящие в
+ условие, чтобы не получился бесконечный цикл.</P>
+<P><U>Пример 1:</u> repeat … until false;бесконечный
+ цикл</P>
+<P><U>Пример 2:</u> repeat until keypressed;цикл до
+ нажатия любой клавиши</P>
+<P>keypressed – стандартная логическая функция, принимает
+ значение true, если была нажата клавиша.</P>
+<P>&nbsp;</P>
+<P></P>
+<P><U>Пример 3: </u>Вычисление суммы чисел S=0,2+ 0,4+
+ 0,6+…+2.</P>
+<P class=code>const n=2;</P>
+<P class=code>var s, x: integer;</P>
+<P class=code>begin</P>
+<P class=code>&nbsp;s:=0; x:=0.2;</P>
+<P class=code> &nbsp;repeat</P>
+<P class=code> &nbsp;&nbsp;s:=s+ x;</P>
+<P class=code> &nbsp;&nbsp;x:=x+ 0.2;</P>
+<P class=code> &nbsp;until x&gt;2;</P>
+<P class=code>&nbsp;writeln(‘S = ’, s);</P>
+<P class=code>end.</P>
+<P>&nbsp;</P>
+<P></P>
+<P><U>Пример 4:</u> Вычисление квадратного корня числа,
+ введенного с клавиатуры.</P>
+<P class=code>vara,b: real;</P>
+<P class=code>begin</P>
+<P class=code>&nbsp;repeat</P>
+<P class=code> &nbsp;&nbsp;writeln(‘Введите
+ а&gt;0’);</P>
+<P class=code> &nbsp;&nbsp;readln(a);</P>
+<P class=code>&nbsp;until a&gt;0;</P>
+<P class=code>&nbsp;b:=sqrt(a);</P>
+<P class=code>&nbsp;writeln(‘b=’,b);</P>
+<P class=code>end.</P>
+<P>&nbsp;</P>
+<P></P>
+<P><U>Пример 5:</u> Программа, считывающая с клавиатуры
+ символ и печатающая его код</P>
+<P class=code>vark: integer;</P>
+<P class=code>ch: char;</P>
+<P class=code>begin</P>
+<P class=code>&nbsp;repeat</P>
+<P class=code> &nbsp;&nbsp;writeln(‘Введите
+ символ’);</P>
+<P class=code> &nbsp;&nbsp;readln(ch);</P>
+<P class=code> &nbsp;&nbsp;k:=ord(ch);</P>
+<P class=code> &nbsp;&nbsp;writeln(‘Код символа’,
+ ch, ‘ = ’,k);</P>
+<P class=code>&nbsp;until k=13; {13 – код пробела}</P>
+<P class=code>end.</P>
+<P>&nbsp;</P>
+<P></P>
+<P><u>Основные отличия операторов цикла:</u></P>
+ <OL>
+ <P>
+ <LI>Цикл FOR используется, когда число повторений заранее известно, циклы
+ WHILE и REPEAT – когда неизвестно.</LI>
+ <P></P>
+ <P>
+ <LI>В цикле FOR параметр цикла изменяется с шагом 1, в циклах WHILE и
+ REPEAT необходимо изменять переменные, входящие в условие.</LI>
+ <P></P>
+ <P>
+ <LI>В циклах FOR и WHILE несколько операторов объединяются операторными
+ скобками begin…end, в цикле REPEAT это не требуется.</LI>
+ <P></P>
+ <P>
+ <LI>В циклах FOR и WHILE проверка условия выполняется перед очередным
+ выполнением тела цикла, в цикле REPEAT – после выполнения тела цикла.</LI>
+ <P></P>
+ </OL>
+<P></P>
+<P><b><u><a name="3_8"></a>3.8 Вложенные циклы</u></b></P>
+<P>&nbsp;</P>
+<P>Тело цикла может содержать любые операторы языка Паскаль,
+ в т.ч. и операторы циклов. Когда один цикл находиться внутри другого,
+ то его называют вложенным циклом.</P>
+<P><u>Примеры вложенного цикла For:</u></P>
+<P> 1.<span class=code>var a,b:integer;</span></P>
+<P class=code> begin</P>
+<P class=code> &nbsp;for i:= 1 to 2 do</P>
+<P class=code> &nbsp;for j:= 1 to 3 do</P>
+<P class=code> &nbsp;&nbsp;writeln(i,
+ ‘ ’, j);{выполнится 6 раз}</P>
+<P class=code> end.</P>
+<P>&nbsp;</P>
+<P><u>На экране увидим:</u></P>
+<P></P>
+<P>1 1</P>
+<P>1 2</P>
+<P>1 3</P>
+<P>2 1</P>
+<P>2 2</P>
+<P>2 3</P>
+<P>&nbsp;</P>
+<P>2.<span class=code>var a,b:integer;</span></P>
+<P class=code> begin</P>
+<P class=code> &nbsp;for i:= 1 to 2 do </P>
+<P class=code> &nbsp;begin</P>
+<P class=code> &nbsp;&nbsp;for j:= 1 to 3
+ do writeln(i, ‘ ’, j);{выполнится 6 раз}</P>
+<P class=code> &nbsp;&nbsp;writeln(‘******’);
+ </P>
+<P class=code> &nbsp;end;</P>
+<P class=code> end.</P>
+<P>&nbsp;</P>
+<P><u>На экране увидим:</u></P>
+<P></P>
+<P>1 1</P>
+<P>1 2</P>
+<P>1 3</P>
+<P>******</P>
+<P>2 1</P>
+<P>2 2</P>
+<P>2 3</P>
+<P>&nbsp;</P>
+<P></P>
+<P><u>Правило выполнения:</u></P>
+<P>на каждом шаге внешнего цикла полностью выполняются все
+ шаги внутреннего цикла.</P>
+<P></P>
+<P><U>Пример 1:</u> Программа вычисления и вывода на экран
+ таблицы умножения (Пифагора).</P>
+<P class=code>vari,j: integer;</P>
+<P class=code>begin</P>
+<P class=code>&nbsp;for i:=1 to 9 do</P>
+<P class=code> &nbsp;begin</P>
+<P class=code>&nbsp;&nbsp;for j:=1 to
+ 9 do</P>
+<P class=code> &nbsp;&nbsp;&nbsp;write(i*j:4);</P>
+<P class=code>&nbsp;&nbsp;writeln;</P>
+<P class=code> &nbsp;end;</P>
+<P class=code>end.</P>
+<P>&nbsp;</P>
+<P></P>
+<P><U>Пример 2:</u> Программа вычисления значений функции
+ f(x,y)=sin(x)*cos(y), где х=0..&#960; с шагом &#960;/5 и у=0..1 с шагом
+ 0,1.</P>
+<P class=code>varx,y,f: real;</P>
+<P class=code>begin</P>
+<P class=code>&nbsp;x:=0;</P>
+<P class=code>&nbsp;repeat</P>
+<P class=code> &nbsp;&nbsp;y:=0;</P>
+<P class=code> &nbsp;&nbsp;while y&lt;=1 do</P>
+<P class=code> &nbsp;&nbsp;begin</P>
+<P class=code>&nbsp;&nbsp;&nbsp;f:=sin(x)*cos(y);</P>
+<P class=code>&nbsp;&nbsp;&nbsp;write(f:6:3);</P>
+<P class=code>&nbsp;&nbsp;&nbsp;y:=y+0,1;</P>
+<P class=code> &nbsp;&nbsp;end;</P>
+<P class=code> &nbsp;&nbsp;x:=x+pi/5;</P>
+<P class=code> &nbsp;&nbsp;writeln;</P>
+<P class=code>&nbsp;until x&gt;pi;</P>
+<P class=code>end.</P>
+<P>&nbsp;</P><P>&nbsp;</P>
+<P></P>
+<P><b><u><a name="3_9"></a>3.9 Оператор перехода GOTO</u></b></P>
+<P>&nbsp;</P>
+<P>Оператор перехода позволяет изменить обычный последовательный
+ порядок выполнения операторов в программе. Он вызывает переход к выполнению
+ оператора, которому предшествует метка.</P>
+<P>Структура оператора:</P>
+<P><b>GOTO &lt;метка&gt;;</b></P>
+<P><b>…</b></P>
+<P><b>…</b></P>
+<P><b>&lt; метка &gt;: &lt;оператор&gt;;</b></P>
+<P><I>Метка</i> – это число от 0 до 9999, или идентификатор.
+ Метки, используемые в программе, должны быть описаны:</P>
+<P>LABEL 1, 2, Met;</P>
+<P><I>Нельзя использовать</i> оператор GOTO для перехода
+ в подпрограммы, а также внутрь операторов цикла, условного и составного
+ операторов.</P>
+<P>Использование оператора перехода в Паскаль <I>считается
+ избыточным</I>, поэтому следует избегать его использования в программах.
+ В крайнем случае можно применять GOTO для перехода вниз по тексту программы
+ (вперед) .</P>
+<P>&nbsp;</P>
+<P></P>
+<P><U>Пример:</u> Частное от деления целых чисел.</P>
+<P class=code>LabelM1;</P>
+<P class=code>varx,y,res: integer;</P>
+<P class=code>begin</P>
+<P class=code>&nbsp;write(‘Введите x,y’);</P>
+<P class=code>&nbsp;readln(x,y);</P>
+<P class=code>&nbsp;if y=0 then</P>
+<P class=code> &nbsp;begin</P>
+<P class=code>&nbsp;&nbsp;writeln(‘Деление на ноль!’);</P>
+<P class=code>&nbsp;&nbsp;goto M1;</P>
+<P class=code> &nbsp;end;</P>
+<P class=code>&nbsp;res:=x div y;</P>
+<P class=code>&nbsp;writeln(‘Частное = ’, res);</P>
+<P class=code> &nbsp;M1: writeln(‘Конец программы’);</P>
+<P class=code>end.</P>
+<P>&nbsp;</P>
+<P><b><u><a name="z"></a>Задачи для самоконтроля</u></b></P>
+<P>&nbsp;</P>
+<P><B>3.1</b> Определить, какие значения x, y, z будут напечатаны
+ после выполнения программы.</P>
+<P><B>var</b> x,y,z: real;</P>
+<P><b>begin</b></P>
+<P> x:=-2; y:=3; z:=3.5;</P>
+<P> z:=x-2.5;</P>
+<P> y:=x-y+2*z;</P>
+<P> x:=x+y-2*z;</P>
+<P> x:=y-2*x;</P>
+<P> y:=x+2*y+z;</P>
+<P> z:=(x+y)*2;</P>
+<P> writeln(‘x=’,x,’ y=’,y,’ z=’,z);</P>
+<P><b>end.</b></P>
+<P></P>
+<P><b>3.2 </b></P>
+<P></P>
+<P>а)Определить значение переменной <B><I>x</i></B>
+ после работы следующего фрагмента программы:</P>
+ <DIR>
+<P><b><i> a = 8; b = 3 * a – 4; x = 0; y = 2 * b;</i></b></P>
+ <DIR>
+<P><i><b>if ( 2 * a &gt; b ) or (4 * a &lt; y ) then begin
+ x = 7; y = –15 end;</b></i></P>
+<P><i><b>if ( x &gt; 0 ) and ( 2 * a + b &lt; y ) then begin
+ x = 5; y = –7 end;</b></i></P>
+<P>&nbsp;</P><P>&nbsp;</P>
+ </DIR></DIR>
+<P>б)Определить значение переменной <B><I>x</i></B>
+ после работы следующего фрагмента программы:</P>
+<P><B><I>a = –3; b = –4 * a –2; x = 1; y = b/2 –
+ 1;</i></b></P>
+ <DIR><DIR>
+<P><b><i>if ( 5 * a &gt; b ) or ( y &gt; a ) then begin
+ x = x + 2; y = x – 3 end;</i></b></P>
+<P><b><i>if ( 2 * a + 8 &gt; y ) and ( y &lt; x ) then begin
+ x = y + 5; y = 6 end;</i></b></P>
+<P>&nbsp;</P>
+ </DIR></DIR>
+<P><B>3.3 </b>Определить значение переменной <B><I>x</i></B>
+ после работы следующих фрагментов программы:</P>
+<P></P>
+<P>а) x:=5;</P>
+<P>for i:=2 to 4 do x:= x – 2;</P>
+<P></P>
+<P>б)x:=4; y:=2;</P>
+<P> While y&lt;= 4 do begin</P>
+<P>x:=x - 2;</P>
+<P>y:=y+1;</P>
+<P>end;</P>
+<P></P>
+<P>в)x:=4; y:=2;</P>
+<P> Repeat </P>
+<P>x:=x - 2;</P>
+<P>y:=y+1;</P>
+<P>until y&gt;=4 ;</P>
+<P>&nbsp;</P><P>&nbsp;</P>
+ </td>
+</TR>
+</table>
+<hr>
+<div align=center><font size=2 face=Arial color="#0000FF"><a href="lec2.htm">назад</a>
+ | <a href="index_lec.htm">оглавление</a> | <a href="lec4.htm"> вперёд</a></font></div>
+</BODY>
+</HTML>

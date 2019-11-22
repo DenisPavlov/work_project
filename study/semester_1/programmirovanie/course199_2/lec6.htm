@@ -1,0 +1,294 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<TITLE></TITLE>
+<style type="text/css">
+p {
+margin:0cm;
+margin-bottom:.0001pt;
+text-align:justify;
+text-indent:35.45pt;
+mso-pagination:widow-orphan;
+font-size:12.0pt;
+font-family:"arial";
+mso-fareast-font-family:"arial";
+}
+.code{font-family:"Courier New";font-size:10pt}
+</style>
+</HEAD>
+<BODY>
+<basefont face=arial size=3>
+<B></B>
+<table border="0" cellpadding="0" cellspacing="0" width="100%"
+ height="31">
+<TR>
+ <TD width="100%" bgcolor="#000000"><div align=right><font color="#FFFFFF" size=3 face=Arial><b>Программирование
+ на языках высокого уровня. Язык программирования Паскаль&nbsp;</b></font></div></td>
+</TR>
+</table>
+<table border="0" cellpadding="2" cellspacing="0" width="100%" height="35">
+<TR>
+ <TD width="486" bgcolor=gray height="26">
+<P align=right>&nbsp;</p>
+ </td>
+ <TD width="230" bgcolor="#EEE0BF" height="26"><p align=center><font size=2 face=Arial color="#0000FF"><a href="P6.htm">
+</a><a href="lec5.htm">назад</a> | <a href="index_lec.htm">оглавление</a>
+| <a href="lec7.htm"> вперёд</a></font></p>
+ </td>
+ <TD width="43" height="26">&nbsp;</td>
+</TR>
+</table><br>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<TR>
+ <TD><div align=center></div> 
+ <P><b>6. Строковый тип данных</b></P>
+ <P>&nbsp;</P>
+<P></P>
+<P><b><u>6.1 Описание строк</u></b></P>
+<P>&nbsp;</P>
+<P><U><I>Строка</i></u> – это последовательность символов 
+ произвольной длины (до 255 символов). Строку можно рассматривать, как 
+ массив символов переменной длины. Максимальное количество символов в строке 
+ <I>указывается при ее описании</I> в квадратных скобках:</P>
+<P>varstr1: string[80];</P>
+<P>&nbsp;&nbsp;&nbsp;str2: string;</P>
+<P>&nbsp;</P>
+<P>Если в квадратных скобках не указан максимальный размер 
+ строки, то он считается равным 255.</P>
+<P>Строка может быть описана как <I>типизированная константа</I>:</P>
+<P>const str10: string[10]=’январь’;</P>
+<P>В памяти для строки длины N отводится N+1 байт, пронумерованных 
+ от 0 до N. В нулевом байте хранится текущее значение длины строки.</P>
+<P>&nbsp;</P>
+<P><img src="img/pic2.gif" width="240" height="45"> 
+</P>
+<P>&nbsp;</P>
+<P>Когда изменяется содержание строки, автоматически пересчитывается 
+ ее текущая длина и меняется значение 0-го байта. Всегда можно определить 
+ текущую длину строки:</P>
+<P><span class=code>l:=ord(str10[0]);</span></P>
+<P class=code>writeln(l);</P>
+<P class=code>&nbsp;</P>
+<P>Допустимо обращение к отдельным символам строки:</P>
+<P class=code>vars: string;</P>
+<P class=code>begin</P>
+<P class=code>&nbsp;s:=’стол’;</P>
+<P class=code>&nbsp;writeln(s);| стол</P>
+<P class=code>&nbsp;s[3]:=’у’;</P>
+<P class=code>&nbsp;writeln(s);| стул</P>
+<P class=code>end.</P>
+<P>&nbsp;</P><P>&nbsp;</P>
+<P></P>
+<P><b><u><a name="6_2"></a>6.2 Операции со строками</u></b></P>
+<P>&nbsp;</P>
+<P></P>
+<P><u><i>Сцепление строк (конкатенация) “+”</i></u></P>
+<P></P>
+<P>Эта операция добавляет к первой строке вторую.</P>
+<P></P>
+<P><u>Пример 1:</u></P>
+<P class=code>varst1, st2, st3: string[20];</P>
+<P class=code>begin</P>
+<P class=code>&nbsp;st1:=’Турбо’;</P>
+<P class=code>&nbsp;st2:=’Паскаль’;</P>
+<P class=code>&nbsp;st3:=st1+’ ’+st2;</P>
+<P class=code>&nbsp;writeln(st3);| 
+ Турбо Паскаль</P>
+<P class=code>end.</P>
+<P>&nbsp;</P>
+<P></P>
+<P><u>Пример 2:</u></P>
+<P class=code>varst1, st2: string[7];</P>
+<P class=code>begin</P>
+<P class=code>&nbsp;st1:=’student’;student</P>
+<P class=code>&nbsp;st2:=’123’;123</P>
+<P class=code>&nbsp;st1:=st2+st1;123stud</P>
+<P class=code>end.</P>
+<P>&nbsp;</P>
+<P></P>
+<P><i><u>Сравнение строк (&gt;, &lt;, &gt;=, &lt;=, =, &lt;&gt;)</u></i></P>
+<P>Сравнение двух строк осуществляется следующим образом. 
+ Символы строк сравниваются попарно друг с другом так, что первый символ 
+ первой строки сравнивается с первым символом второй строки, второй символ 
+ первой строки - со вторым символом второй и т.д. Символы сравниваются 
+ путем сравнения их кодов во внутреннем представлении. Если одна строка 
+ короче другой, недостающие символы заменяются нулем. Отношение первой 
+ несовпадающей друг с другом пары символов и принимается за отношение двух 
+ строк.</P>
+<P>‘abc’=’abc’‘Abc’&lt;’abc’</P>
+<P>‘ab’&lt;’abc’‘Abc’&lt;’1ab’</P>
+<P>‘ABC’&lt;’ab’</P>
+<P>&nbsp;</P>
+<P></P>
+<P><b><u><a name="6_3"></a>6.3 Процедуры и функции для работы 
+ со строками</u></b></P>
+<P>&nbsp;</P>
+<P></P>
+<P><I><B>length (s: string): integer;</b></i> - функция 
+ возвращает текущий размер строки (т.е. количество символов в строке; пробел 
+ тоже считается символом).</P>
+<P><span class=code>varn: integer;</span></P>
+<P class=code>&nbsp;&nbsp;&nbsp;str: 
+ string[15];</P>
+<P class=code>begin</P>
+<P class=code>&nbsp;str:=’Turbo Pascal’;</P>
+<P class=code>&nbsp;n:=length(str);</P>
+<P class=code>&nbsp;write(‘n=’,n);&nbsp;&nbsp;&nbsp; 
+ | n=12</P>
+<P class=code>end.</P>
+<P>&nbsp;</P>
+<P></P>
+<P><I><B>copy (s: string; n1, n2: integer): string;</b></i> 
+ - функция копирует из сроки S n2 символов, начиная с символа n1.</P>
+<P><span class=code>st1:=’abcdef’;</span></P>
+<P class=code>st2:=copy(st1,2,3);&nbsp;|bcd</P>
+<P></P>
+<P><I><B>delete (var s: string; n1, n2: integer);</b></i> 
+ - процедура удаляет из строки S n2 символов, начиная с символа n1.</P>
+<P><span class=code>st1:=’abcdef’;</span></P>
+<P class=code>delete(st1,1,3);&nbsp;| 
+ def</P>
+<P></P>
+<P><I><B>insert (s1: string; var s2: string; n1: integer);</b></i> 
+ - процедура вставляет строку s1 в строку s2, начиная с символа n1.</P>
+<P><span class=code>st1:=’abcdef’;</span></P>
+<P class=code>insert(‘++’,st1,4);&nbsp;|abc++def</P>
+<P></P>
+<P><I><B>pos (s1,s2: string): byte;</b></i> - функция возвращает 
+ номер позиции первого вхождения строки s1 в строку s2. Если строка s1 
+ не входит в строку s2, то возвращает 0.</P>
+<P><span class=code>st:=’abcdef’;</span></P>
+<P class=code>n:=pos(‘d’,st);|n=4</P>
+<P class=code>k:=pos(‘dc’,st);| k=0</P>
+<P><I><B>str (x[:M[:N]]; var s: string);</b></i> - процедура 
+ преобразует число х в строку символов S; M,N – необязательные форматы 
+ вывода числа, аналогичные write.</P>
+<P><span class=code>varx: real;</span></P>
+<P class=code>n: integer;</P>
+<P class=code>st: string;</P>
+<P class=code>begin</P>
+<P class=code>&nbsp;x:=3.141592;</P>
+<P class=code>&nbsp;n:=5;</P>
+<P class=code>&nbsp;str(x,st);st=’3.141592’;</P>
+<P class=code>&nbsp;str(n,st);st=’5’;</P>
+<P class=code>&nbsp;str(x:4:2,st);st=’3.14’;</P>
+<P class=code>end.</P>
+<P>&nbsp;</P>
+<P></P>
+<P><I><B>val (s: string; var x, cod: integer);</b></i> - 
+ процедура преобразует строку s в целое или вещественное число х. Если 
+ преобразование прошло успешно, то cod=0, иначе cod=номер символа, вызвавшего 
+ ошибку.</P>
+<P><span class=code>varx: real;</span></P>
+<P class=code>n, cod: integer;</P>
+<P class=code>st: string;</P>
+<P class=code>begin</P>
+<P class=code>&nbsp;&nbsp;st:=’3.14’;</P>
+<P class=code>&nbsp;&nbsp;val(st,x,cod);&nbsp;|cod=0</P>
+<P class=code>&nbsp;&nbsp;val(st,n,cod);&nbsp;|cod=2</P>
+<P class=code>end.</P>
+<P></P>
+<P><I><B>upcase (c: char): char;</b></i> - функция преобразует 
+ строчную латинскую букву в заглавную</P>
+<P>1) <span class=code>varst: string;</span></P>
+<P class=code>begin</P>
+<P class=code>&nbsp;st:=’a bc’;</P>
+<P class=code>&nbsp;st[3]:= upcase(st[3]);</P>
+<P class=code>&nbsp;write(st); | a Bc</P>
+<P class=code>end.</P>
+<P></P>
+<P>2) <span class=code>repeat</span></P>
+<P><span class=code>…</span></P>
+<P class=code>write(‘Завершить? (Y/N)’);</P>
+<P class=code>&nbsp;readln(c);</P>
+<P class=code> until (upcase(c)=’Y’);</P>
+<P>&nbsp;</P>
+<P></P>
+<P><U>Пример 1</u>: Удалить из строки все точки.</P>
+<P class=code>varst: string;</P>
+<P class=code>&nbsp;&nbsp;&nbsp;n: 
+ integer;</P>
+<P class=code>begin</P>
+<P class=code>&nbsp;write(‘введите строку’);</P>
+<P class=code>&nbsp;readln(st);</P>
+<P class=code>&nbsp;repeat</P>
+<P class=code>&nbsp;&nbsp;n:=pos(‘.’,st);</P>
+<P class=code>&nbsp;&nbsp;delete(st,n,1);</P>
+<P class=code>&nbsp;until n=0;</P>
+<P class=code>&nbsp;writeln(st);</P>
+<P class=code>end.</P>
+<P>&nbsp;</P>
+<P></P>
+<P><U>Пример 2</u>: Удалить из строки все цифры.</P>
+<P class=code>varst: string;</P>
+<P class=code>&nbsp;&nbsp;n: integer;</P>
+<P class=code>&nbsp;&nbsp;c: char;</P>
+<P class=code>begin</P>
+<P class=code>&nbsp;write(‘введите строку’);</P>
+<P class=code>&nbsp;readln(st);</P>
+<P class=code>&nbsp;for c:=’0’ to ‘9’ do</P>
+<P></P>
+<P class=code>&nbsp;&nbsp;&nbsp;repeat</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;n:=pos(c,st);</P>
+<P class=code>&nbsp;&nbsp;&nbsp;&nbsp;delete(st,n,1);</P>
+<P class=code>&nbsp;&nbsp;&nbsp;until n=0;</P>
+<P class=code>&nbsp;writeln(st);</P>
+<P class=code>end.</P>
+<P>&nbsp;</P>
+<P></P>
+<P><U>Пример 3</u>: Поменять в строке порядок символов на 
+ обратный (abcd на dcba).</P>
+<P class=code>varst: string;</P>
+<P class=code>&nbsp;&nbsp;&nbsp;n: 
+ integer;</P>
+<P class=code>&nbsp;&nbsp;&nbsp;c: 
+ char;</P>
+<P class=code>begin</P>
+<P class=code>&nbsp;write(‘введите строку’);</P>
+<P class=code>&nbsp;readln(st);</P>
+<P class=code>&nbsp;for i:=1 to length(st) div 
+ 2 do</P>
+<P class=code>&nbsp;begin</P>
+<P class=code>&nbsp;&nbsp;c:=st[i];</P>
+<P class=code>&nbsp;&nbsp;st[i]:=st[length(st)-i+1];</P>
+<P class=code>&nbsp;&nbsp;st[length(st)-i+1]:=c;</P>
+<P class=code>&nbsp;end;</P>
+<P class=code>&nbsp;writeln(st);</P>
+<P class=code>end.</P>
+<P></P>
+<P>&nbsp;</P>
+<P><b><u><a name="z"></a>Задачи для самоконтроля</u></b></P>
+<P>&nbsp;</P>
+<P></P>
+<P><B>6.1 </b>Определите значение переменной n после выполнения 
+ следующей программы:</P>
+<P><span class=code>varn: integer;</span></P>
+<P class=code>&nbsp;&nbsp;&nbsp;str: 
+ string[25];</P>
+<P class=code>begin</P>
+<P class=code>&nbsp;str:=Лев Толстой’;</P>
+<P class=code>&nbsp;n:=length(str);</P>
+<P class=code>&nbsp;write(‘n=’,n);</P>
+<P class=code>end.</P>
+<P></P>
+<P><B>6.2 </b>Определите значение переменной st2 после выполнения 
+ следующих фрагментов программ:</P>
+<P>а) <span class=code>st1:=’abc def’;</span></P>
+<P class=code> st2:=copy(st1,5,2);</P>
+<P></P>
+<P>б) <span class=code>st2:=’abcdef’;</span></P>
+<P class=code> delete(st2,3,2);</P>
+<P></P>
+<P> в) <span class=code>st2:=’abcd’;</span></P>
+<P class=code> insert(‘***’,st2,2);</P>
+<P></P>
+<P>&nbsp;</P><P>&nbsp;</P>
+ <P>&nbsp;</P>
+</td>
+</TR>
+</table>
+<hr>
+<div align=center><font size=2 face=Arial color="#0000FF"><a href="lec5.htm">назад</a> 
+ | <a href="index_lec.htm">оглавление</a> | <a href="lec7.htm"> вперёд</a></font></div>
+</BODY>
+</HTML>
