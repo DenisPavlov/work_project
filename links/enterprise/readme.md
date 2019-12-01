@@ -13,3 +13,5 @@
 
 ### Serialization
 - <a href="https://vk.com/javatutorial?z=video-111905078_456242685%2Fe09e5e586992d92bba%2Fpl_wall_-111905078">Java Serialization. Проблемы и альтернативы (video)</a>
+
+### <a href="hibernate/readme.md">hibernate</a>

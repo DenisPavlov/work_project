@@ -1,0 +1,2 @@
+- <a href="https://habr.com/post/271115/">Hibernate. Основные принципы работы с сессиями и транзакциями</a>
+- <a href="https://vk.com/feed?section=likes&z=video-111905078_456245176%2F5300f62e3061720306%2Fpl_post_-111905078_23896">Основы. Основные типы отношений (oneToOne, oneToMany, manyToOne, manyToMany)</a>(<a href="https://github.com/DenisPavlov/work_project/tree/master/hibernate/src/main/java/com/geekbrains/geekchange/hibernate">Код</a>) 
