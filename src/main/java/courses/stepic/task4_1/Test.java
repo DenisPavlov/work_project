@@ -1,4 +1,4 @@
-package coursec.stepic.task4_1;
+package courses.stepic.task4_1;
 
 public class Test {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package coursec.stepic;
+package courses.stepic;
 
 import java.math.BigInteger;
 import java.util.Arrays;
