@@ -5,7 +5,7 @@
 Var x,y,p: Real;
 
 Begin
-  x:=1.5; y:=4.3; {воод данных, вариант 1}
+  x:=1.5; y:=4.3;
   
   p := ( Ln(x)/Ln(10) - Exp(x+y) )/( Sqrt(2) + Sqr(y) + Abs(Exp(3*Ln(x)) - Ln(y)));
   
