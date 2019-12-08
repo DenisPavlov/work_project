@@ -11,6 +11,7 @@
 
     <modules>
         <module>hibernate</module>
+        <module>books</module>
     </modules>
     <build>
         <sourceDirectory>src/main/kotlin</sourceDirectory>
