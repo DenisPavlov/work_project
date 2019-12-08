@@ -1,6 +1,6 @@
 package horstmann.v2ch08.rect;
 
-import sourceAnnotations.ToStrings;
+import horstmann.v2ch08.sourceAnnotations.ToStrings;
 
 public class SourceLevelAnnotationDemo
 {

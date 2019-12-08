@@ -1,6 +1,6 @@
 package horstmann.v2ch08.rect;
 
-import sourceAnnotations.ToString;
+import horstmann.v2ch08.sourceAnnotations.ToString;
 
 @ToString(includeName=false)
 public class Point {

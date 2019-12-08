@@ -1,6 +1,6 @@
 package horstmann.v1ch13.serviceLoader.impl;
 
-import books.horstman.v1ch13.serviceLoader.Cipher;
+import horstmann.v1ch13.serviceLoader.Cipher;
 
 public class CaesarCipher implements Cipher {
     public byte[] encrypt(byte[] source, byte[] key) {

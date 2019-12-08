@@ -2,7 +2,7 @@ package horstmann.v2ch08.buttons3;
 
 import java.awt.*;
 import javax.swing.*;
-import runtimeAnnotations.*;
+import horstmann.v2ch08.runtimeAnnotations.*;
 
 /**
  * A frame with a button panel.

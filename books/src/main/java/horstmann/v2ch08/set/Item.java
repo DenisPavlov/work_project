@@ -2,7 +2,7 @@ package horstmann.v2ch08.set;
 
 import java.util.*;
 
-import books.horstman.v2ch08.bytecodeAnnotations.*;
+import horstmann.v2ch08.bytecodeAnnotations.*;
 
 /**
  * An item with a description and a part number.
