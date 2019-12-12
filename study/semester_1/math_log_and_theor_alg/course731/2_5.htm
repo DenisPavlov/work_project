@@ -1,0 +1,140 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<style>
+P {text-align=justify;
+		text-indent= 19px;
+		}</style>
+<TITLE>Математическая логика и теория алгоритмов</TITLE>
+</HEAD>
+<BODY >
+<BASEFONT face=arial> 
+<table border= 0  cellpadding= 0  cellspacing= 0  width= 100%
+  height= 31 >
+    <tr>
+        <td width= 100%  bgcolor=#000000>
+         <div align= right><font color= #FFFFFF  size= 3  face= Arial><b>Математическая логика и теория алгоритмов</b></font>
+         </div>
+        </td>
+    </tr>
+</table>
+
+<table border= 0  cellpadding= 0  cellspacing= 0  height= 35 >
+    <tr>
+        <td width=400  bgcolor=gray><p align= right><font   color= #FFFFFF size=3  face= Arial><strong> 
+		<B>2.5 Примитивно рекурсивные функции</B> </strong></font></p>
+        </td>
+
+          <td width= 300  bgcolor= #EEE0BF >
+		  
+	      <p align= center > <a href= 2_4.htm> <font color= #0000FF  size= 2  face= Arial>назад</font></a> <font
+              color= #0000FF  size= 2  face= Arial> | </font> <a href= main.htm><font color= #0000FF  size= 2 
+          face= Arial>оглавление</font></a> <font color= #0000FF  size= 2  face= Arial> 
+        | </font> <a href= 2_6.htm> <font color= #0000FF  size= 2  face= Arial>вперёд</font> 
+        </a> <font color= #0000FF  size= 2  face= Arial> </font></p>
+        </td>
+        <td width= 260  height= 35 >&nbsp;</td>
+    </tr>
+</table>
+<P>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspЧасто решение поставленной задачи можно свести к вычислению некоторой целочисленной функции, определенной на множестве натуральных чисел. Этот раздел посвящен уточнению понятия алгоритма – классу частично рекурсивных функций. Этот подход к формализации алгоритма был разработан в 30-х годах прошлого столетия математиками К. Гёделем, С.К. Клини, А. Черчем.
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspБудем рассматривать n-арные функции на множестве наборов натуральных чисел <img src=img/2_5.gif align=absmiddle>. Такие функции назовем <i>арифметическими функциями</i>. Если функция определена не для каждого набора натуральных чисел, то такие функции будем называть <a name="chaf"></a><i>частично определенными арифметическими функциями</i>(ч.а.ф).
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspОсновная идея состоит в том, чтобы получить все вычислимые функции из существенно ограниченного множества базисных функций с помощью простейших алгоритмических средств. Базисные функции выбираются так, чтобы их вычислимость была достаточно очевидна.
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspОпределим класс функций, следующим образом. Выделим конечное множество базовых функций и операции над ними для получения новых функций. В качестве <a name="bf"></a><i>базовых (простейших) функций</i> берут следующие функции:
+<ul>
+   <li><i>Функция следования: S(x)=x+1</i>;
+   <li><i>Функция проекции:</i>  <img src=img/2_5_23.gif align=absmiddle>, где n – кол-во переменных, а<sub>i</sub>, 1 &#8804 i &#8804 n, - номер переменной, по которой берется проекция. Функция проекции – функция, равная одному из своих аргументов. Например, <i>U<sub>2</sub><sup>3</sup>(x,y,z)=y.   
+   <li><i>Функция нуля:O(x)=0</i>, для всех x=0,1,...
+</ul> 
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspОчевидно, что простейшие функции всюду определены и достаточны просты для вычисления (будем называть их <a name="ivf"></a><i>интуитивно вычислимыми</i>).
+<P>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspОпределим операции над функциями. Пусть имеются n- арная функция <i>f</i> и m-арные функции <img src=img/2_5_24.gif align=absmiddle>. Говорят, что m-арная функция <img src=img/2_5_25.gif align=absmiddle> получена в результате операции  <a href="2_3.htm#prsup">суперпозиции</a> или подстановки  из функций <i>f</i> и <img src=img/2_5_24.gif align=absmiddle>, если для любых <img src=img/2_5_26.gif align=absmiddle>.
+<br><img src=img/2_5_1.gif align="absmiddle">  
+<P>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspПусть заданы произвольные функции: <i>n</i>-арная функция <i>g</i> и <i>n+2</i>-арная функция <i>h</i>. Говорят, что <i>n+1</i>-арная функция <i>f</i> получена <i>операцией примитивной рекурсии</i> из функций  <i>g</i> и <i>h</i>, если для любых <img src=img/2_5_27.gif align=absmiddle>  выполнены соотношения:
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src=img/2_5_2.gif align="absmiddle">
+<P>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspВ случае если <i>n=0</i>, то определение имеет такой вид. Говорят, что функция <i>f(x)</i>  получена <i>операцией примитивной рекурсии</i> из функции <i>h(x,y)</i>  и константы С, если для любого <i>x &#8712 N</i>  выполнены соотношения:
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src=img/2_5_3.gif align="absmiddle">
+<br><br><b>Предложение (свойства операций суперпозиции и примитивной рекурсии).</b> <i>Операции <a href="2_3.htm#prsup">суперпозиции</a> и <a href="2_5.htm#prf">примитивной рекурсии</a> сохраняют:
+<ol>
+   <li>всюду определённость функций; 
+   <li>интуитивную вычислимость функций.
+</ol></i>
+<b>Доказательство</b> проведем для операции <a href="2_3.htm#prsup">суперпозиции</a>. Пусть  m-арная функция <img src=img/2_5_25.gif align=absmiddle> получена в результате операции суперпозиции  из функций <i>f</i>  и <img src=img/2_5_24.gif align=absmiddle>.
+<ol>
+   <li>Если все функции <img src=img/2_5_24.gif align=absmiddle>  и <i>f</i>  – всюду определённые, то функция <i>g</i> всюду определена. Функция <i>g</i>  будет не всюду определённой, если одна из функций <img src=img/2_5_24.gif align=absmiddle>  не всюду определена или если можно найти такие <i>a<sub>1</sub>,...,a<sub>m</sub></i>, что <img src=img/2_5_4.gif align=absmiddle>, но значение  <i>f(b<sub>1</sub>,...,b<sub>n</sub>)</i> не определено.
+   <li>Если каким-либо образом можно вычислять значения функций <img src=img/2_5_24.gif align=absmiddle> и <i>f</i>,то ясно,как можно вычислить значение функции <i>g</i>. Придадим переменным <img src=img/2_5_26.gif align=absmiddle>  некоторые значения <i>a<sub>1</sub>,...,a<sub>m</sub></i>. Вычислим все <i>f(a<sub>1</sub>,...,a<sub>m</sub>)</i>, 1 &#8804 i &#8804 n. Получим значения <img src=img/2_5_4.gif align=absmiddle>. Вычисляя теперь <img src=img/2_5_28.gif align=absmiddle>, получим,что <i>g(a<sub>1</sub>,...,a<sub>m</sub>)=c</i>. Таким образом,  если функции <img src=img/2_5_24.gif align=absmiddle>  и <i>f</i>  интуитивно вычислимы, то и функция <i>g</i> интуитивно вычислима. 
+</ol>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i>Предложение доказано.</i> 
+
+<P>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspФункция <i>f</i> называется <a name="2_5.htm#prf"></a><i>примитивно рекурсивной</i> (п.р.ф.), если ее можно получить из простейших функций с помощью конечного числа операций суперпозиции и примитивной рекурсии. 
+<br>Свойства примитивно рекурсивных функций характеризует следующее:
+<i><ol>
+   <li>Всякая примитивно рекурсивная функция всюду определена.
+   <li>Если функция f получена из примитивно рекурсивных функций с применением операций суперпозиции или примитивной рекурсии, то функция f является примитивно рекурсивной функцией.
+   <li>Все примитивно рекурсивные функции интуитивно вычислимы.
+</ol></i>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspРассмотрим несколько примеров примитивно рекурсивных функций. 
+
+<br><br><b>Пример 1.</b>Рассмотрим функцию <i>g(x<sub>1</sub>,...,x<sub>m</sub>)=1</i> для любых <img src=img/2_5_26.gif align=absmiddle>. Эта функция может быть получена суперпозицией из простейших функций.
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src=img/2_5_5.gif align=absmiddle>.
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspТаким образом, функция <img src=img/2_5_25.gif align=absmiddle>  является примитивно рекурсивной.   
+
+<br><br><b>Пример 2.</b>Покажем, что функция суммы <i>f(x,y)=x+y</i> примитивно рекурсивна. Действительно,
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src=img/2_5_6.gif align="absmiddle">,
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspгде <img src=img/2_5_29.gif align=absmiddle>. Поскольку функции <i>g</i> и <i>h</i> являются примитивно рекурсивными, то и функция  <i>f</i>  является примитивно рекурсивной.
+
+<br><br><b>Пример 3.</b>Покажем, что <i>p(x,y)=x*y</i>  примитивно рекурсивна. Действительно, функция получена при помощи операции примитивной рекурсии
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src=img/2_5_7.gif align=absmiddle>,
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspгде <img src=img/2_5_30.gif align=absmiddle>. Поскольку функции <i>g</i> и <i>h</i> являются примитивно рекурсивными, то и функция  <i>f</i>  является примитивно рекурсивной.
+
+<br><br><b>Пример 4.</b>Покажем, что функция <img src=img/2_5_8.gif align=absmiddle>  является примитивно рекурсивной. <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspПредставим функцию в виде примитивной рекурсии.
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src=img/2_5_9.gif align=absmiddle>,
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspгде <img src=img/2_5_31.gif align=absmiddle>.
+
+<br><br><b>Пример 5.</b>Покажем, что функция <img src=img/2_5_10.gif align=absmiddle>  является примитивно рекурсивной. <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspПредставим функцию в виде примитивной рекурсии:
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src=img/2_5_11.gif align=absmiddle>.
+
+<br><br><b>Пример 6.</b>Покажем, что функция <img src=img/2_5_12.gif align=absmiddle>  является примитивно рекурсивной. <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspПредставим функцию в виде примитивной рекурсии:
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src=img/2_5_13.gif align=absmiddle>.
+
+<br><br><b>Пример 7.</b>Покажем, что <i>r(x)=|x-5|</i> является примитивно рекурсивной. 
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspДействительно, функция получена суперпозицией функций <img src=img/2_5_14.gif align="absmiddle">.
+
+<br><br><b>Пример 8.</b>Покажем, что функция <img src=img/2_5_15.gif align=absmiddle>  является примитивно рекурсивной. <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspПредставим функцию <i>f(x)</i> в виде суммы (сумма является примитивно рекурсивной функцией) функций <i>f<sub>1</sub>(x), f<sub>2</sub>(x), f<sub>3</sub>(x)</i>, где
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src=img/2_5_16.gif align=absmiddle>.  
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspТеперь покажем, что каждая из функций <i>f<sub>1</sub>(x), f<sub>2</sub>(x), f<sub>3</sub>(x)</i> является примитивно рекурсивной, поскольку представляет собой суперпозицию примитивно рекурсивных функций.
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src=img/2_5_17.gif align=absmiddle>. 
+
+<br><br><b>Теорема.</b><i>Пусть n-арная функция g примитивно рекурсивна. Тогда функции  f, u, определенные следующим образом, также <a href="2_5.htm#prf">примитивно рекурсивны</a>.</i>
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src=img/2_5_18.gif align=absmiddle>.
+<br><b>Доказательство.</b>Из условия теоремы следует, что
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src=img/2_5_19.gif align=absmiddle>.
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspСледовательно, функция <i>f</i> строится с помощью примитивной рекурсии из примитивно рекурсивных функций <i>g(x<sub>1</sub>,...,x<sub>n-1</sub>,0)</i> и <img src=img/2_5_32.gif align=absmiddle>. Поэтому функция <i>f</i> примитивно рекурсивна. Для функции  u доказательство аналогичное. 
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i>Теорема доказана.</i>
+
+<br><br><b>Пример.</b>Положим <i>g(x)=x</i>. Тогда <img src=img/2_5_20.gif align="absmiddle">. Поскольку функция <i>g(x)=x</i> примитивно рекурсивная, то по предыдущей теореме функция <img src=img/2_5_21.gif align="absmiddle"> также является примитивно рекурсивной.
+
+<br><br><b>Теорема.</b><i>   
+<ul>
+   <li>Если f(x<sub>1</sub>,...,x<sub>n</sub>) п.р.ф, то g(x<sub>1</sub>,...,x<sub>n</sub>,x<sub>n+1</sub>)=f(x<sub>1</sub>,...,x<sub>n</sub>) также п.р.ф. (Операция введения фиктивных переменных).
+   <li>Если f(x<sub>1</sub>,...,x<sub>n</sub>) п.р.ф, то g(x<sub>1</sub>,...,x<sub>n</sub>)=f(x<sub>2</sub>,x<sub>1</sub>,...,x<sub>n</sub>) также п.р.ф. (Операция перестановки переменных).
+   <li>Если f(x<sub>1</sub>,...,x<sub>n</sub>) п.р.ф, то g(x<sub>1</sub>,...,x<sub>n-1</sub>)=f(x<sub>1</sub>,...,x<sub>n-1</sub>,x<sub>n-1</sub>) также п.р.ф. (Операция отождествления переменных).
+</ul></i>
+<b>Доказательство.</b>Докажем первое утверждение. Новая функция представима в виде суперпозиции п.р.ф.
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src=img/2_5_22.gif align="absmiddle">
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspОстальные утверждения доказываются аналогично.
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i>Теорема доказана.</i>
+<P>
+<hr>
+<div align= center >
+
+<a href= 2_4.htm><font color= #0000FF  size= 2 face= Arial>назад</font></a>
+
+<font color= #0000FF  size= 2 face= Arial> | </font>
+
+<a href= main.htm><font color= #0000FF size= 2  face= Arial>оглавление</font></a>
+
+<font color= #0000FF  size= 2  face= Arial> | </font>
+
+<a href= 2_6.htm><font color= #0000FF  size= 2  face= Arial>вперёд</font></a>
+<font color= #0000FF  size= 2  face= Arial> </font></div>
+<br>
+</body>
+</html>

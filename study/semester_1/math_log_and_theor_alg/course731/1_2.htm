@@ -1,0 +1,100 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<style>
+	P { text-align=JUSTIFY;
+		text-indent= 19px;
+		}
+</style>
+<TITLE>Математическая логика и теория алгоритмов</TITLE>
+</HEAD>
+<BODY >
+<BASEFONT face=arial>
+<table border= 0  cellpadding= 0  cellspacing= 0  width= 100% 
+  height= 31 >
+    <tr>
+        <td width= 100%  bgcolor= #000000>
+         <div align= right><font color= #FFFFFF  size= 3  face= Arial><b>Математическая логика и теория алгоритмов</b></font>
+         </div>
+        </td>
+    </tr>
+</table>
+
+<table border= 0  cellpadding= 0  cellspacing= 0  height= 35 >
+    <tr>
+        <td width= 400  bgcolor= gray ><p align= right><font   color= #FFFFFF  size=3 face= Arial><strong> <B>1.2 Понятие формальной теории</B> </strong></font></p>
+        </td>
+
+          <td width= 300  bgcolor= #EEE0BF >
+
+	      <p align= center > <a href= 1_1.htm> <font color= #0000FF  size= 2  face= Arial>назад</font></a> <font
+              color= #0000FF  size= 2  face= Arial> | </font> <a href= main.htm><font color= #0000FF  size= 2
+          face= Arial>оглавление</font></a> <font color= #0000FF  size= 2  face= Arial>
+        | </font> <a href= 1_3.htm> <font color= #0000FF  size= 2  face= Arial>вперёд</font>
+        </a> <font color= #0000FF  size= 2  face= Arial> </font></p>
+        </td>
+        <td width= 170  height= 35 >&nbsp;</td>
+    </tr>
+</table>
+
+<P>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspХотя для проверки логических рассуждений можно использовать алгебру логики, сами рассуждения представляют собой цепочку утверждений, каждое из которых либо является <i>исходной посылкой (постулатом, аксиомой, гипотезой)</i>, либо получается из предыдущих утверждений с помощью определённых правил - <i>правил логического вывода</i>. Эти правила вывода применяются к утверждениям <i>формально</i>, т.е., исходя только из их формы, структуры, а не содержания. Весь содержательный анализ происходит при формулировании аксиом. 
+<P>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspСпособ построения научной теории в виде системы аксиом (постулатов) и правил вывода, позволяющих формальным логическим путем получать утверждения (теоремы) данной теории, называется <i>аксиоматическим методом</i>. 
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspНаиболее убедительным примером применения аксиоматического метода явился математический трактат "Начала" древнегреческого математика Евклида (ок. 300 г. до н.э.). По примеру Евклида нидерландский философ Бенедикт Спиноза применил аксиоматический метод в своём основном труде «Этика, доказанная в геометрическом порядке» (1675), а великий русский учёный Михаил Ломоносов аксиоматически изложил основы физической химии.
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspБолее двух тысяч лет учёные старались выяснить, какими же правилами вывода пользуются люди в логически правильных рассуждениях. Крупные достижения были сделаны и древнегреческими философами (Аристотель), и средневековыми европейскими схоластами, и учёными-логиками конца 19 - начала 20 века.
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspПри описании логических исчислений будем придерживаться аксиоматического
+метода, т.е. способа построения научной теории, при котором какие-то
+положения теории избираются в качестве исходных (аксиом), а все
+остальные выводятся из нее чисто логическим путем, посредством
+доказательств. Положения, доказываемые на основе аксиом, называются
+теоремами. 
+<P>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspЧтобы
+задать <a name="fat"></a><I>формальную аксиоматическую теорию</I>  T ,
+необходимо определить: 
+<OL>
+	<LI> некоторое 	счётное множество символов (<I>алфавит</I>) – символов теории Т (конечные последовательности символов теории Т называются
+	выражениями или словами теории  Т);   
+	<LI> подмножество выражений теории  Т, называемых <I>формулами</I>;
+	<LI> подмножество формул теории  Т, называемых <a name="aks"></a><I>аксиомами</I>;   
+	<LI> конечное множество <img src= img/1_2.gif align=absmiddle> отношений между формулами, называемых <I>правилами вывода</I>.   
+</OL>
+<P>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  Если формула <I>A </I>и формулы <img src= img/1_2_1.gif align=absmiddle> находятся в некотором отношении <I>R</I><sub>k </sub> ,
+то <I>A </I>называется <I>непосредственным следствием</I> из формул
+<img src= img/1_2_1.gif align=absmiddle>,
+полученным по правилу <I>R</I><sub>k </sub> .
+Это обозначается так
+<img src= img/lec_html_m5ece430c.gif align=absmiddle>,
+при этом формулы <img src= img/1_2_1.gif align=absmiddle> 
+называются <I>посылками</I>, формула <I> A </I>
+– <I>заключением</I>.   
+<P>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <a name="vyv"></a><I>Выводом формулы</i> A 
+из формул  <img src= img/1_2_2.gif align=absmiddle> в теории  называется всякая последовательность <img src= img/1_2_3.gif align=absmiddle> формул такая, что <img src= img/1_2_6.gif align=absmiddle>
+и для любого <I>i </I>формула <I> A<SUB>i</SUB> </I> есть
+либо аксиома теории  , либо одна из формул <I> F<SUB>j</SUB> </I>,
+либо непосредственное следствие из ранее полученных формул. Если в
+теории  T  существует вывод формулы <I> A </I>
+из формул <img src= img/1_2_2.gif align=absmiddle>, то записывают это так <img src= img/1_2_4.gif align=absmiddle> ,  </I> при
+этом формулы <img src= img/1_2_2.gif align=absmiddle> называются <a name="gip"><I>гипотезами </I></a>вывода.   
+<P>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  Если  <img src= img/1_2_5.gif align=absmiddle> , то
+формула <I>А</I> называется <a name="teorema"></a><I>теоремой</I> теории  (т.е. выводима
+только из аксиом, без гипотез). Вывод теоремы называется
+<I>доказательством</I>.
+</blockquote>
+<hr>
+<div align= center >
+
+<a href= 1_1.htm><font color= #0000FF  size= 2 face= Arial>назад</font></a>
+
+<font color= #0000FF  size= 2 face= Arial> | </font>
+
+<a href= main.htm><font color= #0000FF size= 2  face= Arial>оглавление</font></a>
+
+<font color= #0000FF  size= 2  face= Arial> | </font>
+
+<a href= 1_3.htm><font color= #0000FF  size= 2  face= Arial>вперёд</font></a>
+<font color= #0000FF  size= 2  face= Arial> </font></p>
+<br></div>
+</body>
+</html>

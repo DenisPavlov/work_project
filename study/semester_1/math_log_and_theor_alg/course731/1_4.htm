@@ -1,0 +1,364 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<style>
+ 	P { text-align=JUSTIFY;
+		text-indent= 19px;
+		}
+</style>
+<TITLE>Математическая логика и теория алгоритмов</TITLE>
+</HEAD>
+<BODY >
+<BASEFONT face=arial> 
+<table border= 0  cellpadding= 0  cellspacing= 0  width= 100% 
+  height= 31 >
+    <tr>
+        <td width= 100%  bgcolor= #000000>
+         <div align= right><font color= #FFFFFF  size= 3  face= Arial><b>Математическая логика и теория алгоритмов</b></font>
+         </div>
+        </td>
+    </tr>
+</table>
+
+<table border= 0  cellpadding= 0  cellspacing= 0  height= 35 >
+    <tr>
+        <td width= 400 bgcolor= gray><p align=right><font   color= #FFFFFF  size=3 face= Arial><strong> <B>1.4 Теорема дедукции</B> </strong></font></p>
+        </td>
+
+          <td width= 300  bgcolor= #EEE0BF >
+		  
+	      <p align= center > <a href= 1_3.htm> <font color= #0000FF  size= 2  face= Arial>назад</font></a> <font
+              color= #0000FF  size= 2  face= Arial> | </font> <a href= main.htm><font color= #0000FF  size= 2 
+          face= Arial>оглавление</font></a> <font color= #0000FF  size= 2  face= Arial> 
+        | </font> <a href= 1_5.htm> <font color= #0000FF  size= 2  face= Arial>вперёд</font> 
+        </a> <font color= #0000FF  size= 2  face= Arial> </font></p>
+        </td>
+        <td width= 260  height= 35 >&nbsp;</td>
+    </tr>
+</table>
+
+<P>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a name="ded"></a><I>Дедукция</I>
+– это процесс логического вывода, представляющий собой переход
+от посылок к заключениям, следствиям на основе применения правил
+логики. Основная теорема устанавливающая связь между импликацией и
+логическим выводом носит название теоремы дедукции. Ее суть состоит в
+следующем: если из посылок <I>А</I> выводимо по правилам логики
+некоторое заключение <I>В</I>, то импликация <img src=img/1_1_34.gif align=absmiddle> доказуема, т.е. выводима уже без всяких посылок (гипотез) из
+одних аксиом, которые являются логически истинными предложениями. Эта
+теорема имеет большое познавательное значение, поскольку в процессе
+дедукции позволяет вводить вспомогательные допущения (гипотезы), а
+затем освобождаться от них. 
+<br><br><a name="tded"></a><b>Теорема
+дедукции.</b> <I>Пусть Г – множество формул, А и В –
+формулы. Если <img src=img/1_4_2.gif align=absmiddle>, то <img src=img/1_4_3.gif align=absmiddle> и обратно.</I>   
+<br><B>Доказательство.</B> Докажем эту
+теорему конструктивно, т.е. предложим алгоритм <a href="1_2.htm#vyv">построения вывода</a>
+ <img src=img/1_4_3.gif align=absmiddle> из имеющегося вывода <img src=img/1_4_2.gif align=absmiddle>.
+Пусть <img src=img/1_4_4.gif align=absmiddle>
+вывод <I>В</I> из <I>Г, А,</I> причем <I> E<SUB>n</SUB> = В</I>.
+Покажем индукцией по <img src=img/1_4_17.gif align=absmiddle>,
+что <img src=img/1_4_5.gif align=absmiddle>. 
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 1<SUP>0</SUP>. <I> i =1</I>
+ Покажем, что <img src=img/1_4_5.gif align=absmiddle>.
+Возможны три случая: 
+<ol>
+	<LI><I> E<SUB>1</SUB></I> - аксиома.  Тогда следующий вывод доказывает необходимую
+	выводимость. 
+	<DD><TABLE>
+		<TR>
+			<TD>
+				<P>1. 
+			</TD>
+			<TD>
+				<P><I> E<SUB>1</SUB> </I> 
+			</TD>
+			<TD>
+				<P><a href="1_2.htm#aks">аксиома</a> 
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<P>2. 
+			</TD>
+			<TD>
+				<img src=img/1_4_18.gif align=absmiddle>
+			</TD>
+			<TD>
+				<P>  <a href="1_3.htm#aksiom">A<SUB>1</SUB></a>  
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<P>3. 
+			</TD>
+			<TD>
+				<img src=img/1_4_19.gif align=absmiddle>
+			</TD>
+			<TD>
+				<P><a href="1_3.htm#MP">MP</a> 1,2 
+			</TD>
+		</TR>
+	</TABLE></DD>
+	<LI><img src=img/1_4_20.gif align=absmiddle>. Тогда рассмотрим	вывод:
+	<DD><TABLE>
+		<TR>
+			<TD>
+				<P>1. 
+			</TD>
+			<TD>
+				<P><I> E <SUB>1</SUB></I> 
+			</TD>
+			<TD>
+				<P><a href="1_2.htm#gip">гипотеза</a> 
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<P>2. 
+			</TD>
+			<TD>
+				<img src=img/1_4_18.gif align=absmiddle> 
+			</TD>
+			<TD>
+				<P>  A <SUB>1</SUB>  
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<P>3. 
+			</TD>
+			<TD>
+				<img src=img/1_4_19.gif align=absmiddle> 
+			</TD>
+			<TD>
+				<P> MP  1,2 
+			</TD>
+		</TR>
+	</TABLE>
+	</DD>
+	<LI><I> E <SUB>1</SUB>=А</I>. Тогда по <a href="1_3.htm#pvi">правилу введения импликации</a> имеем <img src=img/1_4_8.gif align=absmiddle> или <img src=img/1_4_9.gif align=absmiddle> 
+</oL>
+</DD>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 2<SUP>0</SUP>. Пусть теперь <img src=img/1_4_5.gif align=absmiddle> для
+всех <I> i < k  </I>.
+Покажем, что <img src=img/1_4_6.gif align=absmiddle>.
+Возможны четыре случая: 
+<OL>
+	<LI><img src=img/1_4_21.gif align=absmiddle>;
+	<LI><img src=img/1_4_22.gif align=absmiddle>;
+	<LI><img src=img/1_4_23.gif align=absmiddle>;
+	<LI><I> E<SUB>к</SUB></I> получена по правилу  <a href="1_3.htm#MP">modus   ponens</a> 
+	из формул <img src=img/1_4_24.gif align=absmiddle> и <img src=img/1_4_25.gif align=absmiddle>.
+</OL>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspДля первых трех случаев
+доказательство аналогично случаю <I> i = 1</I>.
+Для четвертого случая по индукционному предположению имеется вывод <img src=img/1_4_5.gif align=absmiddle> для
+всех <I> i < k </I>
+и вывод <img src=img/1_4_7.gif align=absmiddle>. Достроим вывод. 
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src=img/1_4.gif align=absmiddle> 
+
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspТаким образом, <img src=img/1_4_6.gif align=absmiddle> для
+всех <I> k .</I> При <I> k = n </I>
+получаем <img src=img/1_4_10.gif align=absmiddle> или <img src=img/1_4_3.gif align=absmiddle>. 
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspВ обратную сторону доказательство
+также конструктивное. Пусть имеется вывод <img src=img/1_4_3.gif align=absmiddle> , </I>состоящий из <I> n </I>
+формул. Достроив его следующим образом, получим  вывод <img src=img/1_4_2.gif align=absmiddle>. 
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src=img/1_4_1.gif align=absmiddle> 
+
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i>Теорема доказана.</i> 
+ 
+<br><br><B>Следствие 1. </B><i>Если  <img src=img/1_4_11.gif align=absmiddle> , то <img src=img/1_4_12.gif align=absmiddle> и обратно.</I> 
+<br><B>Доказательство.</B> Положим в
+<a href="1_4.htm#tded">теореме дедукции</a> <img src=img/1_4_26.gif align=absmiddle>.
+<br><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i>Следствие доказано.</i> 
+ 
+<br><br><B>Следствие 2 <a name="prtr"></a>(Правило
+транзитивности).</B>  <img src=img/1_4_13.gif align=absmiddle>.
+<br><B>Доказательство.</B> 
+<DL>
+	<DD>
+	<TABLE>
+		<TR>
+			<TD>
+				<P>1.  
+			</TD>
+			<TD>
+				<P><img src=img/1_1_34.gif align=absmiddle>
+			</TD>
+			<TD>
+				<P>гипотеза 
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<P>2. 
+			</TD>
+			<TD>
+				<P><img src=img/1_4_27.gif align=absmiddle>
+			</TD>
+			<TD>
+				<P>гипотеза 
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<P>3. 
+			</TD>
+			<TD>
+				<P><I>A</I> 
+			</TD>
+			<TD>
+				<P>гипотеза 
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<P>4. 
+			</TD>
+			<TD>
+				<P><I>В</I> 
+			</TD>
+			<TD>
+				<P> MP 3,1 
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<P>5. 
+			</TD>
+			<TD>
+				<P><I>С</I> 
+			</TD>
+			<TD>
+				<P> MP 4,2 
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<P>6. 
+			</TD>
+			<TD>
+				<P><img src=img/1_4_14.gif align=absmiddle>
+			</TD>
+			<TD>
+				<P> пункты 1-5 
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<P>7. 
+			</TD>
+			<TD>
+				<P><img src=img/1_4_13.gif align=absmiddle>
+			</TD>
+			<TD>
+				<P> теорема дедукции 
+			</TD>
+		</TR>
+	</TABLE>
+</DL>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i>Следствие доказано.</i>
+
+<br><br><B>Следствие 3 <a name="prse"></a>(Правило
+сечения).</B> <img src=img/1_4_15.gif align=absmiddle>.
+<br><B>Доказательство.</B> 
+<DL><DD>
+<TABLE>
+		<TR>
+			<TD>
+				<P>1. 
+			</TD>
+			<TD>
+				<P><img src=img/1_4_28.gif align=absmiddle> 
+			</TD>
+			<TD>
+				<P>гипотеза 
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<P>2. 
+			</TD>
+			<TD>
+				<P><I>A</I> 
+			</TD>
+			<TD>
+				<P>гипотеза 
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<P>3. 
+			</TD>
+			<TD>
+				<P><img src=img/1_4_27.gif align=absmiddle> 
+			</TD>
+			<TD>
+				<P> MP  2,1  
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<P>4. 
+			</TD>
+			<TD>
+				<P><I>В</I> 
+			</TD>
+			<TD>
+				<P>гипотеза   
+				 
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<P>5. 
+			</TD>
+			<TD>
+				<P><I>С</I> 
+			</TD>
+			<TD>
+				<P> MP 4,3 
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<P>6.
+			</TD>
+			<TD>
+				<P><img src=img/1_4_16.gif align=absmiddle>
+			</TD>
+			<TD>
+				<P>пункты 1-5 
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<P>7. 
+			</TD>
+			<TD>
+				<P><img src=img/1_4_15.gif align=absmiddle>
+			</TD>
+			<TD>
+				<P> теорема дедукции 
+			</TD>
+		</TR>
+	</TABLE>
+</DL>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i>Следствие доказано.</i>
+
+<hr>
+<div align= center >
+
+<a href= 1_3.htm><font color= #0000FF  size= 2 face= Arial>назад</font></a>
+
+<font color= #0000FF  size= 2 face= Arial> | </font>
+
+<a href= main.htm><font color= #0000FF size= 2  face= Arial>оглавление</font></a>
+
+<font color= #0000FF  size= 2  face= Arial> | </font>
+
+<a href= 1_5.htm><font color= #0000FF  size= 2  face= Arial>вперёд</font></a>
+<font color= #0000FF  size= 2  face= Arial> </font></p>
+<br></div>
+</body>
+</html>
+
+

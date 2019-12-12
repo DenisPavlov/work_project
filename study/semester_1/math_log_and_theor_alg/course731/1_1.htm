@@ -1,0 +1,284 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<style>
+	P {
+        text-align = justify;
+		text-indent= 19px;
+        font-family= arial;
+		}
+</style>
+<TITLE>Математическая логика и теория алгоритмов</TITLE>
+</HEAD>
+<BODY>
+<BASEFONT face=arial> 
+<table border= 0  cellpadding= 0  cellspacing= 0  width= 100% height= 31>
+    <tr>
+        <td width= 100%  bgcolor= #000000>
+         <div align= right><font color= #FFFFFF  size= 3  face= Arial><b>Математическая логика и теория алгоритмов</b></font>
+         </div>
+        </td>
+    </tr>
+</table>
+
+<table border= 0  cellpadding= 0  cellspacing= 0  height= 35>
+    <tr>
+        <td width= 400  bgcolor= gray><p align=right><font   color= #FFFFFF  size=3 face= Arial><strong><B>1.1 Логика высказываний </B></strong></font></p>
+        </td>
+
+          <td width= 300  bgcolor= #EEE0BF >
+
+	      <p align= center > <a href= vved.htm> <font color= #0000FF  size= 2  face= Arial>назад</font></a> <font
+              color= #0000FF  size= 2  face= Arial> | </font> <a href= main.htm><font color= #0000FF  size= 2
+          face= Arial>оглавление</font></a> <font color= #0000FF  size= 2  face= Arial>
+        | </font> <a href= 1_2.htm> <font color= #0000FF  size= 2  face= Arial>вперёд</font>
+        </a> <font color= #0000FF  size= 2  face= Arial> </font></p>
+        </td>
+        <td width= 210  height= 35 >&nbsp;</td>
+    </tr>
+</table>
+
+
+<P>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspПод <a name="vys"></a><I>высказыванием </I>принято понимать
+языковое предложение, о котором имеет смысл говорить, что оно истинно
+или ложно. Примерами высказываний могут служить следующие
+предложения:
+<UL>
+	<LI> За окном идет снег.
+	<LI> Завтра будет Новый год.
+	<LI> Столица России – Москва.
+</UL>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspНе всякое предложение может быть истинным или ложным, а значит, быть высказыванием. Так, вопросительное или повелительное предложение не является высказыванием. 
+<P>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspНапример, повествовательное предложение <i>"Я лгу"</i> не может быть высказыванием (парадокс лжеца). Действительно, если бы это предложение  было верным, то по смыслу оно было бы ложным. А если бы предложение было бы ложным, то по смыслу оно должно быть истинным. Но ни то, ни другое для высказывания невозможно, так как оно не может быть одновременно и истинным, и ложным. Этот пример показывает, насколько внимательно следует относиться к принимаемым определениям (в данном случае - к определению <i>высказывания</i>).
+<P>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+В <i>логике высказываний</i> интересуются не содержанием, а истинностью или ложностью высказываний. Истинностное значение – истина или ложь – будем обозначать И и Л соответственно. Для соединения высказываний в более сложные высказывания используют следующие <i>логические операции</i> (связки).
+<P>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <a name="otr"></a><I>Отрицанием</I> высказывания <I> A 
+</I>называется высказывание, истинное тогда и только тогда, когда
+высказывание <I>A </I>ложно. Обозначается   &#172<I>A</I>.
+В естественном языке отрицание   &#172<I>A</I> соответствует следующим конструкциям:   
+<UL>
+	<LI> Не <I>A</I> (или то, что получится в результате вставки частицы "не"	перед глаголом – основным или вспомогательным)   
+	<LI> <I>A</I> не имеет места   
+	<LI> <I>A</I> не верно   
+</UL>
+<P>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a name="kon"></a><I>Конъюнкцией</I> двух высказываний <I>A </I>и
+<I>B </I>называется высказывание, истинное тогда и только тогда,
+когда истинны оба высказывания. Обозначается <img src=img/1_1_32.gif align=absmiddle>.
+В естественном языке конъюнкция <img src=img/1_1_32.gif align=absmiddle>
+соответствует следующим конструкциям:   
+ 
+<UL>
+	<LI><I> A </I>и  <I>B</I>    
+	<LI>   Не только <I>A</I>, но и <I>B</I>   
+	<LI><I>B</I>, хотя и <I>A</I>   
+	<LI><I>B</I>, несмотря на <I>A</I>   
+	<LI>   Как	<I>A</I>, так и <I>B</I>   
+	<LI><I>A</I> вместе с  <I>B</I>   
+	<LI><I>A</I>, в то время как  <I>B</I>   
+</UL>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <a name="diz"></a><I>Дизъюнкцией</I> двух высказываний <I>A </I>и
+<I>B </I>называется высказывание, ложное тогда и только тогда, когда
+оба высказывания ложны. Обозначается <img src=img/1_1_33.gif align=absmiddle>.
+В естественном языке дизъюнкция <img src=img/1_1_33.gif align=absmiddle> соответствует следующим конструкциям:   
+<UL>
+	<LI><I>A</I> или  <I>B</I>,  или оба    
+	<LI><I>A</I> или  <I>B</I>
+	<LI><I>A</I>, если не  <I>B</I>   
+	<LI><I>A</I> и / или  <I>B</I>( в юридических текстах )
+</UL>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a name="impli"></a><I>Импликацией</I> двух высказываний <I> A
+</I>и <I> B  </I>называется высказывание,
+ложное тогда и только тогда, когда <I>A </I>истинно, а <I>B </I>ложно.
+Обозначается <img src=img/1_1_34.gif align=absmiddle>. В естественном языке импликация <img src=img/1_1_34.gif align=absmiddle> соответствует следующим конструкциям:   
+ 
+<UL>
+	<LI>   Если	<I>A</I>, то <I>B</I>   
+	<LI>   Коль	скоро <I>A</I>, то <I>B</I>   
+	<LI>   В случае <I>A </I>имеет место <I>B</I>   
+	<LI>   Для <I>B </I>достаточно <I>A</I>   
+	<LI>   Для <I>A </I>необходимо <I>B</I>   
+	<LI><I>A</I>, только если <I>B</I>   
+	<LI><I>B</I>, если  <I>A</I>    
+	<LI><I>A</I> влечет  <I>B</I>    
+	<LI><I>A</I> имплицирует <I>B</I>   
+</UL>
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a name="ekvi"></a><I>Эквиваленцией</I> двух высказываний <I>A
+</I>и <I>B </I>называется высказывание, истинное тогда и только
+тогда, когда истинностные значения <I>A </I>и <I>B </I>совпадают.
+Обозначается <img src=img/1_1_35.gif align=absmiddle>. В естественном
+языке эквиваленция <img src=img/1_1_35.gif align=absmiddle> соответствует
+следующим конструкциям:
+
+<UL>
+	<LI><I>A</I>, если и только если  <I>B</I>   
+	<LI>    Если <I>A</I>,  то  <I>B</I>,  и обратно    
+	<LI><I>A</I>, если  <I>B</I>,  и <I>B</I>,  если  <I>A</I>   
+	<LI>    Для	 <I>A </I> необходимо и достаточно  <I>B</I>
+	<LI><I>A</I> равносильно  <I>B</I>   
+	<LI><I>A</I> тогда и только тогда ,  когда <I>B</I>
+</UL>
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspМожно попытаться прочесть полученные высказывания, когда A - это высказывание <i>"Солнце взошло"</i>, а B - высказывание <i>"Птицы смолкли"</i>.
+<P>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspАлфавит логики высказываний содержит
+следующие символы: <i>высказывательные переменные</i> – обычно
+заглавные латинские буквы; логические символы, символы скобок (, ).   
+<P>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspПоследовательность символов в логике
+высказываний называется <a name="form"></a><I>формулой, </I>если она удовлетворяет
+следующему определению:   
+<a name="pravila"></a><OL>
+	<LI> любая высказывательная переменная – формула;  
+	<LI> если <I>A </I>и <I>B </I>– формулы, то <img src=img/1_1.gif align=absmiddle> – формулы;   
+	<LI> других формул нет.  
+</OL>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspДля упрощения записи вводится <a name="prio"></a><i>приоритет
+операций</i> <img src=img/1_1_36.gif align=absmiddle> и лишние скобки опускаются. 
+<P><B>Пример 1</B>. Выражение <img src=img/1_1_1.gif align=absmiddle> является <a href="1_1.htm#form">формулой</a>, поскольку
+получено при помощи логической связки   &#8594 
+из двух подформул <img src=img/1_1_2.gif align=absmiddle>. Каждая из подформул представляет
+собой логическую связку двух переменных. 
+<P><B>Пример 2</B>. 
+Выражение <img src=img/1_1_3.gif align=absmiddle> не является формулой, поскольку
+логическая связка   &#8594 
+связывает два выражения <img src=img/1_1_4.gif align=absmiddle>. Первое выражение не является
+формулой, поскольку не получено <a href="1_1.htm#pravila">по правилам 1–3</a>, т.е. не удовлетворяет определению формулы. 
+<P><B>Пример 3</B>.
+ Перевести следующее высказывание в логическую символику:
+ <i>Я заплачу за работу по ремонту телевизора, если он будет
+работать.</i>  
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspВыделим отдельные высказывания, встречающиеся в данном 
+высказывании и обозначим их переменными:
+<UL>  
+  <LI>А= ”Я заплачу за работу по ремонту телевизора”,  
+  <LI>В= ”Телевизор будет работать”. 
+</UL>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspВысказывания А и В связаны между собой <a href="1_1.htm#impli">импликацией</a>, поэтому формула,
+соответствующая высказыванию, выглядит так  <img src=img/1_1_37.gif align=absmiddle>.      
+        
+<P>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspЕсли каждой высказывательной переменной, входящей в
+формулу, придать истинностное значение И или Л, то формула будет
+определять истинностную функцию, т.е. функцию, определенную на
+множестве высказывательных переменных со значениями в множестве {И,
+Л}. Если, кроме того, принять И=1, Л=0, то любую формулу логики
+высказываний можно интерпретировать как формулу логики
+переключательных функций. По аналогии с переключательными функциями,
+для любого высказывания можно построить таблицу истинности.  
+
+<P><B>Пример 4</B>.
+Построим <a name="tabl"></a>таблицу истинности для формулы <img src=img/1_1_5.gif align=absmiddle>.   
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src=img/1_1_23.gif align=absmiddle>
+
+<P>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspУпорядоченный набор высказывательных
+переменных <img src=img/1_1_24.gif align=absmiddle>
+назовем списком переменных формулы <I>A</I>, если все переменные
+формулы <I>A </I>содержатся в этом наборе. В списке переменных
+формулы <I>A </I>часть переменных может быть фиктивной, т.е. может не
+входить явно в формулу <I>A</I>. Очевидно, что если список переменных
+для формулы <I>A </I>содержит <I>k </I>переменных, то таблица
+истинности для формулы <I>A </I>будет содержать 2 <SUP>k</SUP> строк.   
+<P>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  Пусть формула <I>A </I>зависит от списка
+переменных <img src=img/1_1_24.gif align=absmiddle>. Дадим несколько определений:
+<UL>
+<LI>Формула <I>A </I>называется <a name="tav"></a><I>тавтологией</I> (тождественно<I>-</I>истинной
+формулой –  ИФ), если при любых значениях (интерпретации)
+переменных списка <img src=img/1_1_24.gif align=absmiddle>
+она принимает значение И. 
+<LI>Формула <I>A </I>называется <I>выполнимой</I>
+(условно<I>-</I>истинной формулой – УИФ), если при некоторой
+значениях переменных списка <img src=img/1_1_24.gif align=absmiddle>
+она принимает значение И.  
+<LI>Формула  <I>A</I> называется   <a name="prot"></a><I>тождественно
+ложной (противоречием)</I> формулой  –   ЛФ ,
+ если при   любых значениях переменных списка  <img src=img/1_1_24.gif align=absmiddle> она принимает значение   Л .
+<LI>Формула  <I>A </I> называется
+  <a name="opr"></a><I>опровержимой</I>  ( условно <I>-</I> ложной
+формулой ),  если   при некоторых значениях переменных списка  
+<img src=img/1_1_24.gif align=absmiddle> она принимает   значение Л .
+<LI>Формула В <a name="log"></a><i>логически следует</i> из формулы А (<img src=img/1_1_38.gif align=absmiddle>), если формула В имеет значение И при всех интерпретациях, при которых формула А имеет значение И. 
+<LI>Формулы А и В <i>логически эквивалентны</i> (<img src=img/1_1_39.gif align=absmiddle>), если они являются логическим следствием друг друга. Логически эквивалентные формулы имеют одинаковые значения при любой интерпретации. 
+</UL>  
+<br><B>Теорема. </B><I>Имеют место следующие логические эквивалентности: </I> <img src=img/1_1_8.gif align=absmiddle>.
+<br><B>Доказательство</B> проводится сравнением <a href="1_1.htm#tabl">таблиц истинности</a> двух формул. 
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i>Теорема доказана.</i> 
+
+<P><B>Теорема.</B> <I>Справедливы следующие логические эквивалентности для алгебры высказываний (1 и 0
+– тождественно истинное и тождественно ложное высказывания
+соответственно):</I> 
+<OL type=1>
+	<LI><B>Закон двойного отрицания</B>
+		<br> <img src=img/1_1_9.gif align=absmiddle> 
+	<LI><B>Законы коммутативности</B>
+		<OL type=a>
+			<LI> <img src=img/1_1_10.gif align=absmiddle>
+			<LI> <img src=img/1_1_11.gif align=absmiddle>
+		</OL>
+	<LI><B>Законы ассоциативности</B>
+		<OL type=a>
+			<LI> <img src=img/1_1_12.gif align=absmiddle>
+			<LI> <img src=img/1_1_13.gif align=absmiddle>
+		</OL>
+  
+	<LI><B>Законы дистрибутивности</B>
+		<OL type=a>
+			<LI> <img src=img/1_1_14.gif align=absmiddle>
+			<LI> <img src=img/1_1_15.gif align=absmiddle>
+		</OL>
+	<LI><B>Законы идемпотентности</B>
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;<img src=img/1_1_16.gif align=absmiddle>
+                
+	<LI><B>Законы де Моргана</B>
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;<img src=img/1_1_17.gif align=absmiddle>
+
+	<LI><B>Законы нуля и единицы</B>
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;<img src=img/1_1_18.gif align=absmiddle>
+		
+	<LI><B>Законы поглощения</B>
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;<img src=img/1_1_19.gif align=absmiddle>
+
+	<LI><B>Закон противоречия</B>
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;<img src=img/1_1_20.gif align=absmiddle>
+
+	<LI><B>Закон исключенного третьего</B>
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;<img src=img/1_1_21.gif align=absmiddle>
+
+</OL>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i>Теорема доказана.</i> 
+
+<P><B>Теорема (о логическом следствии двух формул)</B>.<img src=img/1_1_25.gif align=absmiddle>  тогда и только тогда, когда <img src=img/1_1_26.gif align=absmiddle> 
+– <a href="1_1.htm#tav">тавтология</a>. <img src=img/1_1_25.gif align=absmiddle>  тогда и только тогда, когда <img src=img/1_1_27.gif align=absmiddle>
+– <a href="1_1.htm#prot">противоречие</a>.</I>   
+<br><B>Доказательство</B>.
+Докажем первое утверждение.
+<ul>
+   <li>Необходимость.
+Пусть формула <img src=img/1_1_28.gif align=absmiddle> принимает значение И при некоторой интерпретации. Обозначим это <img src=img/1_1_29.gif align=absmiddle> ,
+ когда  <img src=img/1_1_40.gif align=absmiddle> и  <img src=img/1_1_30.gif align=absmiddle>.
+Пусть  <img src=img/1_1_31.gif align=absmiddle> ,
+ когда  <img src=img/1_1_30.gif align=absmiddle>.
+ Таким образом формула <img src=img/1_1_26.gif align=absmiddle> - <a href="1_12.htm#obf">общезначима</a>.   
+<li>  Достаточность.
+Пусть  <img src=img/1_1_30.gif align=absmiddle>.
+ Тогда если  <img src=img/1_1_29.gif align=absmiddle> ,
+то и <img src=img/1_1_40.gif align=absmiddle>.  таким образом, <I> Q  </I>является
+<a href="1_1.htm#log">логическим следствием</a> формулы <img src=img/1_1_28.gif align=absmiddle>. 
+</ul>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i>Теорема доказана.</i>         
+
+<hr>
+<div align= center >
+
+<a href= vved.htm><font color= #0000FF  size= 2 face= Arial>назад</font></a>
+
+<font color= #0000FF  size= 2 face= Arial> | </font>
+
+<a href= main.htm><font color= #0000FF size= 2  face= Arial>оглавление</font></a>
+
+<font color= #0000FF  size= 2  face= Arial> | </font>
+
+<a href= 1_2.htm><font color= #0000FF  size= 2  face= Arial>вперёд</font></a>
+<font color= #0000FF  size= 2  face= Arial> </font></p>
+<br>
+</div>
+</body>
+</html>

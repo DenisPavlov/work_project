@@ -1,0 +1,107 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<style>
+P {text-align=justify;
+		text-indent= 19px;
+		}</style>
+<TITLE>Математическая логика и теория алгоритмов</TITLE>
+</HEAD>
+<BODY >
+<BASEFONT face=arial> 
+<table border= 0  cellpadding= 0  cellspacing= 0  width= 100%
+  height= 31 >
+    <tr>
+        <td width= 100%  bgcolor=#000000>
+         <div align= right><font color= #FFFFFF  size= 3  face= Arial><b>Математическая логика и теория алгоритмов</b></font>
+         </div>
+        </td>
+    </tr>
+</table>
+
+<table border= 0  cellpadding= 0  cellspacing= 0  height= 35 >
+    <tr>
+        <td width=400  bgcolor=gray><p align= right><font   color= #FFFFFF size=3  face= Arial><strong> 
+		<B>2.3 Вычисление функций на машине Тьюринга</B> </strong></font></p>
+        </td>
+
+          <td width= 300  bgcolor= #EEE0BF >
+		  
+	      <p align= center > <a href= 2_2.htm> <font color= #0000FF  size= 2  face= Arial>назад</font></a> <font
+              color= #0000FF  size= 2  face= Arial> | </font> <a href= main.htm><font color= #0000FF  size= 2 
+          face= Arial>оглавление</font></a> <font color= #0000FF  size= 2  face= Arial> 
+        | </font> <a href= 2_4.htm> <font color= #0000FF  size= 2  face= Arial>вперёд</font> 
+        </a> <font color= #0000FF  size= 2  face= Arial> </font></p>
+        </td>
+        <td width= 260  height= 35 >&nbsp;</td>
+    </tr>
+</table>
+<P>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspДалее
+будем применять МТ для правильного вычисления арифметических функций
+<img src=img/2_3_7.gif align=absmiddle>. 
+Для вычисления <img src=img/2_3_8.gif align=absmiddle> будем представлять <I>х</I> в виде последовательности <I>х+1</I>
+единиц. Если функция зависит от нескольких переменных, то, введя дополнительный символ (разделитель *) во внешний алфавит, будем последовательно записывать последовательности единиц, соответствующие аргументам функции, разделенные символом разделителем.
+<P>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a name="pvaf"></a><I>Правильным вычислением арифметической функции</I> <img src=img/2_3_8.gif align=absmiddle> на МТ будем называть правильные вычисления, производимые МТ в
+алфавите <I>А</I> ={0,1} при переходе от конфигурации <img src=img/2_3_2.gif align=absmiddle> к конфигурации <img src=img/2_3_3.gif align=absmiddle>. 
+
+<br><br><B>Пример 1</B>. Вычислим функцию <I>O(x)=</I>0. 
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspОчевидно, что действия МТ сводятся к замене всех последовательно идущих на ленте единиц нулями. 
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspПрограмма вычислений :
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src=img/2_3.gif>
+<Br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspПошаговое исполнение программы для начальной конфигурации='1111110' вы можете увидеть, перейдя по ссылке "Иллюстрация примера №1". 
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src=img/MT.gif  align=absmiddle><a href="exam/MT231.exe">Иллюстрация примера №1</a>   
+
+<br><br><B>Пример 2.</B> Вычислим функцию <I>S(x)=x+1</I> 
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspДля вычисления этой функции достаточно приписать слева одну единицу к последовательности единиц  на ленте.
+ <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspПрограмма вычислений:
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src=img/2_3_1.gif>
+<Br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspПошаговое исполнение программы для начальной конфигурации='0111' вы можете увидеть, перейдя по ссылке "Иллюстрация примера №2". 
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src=img/MT.gif  align=absmiddle><a href="exam/MT232.exe">Иллюстрация примера №2</a>     
+
+<br><br><B>Пример 3.</B> Построить машину Тьюринга для вычисления функции <I>C(x)=S(O(x))</I>. 
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspДля этого будем использовать <a name="prsup"></a><i>принцип суперпозииции</i> для МТ. Суть его поясним на следующем примере. Искомую машину будем строить как суперпозицию машин, вычисляющих функции <i>O(x)=0</i> и <i>S(x)=x+1</i>. Возьмем МТ, вычисляющие эти функции. Объединим состояния и программы этих машин. Пусть имеются две машины T<sub>1</sub> и T<sub>2</sub>, которые вычисляют функции <i>f<sub>1</sub>(x)</i> и <i>f<sub>2</sub>(x)</i> соответственно в одном и том же алфавите. Построим новую машину Тьюринга Т следующим образом. Состояния машины T<sub>2</sub> переобозначим так, чтобы они отличались от состояний T<sub>1</sub>. <a href="2_2.htm#nach">Начальное состояние</a> q<sub>1</sub><sup>1</sup> машины Т<sub>1</sub> объявляем начальным состоянием q<sub>1</sub> машины Т. <a href="2_2.htm#zak">Заключительное состояние</a> q<sub>0</sub><sup>2</sup> машины Т<sub>2</sub> объявляем заключительным состоянием q<sub>0</sub> машины Т. Заключительное состояние q<sub>0</sub><sup>1</sup> машины Т<sub>1</sub>  и начальное состояние q<sub>1</sub><sup>2</sup> машины Т<sub>2</sub> отождествляем. Полученные команды для обеих машин объединяем в одну программу новой машины. Построенная машина Т вычисляет суперпозицию функций <img src=img/2_3_4.gif align=absmiddle> и называется суперпозицией машин Т<sub>1</sub> и Т<sub>2</sub>.
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspВ результате из двух таблиц:
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src=img/2_2_51.gif>
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspполучим одну:
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src=img/2_2_6.gif>   
+
+<br><br><B>Пример 4.</B>Построить МТ для вычисления функции <img src=img/2_2_71.gif align=absmiddle>
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspРанее были построены МТ для вычисления функций <i>O(x)=0</i> и <i>S(x)=x+1</i>. Легко видеть, что исходная функция  – это функция <i>O(x)</i>, если <i>x > 1</i> и функция  <i>S(x)</i> в противном случае. Таким образом, перед вычислением нужно определить, сколько единиц находится на ленте, и в зависимости от этого переходить к вычислению функций. Для определения количества единиц на ленте будем сдвигаться по ленте вправо и на каждом сдвиге менять состояние МТ. Если обнаружили больше двух единиц, необходимо вернуться назад на начало последовательности единиц и применить МТ для вычисления функции <i>O(x)</i>. Если обнаружили две или одну единицу, то <a href="2_2htm#ug">устанавливаем головку</a> на начале последовательности единиц и применяем МТ для вычисления функции <i>S(x)</i>. Внутренние состояния машин для вычисления функций <i>O(x)</i> и <i>S(x)</i> пометим буквами O и S соответственно. <a href="2_2.htm#zak">Заключительные состояния</a> этих машин отождествим.
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspПрограмма MT:
+<P>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src=img/2_3_5.gif align=absmiddle>
+<P>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspПошаговое исполнение программы для двух разных начальных конфигураций вы можете увидеть, перейдя по ссылке "Иллюстрация примера №4". 
+<ul>
+<li><img src=img/MT.gif  align=absmiddle>Случай №1 - начальная конфигурация='011110'; <a href="exam/MT234_1.exe">Иллюстрация примера №4 (1)</a>
+<li><img src=img/MT.gif  align=absmiddle>Случай №2 - начальная конфигурация='0110'; <a href="exam/MT234_2.exe">Иллюстрация примера №4 (2)</a>
+</ul>     
+
+
+<br><br><B>Пример 5.</B> Построить МТ для вычисления функции <img src=img/2_3_9.gif align=absmiddle>.
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspЧтобы правильно вычислить данную функцию, необходимо построить МТ, которая переводит <a href="2_2.htm#konf">конфигурацию</a> <img src=img/2_3_10.gif align=absmiddle> в конфигурацию <img src=img/2_3_121.gif align=absmiddle>. Порядок действий для МТ можно выбрать такой. Сначала происходит движение головки вправо до появления на <a href="2_2.htm#OMT">ленте</a> нуля. Этот нуль разделяет аргументы на ленте. Поставим в эту ячейку вместо нуля единицу и вернемся к началу последовательности единиц. Заменим первые две единицы нулями. Тогда на ленте останется <i>x+y+1</i> единиц.
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspНабор команд для такой MT:
+<P>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src=img/2_3_62.gif align=absmiddle>
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspПрограмму МТ можно изобразить в виде ориентированного графа, вершинами которого являются внутренние состояния МТ, а дуги помечены тройками из символов <a href="2_2.htm#vnamt">внешнего алфавита</a> и символов из множества <i>{L,R,H}</i>. 
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src=img/2_2_9.gif align="absmiddle">
+<P>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspПошаговое исполнение программы при х=2, у=1 (начальная конфигурация='01110110') вы можете увидеть, перейдя по ссылке "Иллюстрация примера №5". 
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src=img/MT.gif  align=absmiddle><a href="exam/MT235.exe">Иллюстрация примера №5</a>     
+<P>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspЕсли Вы хотите создать свои примеры МТ, либо проверить работу МТ на примерах, приведенных выше (разделы 2.2 и 2.3) на других начальных конфигурациях, то перейдите по ссылке "Создайте свою Машину Тьюринга". Эта программа также поможет Вам при выполнении контрольной работы. Сохраните архив на свой жесткий диск и запустите файл <b>MT.exe</b> 
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src=img/MT.gif  align=absmiddle><a href="exam/MT.rar">Создайте свою Машину Тьюринга</a>
+
+<P> 
+
+<hr>
+<div align= center >
+
+<a href= 2_2.htm><font color= #0000FF  size= 2 face= Arial>назад</font></a>
+
+<font color= #0000FF  size= 2 face= Arial> | </font>
+
+<a href= main.htm><font color= #0000FF size= 2  face= Arial>оглавление</font></a>
+
+<font color= #0000FF  size= 2  face= Arial> | </font>
+
+<a href= 2_4.htm><font color= #0000FF  size= 2  face= Arial>вперёд</font></a>
+<font color= #0000FF  size= 2  face= Arial> </font></div>
+<br>
+</body>
+</html>

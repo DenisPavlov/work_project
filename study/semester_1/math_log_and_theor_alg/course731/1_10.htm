@@ -1,0 +1,123 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<style>
+	P { text-align=JUSTIFY;
+		text-indent= 19px;
+		}
+</style>
+<TITLE>Математическая логика и теория алгоритмов</TITLE>
+</HEAD>
+<BODY >
+<BASEFONT face=arial> 
+<table border= 0  cellpadding= 0  cellspacing= 0  width= 100% 
+  height= 31 >
+    <tr>
+        <td width= 100%  bgcolor=#000000>
+         <div align= right><font color= #FFFFFF  size= 3  face= Arial><b>Математическая логика и теория алгоритмов</b></font>
+         </div>
+        </td>
+    </tr>
+</table>
+
+<table border= 0  cellpadding= 0  cellspacing= 0  height= 35 >
+    <tr>
+        <td width= 400  bgcolor= gray><p align=right><font   color= #FFFFFF  size=3 face= Arial><strong>
+		<B>1.10 Термы и формулы в исчислении предикатов</B> </strong></font></p>
+        </td>
+
+          <td width= 300  bgcolor= #EEE0BF >
+		  
+	      <p align= center > <a href= 1_9.htm> <font color= #0000FF  size= 2  face= Arial>назад</font></a> <font
+              color= #0000FF  size= 2  face= Arial> | </font> <a href= main.htm><font color= #0000FF  size= 2 
+          face= Arial>оглавление</font></a> <font color= #0000FF  size= 2  face= Arial> 
+        | </font> <a href= 1_11.htm> <font color= #0000FF  size= 2  face= Arial>вперёд</font> 
+        </a> <font color= #0000FF  size= 2  face= Arial> </font></p>
+        </td>
+        <td width= 260  height= 35 >&nbsp;</td>
+    </tr>
+</table>
+
+<P>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspЧтобы
+наглядно показать чем отличаются термы и формулы, рассмотрим
+следующий пример. 
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspПусть
+имеется предикат <img src=img/1_7_14.gif align=absmiddle>
+на множестве натуральных чисел <I> N </I>.
+Определим две функции <img src=img/1_10_4.gif align=absmiddle> и <img src=img/1_10_5.gif align=absmiddle> следующим образом: 
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src=img/1_9.gif align="absmiddle">
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src=img/1_10_6.gif align=absmiddle>
+<P>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspФункция <I> f (x, y)</I>
+определяет истинностное значение предиката при определенных значениях
+предметных переменных <I> x </I> и <I> y </I>.
+Значение функции <I> g (x, y)</I>
+принадлежит той де предметной области, что и предметные переменные <I>x</I> и <I>y</I>. Для записи функций типа
+функции <I> f (x, y)</I>
+используются <I>формулы</I>, а для записи функций типа функции <I> g (x, y)</I>
+– <I>термы</I>. 
+ 
+<P>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspДадим
+точные определения формулы и терма в исчислении предикатов. Сначала
+определим алфавит формул и термов. В алфавит входят: 
+<OL>
+    <LI>Предметные переменные <img src=img/1_10_7.gif align=absmiddle>; 
+    <LI>Функциональные переменные  <img src=img/1_10_8.gif align=absmiddle> – арность (местность); 
+    <LI>Предикатные переменные 	<img src=img/1_10_9.gif align=absmiddle> – арность (местность); 
+    <LI>Логические символы   <img src=img/1_10_10.gif align=absmiddle> (дополнительные  <img src=img/1_10_11.gif align=absmiddle>); 
+    <LI>Служебные символы (,). 
+</OL>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspПоследовательность символов в исчислении
+предикатов называется <a name="term"></a><I>термом, </I>если она удовлетворяет
+следующему определению:   
+<OL>
+			<LI> любая предметная переменная, любая нульарная	функциональная переменная является термом; 
+			<LI>если	<img src=img/1_10.gif align=absmiddle> – термы, то	<img src=img/lec_html_m16efa52b.gif align=absmiddle><img src=img/1_10_1.gif align=absmiddle> –терм;   
+			<LI>других	термов нет.  
+		</OL>
+
+<B>Пример.</B> Выражение <img src=img/lec_html_34f85823.gif align=absmiddle> является термом, а выражение <img src=img/lec_html_278663a.gif align=absmiddle> не является термом.   
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspПридадим
+теперь функциональным символам следующие значения:
+<ul>
+   <li><img src=img/1_10_12.gif align=absmiddle> - умножение двух чисел,
+   <li><img src=img/1_10_13.gif align=absmiddle> - возведение в степень, 
+   <li><img src=img/1_10_14.gif align=absmiddle> – сложение двух чисел.  
+</ul>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspТогда терм выглядит так: 
+<img src=img/1_10_15.gif align=absmiddle>.
+Полагая <img src=img/1_10_16.gif align=absmiddle>, получаем, что терм равен 9.  Таким образом, если заданы значения всех
+функциональных и предметных переменных, входящих в терм, то чтобы
+получить значение терма следует выполнить все операции сопоставленные
+переменным.   
+<P>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspДадим
+теперь определение формулы исчисления предикатов. Последовательность
+символов в исчислении предикатов называется <a name="fIP"></a><I>формулой, </I>если она
+удовлетворяет следующему определению: 
+<OL>
+	<LI> Каждый предикатный символ арности нуль является формулой; 
+	<LI> Eсли <img src=img/lec_html_16cf4f02.GIF align=absmiddle> – <I>n</I>-арный предикатный символ и <img src=img/1_10.gif align=absmiddle>– термы, то  <img src=img/lec_html_16cf4f02.GIF align=absmiddle> <img src=img/1_10_1.gif align=absmiddle> – формула. Все входящие в эту формулу предметные переменные –	свободные;   
+	<LI> Eсли <img src=img/1_10_17.gif align=absmiddle> – формулы, то <img src=img/1_10_2.gif align=absmiddle> - формулы. Свободные вхождения переменных в <img src=img/1_10_17.gif align=absmiddle> остаются свободными в	формулах <img src=img/1_10_2.gif align=absmiddle>;   
+	<LI> Если	переменная <I> x </I> – свободная в <I> F </I>,	то <img src=img/1_10_18.gif align=absmiddle> – формула. Вхождения других переменных (отличных от <I> x </I>)	остаются свободными в формуле <img src=img/1_10_18.gif align=absmiddle>;   
+	<LI> других	формул нет.  
+</OL>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspОдна и та
+же переменная может иметь в одной и той же формуле как свободные, так
+и связанные вхождения. Формула, не содержащая свободных вхождений
+переменных, называется <I>замкнутой</I>. Квантор существования
+вводится определением  <img src=img/1_10_3.gif align=absmiddle>. 
+<P>
+<hr>
+<div align= center >
+
+<a href= 1_9.htm><font color= #0000FF  size= 2 face= Arial>назад</font></a>
+
+<font color= #0000FF  size= 2 face= Arial> | </font>
+
+<a href= main.htm><font color= #0000FF size= 2  face= Arial>оглавление</font></a>
+
+<font color= #0000FF  size= 2  face= Arial> | </font>
+
+<a href= 1_11.htm><font color= #0000FF  size= 2  face= Arial>вперёд</font></a>
+<font color= #0000FF  size= 2  face= Arial> </font></div>
+<br>
+</body>
+</html>
