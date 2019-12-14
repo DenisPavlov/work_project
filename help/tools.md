@@ -1,5 +1,8 @@
 ## visualvm
 - visualvm --jdkhome '/home/denis/java/jdk1.8.0_181' --openpid 896 - посмотреть процесс 896
+## jconsole
+- посмотреть информацию о запущенных java программах
+
 
 ## JBake (https://jbake.org/)
 - инструмент для создания статического контента
