@@ -6,7 +6,7 @@ public class Robot {
 
     public static void moveRobot(RobotConnectionManager robotConnectionManager, int toX, int toY) {
 
-        Logger logger = Logger.getLogger(Robot.class);
+        //Logger logger = Logger.getLogger(Robot.class);
 
         for (int i = 0; i < 3; i++) {
             try (RobotConnection connection = robotConnectionManager.getConnection()) {

@@ -40,6 +40,50 @@ begin
     end;
 end;
 
+{просеивание кучи}  
+procedure downHeap(var arr: array of integer; index: integer);
+  var lenth,left,right,min,tmp: integer;
+  begin
+  lenth := index;
+  while ((index>0) or (index=0)) do
+    begin
+	  left := index*2+1;
+	  right := index*2+2;
+	  min := index;
+	
+	  if ((left < lenth) and (arr[left] > arr[min])) then min := left;
+      if ((right < lenth) and (arr[right] > arr[min])) then min := right;
+        
+      if (min <> index) then
+        begin
+          tmp := arr[index];
+          arr[index] := arr[min];
+          arr[min] := tmp;
+        end;
+          
+      index := index -1;
+	end;
+  end;
+
+{пирамидальная сортировка}
+procedure heapSort(var arr: array of integer);
+  var i,tmp: integer;
+  begin
+  i:= high(arr)-1;
+  while (i <> 0) do
+    begin
+      downHeap(arr, i);
+      
+      {поменять местами последний и первый элементы массива}
+      tmp := arr[0];
+      arr[0] := arr[i];
+      arr[i] := tmp;
+      i := i - 1;
+      
+    end;
+  end;
+
+
 {вывод элементов массива на экран}
 procedure arrayPrint(var arr: array of integer);
 var i: integer;
@@ -71,6 +115,16 @@ begin
     arrayPrint(arr);
     
     shellSort(arr); {сортировка Шелла}
+    arrayPrint(arr);
+    
+    writeln();
+    for i:=0 to high(arr) do
+    begin
+      arr[i]:=random(100);
+    end;
+    arrayPrint(arr);
+    
+    heapSort(arr); {пирамидальная сортировка}
     arrayPrint(arr);
     
 end.
