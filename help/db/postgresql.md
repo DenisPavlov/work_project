@@ -1,3 +1,5 @@
+##Help
+- <a href="https://stackoverflow.com/questions/31433747/postgres-where-clause-compare-timestamp">Сравнение дат</a>
 - sudo -u postgres psql -c 'select now()' - проверить, будет ли работать БД
 - sudo service postgresql - посмотреть доступные команды
 - sudo journalctl -xeu postgresql - посмотеть лог
