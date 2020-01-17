@@ -2,6 +2,7 @@
 
 - fuser 1099/tcp - проверка порта (какой процесс на нем)
 - fuser -k 1099/tcp - убить процесс на порту
+- ./main - запуск бинарного файла main
 
 ## Работа с файлами
 - cp - копирвание файла. <code>cp \[options] source destination</code>
@@ -47,7 +48,7 @@
 - curl -o archive.zip https://domain.ru/file.zip - скачать в определенный файл
 - curl -I http://domain.ru - получить заголовок
 
-### удить процесс
+### убить процесс
 - ps - посмотреть процессы
 - ps -ef - посмотеть все процессы
 - ps axu | grep -i 'idea' - найти PID процесса
