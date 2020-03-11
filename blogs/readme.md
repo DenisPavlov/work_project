@@ -16,3 +16,4 @@
 - <a href="https://vertex-academy.com/tutorials/ru/">vertex (статьи по Java)</a>
 - <a href="https://alexkosarev.name/">Интересно почитать про экосистему java</a>
 - <a href="https://devzen.ru/">DevZen Podcast</a>
+- <a href="https://javax0.wordpress.com/">Peter Verhas</a>

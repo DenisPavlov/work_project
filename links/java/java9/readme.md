@@ -1,0 +1,1 @@
+- <a href="https://habr.com/ru/company/jugru/blog/336864/">Готовимся к Java 9. Обзор самых интересных улучшений(Rus)</a>

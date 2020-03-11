@@ -1,6 +1,4 @@
 ## <a href="core/readme.md">Core</a>
-## <a href="java8/readme.md">Java 8</a>
-## <a href="java8plus/readme.md">Java 8+</a>
 ### <a href="reflection/readme.md">Reflection API</a>
 ### <a href="generics/readme.md">Обобщенные типы (Generics)</a>
 ### <a href="string/readme.md">String, StringBuilder, StringBuffer</a>
@@ -10,3 +8,6 @@
 ### <a href="garbage/readme.md">Сборка мусор</a>
 ### <a href="trycatch/readme.md">Исключения</a>
 ### <a href="methods/readme.md">Methods</a>
+## <a href="java8/readme.md">Java 8</a>
+## <a href="java8plus/readme.md">Java 8+</a>
+### <a href="methods/readme.md">java 9</a>
