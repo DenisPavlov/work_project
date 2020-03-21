@@ -12,7 +12,9 @@ Actual
       - интеграционное тестирование
       - клиент на angular
 - TDD - стр.50 7. Яблоки и апельсины
-
+- gradle
+  - getting-started
+    - прочитал Building Kotlin JVM Libraries
 TODO list
 -----------------------
 - пересмотреть видео по REST (с Joker 2016) и разобрать пример 

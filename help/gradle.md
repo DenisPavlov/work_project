@@ -1,3 +1,12 @@
+## Commands
+- <code>gradle tasks</code> - посмотреть список доступных задач
+
+## Options
+- <code>--scan</code> - включение сканирования билда 
+- <code>gradle build --console=plain</code> - вывод исполняемых тасков
+
+
+### notes
 1. show gradle home dir
    - create ````gradle.build```` file
    ````
@@ -7,9 +16,8 @@
        }
    }
    ````
-   - run ````gradle getHomeDir```
+   - run 
+   ````
+   gradle getHomeDir
+   ````
    
-2. список доступных задач
-   ````
-   gradle tasks
-   ````
