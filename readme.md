@@ -5,7 +5,6 @@
 - <a href="/tutorials/readme.md">Tutorials</a>
 - <a href="/blogs/readme.md">Интересные блоги и сайты</a>
 - <a href="/help/readme.md">Help</a>
-- <a href="/actual/readme.md">Текушие задачи</a>
 - <a href="/cookbook/cookbook.md">Cook Book</a>
 - <a href="/other/readme.md">Разное</a>
 - <a href="/js/readme.md">Java Script</a>

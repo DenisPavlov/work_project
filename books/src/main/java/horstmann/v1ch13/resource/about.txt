@@ -1,5 +1,0 @@
-Core Java: Fundamentals
-10th Edition
-Cay Horstmann and Denis Pavlov
-Copyright © 2019
-Novosibirsk
