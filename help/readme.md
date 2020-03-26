@@ -5,6 +5,7 @@
 - <a href="/help/scala.md">scala</a>
 - <a href="/help/wicket.md">Wicket</a>
 - <a href="/help/linux.md">Linux</a>
+- <a href="/help/windows.md">Windows</a>
 - <a href="/help/tomcat.md">Tomcat</a>
 - <a href="/help/tools.md">Tools</a>
 - <a href="/help/chrome.md">chrome</a>
