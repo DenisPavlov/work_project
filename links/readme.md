@@ -14,6 +14,7 @@
 ### <a href="htmlcssjs/readme.md">HTML, JavaScript, CSS</a>
 ### <a href="interview/readme.md">Интервью</a>
 ### <a href="docker/readme.md">docker</a>
+### <a href="testing/readme.md">Testing</a>
 
 
 
