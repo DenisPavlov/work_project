@@ -1,3 +1,10 @@
 - <a href="https://habr.com/post/310460/">docker tutorial in habr</a>
 - <a href="https://www.digitalocean.com/community/tutorials/docker-ubuntu-16-04-ru">Как установить и использовать Docker в Ubuntu 16.04</a>
 - <a href="https://proglib.io/p/ponyatnye-videouroki-po-docker-dlya-nachinayushchih-2019-12-25">Видео туториал (есть проброска портов)</a>
+- <a href="https://www.youtube.com/watch?v=QF4ZF857m44">Введение в docker. Отлично рассказывает</a>
+  - примеры (Добавить ссылки !!!)
+  - Проброска портов - 36:00
+  - Установка переменных окружения 39:00
+  - Монтирование папки 42:00
+  - vscale 1:06
+  - docker compose (ближе к концу)
