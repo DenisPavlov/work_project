@@ -1,1 +1,2 @@
-- <a href="https://vk.com/video-111905078_456245623?list=bb35bea58830c2d347">Алименков о java 14 (Rus)</a> - <a href="https://github.com/DenisPavlov/java14/tree/master/src/example1">code</a>
+- <a href="https://vk.com/video-111905078_456245623?list=bb35bea58830c2d347">Видео. Алименков о java 14 (Rus)</a> - <a href="https://github.com/DenisPavlov/java14/tree/master/src/example1">code</a>
+- <a href="https://medium.com/better-programming/a-look-at-the-new-switch-expressions-in-java-14-ed209c802ba0">A Look at the New ‘Switch’ Expressions in Java 14</a> - <a href="https://github.com/DenisPavlov/java14/tree/master/src/example2">code</a>
