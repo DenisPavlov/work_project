@@ -1,0 +1,1 @@
+- <a href="https://habr.com/ru/post/435144/">Введение в Spring Boot: создание простого REST API на Java</a>(<a href="https://github.com/DenisPavlov/spring-boot/tree/master/SpringBootRestService">код</a>)
