@@ -1,0 +1,1 @@
+<a href="https://www.youtube.com/watch?v=HvovW6Uh1yU&t=1s">Классное видео про Spring Security (RUS)</a>
