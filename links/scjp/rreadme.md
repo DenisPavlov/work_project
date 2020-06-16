@@ -1,0 +1,2 @@
+- <a href="https://habr.com/post/150186/">Шпаргалка по SCJP. Часть первая</a>
+- <a href="https://habr.com/post/150193/">Шпаргалка по SCJP. Часть вторая</a>
