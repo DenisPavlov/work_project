@@ -16,20 +16,13 @@
 ### <a href="docker/readme.md">docker</a>
 ### <a href="testing/readme.md">Testing</a>
 ### <a href="spring/readme.md">Spring</a>
-
-
-
-### Enum
-- <a href="http://info.javarush.ru/translation/2015/10/13/15-%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D0%BE%D0%B2-%D0%B4%D0%BB%D1%8F-%D1%81%D0%BE%D0%B1%D0%B5%D1%81%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%D0%BE%D0%B2-%D0%BE%D1%82%D0%BD%D0%BE%D1%81%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE-Enum-%D0%B2-%D0%94%D0%B6%D0%B0%D0%B2%D0%B5-%D1%81-%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D0%B0%D0%BC%D0%B8-.html">15 вопросов для собеседования разработчиков, относительно Enum в Джаве (с ответами!)</a>
-- <a href="https://tproger.ru/articles/comparing-enums-in-java/">Как лучше сравнивать перечисляемые типы в Java</a>
-- <a href="http://info.javarush.ru/tag/%D0%9D%D0%B0%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B2%20enum/">Перечисления в Java (java enum)</a>
-- <a href="http://cyclowiki.org/wiki/Enum_(Java)">Enum (Java)</a>
+### <a href="building/readme.md">Сборка проектов</a>
+### <a href="kotlin/readme.md">Kotlin</a>
+### <a href="libraries/readme.md">Различные вспомогательные библиотеки</a>
+### <a href="rest/readme.md">REST</a>
 
 ### Аннотации
 - <a href="https://www.ibm.com/support/knowledgecenter/ru/SS8PJ7_9.5.0/org.eclipse.jdt.doc.user/tasks/task-suppress_warnings.htm">Отключение предупреждений с помощью @SuppressWarnings</a>
-
-### <a href="kotlin/readme.md">Kotlin</a>
-### <a href="libraries/readme.md">Libraries</a>
 
 ### Разное
 - <a href="https://habr.com/post/150186/">Шпаргалка по SCJP. Часть первая</a>
@@ -91,8 +84,5 @@
 
 ## Прочее
 - <a href="https://habrahabr.ru/post/90696/">Что такое xsd-схема</a>
-
-## IDEA
-- <a href="http://info.javarush.ru/idea_help/2014/01/22/%D0%A0%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE-%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F-IntelliJ-IDEA-%D0%9E%D1%82%D0%BB%D0%B0%D0%B4%D1%87%D0%B8%D0%BA-.html">Руководство пользователя IntelliJ IDEA. Отладчик.</a>
 
 

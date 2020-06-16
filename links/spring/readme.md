@@ -9,4 +9,4 @@
 
 ### Video
 - <a href="https://www.youtube.com/watch?v=hDpa6m48eC4&index=15&list=PLVe-2wcL84b8qDFSA2rpbpuE3OTkEbAwe">Spring the Ripper (Евгений Борисов)</a> - <a href="https://github.com/DenisPavlov/work_project/tree/master/src/main/java/links/jpoint">Код</a>
-- <a href="https://www.youtube.com/watch?v=HvovW6Uh1yU&t=1s">Классное видео про Spring Security (RUS)</a> - <a href="">Код</a> 
+- <a href="https://www.youtube.com/watch?v=HvovW6Uh1yU&t=1s">Классное видео про Spring Security (RUS)</a> - <a href="https://github.com/DenisPavlov/work_project/tree/master/projects/spring.security">Код</a> 
