@@ -1,0 +1,2 @@
+- <a href="https://sysout.ru/vvedenie-v-spring-integration-na-primere-ispolzovaniya-konechnoj-tochki-service-activator/">Введение в Spring Integration на примере использования Service Activator</a>
+- <a href="https://sysout.ru/adaptery-v-spring-integration/">Адаптеры в Spring Integration: работа с почтой и базой</a>

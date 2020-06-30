@@ -72,3 +72,6 @@
 
 ## VIM
 - vimtutor - посмотреть обучалку по vim
+
+## SDK
+- ```sdk use java <version>``` - изменение версии java

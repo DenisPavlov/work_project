@@ -1,5 +1,7 @@
 ## Spring
 
+### <a href="integration/readme.md">Integration</a>
+
 - <a href="https://habrahabr.ru/post/139421/">Spring Data на примере JPA</a>
 - <a href="https://habrahabr.ru/post/113945/">Кеширование в Spring Framework 3.1</a>
 - <a href="https://habrahabr.ru/post/343960/">Настройка валидации DTO в Spring Framework</a>
