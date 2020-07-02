@@ -85,3 +85,11 @@ DEBUG
     - Shift + F7 (Cmd + F7 для Mac) - выбор метода в который перейти
     - Alt + F9 - переход к курсору
     
+## Настройки
+  - Если не работает навигация 'Назад', то необходимо в ubuntu выполнить две команды:
+    
+    `` gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['']"``
+    
+    `` gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['']"`` 
+    
+    затем в idea зайти File -> Settings -> Keymap -> Main menu -> Back и установить нужное сочетание клавиш

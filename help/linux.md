@@ -33,7 +33,7 @@
 - Shift + PageUp - terminal scrol up
 - Shift + PageDown - terminal scrol down
 - skype & - запуск программы в фоне
-- etc/enviroment TOPJAVA_ROOT="/home/denis/projects/topjava" - добавить переменную окружения
+- ```sudo subl /etc/enviroment``` и прописать TOPJAVA_ROOT="/home/denis/projects/topjava" - добавить переменную окружения
 
 ## touch - утилита для работы с файлом
 - touch файл.txt - создать файл
