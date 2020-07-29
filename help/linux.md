@@ -33,7 +33,7 @@
 - Shift + PageUp - terminal scrol up
 - Shift + PageDown - terminal scrol down
 - skype & - запуск программы в фоне
-- ```sudo subl /etc/enviroment``` и прописать TOPJAVA_ROOT="/home/denis/projects/topjava" - добавить переменную окружения
+- ```sudo subl /etc/environment``` и прописать TOPJAVA_ROOT="/home/denis/projects/topjava" - добавить переменную окружения
 
 ## touch - утилита для работы с файлом
 - touch файл.txt - создать файл
@@ -75,3 +75,6 @@
 
 ## SDK
 - ```sdk use java <version>``` - изменение версии java
+
+## bash
+- `eval` - принимает строку в качестве аргумента и вычисляет ее так, как если бы вы ввели эту строку в командной строке. (Если вы передаете несколько аргументов, они сначала соединяются с пробелами между ними.)
