@@ -17,7 +17,7 @@
 
         <!--DB-->
         <postgresql.version>42.2.5</postgresql.version>
-        <hibernate.versio>5.4.4.Final</hibernate.versio>
+        <hibernate.versio>5.4.24.Final</hibernate.versio>
 
         <!-- Logging -->
         <logback.version>1.2.3</logback.version>
